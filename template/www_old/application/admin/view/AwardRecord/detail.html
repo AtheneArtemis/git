@@ -1,0 +1,100 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>奖品领取详情</h3></div>
+					    <div class="col-sm-3 text-right">
+						    <a href="__URL__/index">
+						    	<button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+						    </a>
+					    </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">奖品名称</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    <if condition="empty($list['award_id'])">
+                                        现金红包：{$list.money}元
+                                    <elseif condition="$list['award_id'] eq -3">
+                                        购物券：{$list.money}元
+                                    <else />
+                                        {$list.award.name}
+                                    </if>
+                                </div>
+                                <label class="col-sm-2 control-label">收货人</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list.address.username}
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">用户昵称</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list.user.nickname}
+                                </div>
+                                <label class="col-sm-2 control-label">联系方式</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list.address.mobile}
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">中奖时间</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {:date('Y-m-d',$list.createtime)}
+                                </div>
+                                <label class="col-sm-2 control-label">收货地址</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list["address"]['province']['name']}{$list["address"]['city']['name']}{$list["address"]['district']['name']}{$list["address"]['address']}
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <input type="hidden" name="id" value="{$list.id}">
+                            <div class="form-group">
+                                <div class="col-sm-12 text-right">
+                                    <if condition="$list.status eq 1">
+                                        <button class="btn btn-primary disabled" type="button" >奖品未领取</button>
+                                    <elseif condition="$list.status eq 2">
+                                        <button class="btn btn-primary" type="button" onclick="sendGoods('{$list.id}')">发货</button>
+                                    <elseif condition="$list.status eq 3"/>
+                                        <button class="btn btn-primary disabled" type="button" >奖品已发货</button>
+                                    <elseif condition="$list.status eq 4"/>
+                                        <button class="btn btn-primary disabled" type="button" >奖品已完成</button>
+                                    <else />
+                                        <button class="btn btn-primary disabled" type="button" >奖品已取消</button>
+                                    </if>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function submitApply(id,status){
+            if(window.confirm('确认通过审核？')){
+                $.post('__URL__/submitApply',{id:id,status:status},function(json){
+                    alert(json.msg);
+                    if (json.code == 0){
+                        window.location.href='__URL__/index';
+                    }
+                },'json')
+            }
+        }
+        function sendGoods(id){
+            if (window.confirm('确认发货？')) {
+                $.post('__URL__/sendGoods',{id:id},function(json){
+                    alert(json.msg);
+                    if (json.code == 0) {
+                        window.location = '__URL__/detail/id/'+id;
+                    }
+                },'json')
+            }
+        }
+    </script>
+<include file="Public/footer" />

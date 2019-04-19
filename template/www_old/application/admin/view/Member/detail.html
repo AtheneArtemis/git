@@ -1,0 +1,130 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>{$list.nickname} -- 会员详情</h3></div>
+                <div class="col-sm-6 text-right">
+                    <a href="__URL__/index">
+                        <button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+                    </a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+                <!-- 搜索栏 start -->
+    			<div>
+        			<form action="" method="post" id="queryForm">
+        				
+        			</form>
+    			</div>
+                <!-- 搜索栏 end -->
+                <div style="clear:both;"></div>
+			</div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title">会员信息</h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>会员昵称</th>
+                                        <th>头像</th>
+                                        <th>用户等级</th>
+                                        <th>佣金</th>
+                                        <th>积分</th>
+                                        <th>购物券</th>
+                                        <th>业绩</th>
+                                        <th>下级数量</th>
+                                        <th>注册时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{$list.id}</td>
+                                        <td>{$list.nickname}</td>
+                                        <td><img src="{$list.avatar_url}"  style="width: 50px;height: 50px;"/></td>
+                                        <td>{$list.userlevel.name}</td>
+                                        <td>{$list.commission}</td>
+                                        <td>{$list.dividend}</td>
+                                        <td>{$list.manual_integral}</td>
+                                        <td>{$list.order_money}元</td>
+                                        <td>{$list.sub_number}人</td>
+                                        <td>{:date('Y-m-d H:i:s',$list.createtime)}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$datalist["page"]}</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <h4 class="example-title" style="line-height: 50px">下级信息</h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>会员昵称</th>
+                                        <th>头像</th>
+                                        <th>用户等级</th>
+                                        <th>佣金</th>
+                                        <th>积分</th>
+                                        <th>购物券</th>
+                                        <th>业绩</th>
+                                        <th>注册时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <volist name="sublist" id="v">
+                            		<tr>
+                                        <td>{$v.id}</td>
+                                        <td>{$v.nickname}</td>
+                                        <td><img src="{$v.avatar_url}"  style="width: 50px;height: 50px;"/></td>
+                                        <td>{$v.userlevel.name}</td>
+                                        <td>{$v.commission}</td>
+                                        <td>{$v.dividend}</td>
+                                        <td>{$v.manual_integral}</td>
+                                        <td>{$v.order_money}元</td>
+                                        <td>{:date('Y-m-d H:i:s',$v.createtime)}</td>
+                                    </tr>
+                                    </volist>
+                            	</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$page}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    
+    <script type="text/javascript">
+    	function complete_query(data) {
+    		$("#datalist").empty();
+    		$("#datalist").html(data.data.html);
+    		$("#page").html(data.data.page);
+    	}
+    	function submitquery(id) {
+			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
+			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
+    		$.get('__URL__/index',{'p':id,'account':$('#account').val(),'provinceid':$('#provinceid').val(),'cityid':$('#cityid').val(),'zoneid':$('#zoneid').val(),'usertypeid':$('#usertypeid').val()},complete_query,'json');
+		}
+		
+		function opend(){
+            $.post("__URL__/opend",{},function(res){
+                alert(res.msg);
+                if (res.code == 0) {
+                    window.location.href = "__URL__/index";
+                }
+            },'json')
+        }
+        function closed(){
+             $.post("__URL__/closed",{},function(res){
+                alert(res.msg);
+                if (res.code == 0) {
+                    window.location.href = "__URL__/index";
+                }
+            },'json')
+        }
+	</script> 
+<include file="Public/footer" />

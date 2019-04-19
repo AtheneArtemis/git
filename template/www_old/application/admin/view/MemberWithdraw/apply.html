@@ -1,0 +1,113 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>会员提现审核</h3></div>
+					    <div class="col-sm-3 text-right">
+						    <a href="__URL__/index">
+						    	<button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+						    </a>
+					    </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="__URL__/submitApply">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">会员</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list.user.nickname}
+                                </div>
+                                <label class="col-sm-2 control-label">手机号码</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list.user.mobile}
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现金额</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list.money}元
+                                </div>
+                                <label class="col-sm-2 control-label">到账金额</label>
+                                <div class="col-sm-4" style="line-height: 35px;">
+                                    {$list.actual_money}元
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现账号</label>
+                                <div class="col-sm-2" style="line-height: 35px;">
+                                    姓名：
+                                </div>
+                                <div class="col-sm-3" style="line-height: 35px;">
+                                    {$list.withdrawAccount.name}
+                                </div>
+                                <div class="col-sm-2" style="line-height: 35px;">
+                                    手机号码：
+                                </div>
+                                <div class="col-sm-3" style="line-height: 35px;">
+                                    {$list.withdrawAccount.mobile}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"></label>
+                                <div class="col-sm-2" style="line-height: 35px;">
+                                    微信号：
+                                </div>
+                                <div class="col-sm-3" style="line-height: 35px;">
+                                    {$list.withdrawAccount.wechat}
+                                </div>
+                                <div class="col-sm-2" style="line-height: 35px;">
+                                    支付宝：
+                                </div>
+                                <div class="col-sm-3" style="line-height: 35px;">
+                                    {$list.withdrawAccount.alipay}
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"></label>
+                                <div class="col-sm-2" style="line-height: 35px;">
+                                    银行名称：
+                                </div>
+                                <div class="col-sm-3" style="line-height: 35px;">
+                                    {$list.withdrawAccount.bank_name}
+                                </div>
+                                <div class="col-sm-2" style="line-height: 35px;">
+                                    银行卡账号：
+                                </div>
+                                <div class="col-sm-3" style="line-height: 35px;">
+                                    {$list.withdrawAccount.bank_account}
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <input type="hidden" name="id" value="{$list.id}">
+                            <div class="form-group">
+                                <div class="col-sm-12 text-right">
+                                    <if condition="$list.status eq 1">
+                                        <button class="btn btn-primary" type="button" onclick="submitApply('{$list.id}','3')">审核通过（线下）</button>
+                                        <button class="btn btn-primary" type="button" onclick="submitApply('{$list.id}','-1')">审核不通过</button>
+                                    <else />
+                                        <button class="btn btn-primary disabled" type="button" >已审核</button>
+                                    </if>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function submitApply(id,status){
+            if(window.confirm('确认通过审核？')){
+                $.post('__URL__/submitApply',{id:id,status:status},function(json){
+                    alert(json.msg);
+                    if (json.code == 0){
+                        window.location.href='__URL__/index';
+                    }
+                },'json')
+            }
+        }
+    </script>
+<include file="Public/footer" />

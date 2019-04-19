@@ -1,0 +1,14 @@
+<!-- 授权弹窗 -->
+<view class="{{showAuthView?'show':'hide'}}">
+  <view class='sq-zhaoc'></view>
+  <view class='sq-code-box'>
+    <view class='sq-title'>需要您的授权</view>
+    <view class='sq-ftitle'>
+    <text>为了提供更好的服务\n请稍后的提示框中点击"允许"</text>
+    </view>
+    <view style='text-align:center'>
+      <image src='/images/sq.png' class='sq-windows'></image>
+    </view>
+    <button class='sq-confirm-btn' open-type="getUserInfo" bindgetuserinfo="myLogin">我知道了</button>
+  </view>
+</view>

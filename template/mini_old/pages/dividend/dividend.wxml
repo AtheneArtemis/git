@@ -1,0 +1,22 @@
+<!--pages/dividend/dividend.wxml-->
+<view class=' center_box'>
+  <image src='/pages/images/12.png' class='card-img'></image>
+  <view class='card flex-bet'>
+    <view>
+      总资产 （元）
+      <view class='big-text'>{{userinfo.dividend}}</view>
+    </view>
+    <navigator url='/pages/withdraw/withdraw?type=dividend'>
+      <view class='btn'>提现</view>
+    </navigator>
+  </view>
+  <view class='list2' wx:for="{{dividend_record}}" wx:key="{{item}}" wx:for-item="stock">
+    <view class='flex-bet'>
+      <view>
+        <view class='gray-text'>{{stock.createtime}}</view>
+        <view class='bule'>{{stock.stock.name}}</view>
+      </view>
+      <view class='red'>+{{stock.dividend}}</view>
+    </view>
+  </view>
+</view>

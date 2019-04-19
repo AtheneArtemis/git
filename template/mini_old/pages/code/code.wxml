@@ -1,0 +1,8 @@
+<!--pages/code/code.wxml-->
+<!-- <view class='text'>我的邀请码：<text>{{userinfo.invitation_code}}</text></view> -->
+<!-- <image src='/pages/images/tgbj.jpg' style='width:100%;height:100%'></image>
+<view class='code'>
+<image src='{{userinfo.invitation_qrcode}}' class='code-img'></image>
+</view> -->
+
+<image src='{{userinfo.poster}}' style='width:100%;height:100%' bindtap="previewImage"></image>

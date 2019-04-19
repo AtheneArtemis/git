@@ -1,0 +1,92 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>其他参数</h3></div>
+                        <div class="col-sm-3 text-right">
+                            <a href="__URL__/edit/id/{$list.id}">
+                                <button type="submit" class="btn btn-sm btn-primary">修改</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">联系我们-电话号码</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    {$list.mobile}
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">每天抽奖轮数</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    {$list.number}轮
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">每轮抽奖人数</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    {$list.humanNum}人
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">是否开启中奖公告</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    <if condition="$list.switch_jackpot eq 1">开启<else />关闭</if>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">是否开启新会员公告</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    <if condition="$list.switch_member eq 1">开启<else />关闭</if>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">全商品包邮</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    <if condition="$list.switch_freight eq 1">开启<else />关闭</if>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现最小金额</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    {$list.withdraw_min}元
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现最大金额</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    {$list.withdraw_max}元
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现手续费</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    {$list.withdraw_commission}%
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">收取手续费的起始金额</label>
+                                <div class="col-sm-10" style="line-height: 35px">
+                                    {$list.withdraw_commission_initiation}元
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="Public/footer" />

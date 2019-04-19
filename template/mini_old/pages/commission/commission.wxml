@@ -1,0 +1,31 @@
+<!--pages/commission/commission.wxml-->
+<view class='center_box content'>
+  <image src='/pages/images/12.png' class='card-img'></image>
+  <view class='card flex-bet'>
+    <view>
+      总资产 （元）
+      <view class='big-text'>{{userinfo.commission}}</view>
+    </view>
+    <navigator url='/pages/withdraw/withdraw?type=commission'>
+      <view class='btn'>提现</view>
+    </navigator>
+  </view>
+  <view class='line'>佣金明细</view>
+  <view wx:for="{{commission_record}}" wx:key="{{item}}">
+    <view class="list">
+      <view class="flex-bet">
+        <view class="flex">
+          <image src="/pages/images/yjmx.png"></image>
+          <view class="list-left">
+            <view style="font-size:0.95rem">佣金</view>
+            <!-- <view style="color:#808080">成功提现</view> -->
+          </view>
+        </view>
+        <view>
+          <view class="date">{{item.createtime}}</view>
+          <view class="red-text">{{item.commission?item.commission:0}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

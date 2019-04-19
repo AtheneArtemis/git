@@ -1,0 +1,50 @@
+<!--pages/raffle/raffle.wxml-->
+<view class='remark'>备注:奖品包含实物与红包，百分百中奖几率。</view>
+<image src='/pages/images/h.png' class='bj'></image>
+<view class="show-iconView">
+  <image src="/pages/images/j(1).png" class="show-iconImage" animation="{{animationData}}" mode="scaleToFill"></image>
+</view>
+<view style='text-align:center'>
+  <image src='/pages/images/bmbtn.png' class='bm-btn' bindtap='signtap'></image>
+</view>
+<view class='flex-bet' style='margin:40rpx 0;'>
+  <view class='text'>
+    <text>报名人数\n {{humanNum}}人</text>
+  </view>
+  <view class='text'>
+    <text>报名总人数\n {{setting.humanNum}}人</text>
+  </view>
+</view>
+<progress class='progress' border-radius='10rpx' percent='{{humanNum_percent * 100}}' activeColor='#fff' backgroundColor='#d36041'></progress>
+<view wx:if="{{setting.switch_jackpot}}">
+  <view class='topic'>中奖动态</view>
+  <view class='roll'>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000" display-multiple-items="1" previous-margin="60rpx" next-margin="60rpx">
+      <block wx:for="{{lottery_award}}" wx:key="{{item}}">
+        <swiper-item>
+          <view class="swiper_item flex-bet">
+            <view>
+              <image src='{{item.user.avatar_url}}' class='tximg'></image>
+            </view>
+            <view>
+              {{item.user.nickname}}
+            </view>
+            <view>{{item.awardinfo}}</view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<view class="{{showView?'show':'hide'}}">
+  <view class='zhaoc'></view>
+
+<view class='code-box'>
+  <view class='close' bindtap='signtap'>
+    <image src="/pages/images/gb.png"></image>
+  </view>
+  <image src='/pages/images/ku.png' class='code-img'></image>
+  <view>您还不是店主，不可以参与抽奖哦！</view>
+  <button class='buy-btn confirm-btn' bindtap='memberUpgrade'>申请成为店主</button>
+  </view>
+</view>

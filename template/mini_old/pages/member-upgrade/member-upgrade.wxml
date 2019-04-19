@@ -1,0 +1,107 @@
+<!--pages/detail/detail.wxml-->
+<swiper autoplay="true" circular="true" class="goods-image-swiper" duration="300" indicatorActiveColor="#ff5c5c" indicatorDots="true" interval="5000">
+  <swiper-item wx:for="{{product.picturelist}}" wx:key="{{item}}">
+    <image bindtap="onGoodsImageClick" class="goods-image" data-index="{{index}}" mode="aspectFill" src="{{item.picture}}"></image>
+  </swiper-item>
+</swiper>
+<view class="goods_info_box" style='margin-bottom:20rpx;'>
+  <view class="goods_name">{{product.name}}</view>
+  <view class="flex-row flex-y-center store_goods_info">
+    <view class="flex-grow-1 flex-col">
+      <view class="flex-row flex-y-center" style="margin-top:7px;">
+        <view class="flex-grow-0 view2">
+          <text class="renminbi is_member">\n ￥</text>
+          <text class="min_price is_member">{{product.price}}</text>
+        </view>
+<!-- <view bindtap='payelmentaftersuccess'>测试</view> -->
+      </view>
+    </view>
+    <view class="flex-grow-0">
+      <button class="share_btn" plain="" open-type='share'>
+        <image class="img" src="/pages/images/icon-share.png"></image>
+        <view class="share">分享</view>
+      </button>
+    </view>
+  </view>
+</view>
+<view class="block" style='padding:0px 24rpx;'>
+  <view bindtap="goToAddress" class="address-picker flex-row" hoverClass="none">
+    <view class="flex-grow-0 flex-y-center" style='font-size:0.7rem'>
+      收货地址
+    </view>
+    <view class="flex-grow-1" style='width:330rpx;font-size:0.6rem' wx:if="{{picker_address}}">
+      <view class="flex-row" style="margin-bottom: 20rpx">
+        <view class="flex-grow-1">收货人:{{picker_address.username}}</view>
+        <view class="flex-grow-0">{{picker_address.mobile}}</view>
+      </view>
+      <view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis">收货地址：{{picker_address.province.name}}{{picker_address.city.name}}{{picker_address.district.name}}{{picker_address.address}}</view>
+    </view>
+    <view class="flex-grow-1" wx:else>
+      <view style="color:#888;text-align:center">未选择收货地址</view>
+    </view>
+    <view class="flex-grow-0 flex-y-center">
+      <image src="/pages/images/icon-jiantou-r.png" style="width: 12rpx; height: 22rpx;margin-left: 24rpx"></image>
+    </view>
+  </view>
+</view>
+<view class="mb-20"></view>
+<view class="flex-row flex-y-center select_attrs">
+  <view class="flex-grow-1 flex-row flex-y-center">
+    <text style='margin-top:-44rpx;'>商品详情</text>
+  </view>
+</view>
+<view class='detail-img'>
+  <!-- <image src='/pages/images/xq.jpg' style='width:100%;height:1400rpx'></image> -->
+  <!-- <view>{{product.detail}}</view> -->
+  <view>
+    <import src="../../utils/js/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:detail.nodes}}"/>
+  </view>
+</view>
+<view style='height:30px'></view>
+<view class="flex-row bar-bottom">
+  <view class="flex-grow-0 flex-row" bindtap='firstPage'>
+    <view class="flex-grow-0 flex-y-center bar-bottom-btn">
+      <view>
+        <image src="/pages/images/xsy.png">
+        </image>
+        <text>\n 首页</text>
+      </view>
+    </view>
+  </view>
+  <view class="flex-grow-1 flex-row">
+    <view class="flex-grow-1 flex-y-center flex-x-center buy-now" wx:if="{{isSellOut == 2}}">联合创始人限额980人</view>
+    <view class="flex-grow-1 flex-y-center flex-x-center buy-now" bindtap='pay' wx:else>立即购买</view>
+  </view>
+</view>
+<!-- 授权弹窗 -->
+<view class="{{showAuthView?'show':'hide'}}">
+  <view class='zhaoc'></view>
+  <view class='code-box' style='top:15%'>
+    <view class='title'>需要您的授权</view>
+    <view class='ftitle'>
+    <text>为了提供更好的服务\n请稍后的提示框中点击"允许"</text>
+    </view>
+    <view style='text-align:center'>
+    <image src='/pages/images/sq.png' class='windows'></image>
+    </view>
+    <button class='buy-btn confirm-btn' style='background-color:#04be01;line-height:69rpx;width:415rpx;' open-type="getUserInfo" bindgetuserinfo="myLogin">我知道了</button>
+  </view>
+</view>
+<!-- 邀请弹窗  showView?'show':'hide'-->
+<view class="{{showView?'show':'hide'}}">
+  <form bindsubmit='setuserinfo'>
+    <view class='zhaoc'></view>
+    <view class='code-box'>
+      <view class='code-text'>注册</view>
+      <input class='code-ipt' placeholder='请输入姓名' name="realname"/>
+      <input class='code-ipt' placeholder='请输入手机号码' name='phoneNo' data-id="phoneNo" bindinput="changeponeNo"/>
+      <view class="flex" style="width:80%;margin: 30rpx auto;">
+        <input class='code-ipt' name="captcha" style='width:54%;margin:0px 0px' placeholder='请输入验证码'/>
+        <button style='width:40%;font-size:0.65rem;margin-left:5%;' disabled="{{disabled}}" bindtap="getcaptcha">{{time}}</button>
+      </view>
+      <input class='code-ipt' name="invitationCode" placeholder='请输入邀请码，可忽略'/>
+      <button class='buy-btn confirm-btn' form-type='submit'>提交</button>
+    </view>
+  </form>
+</view>

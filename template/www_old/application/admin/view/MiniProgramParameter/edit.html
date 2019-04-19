@@ -1,0 +1,64 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>小程序参数设置</h3></div>
+                        <div class="col-sm-3 text-right">
+                            <a href="__URL__/index">
+                                <button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="__URL__/update">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">小程序AppId</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="appid" value="{$list.appid}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">小程序密匙</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="appsecret" value="{$list.appsecret}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">商户号</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="mch_id" value="{$list.mch_id}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">商户操作密码</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="mch_password" value="{$list.mch_password}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">商户密匙</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="mch_key" value="{$list.mch_key}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <input type="hidden" name="id" value="{$list.id}">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-sm-offset-10">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                    <button class="btn btn-white" type="reset">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="Public/footer" />

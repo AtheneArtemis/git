@@ -1,0 +1,144 @@
+<!--pages/detail/detail.wxml-->
+<swiper autoplay="true" circular="true" class="goods-image-swiper" duration="300" indicatorActiveColor="#ff5c5c" indicatorDots="true" interval="5000">
+  <swiper-item wx:for="{{product.picturelist}}" wx:key="{{item}}">
+    <image bindtap="onGoodsImageClick" class="goods-image" data-index="{{index}}" mode="aspectFill" src="{{item.picture}}"></image>
+  </swiper-item>
+</swiper>
+<view class="goods_info_box" style='margin-bottom:20rpx;'>
+  <view class="goods_name">{{product.name}}</view>
+  <view class="flex-row flex-y-center store_goods_info">
+    <view class="flex-grow-1 flex-col">
+      <view class="flex-grow-0 flex-y-center view1" style='margin-top:-56rpx;'>
+        <text class="renminbi is_member">\n ￥</text>
+        <text class="min_price is_member">\n {{product.price}}</text>
+      </view>
+      <view class="flex-row flex-y-center" style="margin-top:7px;">
+        <view class="flex-grow-0 view2">
+          <text class="original_price">￥{{product.original_price}}</text>
+        </view>
+        <view class="flex-grow-0 view2">
+          <text class="sales">销量</text>
+          <text class="sales">{{product.saleNumber}}件</text>
+          <text class="sales" style='margin-left:20rpx'>分享赚：{{product.rebate}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="flex-grow-0">
+      <button class="share_btn" plain="" open-type='share'>
+        <image class="img" src="/pages/images/icon-share.png"></image>
+        <view class="share">分享</view>
+      </button>
+    </view>
+  </view>
+</view>
+<view class="mb-20"></view>
+<view class="flex-row flex-y-center select_attrs" bindtap='guigetap'>
+  <view class="flex-grow-1 flex-row flex-y-center">
+    <text style='margin-top:-44rpx;'>选择</text>
+    <text class="attrs" style='margin-top:-40rpx;'>规格</text>
+  </view>
+  <view class="flex-grow-0">
+    <image class="img" src="/pages/images/icon-jiantou-r.png">
+    </image>
+  </view>
+</view>
+<!-- 商品详情 -->
+<view class="flex-row flex-y-center select_attrs">
+  <view class="flex-grow-1 flex-row flex-y-center">
+    <text style='margin-top:-44rpx;'>商品详情</text>
+  </view>
+</view>
+<view class='detail-img'>
+  <!-- <image src='/pages/images/xq.jpg' style='width:100%;height:1400rpx'></image> -->
+  <view>
+    <import src="../../utils/js/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:detail.nodes}}"/>
+  </view>
+</view>
+<view style='height:30px;'></view>
+<!-- 规格选择框 -->
+<view class="attr-picker {{showView?'show':'hide'}}">
+  <view class="content-box">
+    <view class="flex-row" style="border-bottom: 0.5px solid #e3e3e3;padding: 12px 14px">
+      <view class="flex-grow-0">
+        <view class="goods-pic-box">
+          <image mode="aspectFill" src="{{product.thumbpicture.picture}}"></image>
+        </view>
+      </view>
+      <view class="flex-grow-1" style="padding: 0 12px">
+        <view style="color:#ff4544;margin-bottom: 6px;font-weight: bold">￥{{product.price}}</view>
+        <view style="font-size:9pt"> 库存{{product.stock}}</view>
+      </view>
+      <view class="flex-grow-0">
+        <view class="flex-x-center flex-y-center" style="width: 50px;height: 50px">
+          <image src="/pages/images/icon-close.png" style="width: 15px;height: 15px" bindtap='guigetap'></image>
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y="" style="max-height: 325px;">
+      <view style="padding: 12px 14px">
+        <view>
+          <view class="attr-group">
+            <view class="attr-group-name">规格</view>
+            <view class="attr-list">
+              <text class="attr-item">{{product.specification}}</text>
+            </view>
+          </view>
+        </view>
+        <view style="height: 0;border-bottom: 0.5px solid #e3e3e3;margin-bottom: 20px">
+        </view>
+        <view style="padding-bottom: 20px">
+          <view class="flex-row flex-y-center mb-20">
+            <view class="flex-grow-1">数量</view>
+            <view class="flex-grow-0">
+              <view class="flex-row number-input-box"><!-- disabled -->
+                <view class="flex-grow-0 flex-x-center flex-y-center number-btn number-sub" style="margin-right:0.01rem;" bindtap='subBtn'>- </view>
+                <view class="flex-grow-0">
+                  <input class="flex-grow-1 number-input" style="padding:0" type="number" value="{{number}}">
+                  </input>
+                </view>
+                <view class="flex-grow-0 flex-x-center flex-y-center number-btn number-add" bindtap='addBtn'>+ </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+<view class="flex-row bar-bottom">
+  <view class="flex-grow-0 flex-row">
+    <view class="flex-grow-0 flex-y-center bar-bottom-btn" bindtap='goHome'>
+      <view>
+        <image src="/pages/images/xsy.png">
+        </image>
+        <text>\n 首页</text>
+      </view>
+    </view>
+    <view class="flex-grow-0 flex-y-center bar-bottom-btn" bindtap='enshrine' data-id="{{product.id}}">
+      <view>
+        <image src="/pages/images/ysc.png" wx:if="{{enshrine}}"></image>
+        <image src="/pages/images/sc.png" wx:else></image>
+        <text>\n {{enshrine?'已收藏':'收藏'}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="flex-grow-1 flex-row">
+    <view class="flex-grow-1 flex-y-center flex-x-center add-cart" bindtap='addToCart'>加入购物车</view>
+    <view class="flex-grow-1 flex-y-center flex-x-center buy-now" bindtap='buyNow'>立即购买</view>
+  </view>
+</view>
+<!-- 授权弹窗 -->
+<view class="{{showAuthView?'show':'hide'}}">
+  <view class='zhaoc'></view>
+  <view class='code-box' style='top:15%'>
+    <view class='title'>需要您的授权</view>
+    <view class='ftitle'>
+    <text>为了提供更好的服务\n请稍后的提示框中点击"允许"</text>
+    </view>
+    <view style='text-align:center'>
+    <image src='/pages/images/sq.png' class='windows'></image>
+    </view>
+    <button class='buy-btn confirm-btn' style='background-color:#04be01;line-height:69rpx;width:415rpx;' open-type="getUserInfo" bindgetuserinfo="myLogin">我知道了</button>
+  </view>
+</view>

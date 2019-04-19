@@ -1,0 +1,142 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>为&nbsp;{$roleinfo.name}角色&nbsp;添加用户</h3></div>
+                <div class="col-sm-6 text-right">
+					<a href="javascript:roledetail('{$roleinfo.id}')"><button class="btn btn-primary">返回上一级</button></a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+			</div>
+			<div  class="ibox-title col-sm-12">
+			<form method="post" id="queryForm">
+				<div class="col-sm-12">
+					<div class="col-sm-2">
+						<select name="province_id" id="provinceid" class="form-control" onchange="getcitylist()">
+							{$initdata.provincelist}
+						</select>
+					</div>
+					<div class="col-sm-2">
+						<select name="city_id" id="cityid" class="form-control" onchange="getzonelist()">
+							{$initdata.citylist}
+						</select>
+					</div>
+					<div class="col-sm-2">
+						<select name="zone_id" id="zoneid" class="form-control">
+							{$initdata.zonelist}
+						</select>
+					</div>
+					<div class="col-sm-2">
+						<!-- 用户类型： -->
+				 		<label id="lblSelect">
+				           <select  name="usertype_id" id="usertypeid"  class="form-control">
+			               	<option value="-10000">所有用户类型</option>
+				  			<volist name="usertypelist" id="ut">
+				  				<option value="{$ut.itemname}">{$ut.itemvalue}</option>
+				  			</volist>
+				           </select>
+				       </label>
+				 	</div>
+				 	<div class="col-sm-2"><input type="text" name="account" id="account" class="form-control" placeholder="登录帐号"/></div>
+					<div class="col-sm-2 text-right"><!--  -->
+						<div class="col-sm-3"><input type="button" onclick="submitquery(1)" id="submitBtn" value="查询" class="btn btn-outline btn-default"></div>
+						<div class="col-sm-3" id="loading" style="margin-top:5px;"></div>
+					</div>
+				</div>
+			</form>
+			</div>
+			<div style="clear:both;"></div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                    	<div class="ibox-title col-sm-12">
+                    		<div class="col-sm-10"></div>
+                    		<div class="col-sm-2 text-right">
+                    			<a href="javascript:insertuser()"><button class="btn btn-primary btn-block">添加用户</button></a>
+                    		</div>
+                    	</div>
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=""><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th>
+										<th>账号</th>
+										<th>昵称</th>
+										<th>公司名称</th>
+										<th>已有角色</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="datalist" >
+                            		{$datalist["html"]}
+                            	</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$datalist["page"]}</div>
+                            <div><input type="hidden" id="orderSequence" name="" value="{$ordersequence}"/></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    <script type="text/javascript">  
+	    function complete_query(data) {
+			$("#datalist").empty();
+			$("#datalist").html(data.data.html);
+			$("#page").html(data.data.page);
+		}
+		function submitquery(id) {
+			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
+			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
+			$.get('__URL__/addUser',{'p':id,'account':$('#account').val(),'provinceid':$('#provinceid').val(),'cityid':$('#cityid').val(),'zoneid':$('#zoneid').val(),'usertypeid':$('#usertypeid').val()},complete_query,'json');
+		}
+		
+		function completegetcityzonelist(data) {
+			$('#cityid').empty();
+			$('#cityid').html(data.data.citylist);
+			$('#zoneid').empty();
+			$('#zoneid').html(data.data.zonelist);
+		}
+		function getcitylist() {
+			$.post('__URL__/getcityzonelist',{'provinceid':$('#provinceid').val(),"haveall":"true"},completegetcityzonelist,'json');
+		}
+		function completegetzonelist(data) {
+			$('#zoneid').empty();
+			$('#zoneid').html(data.data.zonelist);
+		}
+		function getzonelist() {
+			$.post('__URL__/getzonelist',{'cityid':$('#cityid').val(),"haveall":"true"},completegetzonelist,'json');
+		}
+		function insertuser(){
+			var a = $("input[type='checkbox']:checked");
+			var userarray = [];
+			
+			for(i=0;i<a.length;i++){
+				userarray[i] = $("input[type='checkbox']:checked").eq(i).val()
+			}
+			if (userarray == '' || userarray[1] == ''){
+				alert("请选择编辑项");
+				return;
+			}
+			var ret = confirm('请确认选择用户是否无误！');
+			if (ret){
+				$.post('__URL__/insertuser',{'userarray':userarray,'role_id':'{$roleinfo.id}'},
+					function(json){
+						if(json.code){
+							alert(json.msg);
+							window.location.href="__URL__/addUser/role_id/{$roleinfo.id}";
+						}else{
+							alert(json.msg);
+							window.location.href="__URL__/addUser/role_id/{$roleinfo.id}";
+						}
+					},'json')
+			}
+		}
+		
+		function roledetail(id){
+			window.location.href = "__URL__/detail/id/"+id;
+		}		
+	</script> 
+<include file="Public/footer" />

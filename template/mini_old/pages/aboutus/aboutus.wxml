@@ -1,0 +1,8 @@
+<!--pages/aboutus/aboutus.wxml-->
+<!-- <view class='box'>
+  <image src='/pages/images/usbanner.png' class='banner'></image>
+  <view class='content'>
+    <text decode="true">&nbsp;&nbsp;&nbsp;&nbsp;重庆亮健科技有限公司是一家追求创新、追求完美的企业!创新互联网公司的目标是让万亿中小企业拥抱互联网，为企业提供高端技术服务，通过深入的用户体验和创新可靠的技术，为用户提供更好的产品和服务。公司位于重庆市巴南区万达广场A座17-8号办公大楼，专注于小程序开发、APP开发、微信公众号开发、网站建设与开发、U互动设计。亮剑”自成立以来,连续坚持拥抱互联网“数以万亿计的中小企业”为使命,一直是“专注、务实、坚持,守信”为目的的公司,坚持“让客户满意,让力量人才成长,让社会更多的就业机会,能使公司长期经营生存”作为远期目标。它是重庆和西南地区移动互联网发展的领导者。</text>
+  </view>  bindtap="previewImage"
+</view> -->
+<image src='/pages/images/aboutus.jpg' style='width:100%;height:100%'></image>

@@ -1,0 +1,15 @@
+<!--ljkj_compass/pages/package/package.wxml-->
+<view style='margin:10rpx;' wx:if="{{enshrine_list.length}}">
+  <view wx:for="{{enshrine_list}}" wx:key="{{item}}" class='goods' bindtap='detailstap' data-id="{{item.product.id}}">
+    <image src='{{item.product.thumbpicture.picture}}'></image>
+    <view style='padding:20rpx;'>
+      <view class='ellipsis;'>
+        {{item.product.name}}
+      </view>
+      <view style='margin-top:18rpx;text-align:center'>
+        <text style='color:red'>￥{{item.product.price}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view style='line-height:120px;text-align:center;' wx:else>暂无收藏商品</view>

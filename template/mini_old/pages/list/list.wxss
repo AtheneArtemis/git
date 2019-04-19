@@ -1,0 +1,89 @@
+/* pages/list/list.wxss */
+page{
+  background: #f3f3f3;
+  font-size: 0.75rem;
+}
+.jd-img{
+  width: 100%;
+  margin: 30rpx auto;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+ .jx-list {
+	color: #343434;
+	padding: 10px 0;
+	border-bottom: 1px solid #d7d7d7;
+ }
+.jx-img image {
+	width: 320rpx;
+	height: 320rpx;
+	margin-right: 16rpx;
+	border-radius: 5rpx;
+}
+.flex-col-bet {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+.flex {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+}.flex-bet {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+ .gray-text{
+    font-size: 0.65rem;
+    color: #b9afae
+  }
+  .xialak{
+background-color:#fff;
+width:20%;
+padding:15rpx 10rpx;
+border: 1px solid #ccc;
+border-radius: 6rpx;
+}
+.icon{
+width: 18rpx;
+height: 20rpx;
+float: right;
+}
+.ipt{
+background-color:#fff;
+width:70%;
+padding:8rpx 10rpx;
+border: 1px solid #ccc;
+border-radius: 6rpx; 
+margin: 0 10rpx;
+}
+.btn{
+background: #f83a3a;
+color: #fff;
+font-size: 0.75rem;
+text-align: center;
+}

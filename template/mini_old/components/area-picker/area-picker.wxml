@@ -1,0 +1,26 @@
+<view class="area-picker" style='display:{{area_picker_show?"block":"none"}};'>
+    <view bindtap="hideAreaPicker" class="area-picker-bg">
+        <scroll-view></scroll-view>
+    </view>
+    <view class="area-picker-body" style='height: 600rpx;flex-grow: 0;position: relative;'>
+        <scroll-view style='left: 0;top: 0;height: 100%;width: 100%;position: absolute;'>
+            <view class="area-picker-top" style='position:relative;top:50px;z-index:10001'>
+                <text bindtap="hideAreaPicker" class="area-picker-cancel" style='display: inline-block;padding: 24rpx;color: #888;top:10px;'>取消</text>
+                <text bindtap="areaPickerConfirm" class="area-picker-confirm" style='display: inline-block;padding: 24rpx;float: right;color: #00aa00;'>确认</text>
+            </view>
+            <view class="area-picker-row">
+                <picker-view bindchange="areaPickerChange" indicatorStyle="height: 100rpx" style="width: 100%; height: 500rpx;">
+                    <picker-view-column>
+                        <view style="line-height: 80rpx;height: 100rpx;text-align: center" wx:for="{{area_picker_province_list}}" wx:key="index">{{item.name}}</view>
+                    </picker-view-column>
+                    <picker-view-column>
+                        <view style="line-height: 80rpx;height: 100rpx;text-align: center" wx:for="{{area_picker_city_list}}" wx:key="index">{{item.name}}</view>
+                    </picker-view-column>
+                    <picker-view-column>
+                        <view style="line-height: 80rpx;height: 100rpx;text-align: center" wx:for="{{area_picker_district_list}}" wx:key="index">{{item.name}}</view>
+                    </picker-view-column>
+                </picker-view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

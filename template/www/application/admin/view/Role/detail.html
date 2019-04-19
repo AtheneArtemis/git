@@ -1,0 +1,74 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>{$roleinfo.name} 角色的用户</h3></div>
+                <div class="col-sm-6 text-right">
+					<a href="javascript:adduser()"><button class="btn btn-primary">添加用户</button></a>
+					<a href="__URL__/index"><button class="btn btn-primary">返回上一级</button></a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+			</div>
+			<div style="clear:both;"></div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+										<th>登录帐号</th>
+										<th>昵称</th>
+										<th>用户类型</th>
+										<th>公司名称</th>
+										<th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                	<volist name="userlist" id="v">
+	                            		<tr>
+	                            			<td>{$v.users.account}</td>
+	                            			<td>{$v.username}</td>
+	                            			<td>{$v.usertype}</td>
+	                            			<td>{$v.users.company.name}</td>
+	                            			<td>
+	                            				<a href="javascript:deleteuser('{$v.users.id}')">移除</a>
+	                            			</td>
+	                            		</tr>
+                            		</volist>
+                            	</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$page}</div>
+                            <div><input type="hidden" id="orderSequence" name="" value="{$ordersequence}"/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    <script type="text/javascript">  
+        
+        function deleteuser(userid){
+            
+            var ret = confirm('请确认选择用户是否无误！');
+            if (ret){
+                $.post('__URL__/deleteuser',{'user_id':userid,'role_id':'{$roleinfo.id}'},
+                    function(json){
+                        if(json.code){
+                            alert(json.msg);
+                            window.location.href="__URL__/detail/id/{$roleinfo.id}";
+                        }else{
+                            alert(json.msg);
+                            window.location.href="__URL__/detail/id/{$roleinfo.id}";
+                        }
+                    },'json')
+            }
+        }
+        function adduser(){
+            
+            window.location.href = "__URL__/addUser/role_id/{$roleinfo.id}";
+        }
+    </script> 
+<include file="Public/footer" />

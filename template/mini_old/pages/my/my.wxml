@@ -1,0 +1,149 @@
+<!--pages/my/my.wxml-->
+<view class='top-box'>
+  <view class='card-box'>
+    <view class='flex'>
+      <image src='{{userinfo.avatar_url}}' class='head-img'></image>
+      <text>{{userinfo.nickname}}</text>
+    </view>
+    <view class='flex-bet' style='margin:20rpx 0;'>
+      <view class='big-text'>{{userinfo.total_money}}</view>
+      <view class='sign flex'>
+        <image src='/pages/images/vip.png' class='vip-img'></image>{{userinfo.userlevel_name}}</view>
+    </view>
+    <view class='bottom-text'>昨日收益+{{earnings.yesterday}}
+      <text>累计收益+{{earnings.total}}</text>
+    </view>
+  </view>
+  <view class='flex-aro' style='margin-top:30rpx'>
+    <view class='money-box'>
+      <text>{{userinfo.commission}}</text>
+      <view>我的佣金</view>
+    </view>
+    <view class='money-box'>
+      <text>{{userinfo.dividend}}</text>
+      <view>龙蛋分红</view>
+    </view>
+    <view class='money-box'>
+      <text>{{userinfo.manual_integral}}</text>
+      <view>购物券</view>
+    </view>
+  </view>
+</view>
+<view style='padding:0 20rpx;'>
+  <view class='box'>
+    <view class='title'>我的订单</view>
+    <view class='flex-aro'>
+      <view class='nav'>
+        <navigator url='/pages/order/order'>
+          <image src='/pages/images/dfk.png'></image>
+          <view>待付款</view>
+        </navigator>
+      </view>
+      <view class='nav'>
+        <navigator url='/pages/order/order'>
+          <image src='/pages/images/dfh.png'></image>
+          <view>
+            待发货</view>
+        </navigator>
+      </view>
+      <view class='nav'>
+        <navigator url='/pages/order/order'>
+          <image src='/pages/images/dsh.png'></image>
+          <view>待收货</view>
+        </navigator>
+      </view>
+      <view class='nav'>
+        <navigator url='/pages/order/order'>
+          <image src='/pages/images/ywc.png'></image>
+          <view>已完成</view>
+        </navigator>
+      </view>
+      <!-- <view class='nav'>
+        <navigator url='/pages/order/order'>
+          <image src='/pages/images/sh.png'></image>
+          <view>售后</view>
+        </navigator>
+      </view> -->
+    </view>
+  </view>
+  <view class='box'>
+    <view class='title'>我的龙蛋</view>
+    <view class='flex-aro'>
+      <view class='nav'>
+        <view class='red-text'>{{stock[0]['number']?stock[0]['number']:0}}</view>
+        <view>A级龙蛋</view>
+      </view>
+      <view class='nav'>
+        <view class='red-text'>{{stock[1]['number']?stock[1]['number']:0}}</view>
+        <view>B级龙蛋</view>
+      </view>
+      <view class='nav'>
+        <view class='red-text'>{{stock[2]['number']?stock[2]['number']:0}}</view>
+        <view>C级龙蛋</view>
+      </view>
+      <view class='nav' wx:if="{{stock[3]['number']}}">
+        <view class='red-text'>{{stock[3]['number']?stock[3]['number']:0}}</view>
+        <view>D级龙蛋</view>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='title'>必备工具</view>
+    <view class='flex' style='flex-flow:row wrap;'>
+      <view class='nav'>
+      <navigator url='/pages/commission/commission'>
+        <image src='/pages/images/2.png'></image>
+        <view>佣金钱包</view>
+        </navigator>
+      </view>
+      <view class='nav'>
+      <navigator url='/pages/dividend/dividend'>
+        <image src='/pages/images/2.png'></image>
+        <view>龙蛋钱包</view>
+        </navigator>
+      </view>
+      <view class='nav'>
+        <navigator url='/pages/team/team'>
+          <image src='/pages/images/3.png'></image>
+          <view>我的团队</view>
+        </navigator>
+      </view>
+      <view class='nav'>
+        <navigator url='/pages/favorite/favorite'>
+          <image src='/pages/images/4.png'></image>
+          <view>我的收藏</view>
+        </navigator>
+      </view>
+      <view class='nav'>
+        <navigator url='/pages/aboutus/aboutus'>
+          <image src='/pages/images/5.png'></image>
+          <view>关于我们</view>
+        </navigator>
+      </view>
+      <view class='nav' bindtap='makePhoneCall'>
+        <image src='/pages/images/6.png'></image>
+        <view>联系我们</view>
+      </view>
+      <view class='nav'>
+        <navigator url='/pages/address/address'>
+          <image src='/pages/images/7.png'></image>
+          <view>收货地址</view>
+        </navigator>
+      </view>
+
+      <view class='nav'>
+        <navigator url='/pages/prize/prize'>
+          <image src='/pages/images/8.png'></image>
+          <view>我的奖品</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='box'>
+    <view class='title'>我的推广码</view>
+    <navigator url='/pages/code/code'>
+    <image class='code-img' src='/pages/images/yjbanner.jpg'>
+    </image>
+    </navigator>
+  </view>
+</view>

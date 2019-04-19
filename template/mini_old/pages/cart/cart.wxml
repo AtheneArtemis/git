@@ -1,0 +1,78 @@
+<view class="page {{__page_classes}}">
+    <view class="body after-navber">
+        <view class="bottom-bar flex-row">
+            <view class="flex-y-center flex-grow-1" style="padding: 0 24rpx">
+                <!-- <view bindtap="cartCheckAll" class="flex-grow-0 flex-y-center" style="margin-right: 20rpx">
+                    <view class="cart-checkbox {{cart_check_all?'active':''}}" style="margin-right: 10rpx"></view>
+                    <text style="white-space: nowrap">全选</text>
+                </view> -->
+                <view class="flex-grow-1" style="color:#ff4544;white-space: nowrap">
+                    总计:￥{{total_price}}
+                </view>
+            </view>
+            <block wx:if="{{show_cart_edit}}">
+                <view bindtap="cartDone" class="flex-y-center flex-grow-0 flex-x-center edit-btn">完成</view>
+                <view bindtap="cartDelete" class="flex-y-center flex-grow-0 flex-x-center submit-btn">删除</view>
+            </block>
+            <block wx:else>
+                <view bindtap="cartEdit" class="flex-y-center flex-grow-0 flex-x-center edit-btn">编辑</view>
+                <view bindtap="cartSubmit" class="flex-y-center flex-grow-0 flex-x-center submit-btn">结算</view>
+            </block>
+        </view>
+        <view class="no-data-tip" wx:if="{{!shopcartlist.length}}">
+            <view class="no-data-icon flex-y-center flex-x-center">
+                <image src="/pages/images/nav-icon-cart.png" style="width: 81rpx;height: 81rpx"></image>
+            </view>
+            <view style='line-height:120px;text-align:center;'>购物车还是空的哦</view>
+        </view>
+        <block wx:else>
+            <block wx:if="{{shopcartlist.length}}">
+                <view class="cart-list">
+                    <view class="cart-item flex-row" wx:for="{{shopcartlist}}" wx:key="{{item.id}}">
+                        <view class="flex-grow-0 flex-y-center" style="padding: 24rpx" wx:if="{{item.disabled&&!show_cart_edit}}">
+                            <view style="width: 40rpx"></view>
+                        </view>
+                        <view bindtap="cartCheck" class="flex-grow-0 flex-y-center" data-index="{{index}}" style="padding: 24rpx" wx:else>
+                            <view class="cart-checkbox {{item.checked?'active':''}}"></view>
+                        </view>
+                        <view class="flex-grow-1">
+                            <view class="flex-grow-1 flex-row">
+                                <view class="flex-grow-0">
+                                    <navigator url="/pages/goods/goods?id={{item.goods_id}}">
+                                        <image class="goods-pic" mode="aspectFill" src="{{item.product.thumbpicture.picture}}"></image>
+                                    </navigator>
+                                </view>
+                                <view class="flex-grow-1 flex-col">
+                                    <view class="flex-grow-1">
+                                        <view class="goods-name">
+                                            <navigator url="/pages/goods/goods?id={{item.product.id}}">{{item.product.name}}</navigator>
+                                        </view>
+                                        <view class="attr-list">
+                                            <view class="attr-item">
+                                                规格：{{item.product.specification}}
+                                            </view>
+                                        </view>
+                                    </view>
+                                    <view class="flex-grow-0 flex-row">
+                                        <view class="flex-grow-1 price">￥{{item.product.price}}</view>
+                                        <view>
+                                            <view class="flex-row">
+                                                <image bindtap="subNumber" class="image1" data-index="{{index}}" src="/pages/images/cart-less.png"></image>
+                                                <view class="row-data">{{item.number}}</view>
+                                                <image bindtap="addNumber" class="image1" data-index="{{index}}" src="/pages/images/cart-add.png"></image>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                            <view>
+                                <text class="cart-tag" wx:if="{{item.num>item.max_num}}">库存不足</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+            <view style="height: 109rpx"></view>
+        </block>
+    </view>
+</view>

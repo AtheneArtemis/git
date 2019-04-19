@@ -1,0 +1,86 @@
+<!-- 基础公众js函数 -->
+<script type="text/javascript">
+	//日期选择器
+	$(function(){  
+        var start = {  
+            elem: '#start', //选择ID为START的input  
+            format: 'YYYY/MM/DD hh:mm:ss', //自动生成的时间格式  
+            min: '1900-01-01 0:0:0', //设定最小日期为当前日期-laydate.now()
+            max: '2099-06-16 23:59:59', //最大日期  
+            istime: true, //必须填入时间  
+            istoday: false,  //是否是当天  
+            start: laydate.now(0,"YYYY/MM/DD hh:mm:ss"),  //设置开始时间为当前时间  
+            choose: function(datas){  
+                 end.min = datas; //开始日选好后，重置结束日的最小日期  
+                 end.start = datas //将结束日的初始值设定为开始日  
+            }  
+        };  
+        var end = {  
+            elem: '#end',  
+            format: 'YYYY/MM/DD hh:mm:ss',  
+            min: '1900-01-01 0:0:0',  
+            max: '2099-06-16 23:59:59',  
+            istime: true,  
+            istoday: false,  
+            start: laydate.now(0,"YYYY/MM/DD hh:mm:ss"),  
+            choose: function(datas){  
+                start.max = datas; //结束日选好后，重置开始日的最大日期  
+            }  
+        };  
+        laydate(start);  
+        laydate(end);  
+    })
+    //排序
+    function orderby(type){
+        $('#orderby').val(type);
+        var orderway = $("#orderway").val();
+        if (orderway == 'desc') {
+            $("#orderway").val('asc');
+        }else{
+            $("#orderway").val('desc');
+        }
+        submitquery(1);
+    }
+	//单软删除
+	function del(id){
+		if (confirm('确认删除该条记录？')) {
+			$.post('__URL__/delete',{id:id},function(json){
+				alert(json.msg);
+				if (json.code == 0) {
+					window.location.href = '__URL__/index';
+				}
+			},'json')
+		}
+	}
+	//单硬删除
+	function shiftdelete(id){
+		if (confirm('确认删除该条记录,删除后不可恢复？')) {
+			$.post('__URL__/shiftdelete',{id:id},function(json){
+				alert(json.msg);
+				if (json.code == 0) {
+					window.location.href = '__URL__/index';
+				}
+			},'json')
+		}
+	}
+	//批量软删除
+	function multidel(){
+		var a = $("input[type='checkbox']:checked");
+		var ids = [];
+		
+		for(i=0;i<a.length;i++){
+			ids[i] = $("input[type='checkbox']:checked").eq(i).val()
+		}
+
+		if (confirm('确认删除选中记录？')) {
+			$.post('__URL__/multidelete',{ids:ids},function(json){
+				alert(json.msg);
+				if (json.code == 0) {
+					window.location.href = '__URL__/index';
+				}
+			},'json')
+		}
+	}
+
+
+</script>

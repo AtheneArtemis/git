@@ -1,0 +1,82 @@
+/* pages/prize/prize.wxss */
+page{
+  background: #f3f3f3;
+  font-size: 0.75rem;
+}
+.jd-img{
+  width: 100%;
+  margin: 30rpx auto;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+ .jx-list {
+	color: #343434;
+	padding: 5px;
+  background: #fff;
+  margin: 20rpx 0;
+  border-radius: 7rpx;
+  box-shadow: #eaeaea 0px 5px 27px 0px;
+ }
+ .jx-img{
+   width: 220rpx;
+   height: 160rpx;
+   margin-right: 20rpx;
+ }
+.jx-img image {
+	width: 220rpx;
+	height: 160rpx;
+	margin-right: 16rpx;
+	border-radius: 7rpx;
+}
+.flex-col-bet {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+.flex {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+}.flex-bet {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+ .gray-text{
+    font-size: 0.65rem;
+    color: #b9afae
+  }
+  .ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width:410rpx;
+  }
+  .award-btn{
+    position: absolute;
+    right: 40rpx;
+    color: red;
+  }

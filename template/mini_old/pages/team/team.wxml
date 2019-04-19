@@ -1,0 +1,14 @@
+<!--pages/team/team.wxml-->
+<view wx:if="{{subUserinfo.length}}">
+  <view class='list flex' wx:for='{{subUserinfo}}' wx:key="{{item}}">
+    <view>
+      <image src='{{item.avatar_url}}' />
+    </view>
+    <view>
+      <view>{{item.userlevel.name}}</view>
+      <view>{{item.nickname}}</view>
+      <view class='gray-text'>加入时间：{{item.createtime}}</view>
+    </view>
+  </view>
+</view>
+<view style='line-height:120px;text-align:center;' wx:else >暂无数据</view>

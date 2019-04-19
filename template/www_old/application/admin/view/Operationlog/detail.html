@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<include file="Public/header"/>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox">
+                    <div class="ibox-title">
+                         <div class="col-sm-6"><h3>操作日志信息</h3></div>
+                         <div class="col-sm-6 text-right">
+                         	<a href="{:url('index')}"><button class="btn btn-primary">返回上一级</button></a>
+                         </div>
+                         <div class="clear"></div>
+                    </div>
+                    <div class="ibox-content">
+						<div class="baseinfo">
+					        <table class="table">
+					        	<tr><td class="col-sm-1">操作人</td><td>{$oprationinfo.operator}</td></tr>
+					        	<tr><td>操作时间</td><td>{$oprationinfo.operatetime}</td></tr>
+					        	<tr><td>操作</td><td>{$oprationinfo.operation}</td></tr>
+	                    		<tr><td>操作位置</td><td>{$oprationinfo.operateplace}</td></tr>
+	                    	</table>
+	                    </div>
+                        <div style="margin-top:50px;">
+                            <div class="col-sm-3"><h3>具体操作的数据</h3></div>
+					        <div class="ibox-content">
+					        	<table class="table">
+                                   	<thead>
+                                   		{$datahtml}
+					                </thead>
+                            	</table>
+					    	</div>
+				    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</div>
+    </div>
+    <script src="__PUBLIC__/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__PUBLIC__/js/content.min.js?v=1.0.0"></script>
+    <script src="__PUBLIC__/js/plugins/staps/jquery.steps.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/validate/jquery.validate.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/validate/messages_zh.min.js"></script>
+    <script src="__PUBLIC__/js/app/admin.js"></script>
+    <script type="text/javascript">
+    	//$("#quotation").steps();
+    	function submitform(){
+    		var queryForm = document.getElementById("queryForm");
+		    $.ajax({   
+		        url:$('#queryForm').attr('action'), //发送后台的url  
+		        type:'post',   
+		        data:$('#queryForm').serialize(), //序列化表单内容 $('#queryForm').serialize()
+		        dataType:'json', //后台返回的数据类型  
+		        timeout:15000, //超时时间  
+		        beforeSend:function(XMLHttpRequest){   
+		          //$("#loading").html("<img src='__PUBLIC__/img/22.gif'/>"); //在后台返回success之前显示loading图标  
+		       	  //$('#submitBtn').attr("disabled","true");
+		        },   
+		        success:function(json){  //data为后台返回的数据  
+		            if (json.code){
+		            	window.location.href = "";
+		            }else{
+		            	alert(json.msg);
+		            }
+		        }  
+	        });
+    	}
+    	
+        function audit(id,auth,tipinfo) {
+        /*
+        	if(auth == "0") {
+        		alert(tipinfo);
+        		return false;
+        	}
+        	*/
+			url = '__URL__/firststepofaudit';
+			if(id!='') url = url+'/quotationid/'+id;
+			window.location.href = url;
+		}
+		
+        function cancelaudit(id,auth,tipinfo){
+        	/*
+        	if(auth == "0") {
+        		alert(tipinfo);
+        		return false;
+        	}
+        	*/
+        	if (window.confirm('确实要取消审核所选报价单吗？')) {
+        		$.post('__URL__/cancelaudit',{'quotationid':id},function(json){
+        			if(json.code == 1){
+    					alert(json.msg);
+    					location.reload();
+    				} else {
+    					alert(json.msg);
+    				}
+    			},'json')
+        	}
+        }
+        
+        function retreat(id,auth,tipinfo){
+        	/*
+        	if(auth == "0") {
+        		alert(tipinfo);
+        		return false;
+        	}
+        	*/
+        	if (window.confirm('确实要退回该报价单吗？')) {
+        		$.post('__URL__/retreat',{'quotationid':id},function(json){
+        			if(json.code == 1){
+    					alert(json.msg);
+    					location.reload();
+    				} else {
+    					alert(json.msg);
+    				}
+    			},'json')
+        	}
+        }
+        
+        function exporttoX3(id,auth,tipinfo){
+        /*
+        	if(auth == "0") {
+        		alert(tipinfo);
+        		return false;
+        	}
+        	*/
+        	if (window.confirm('确实要将所选报价单导入到X3系统吗？')) {
+        		$.post('__URL__/exporttoX3',{'quotationid':id},function(json){
+        			if(json.code == 1){
+    					alert(json.msg);
+    					location.reload();
+    				} else {
+    					alert(json.msg);
+    				}
+    			},'json')
+        	}
+        }
+        
+    	
+    </script>
+</body>
+</html>

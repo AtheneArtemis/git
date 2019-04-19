@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/raffle/raffle",
+    "pages/commission/commission",
+    "pages/my/my",
+    "pages/prize/prize",
+    "pages/list/list",
+    "pages/team/team",
+    "pages/favorite/favorite",
+    "pages/aboutus/aboutus",
+    "pages/address/address",
+    "pages/address-edit/address-edit",
+    "pages/order/order",
+    "pages/order-detail/order-detail",
+    "pages/cart/cart",
+    "pages/new-order-submit/new-order-submit",
+    "pages/withdraw/withdraw",
+    "pages/code/code",
+    "pages/address-picker/address-picker",
+    "pages/member-upgrade/member-upgrade",
+    "pages/dividend/dividend",
+    "pages/withdraw-commission/withdraw-commission",
+    "pages/withdraw-dividend/withdraw-dividend",
+    "pages/member-upgrade-list/member-upgrade-list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#f83a39",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/sy.png",
+        "selectedIconPath": "pages/images/sy2.png"
+      },
+      {
+        "pagePath": "pages/raffle/raffle",
+        "text": "抽奖",
+        "iconPath": "pages/images/cj.png",
+        "selectedIconPath": "pages/images/cj2.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "pages/images/gwc.png",
+        "selectedIconPath": "pages/images/gwc2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/images/wd.png",
+        "selectedIconPath": "pages/images/wd2.png"
+      }
+    ]
+  }
+}

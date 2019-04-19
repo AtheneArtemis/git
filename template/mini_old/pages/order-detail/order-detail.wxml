@@ -1,0 +1,91 @@
+<!--pages/order-detail/order-detail.wxml-->
+<view style="overflow-x: hidden">
+  <view class="status-bar">
+    <image src="/pages/images/img-order-status-bar.png" mode="aspectFill"></image>
+    <text wx:if="{{order.status == 1}}">待付款</text>
+    <text wx:elif="{{order.status == 2}}">待发货</text>
+    <text wx:elif="{{order.status == 3}}">待收货</text>
+    <text wx:else>已完成</text>
+  </view>
+  <view class="block">
+    <view class="block-row flex-row">
+      <view class="flex-grow-1">订单编号：{{order.orderNo}}</view>
+      <view class="flex-grow-0">
+        <text class="copy-text-btn" bindtap="copyText" data-text="{{order.orderNo}}">复制</text>
+      </view>
+    </view>
+    <view>下单时间：{{order.createtime}}</view>
+    <view class="block-footer" style='text-align:left;font-weight:inherit'>
+      <text>支付方式：{{pay}}</text>
+    </view>
+  </view>
+  <view class="block">
+    <view class="flex-row block-row">
+      <view class="flex-grow-1">商品总额</view>
+      <view class="flex-grow-0" wx:if="{{order}}">￥{{order.product_price}}元</view>
+      <view class="flex-grow-0" wx:else>￥0.00元</view>
+    </view>
+    <view class="flex-row block-row">
+      <view class="flex-grow-1">商品数量</view>
+      <view class="flex-grow-0">{{order.productNum_total}}件</view>
+    </view>
+    <view class="flex-row block-row">
+      <view class="flex-grow-1">运费</view>
+      <view class="flex-grow-0">￥{{order.freight}}元</view>
+    </view>
+    <view class="flex-row block-row" wx:if="{{order.manual_integral_used != 0}}">
+      <view class="flex-grow-1">购物券抵扣</view>
+      <view class="flex-grow-0">-￥{{order.manual_integral_used}}元</view>
+    </view>
+    <view class="flex-row block-row" wx:if="{{order.commission_used != 0}}">
+      <view class="flex-grow-1">佣金</view>
+      <view class="flex-grow-0">-￥{{order.commission_used}}元</view>
+    </view>
+    <view class="flex-row block-row" wx:if="{{order.dividend_used != 0}}">
+      <view class="flex-grow-1">积分</view>
+      <view class="flex-grow-0">-￥{{order.dividend_used}}元</view>
+    </view>
+    <view wx:if='{{order.note}}'>
+      <view>买家留言</view>
+      <view style='width:100%;overflow:auto;word-wrap:break-word;'>{{order.note}}</view>
+    </view>
+    <view wx:if='{{order.words}}'>
+        <view>商家留言</view>
+      <view class='fs-sm' style='width:100%;overflow:auto;word-wrap:break-word;'>{{order.words}}</view>
+    </view>
+    <view class="block-footer">合计：
+      <text style="color: #ff4544">￥{{order.price}}元</text>
+    </view>
+  </view>
+
+  <view class="block">
+    <view wx:for="{{order.product_list}}" wx:key="{{item}}" class="flex-row goods-item">
+      <view class="flex-grow-0">
+        <navigator url="/pages/goods/goods?id={{item.id}}" style="font-size: 0">
+          <image mode="aspectFill" style="width: 156rpx;height: 156rpx" src="{{item.thumbpicture.picture}}"></image>
+        </navigator>
+      </view>
+      <view class="flex-grow-1" style="padding-left: 20rpx">
+        <view style="margin-bottom: 10rpx">
+          <navigator url="/pages/goods/goods?id={{item.id}}">{{item.name}}</navigator>
+        </view>
+        <view class="flex-row">
+          <view class="flex-grow-1">
+            <view style="font-size: 9pt;color: #888;margin-right: 20rpx;display: inline-block">
+              规格：{{item.specification}}
+            </view>
+          </view>
+          <view class="flex-grow-0" style="text-align: right">
+            <view>×{{item.productNum}}</view>
+            <view style="color: #ff4544">￥：{{item.price}}元</view>
+          </view>
+        </view>
+        <view wx:if="{{item.order_refund_enable==1}}">
+          <navigator wx:if="{{item.is_order_refund==0}}" class="flex-y-center refund-btn" url="/pages/order-refund/order-refund?id={{item.order_detail_id}}">申请售后
+          </navigator>
+          <text class="refund-text" wx:else="{{item.is_order_refund==1}}">已申请售后</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

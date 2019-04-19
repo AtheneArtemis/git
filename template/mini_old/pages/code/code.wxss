@@ -1,0 +1,22 @@
+/* pages/code/code.wxss */
+page{
+  background: #f3f3f3;
+}
+.text{
+  padding: 20rpx;
+  font-size: 0.95rem;
+}
+.text text{
+  color: #0b73f6;
+}
+.code{
+  text-align:center;
+  position:absolute;
+  top: 58%;
+  width: 100%
+}
+.code-img{
+  /* border:20rpx solid #fff; */
+  width: 318rpx;
+  height: 308rpx;
+}

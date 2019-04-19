@@ -1,0 +1,152 @@
+<!-- 用户授权 -->
+<include src="/components/access/access.wxml" />
+<!-- 轮播图 -->
+<view class="page-section page-section-spacing swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{carousel}}" wx:key="*this">
+      <swiper-item>
+        <image src='{{item.picture}}' class='slide-image' mode='aspectFill' bindtap='gotoProductDetail' data-id="{{item.secondtitle}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='search'>
+  <view style='width:90%;'><input placeholder='请输入关键字搜索' class='search-ipt' bindinput='searchInput'></input></view>
+  <view style='width:10%;'><image src='/images/sousuo.png' class='sousuo-img' bindtap='search'></image></view>
+</view>
+<!-- 商品分类 -->
+<view class='nav'>
+  <view wx:for="{{productCat}}" wx:key="{{item}}" class='navlist' data-cat_id='{{item.id}}' bindtap='getProductByCat'>
+    <view>
+      <image src="{{item.icon}}" class='navimg'></image>
+    </view>\n
+    <view>{{item.name}}</view>
+  </view>
+</view>
+<!-- 卡片 -->
+<swiper class="imageContainer" indicator-dots='true' bindchange="handleChange" previous-margin="50rpx" next-margin="50rpx" circular autoplay>
+  <block wx:for="{{memberUpgrade}}" wx:key="{{index}}" >
+    <swiper-item class="item">
+      <image class="itemImg {{currentIndex == index ? 'active': ''}}" src='{{item.icon}}' bindtap="buyMember" data-cat_id="{{item.id}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 商品 -->
+<view class='box'>
+  <!-- 新品上架 -->
+  <view wx:if="{{newProduct}}">
+    <view class='title flex-bet'>
+      <view class='text'>新品上架</view>
+      <navigator url='/pages/list/list?attr_id=1'>
+        <view class='more flex'>
+          <text>更多</text>
+          <image class='icon' src='/images/more.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <view class='flex' wx:if="{{newProduct[0]}}">
+      <view class='box-left' bindtap='buyNewProduct' data-id="{{newProduct[0]['id']}}">
+        <view>
+          {{newProduct[0]['name']}}
+          <text class='gray-text'>\n {{newProduct[0]['intro']?newProduct[0]['intro']:'新品上架'}}</text>
+        </view>
+        <button class='buy-btn' bindtap='buyNewProduct' data-id="{{newProduct[0]['id']}}">立即购买</button>
+        <view style='text-align:center'>
+          <image src='{{newProduct[0]["thumbpicture"]["picture"]}}' class='left-img'></image>
+        </view>
+      </view>
+      <view style='width:43%'>
+        <view class='box-right flex' wx:if="{{newProduct[1]}}">
+          <view bindtap='buyNewProduct' data-id="{{newProduct[1]['id']}}">
+            {{newProduct[1]['name']}}
+            <text class='gray-text'>\n {{newProduct[1]['intro']?newProduct[1]['intro']:'新品上架'}}</text>
+            <button class='buy-btn' bindtap='buyNewProduct' data-id="{{newProduct[1]['id']}}">立即购买</button>
+          </view>
+          <view style='text-align:center'>
+            <image src='{{newProduct[1]["thumbpicture"]["picture"]}}' class='right-img'></image>
+          </view>
+        </view>
+        <view class='box-right box3 flex' wx:if="{{newProduct[2]}}">
+          <view bindtap='buyNewProduct' data-id="{{newProduct[2]['id']}}">
+            {{newProduct[2]['name']}}
+            <text class='gray-text'>\n {{newProduct[2]['intro']?newProduct[2]['intro']:'新品上架'}}</text>
+            <button class='buy-btn' bindtap='buyNewProduct' data-id="{{newProduct[2]['id']}}">立即购买</button>
+          </view>
+          <view style='text-align:center'>
+            <image src='{{newProduct[2]["thumbpicture"]["picture"]}}' class='right-img'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- TOP热销 -->
+  <view wx:if="{{hotsell}}">
+    <view class='title flex-bet'>
+      <view class='text'>TOP热销</view>
+      <navigator url='/pages/list/list?attr_id=2'>
+        <view class='more flex'>
+          <text>更多</text>
+          <image class='icon' src='/images/more.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <view class='hot flex'>
+    <navigator url='/pages/detail/detail?id={{item.id}}' wx:for="{{hotsell}}" wx:key="{{item}}">
+      <view class='hot-list'>
+        <view class='red-text'>
+          分享赚：{{item.rebate}}元
+        </view>
+        <image src='{{item.thumbpicture.picture}}'></image>
+        <view class='ellipsis'>{{item.name}}</view>
+        <text class='price'>￥{{item.price}}</text>
+        <text class='original'>￥{{item.original_price}}</text>
+      </view>
+    </navigator>
+    </view>
+  </view>
+  <view bindtap='gotoRaffle'>
+    <image src='/images/jdbanner.jpg' class='jd-img'></image>
+  </view>
+  <!-- 精选商品 -->
+  <view wx:if="{{featured}}">
+    <view class='title flex-bet'>
+      <view class='text'>精选商品</view>
+      <navigator url='/pages/list/list?attr_id=3'>
+        <view class='more flex'>
+          <text>更多</text>
+          <image class='icon' src='/images/more.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <navigator class="flex jx-list" url='/pages/detail/detail?id={{item.id}}' wx:for="{{featured}}" wx:key="{{item}}">
+      <view class="jx-img">
+        <image src="{{item.thumbpicture.picture}}"></image>
+      </view>
+      <view class="flex-col-bet" style="height: 320rpx;width: 100%;">
+        <view style="margin-bottom: 5px;font-size:0.85rem">{{item.name}}</view>
+        <view class="" style="line-height:22px;margin-right: 15px;">
+          <view>
+            <text style="text-decoration:line-through;color:#999;font-size:10px;">￥{{item.original_price}}</text>
+            <text style="color:red;margin-left:5px;font-size:12px;">优惠价{{item.price}}</text> 
+          </view>
+          <view class='gray-text'>
+            <text>分享赚：{{item.rebate}}元</text> 
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+<navigator url='/pages/code/code'>
+  <view class='share flex'>
+    <image src='/images/er.png'></image>
+    <text>分享二维码</text>
+  </view>
+</navigator>
+<!-- 新会员公告 -->
+<view wx:if="{{newMemberOpen}}">
+  <view class='notice'></view>
+  <swiper class='swiper-box' autoplay='{{true}}' interval='2000' vertical='{{true}}' circular='{{true}}'>
+    <swiper-item class='item' wx:for='{{newMember}}' wx:key="{{item}}">恭喜{{item.nickname}}成为{{item.userlevel.name}}</swiper-item>
+  </swiper>
+</view>

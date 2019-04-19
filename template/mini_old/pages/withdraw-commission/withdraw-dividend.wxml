@@ -1,0 +1,87 @@
+<!--pages/withdraw/withdraw.wxml-->
+<view class='box'>
+  <view>
+    <text class="big-text">￥</text>
+    <input type="number" class="ipt" />
+  </view>
+  <view style='margin:40rpx 0;'>
+    账户余额
+    <text style="color:#f73b3a">1500元</text>
+    <a class="bule-text">全部提现</a>
+  </view>
+  <view class='flex' style='font-size:0.75rem;'>提现账号：
+    <button class="add-btn" style="width: 58%" bindtap='closetap'>添加账号</button>
+  </view>
+  <view style='font-size:0.75rem;margin-top:20rpx;' class='flex'>提现账号：
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='xialak'>
+      <view class="picker">{{array[index]}}
+        <image class='xialatu' style='float:right' src='/pages/images/dlyxl.png'></image>
+      </view>
+    </picker>
+    <button class="edit-btn" bindtap='closetap'>修改</button>
+    <button class="add-btn" bindtap='closetap' style='width: 17%;'>新增</button>
+  </view>
+  <button class="btn">立即提现</button>
+  <view class='tishi'>温馨提示：每天申请提现人数较多，未能及时到账，请谅解</view>
+</view>
+<view class="{{showView?'show':'hide'}}">
+  <view class="zhaoce"></view>
+  <view class="account-box">
+    <view class="title">
+      <text>
+				添加账号
+			</text>
+      <image src="/pages/images/icon-close.png" class="close-img" bindtap='closetap'></image>
+    </view>
+    <view style="padding: 10px;">
+      <view class="list">
+        <view style="width: 30%;line-height: 38px;">
+          <text class="red-sign">*</text>名字：</view>
+        <view style="width: 70%">
+          <input type="text" name="name" placeholder="请输入名字" />
+        </view>
+      </view>
+      <view class="list">
+        <view style="width: 30%;line-height: 38px;">
+          <text class="red-sign">*</text>联系电话：</view>
+        <view style="width: 70%">
+          <input type="text" name="mobile" placeholder="请输入联系电话" />
+        </view>
+      </view>
+      <view class="list">
+        <view style="width: 30%;line-height: 38px;">
+          <text class="red-sign">*</text>微信号：</view>
+        <view style="width: 70%">
+          <input type="text" name="wechat" placeholder="请输入微信号" />
+        </view>
+      </view>
+      <view>
+        <view style="width: 35%;line-height: 38px;">
+          <text class="red-sign"></text>其他收款账号：</view>
+      </view>
+      <view class="list">
+        <view style="width: 30%;">
+          <image src="/pages/images/zfb-icon.png" class="icon"></image>
+          <text class="text">支付宝</text>
+        </view>
+        <view style="width: 70%">
+          <input type="text" name="alipay" placeholder="请输入支付宝号" />
+        </view>
+      </view>
+      <view class="list">
+        <view style="width: 30%;line-height: 38px;">
+          <image src="/pages/images/yl.png" style="width: 28px;height: 28px;"></image>
+          <text class="text">银联</text>
+        </view>
+        <view style="width: 70%">
+          <input type="text" name="bank_name" placeholder="请输入银行地址" value="" />
+          <input type="text" name="bank_account" placeholder="请输入银行卡账号" value="" />
+        </view>
+      </view>
+      <button class="confirm-btn" type="button">保存</button>
+      <view class="notice">
+        注意：商家将通过微信、支付宝、银行转账方式为您支付提取金额，最终打款方式依据打款记录为准。
+      </view>
+    </view>
+  </view>
+</view>

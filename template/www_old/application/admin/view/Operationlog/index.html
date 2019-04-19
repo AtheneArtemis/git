@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<include file="Public/header"/>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <div><h3>操作日志</h3></div>
+	                    <div class="col-sm-12" style="margin:20px 0px;">
+							<form action="{:url('Orderstatus/index')}" method="post" id="queryForm">
+								<div class="col-sm-12">
+									<div class="col-sm-2">
+					          			<select name="operationtype" id="operationtype" class="form-control">
+					              			<option value="-10000">所有操作</option>
+					              			<option value="delete">删除</option>
+					              			<option value="update">修改</option>
+					              			<option value="insert">增加</option>
+					         			</select>
+									</div>
+									<div class="col-sm-2"><input type="text" name="controllername" id="controllername" value="{$querycond.controllername}" class="form-control" placeholder="位置"/></div>
+									<div class="col-sm-2"><input type="text" name="operator" id="operator" value="{$querycond.username}" class="form-control" placeholder="操作人"/></div>
+									<div class="col-sm-2"><input type="text" id="starttime" name="starttime" value="{$querycond.starttime}" class="form-control layer-date" placeholder="起始时间"/></div>
+									<div class="col-sm-2"><input type="text" id="endtime" name="endtime" value="{$querycond.endtime}" class="form-control layer-date" placeholder="结束时间"/></div>
+									<div class="col-sm-2 text-right">
+										<div class="col-sm-3"><input type="button" id="submitBtn" value="搜索" onclick="submitquery(1)" class="btn  btn-outline btn-default"></div>
+										<div class="col-sm-3" id="loading" style="margin-top:5px;"></div>
+									</div>
+								</div>
+							</form>
+						</div>
+					<div style="clear:both;"></div>
+					</div>
+                    <div class="ibox-content">
+                        <table class="table">
+                            <thead>
+                             	<tr>
+                             		<th>操作人</th>
+                                    <th>操作位置</th>
+                                    <th>操作时间</th>
+                                	<th>操作</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                             <tbody id="datalist" >
+                            	{$datalist["html"]}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="page" class="col-sm-12 text-right">{$datalist["page"]}</div>
+                    <div><input type="hidden" id="orderSequence" name="" value="{$ordersequence}"/></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <include file="Public/js" />
+    <script>
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+    	$(function(){  
+		    var start = {  
+		        elem: '#starttime', //选择ID为START的input  
+		        format: 'YYYY/MM/DD', //自动生成的时间格式  
+		        min: '1900-01-01 0:0:0', //设定最小日期为当前日期-laydate.now()
+		        max: '2099-06-16 23:59:59', //最大日期  
+		        istime: true, //必须填入时间  
+		        istoday: false,  //是否是当天  
+		        start: laydate.now(0,"YYYY/MM/DD"),  //设置开始时间为当前时间  
+		        choose: function(datas){  
+		             end.min = datas; //开始日选好后，重置结束日的最小日期  
+		             end.start = datas //将结束日的初始值设定为开始日  
+		        }  
+		    };  
+		    var end = {  
+		        elem: '#endtime',  
+		        format: 'YYYY/MM/DD',  
+		        min: '1900-01-01 0:0:0',  
+		        max: '2099-06-16 23:59:59',  
+		        istime: true,  
+		        istoday: false,  
+		        start: laydate.now(0,"YYYY/MM/DD"),  
+		        choose: function(datas){  
+		            start.max = datas; //结束日选好后，重置开始日的最大日期  
+		        }  
+		    };  
+		    laydate(start);  
+		    laydate(end);  
+	    }) 
+	    function complete_query(data) {
+    		$("#datalist").empty();
+    		$("#datalist").html(data.data.html);
+    		$("#page").html(data.data.page);
+    	}
+    	function submitquery(id) {
+			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
+			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
+			$.get('__URL__/index',{'p':id,'operationtype':$('#operationtype').val(),'controllername':$('#controllername').val(),
+					'operator':$('#operator').val(),'starttime':$('#starttime').val(),'endtime':$('#endtime').val()},
+					complete_query,'json');
+		}
+		
+		function operationdetail(id){
+    		window.location.href = '__URL__/detail/id/'+id;
+    	}
+    </script>
+</body>
+</html>

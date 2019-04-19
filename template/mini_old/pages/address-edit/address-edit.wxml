@@ -1,0 +1,58 @@
+<!--pages/address-edit/address-edit.wxml-->
+<view>
+  <form bindsubmit="saveAddress">
+    <view class="bottom-bar">
+      <button form-type='submit'>保存</button>
+    </view>
+    <view class="flex-row flex-y-center edit-row">
+      <view class="flex-grow-0 row-label">收货人</view>
+      <view class="flex-grow-1">
+        <input placeholder="" value="{{address.username}}" name="username" />
+      </view>
+    </view>
+    <view class="flex-row flex-y-center edit-row">
+      <view class="flex-grow-0 row-label">联系电话</view>
+      <view class="flex-grow-1">
+        <input placeholder="" value="{{address.mobile}}" name="mobile" type="number" />
+      </view>
+    </view>
+    <view class="flex-row flex-y-center edit-row">
+      <view class="flex-grow-0 row-label">所在地区</view>
+      <view class="flex-grow-1 flex-row">
+        <view bindtap="showAreaPicker" class="flex flex-row" style="height: 100%;padding: 0 19rpx;">
+          <view class="flex-grow-0 flex-y-center" style='padding:16rpx 20rpx;width:90%;'>
+            <view class='flex-grow-1' wx:if="{{!edit_district.province}}">请选择地区</view>
+            <view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis" wx:else>
+              {{edit_district.province.name}}{{edit_district.city.name}}{{edit_district.district.name}}
+            </view>
+          </view>
+        </view>
+        <view style="display: none">
+          <input name="province_id" type="hidden" value="{{edit_district.province.id}}"></input>
+          <input name="city_id" type="hidden" value="{{edit_district.city.id}}"></input>
+          <input name="district_id" type="hidden" value="{{edit_district.district.id}}"></input>
+          <input type="hidden" name="address_id" value='{{address.id}}'></input>
+        </view>
+      </view>
+    </view>
+    <view class="flex-row flex-y-center edit-row">
+      <view class="flex-grow-0 row-label">详细地址</view>
+      <view class="flex-grow-1">
+        <input placeholder="街道，楼牌号" value="{{address.address}}" name="address" />
+      </view>
+    </view>
+    <view class="flex-row flex-y-center edit-row">
+      <view class="flex-grow-0 row-label">是否设为默认地址</view>
+      <view class="flex-grow-1">
+        <radio-group class="radio-group" bindchange="radioChange">
+            <radio value="0" checked="{{is_default == 0?'checked':''}}" />否
+            <radio value="1" checked="{{is_default == 1?'checked':''}}" />是
+        </radio-group>
+      </view>
+    </view>
+    
+  </form>
+  <!-- <view bindtap="getWechatAddress" class="get-wechat-address">授权一键获取地址</view> -->
+  <include src="./../../components/area-picker/area-picker.wxml"></include>
+
+</view>

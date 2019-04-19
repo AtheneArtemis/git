@@ -1,0 +1,96 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>会员提现</h3></div>
+                <div class="col-sm-6 text-right">
+	                <!-- <a href="{:url('Stock/add')}"><button class="btn btn-primary">新增</button></a> -->
+				</div>
+                <div style="clear:both;height:10px"></div>
+                <!-- 搜索栏 start -->
+    			<div>
+        			<form action="" method="post" id="queryForm">
+        				<div class="col-sm-12">
+                            <div class="col-sm-3">
+                                <select name="status" id="status" class="form-control">
+                                    <option value="-10000">全部状态</option>
+                                    <option value="1">待审核</option>
+                                    <option value="2">审核中</option>
+                                    <option value="3">审核通过</option>
+                                    <option value="4">未通过审核</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3"><input type="text" name="mobile" id="mobile" class="form-control" placeholder="手机号码"/></div>
+                            <div class="col-sm-2 text-right"><!--  -->
+                                <div class="col-sm-3"><input type="button" onclick="submitquery(1)" id="submitBtn" value="查询" class="btn  btn-outline btn-default"></div>
+                                <div class="col-sm-3" id="loading" style="margin-top:5px;"></div>
+                            </div>
+                        </div>
+        			</form>
+    			</div>
+                <!-- 搜索栏 end -->
+                <div style="clear:both;"></div>
+			</div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th>
+                                        <th>ID</th>
+                                        <th>提现人</th>
+                                        <th>提现类型</th>
+                                        <th>提现金额</th>
+                                        <th>到账金额</th>
+                                        <th>状态</th>
+                                        <th>申请时间</th>
+										<th>备注</th>
+										<th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="datalist" >
+                            		{$datalist["html"]}
+                            	</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$datalist["page"]}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    
+    <script type="text/javascript">
+    	function complete_query(data) {
+    		$("#datalist").empty();
+    		$("#datalist").html(data.data.html);
+    		$("#page").html(data.data.page);
+    	}
+    	function submitquery(id) {
+			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
+			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
+    		$.get('__URL__/index',{'p':id,'mobile':$('#mobile').val(),'status':$('#status').val()},complete_query,'json');
+		}
+		
+		function opend(){
+            $.post("__URL__/opend",{},function(res){
+                alert(res.msg);
+                if (res.code == 0) {
+                    window.location.href = "__URL__/index";
+                }
+            },'json')
+        }
+        function closed(){
+             $.post("__URL__/closed",{},function(res){
+                alert(res.msg);
+                if (res.code == 0) {
+                    window.location.href = "__URL__/index";
+                }
+            },'json')
+        }
+	</script> 
+<include file="Public/footer" />

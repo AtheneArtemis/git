@@ -1,0 +1,33 @@
+/* pages/team/team.wxss */
+page{
+  background: #f3f3f3;
+  font-size: 0.75rem;
+}
+.flex {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+}
+.list{
+  background: #fff;
+  padding: 20rpx;
+  border-bottom:1px solid #f6f0fd
+}
+.list image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.gray-text{
+  color: #b1b1b1;
+  font-size: 0.65rem;
+}
+

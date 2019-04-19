@@ -1,0 +1,20 @@
+/* ljkj_compass/pages/package/package.wxss */
+page{
+  background: #f3f3f3;
+}
+.goods{
+width:351.5rpx;
+font-size:0.75rem;
+background:#fff;
+margin:7rpx;
+float:left;
+}
+.goods image{
+  width: 351.5rpx;
+  height: 351.5rpx;
+}
+.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

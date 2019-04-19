@@ -1,0 +1,129 @@
+/* pages/my/my.wxss */
+page{
+  background: #f3f3f3;
+  font-size: 0.75rem;
+  color: #333;
+}
+.top-box{
+  background: #fff;
+  padding: 20rpx;
+}
+.card-box{
+  background: linear-gradient(to left,#ef713f, #f35252);
+  padding: 20rpx 0 20rpx 20rpx;
+  border-radius: 14rpx;
+  color: #fff;}
+  .head-img{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    margin-right: 10rpx;
+  }
+  .flex {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+}.flex-bet {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+.big-text{
+  font-size: 1.5rem;
+}
+.vip-img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right:10rpx;
+}
+.sign{
+  background: #e76026;
+  padding: 10rpx 30rpx;
+  font-size: 0.65rem;
+  border-bottom-left-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+}
+.bottom-text{
+  margin-top: 20rpx;
+}
+.bottom-text text{
+  margin-left: 40rpx;
+}
+.flex-aro {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+.money-box{
+  text-align: center;
+  color: #696969;
+}
+.money-box text{
+  color: #f35252;
+}
+.box{
+  background: #fff;
+  margin-top: 20rpx;
+  border-radius: 16rpx;
+    color: #696969;
+    font-size: 0.65rem;
+}
+.box .title{
+  font-weight: 600;
+  padding: 16rpx;
+  border-bottom: 1px solid #f4f4f4;
+  font-size: 0.80rem
+}
+.nav{
+  text-align: center;
+  margin:30rpx 0;
+}
+.nav image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.red-text{
+  color: #f35252;
+  font-size: 1.2rem;
+  margin-bottom: 18rpx;
+}
+.flex .nav{
+flex:0 1 25%;
+}
+.flex .nav image
+{
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 10rpx;
+}
+.code-img{
+  width: 100%;
+  height: 160rpx;
+  border-radius: 7px;
+  margin: 30rpx 0;
+}

@@ -1,0 +1,17 @@
+<!-- 邀请弹窗  showView?'show':'hide'-->
+<view class="{{showView?'show':'hide'}}">
+  <form bindsubmit='setuserinfo'>
+    <view class='ui-zhaoc'></view>
+    <view class='ui-code-box'>
+      <view class='ui-code-text'>注册</view>
+      <input class='ui-code-ipt' placeholder='请输入姓名' name="realname"/>
+      <input class='ui-code-ipt' placeholder='请输入手机号码' name='phoneNo' data-id="phoneNo" bindinput="changeponeNo"/>
+      <view class="flex" style="width:80%;margin: 30rpx auto;">
+        <input class='ui-code-ipt' name="captcha" style='width:54%;margin:0px 0px' placeholder='请输入验证码'/>
+        <button style='width:40%;font-size:0.65rem;margin-left:5%;' disabled="{{disabled}}" bindtap="getcaptcha">{{time}}</button>
+      </view>
+      <input class='ui-code-ipt' name="invitationCode" placeholder='请输入邀请码，可忽略'/>
+      <button class='ui-buy-btn ui-confirm-btn' form-type='submit'>提交</button>
+    </view>
+  </form>
+</view>

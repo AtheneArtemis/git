@@ -1,0 +1,87 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>修改龙蛋信息</h3></div>
+					    <div class="col-sm-3 text-right">
+						    <a href="{:url('Stock/index')}">
+						    	<button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+						    </a>
+					    </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="{:url('Stock/update')}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">龙蛋名称</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="name" value="{$list.name}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">数量</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="number" value="{$list.number}" readonly>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">单价</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="price" value="{$list.price}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">分红比例</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="stock_profit" value="{$list.stock_profit}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label"></label>
+                                <div class="col-sm-10">
+                                    <div style="font-size: 12px;color: red">请输入0-100的数字，不含%。（小数点后可保留两位小数）</div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">是否开启</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="switch_btn">
+                                        <option value="2" <if condition="$list.switch_btn eq 2">selected</if> >开启</option>
+                                        <option value="1" <if condition="$list.switch_btn eq 1">selected</if> >关闭</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">排序</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="sort" value="{$list.sort}" readonly>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">备注</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="note" value="{$list.note}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <input type="hidden" name="id" value="{$list.id}">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-sm-offset-10">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                    <button class="btn btn-white" type="reset">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="Public/footer" />

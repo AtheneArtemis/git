@@ -1,0 +1,119 @@
+/* pages/dividend/dividend.wxss */
+page{
+  background-color: #f3f3f2;
+  font-size: 0.75rem;
+}
+.content{
+  padding:30rpx;
+  }
+  .date {
+	font-size: 0.65rem;
+	color: #808080
+}
+.red-text {
+	color: #f9504f;
+	text-align: right;
+	font-size: 0.95rem;
+}
+.list-left {
+	margin-left: 8px;
+}
+.list {
+
+	margin: 10px auto;
+	border-radius: 7px;
+	box-shadow: #eae9ee 0px 5px 27px 0px;
+	padding: 15px 10px;
+	background: #fff;
+}
+.list image{
+  width: 80rpx;
+  height: 80rpx;
+}
+body {
+	background: #f3f3f3;
+	margin: 0;
+	font-size: 0.75rem;
+}
+.flex-bet {
+	display: -webkit-box; 
+	display: -moz-box; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+}
+.flex {
+	display: -webkit-box;
+	display: -moz-box; 
+	display: -webkit-flex; 
+	display: -moz-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+}
+.card-img{
+width:95%;
+height:215rpx;
+margin:20rpx;
+box-shadow:#d5d6f2 0px 5px 27px 0px;
+}
+.card{
+ width:90%;
+margin-left:5%;
+margin-top:-200rpx;
+color:#fff;
+line-height:65rpx;
+margin-bottom: 60rpx
+}
+.big-text{
+  font-size: 1.6rem;
+}
+.btn{
+  background: #fa4c4d;
+  padding: 0rpx 20rpx;
+  border-radius: 10rpx;
+}
+.line{
+  border-left: 6rpx solid #f45152;
+  color: #f45152;
+  padding-left: 20rpx;
+  margin:20rpx 0;
+}
+.time{
+  margin: 20rpx 0;
+  background: #ff8868;
+  color: #fff;
+  padding: 4rpx 10rpx;
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  width: 150rpx
+}
+.list2{
+  background: #fff;
+  margin: 10rpx 0;
+  padding: 20rpx 50rpx;
+  border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.gray-text{
+  font-size: 0.65rem;
+  color: #999;
+}
+.bule{
+  color: #6c6cfb;
+  font-size: 0.85rem;
+}
+  .red{
+    	color: #f9504f;
+	text-align: right;
+  }

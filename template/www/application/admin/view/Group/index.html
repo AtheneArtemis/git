@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经销商服务系统管理后台</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+	<link href="__PUBLIC__/css/bootstrap.min14ed.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/font-awesome.min93e3.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style.min862f.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/app/select.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/app/admin.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>节点分组</h3></div>
+                <div class="col-sm-6 text-right">
+					<a href="{:url('add')}"><button class="btn btn-primary">新增</button></a>
+					<a href="javascript:edit('{:url('edit','','')}')"><button class="btn btn-primary">修改</button></a>
+					<a href="javascript:dele('{:url('shiftdelete')}')"><button class="btn btn-primary">删除</button></a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+			</div>
+			<!-- 搜索栏 end -->
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=""><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th>
+										<th><a href="#">分组标识</a></th>
+										<th><a href="#">分组名称</a></th>
+										<th><a href="#">上级</a></th>
+										<th><a href="#">分组状态</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<volist name="list" id="v">
+										<tr>
+											<td class="bs-checkbox"><input data-index="3" name="btSelectItem" type="checkbox" value="{$v.id}"></td>
+											<td>{$v.id}</td>
+											<td>{$v.title}</td>
+											<td>{$v.parent_id}</td>
+											<td><if condition="$v.status eq 1">正常<else />禁用</if></td>
+										</tr>
+									</volist>
+								</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$page}</div>
+                            <div><input type="hidden" id="orderSequence" name="" value="{$ordersequence}"/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="__PUBLIC__/js/demo/bootstrap-table-demo.min.js"></script>
+    <script src="__PUBLIC__/js/app/admin.js"></script>
+    <script type="text/javascript">  
+		//排序
+		function orderby(orderitem){
+			var orderSequence = document.getElementById('orderSequence').value;
+			window.location.href = "{:url('query','','')}/orderitem/"+orderitem+"/ordersequence/"+orderSequence;
+		}
+		/* function dele(url){
+			var inputValue = $("input[type='checkbox']:checked").val();
+			if (inputValue =='' || inputValue == undefined){
+				alert("请选择编辑项");
+				return;
+			}
+			var ret = confirm('删除分组将同步删除该分组下的所有节点');
+			if (ret){
+				$.post(url,{'id':inputValue},function(json){
+					if(json.code == 1){
+						alert(json.msg)
+						window.location.href = json.data;
+					}else{
+						alert(json.msg);
+						window.location.href = json.data;
+					}
+				},'json')
+			}
+		} */
+	</script> 
+</body>
+</html>

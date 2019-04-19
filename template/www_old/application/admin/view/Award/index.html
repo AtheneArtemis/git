@@ -1,0 +1,122 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>奖品列表</h3></div>
+                <div class="col-sm-6 text-right">
+	                <a href="__URL__/add"><button class="btn btn-primary">新增</button></a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+                <!-- 搜索栏 start -->
+    			<div>
+        			<form action="" method="post" id="queryForm">
+        				
+        			</form>
+    			</div>
+                <!-- 搜索栏 end -->
+			    <div style="clear:both;"></div>
+            </div>
+            <div class="ibox-content">
+                <div class="col-sm-12">
+                    <div class="col-sm-12" style="line-height: 35px;font-size: 16px">
+                        购物券数量：<span id="card-number">{$award_money.card_number}</span>&nbsp;&nbsp;个&nbsp;&nbsp;&nbsp;
+                        购物券单个金额：<span id="card-money">{$award_money.card_money}</span>&nbsp;&nbsp;元&nbsp;&nbsp;&nbsp;
+                        <span id="card-money-btn"><button class="btn btn-primary" type="button" onclick="changeCardMoney()">修改</button></span>
+                    </div>
+                    <div class="col-sm-12" style="line-height: 35px;font-size: 16px">奖品数量不足时每轮抽奖人数时派发的现金：
+                        <span id="award-money">{$award_money.award_money}</span>&nbsp;&nbsp;元&nbsp;&nbsp;&nbsp;
+                        <span id="award-money-btn"><button class="btn btn-primary" type="button" onclick="changeMoney()">修改</button></span>
+                    </div>
+                </div>
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th>
+                                        <th>ID</th>
+										<th>奖品名称</th>
+                                        <th>数量</th>
+                                        <th>派发顺序</th>
+                                        <th>是否在奖池</th>
+										<th>备注</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="datalist" >
+                            		{$datalist["html"]}
+                            	</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$datalist["page"]}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    
+    <script type="text/javascript">
+    	function complete_query(data) {
+    		$("#datalist").empty();
+    		$("#datalist").html(data.data.html);
+    		$("#page").html(data.data.page);
+    	}
+    	function submitquery(id) {
+			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
+			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
+    		$.get('__URL__/index',{'p':id,'account':$('#account').val(),'provinceid':$('#provinceid').val(),'cityid':$('#cityid').val(),'zoneid':$('#zoneid').val(),'usertypeid':$('#usertypeid').val()},complete_query,'json');
+		}
+        function changeMoney(){
+            var awardMoney = '<input type="text" name="award_money" id="awardMoneyInput" value="{$award_money.award_money}" />';
+            var awardMoneyBtn  = '<button class="btn btn-primary" type="button" onclick="saveMoney()">保存</button>';
+
+            $("#award-money").html(awardMoney);
+            $("#award-money-btn").html(awardMoneyBtn);
+        }
+        function saveMoney(){
+            var awardMoneyInput = $("#awardMoneyInput").val();
+            if (awardMoneyInput == '' || awardMoneyInput == undefined || awardMoneyInput == 0) {
+                alert('请输入金额');
+                return false;
+            }
+            var id = "{$award_money.id}";
+            $.post("__URL__/saveMoney",{id:id,awardMoneyInput:awardMoneyInput},function(json){
+                alert(json.msg);
+                if (json.code == 0) {
+                    window.location.href = "__URL__/index";
+                }
+            },'json')
+        }
+        function changeCardMoney(){
+            var cardMoney = '<input type="text" name="card_money" id="cardMoneyInput" value="{$award_money.card_money}" />';
+            var cardNumber = '<input type="text" name="card_number" id="cardNumberInput" value="{$award_money.card_number}" />';
+            var cardMoneyBtn  = '<button class="btn btn-primary" type="button" onclick="saveCard()">保存</button>';
+
+            $("#card-money").html(cardMoney);
+            $("#card-number").html(cardNumber);
+            $("#card-money-btn").html(cardMoneyBtn);
+        }
+        function saveCard(){
+            var cardMoneyInput = $("#cardMoneyInput").val();
+            var cardNumberInput = $("#cardNumberInput").val();
+            if (cardMoneyInput == '' || cardMoneyInput == undefined || cardMoneyInput == 0) {
+                alert('请输入金额');
+                return false;
+            }
+            if (cardNumberInput == '' || cardNumberInput == undefined || cardNumberInput == 0) {
+                alert('请输入数量');
+                return false;
+            }
+            var id = "{$award_money.id}";
+            $.post("__URL__/saveCard",{id:id,cardMoneyInput:cardMoneyInput,cardNumberInput:cardNumberInput},function(json){
+                alert(json.msg);
+                if (json.code == 0) {
+                    window.location.href = "__URL__/index";
+                }
+            },'json')
+        }
+	</script> 
+<include file="Public/footer" />

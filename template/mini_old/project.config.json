@@ -1,0 +1,157 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.5.1",
+	"appid": "wx955de1cdbf5d67ef",
+	"projectname": "%E4%B8%9C%E4%B8%9C%E5%95%86%E5%9F%8E%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 15,
+			"list": [
+				{
+					"id": -1,
+					"name": "收货地址",
+					"pathName": "pages/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "商品详情",
+					"pathName": "pages/detail/detail",
+					"query": "id=18",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "结算",
+					"pathName": "pages/new-order-submit/new-order-submit",
+					"query": "product_id=18&number=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择地址",
+					"pathName": "pages/address-picker/address-picker",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单",
+					"pathName": "pages/order/order",
+					"query": "status=1",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "商品列表",
+					"pathName": "pages/list/list",
+					"query": "attr_id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "抽奖",
+					"pathName": "pages/raffle/raffle",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "会员套餐",
+					"pathName": "pages/member-upgrade/member-upgrade",
+					"query": "id=3&parent_id=5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/cart/cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "推广码",
+					"pathName": "pages/code/code",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的佣金",
+					"pathName": "pages/commission/commission",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "编辑地址",
+					"pathName": "pages/address-edit/address-edit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "会员商品列表",
+					"pathName": "pages/member-upgrade-list/member-upgrade-list",
+					"query": "cat_id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "会员商品",
+					"pathName": "pages/member-upgrade/member-upgrade",
+					"query": "id=1",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "二维码",
+					"pathName": "pages/code/code",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经销商服务系统管理后台</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="__PUBLIC__/css/bootstrap.min14ed.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/font-awesome.min93e3.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/app/admin.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9">
+                        <h3 class="box-title">个人信息&nbsp;&nbsp;
+                        <a href="{:url('Userhis/index','','')}/id/{$ulist.id}" style="width:5px;font-size:12px;">
+                        <i class="fa fa-user"></i>&nbsp;历史</a>
+                        </h3>
+                        </div>
+					    <div class="col-sm-3 text-right">
+						    <a href="{:url('User/index','','')}?pagenumber={$pagenumber}">
+						    	<button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+						    </a>
+					    </div>
+                    </div>
+                    <div class="ibox-content">
+						<div class="col-sm-12">
+							<div class="col-sm-6">
+								<h3 class="">{$ulist.nickname}</h3>
+							</div>
+							<!-- <div class="col-sm-6 text-right">
+								<a href="{:url('User/editbasicinfo','','')}/id/{$ulist.id}"><button class="btn btn-primary">修改</button></a>
+							</div> -->
+						</div>
+						<div class="box-body">
+						  <table id="example2" class="table table-bordered table-hover table-word-wrap">
+						    <tr>
+						      <th>昵称</th>
+						      <td>{$ulist.nickname}</td>
+						      <th>账号</th>
+						      <td>{$ulist.account}</td>
+						      <th><if condition="$ulist.isshop eq 1 && $ulist.usertype_id neq distributor">门店名称<else />公司名称</if></th>
+						      <td>{$ulist.company.name}</td>
+						    </tr>
+						    <tr>
+						      <th>用户类别</th>
+						      <td>{$ulist.usertype.itemvalue}</td>
+						      <th>手机号码</th>
+						      <td>{$ulist.mobilenumber}</td>
+						      <th>电子邮件</th>
+						      <td>{$ulist.mailaddr}</td>
+						    </tr>
+						    <tr>
+						      <th>用户组别</th>
+						      <td>{$ulist.roles.0.name}</td>
+						      <th>是否门店</th>
+						      <td><if condition="$ulist.isshop eq 1">是<else />否</if></td>
+						      <th>用户等级</th>
+						      <td>{$ulist.userlevel.levelnumber}</td>
+						    </tr>
+						    <tr>
+						      <th>个性签名</th>
+						      <td>{$ulist.onewords}</td>
+						      <th>是否认证</th>
+						      <td><if condition="$ulist.whetheridentified.itemvalue">{$ulist.whetheridentified.itemvalue}<else />未认证</if></td>
+						      <th></th>
+						      <td></td>
+						    </tr>
+						    <tr>
+						      <th>服务范围</th>
+						      <td colspan="5">{$ulist.servicescope}</td>
+						    </tr>
+						    <tr>
+						      <th>地址</th>
+						      <td colspan="5">
+						      {$ulist.province.name}{$ulist.city.name}{$ulist.zone.name}{$ulist.addr}</td>
+						    </tr>
+						    <tr>
+						      <th>其他信息</th>
+						      <td colspan="5">{$ulist.info}</td>
+						    </tr>
+						  </table>
+						</div>
+						<notempty name="clist">
+							<div class="col-sm-12">
+								<div class="col-sm-6">
+									<h3 class=""><if condition="$ulist.isshop eq 1 && $ulist.usertype_id neq distributor">门店信息<else />公司信息</if></h3>
+								</div>
+								
+							</div>
+							<div class="box-body">
+								<table id="example2" class="table table-bordered table-hover table-word-wrap">
+						   			<tr>
+						   				<th><if condition="$ulist.isshop eq 1 && $ulist.usertype_id neq distributor">门店名称<else />公司名称</if></th>
+						   				<td>{$clist.name}</td>
+						   				<th><if condition="$ulist.isshop eq 1 && $ulist.usertype_id neq distributor">门店类型<else />公司类型</if></th>
+						   				<td>{$ulist.usertype.itemvalue}</td>
+						   				<th>协议编号</th>
+						   				<td>{$clist.agreementcode}</td>
+						   			</tr>
+						   			<tr>
+						   				<th>联系人</th>
+						   				<td>{$clist.contactperson}</td>
+						   				<th>联系电话</th>
+						   				<td>{$clist.telephonenumber}</td>
+						   				<th>公司性质</th>
+						   				<td>{$clist.taxtype.itemvalue}</td>
+						   			</tr>
+						   			<tr>
+						   				<th>销售代表名称</th>
+						   				<td>{$clist.salespersonofll}</td>
+						   				<th>销售代表代码</th>
+						   				<td>{$clist.codeforsalespersonofll}</td>
+						   				<th>税号</th>
+						   				<td>{$clist.taxcode}</td>
+						   			</tr>
+						   			<tr>
+						   				<th>地址</th>
+						   				<td colspan="5">{$ulist.province.name}{$ulist.city.name}{$ulist.zone.name}{$ulist.addr}</td>
+						   			</tr>
+						   		</table>
+							</div>
+						</notempty>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="position:relative;z-index:90;">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+        			<div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3 class="box-title">认证信息</h3></div>
+					    <div class="col-sm-3 text-right">
+							<if condition="$ulist.whetheridentified_id eq ongoing"><a href="javascript:review()"><button class="btn btn-primary">审核</button></a><else /><button class="btn btn-primary" disabled>尚未认证或无认证资料更新</button></if>
+						</div>
+                    </div>
+	       			<div class="ibox-content col-sm-12">
+	      				<notempty name="cilist">
+					        <div class="box-body">
+							  <table id="example2" class="table table-bordered table-hover table-word-wrap">
+							    <tr>
+				      		  		<th style="width:5%;">商家名称</th>
+						      		<td>{$clist.name}</td>
+							    </tr>
+							    <tr>
+				      		  		<th>法人姓名</th>
+						      		<td>{$cilist.masterperson}</td>
+							    </tr>
+							    <tr>
+				      		  		<th>法人联系电话</th>
+						      		<td>{$cilist.mastermobile}</td>
+							    </tr>
+							    <tr>
+				      		  		<th>法人身份证号码</th>
+						      		<td>{$cilist.masterpersonid}</td>
+							    </tr>
+							    <tr>
+				      		  		<th>营业执照编号</th>
+						      		<td>{$cilist.companylisencecode}</td>
+							    </tr>
+							    <tr>
+				      		  		<th>认证说明</th>
+						      		<td>{$cilist.identiydescription}</td>
+							    </tr>
+						        <tr>
+						      		<th>备注说明</th>
+						      		<td>{$cilist.note}</td>
+						    	</tr>
+						      </table>
+						    </div>
+					        <div class="col-sm-4">
+					        	<div class="">
+				        			<h5>法人身份证电子版正面</h5>
+			        			</div>
+						        <div class="box-body col-sm-12">
+						        	<div><img src="__PUBLIC__/Uploads/{$cilist.masterpersonidcard1}" class="img-responsive" style="width:320px;height:200px;"/></div>
+						    	</div>
+					        </div>
+					        <div class="col-sm-4">
+					        	<div class="">
+						        	<h5>法人身份证电子版反面</h5>
+						        </div>
+						        <div class="box-body col-sm-12">
+						        	<div><img src="__PUBLIC__/Uploads/{$cilist.masterpersonidcard2}" class="img-responsive" style="width:320px;height:200px;"/></div>
+						        </div>
+					        </div>
+					        <div class="col-sm-4">
+					        	<div class="">
+						        	<h5>营业执照电子版</h5>
+						        </div>
+						        <div class="box-body col-sm-12">
+						        	<div><img src="__PUBLIC__/Uploads/{$cilist.companylisencecard}" class="img-responsive" style="width:320px;height:200px;"/></div>
+						        </div>
+					        </div>
+				        </notempty>
+				        <notempty name="pilist">
+					        <div class="box-body">
+							  <table id="example2" class="table table-bordered table-hover table-word-wrap">
+							    <tr>
+						      		<th>真实姓名</th>
+						      		<td>{$pilist.realname}</td>
+					      			<th>身份证号码</th>
+						      		<td>{$pilist.personcardid}</td>
+						      		<th>生日</th>
+						      		<td>{$pilist.birthyear}年{$pilist.birthmonth}月{$pilist.birthday}日</td>
+							    </tr>
+							    <tr>
+				      		  		<th>认证说明</th>
+						      		<td colspan="5">{$pilist.identiydescription}</td>
+							    </tr>
+						        <tr>
+						      		<th>备注说明</th>
+						      		<td colspan="5">{$pilist.note}</td>
+						    	</tr>
+						      </table>
+						    </div>
+					        <div class="col-sm-4">
+					        	<div class="">
+				        			<h5>身份证正面</h5>
+			        			</div>
+							    <div class="col-sm-12">
+							        <div><img src="__PUBLIC__/Uploads/{$pilist.personidcard1}" class="img-responsive" style="width:320px;height:200px;"/></div>
+							    </div>
+					        </div>
+					        <div class="col-sm-4">
+					        	<div class="">
+				        			<h5>身份证反面</h5>
+			        			</div>
+							    <div class="col-sm-12">
+							        <div><img src="__PUBLIC__/Uploads/{$pilist.personidcard2}" class="img-responsive" style="width:320px;height:200px;"/></div>
+							    </div>
+					        </div>
+					        <div class="col-sm-4">
+					        	<div class="">
+				        			<h5>手持身份证</h5>
+			        			</div>
+							    <div class="col-sm-12">
+							        <div><img src="__PUBLIC__/Uploads/{$pilist.personidcardwithperson}" class="img-responsive" style="width:320px;height:200px;"/></div>
+							    </div>
+					        </div>
+				        </notempty>
+				        <div style="clear:both;"></div>
+	       			</div>
+       			</div>
+			</div>
+			<!-- 审核表单 -->
+    		<div style="position:absolute;top:0px;left:150px;width:800px;height:300px;z-index:100;background:#fff;padding:30px;display:none;" id="failedoptionform">
+				<div class="col-sm-12">
+				<form method="post" class="form-horizontal" action="{:url('User/review')}" id="certificationform">
+					<div class="col-sm-12">
+						<div class="col-sm-9"><h3>审核</h3></div>
+						<div class="col-sm-3 text-right" style="cursor:pointer;" onclick="closefailedoption()">关闭</div>
+        			</div>
+					<div class="form-group">
+						<label class="col-sm-2 control-label">认证结果</label>
+	                    <div class="col-sm-10">
+	                    	<select name="whetheridentified_id" class="form-control" id="failedreason" onchange="failedoption()">
+								<volist name="whetheridentifiedlist" id="v">
+									<if condition="$v.itemvalue eq 认证失败 ||$v.itemvalue eq 已认证">
+										<option value="{$v.itemname}">{$v.itemvalue}</option>
+									</if>
+									<empty name="whetheridentifiedlist"><option>系统繁忙，请稍后重试！</option></empty>
+								</volist>
+							</select>
+	                    </div>
+                    </div>
+                    <!-- 审核通过 -->
+                    <div id="successdetail"  style="display:none;">
+                    	<div class="form-group">
+	                    	<label class="col-sm-2 control-label">用户类别</label>
+		                    <div class="col-sm-10">
+		                    	<select name="usertype_id" class="form-control">
+                                    <volist name="usertypelist" id="v">
+                                    	<option value="{$v.itemname}">{$v.itemvalue}</option>
+                                    </volist>
+                                </select>
+		                    </div>
+	                    </div>
+	                    <div class="form-group">
+	                    	<label class="col-sm-2 control-label">用户组别</label>
+		                    <div class="col-sm-10">
+		                    	<select name="role_id" class="form-control">
+                                    <volist name="rolelist" id="v">
+                                    	<option value="{$v.id}">{$v.name}</option>
+                                    </volist>
+                                </select>
+		                    </div>
+	                    </div>
+                    </div>
+                    <!-- 审核不通过 -->
+                    <div id="failedreasondetail"  style="display:none;">
+	                    <div class="form-group">
+	                    	<label class="col-sm-2 control-label">失败原因</label>
+		                    <div class="col-sm-10">
+		                    	<select name="failedreason" class="form-control">
+									<option value="认证资料数据不完整">认证资料数据不完整</option>
+									<option value="用户证件模糊，无法辨认信息">用户证件模糊，无法辨认信息</option>
+									<option value="用户资料与证件中的信息不一致">用户资料与证件中的信息不一致</option>
+								</select>
+		                    </div>
+	                    </div>
+	                    <div class="form-group">
+	                    	<label class="col-sm-2 control-label">备注说明</label>
+		                    <div class="col-sm-10">
+		                    	<input type="text" name="note" class="form-control"/>
+		                    </div>
+	                    </div>
+                    </div>
+                    <!-- <if condition="$ulist.usertype_id neq firstleveldistributor">
+	                   	<div class="form-group">
+                            <label class="col-sm-2 control-label">上级</label>
+                            <div class="col-sm-10">
+                                <select data-placeholder="选择上级..." class="chosen-select form-control">
+                                    <option value="-10000">请选择上级</option>
+                                    <volist name="userlist" id="v">
+                                    	<option value="{$v.id}" hassubinfo="true">{$v.nickname}</option>
+                                    </volist>
+                                </select>
+                            </div>
+                        </div>
+                    </if> -->
+                    <input type="hidden" name="id" value="{$ulist.id}"/>
+                    <div class="form-group">
+                        <div class="col-sm-12 text-center">
+                            <button class="btn btn-primary" type="button" id="certificationBtn">提交</button>
+                        </div>
+                    </div>
+                </form>
+				</div>
+			</div>
+	    </div>
+    </div>
+    
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="__PUBLIC__/js/demo/form-advanced-demo.min.js"></script>
+    <script src="__PUBLIC__/js/app/admin.js"></script>
+    <script>
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+      	//用户认证
+        if ($('#failedreason option:selected').val() == 'failured'){
+    		$("#failedreasondetail").css("display",'block');
+    	}
+        function failedoption(){
+        	if ($('#failedreason option:selected').val() == 'failured'){
+        		$("#failedreasondetail").css("display",'block');
+        	}else{
+        		$("#failedreasondetail").css("display",'none');
+        	}
+        	if ($('#failedreason option:selected').val() == 'whetheridentified'){
+        		$("#successdetail").css("display",'block');
+        	}else{
+        		$("#successdetail").css("display",'none');
+        	}
+        	
+        }
+        function closefailedoption(){
+        	$("#failedoptionform").css("display",'none');
+        }
+        function review(){
+        	$("#failedoptionform").css("display",'block');
+        }
+        $("#certificationBtn").click(function(){
+        	$.ajax({   
+		        url:$('#certificationform').attr('action'), //发送后台的url  
+		        type:'post',   
+		        data:$('#certificationform').serialize(),//序列化表单内容 $('#queryForm').serialize()
+		        dataType:'json', //后台返回的数据类型  
+		        timeout:15000, //超时时间  
+		        beforeSend:function(XMLHttpRequest){   
+		          //$("#loading").html("<img src='__PUBLIC__/img/22.gif'/>"); //在后台返回success之前显示loading图标  
+		       	  $('#submitBtn').attr("disabled","true");
+		        },   
+		        success:function(json){  //data为后台返回的数据  
+		            alert(json.msg)
+		        	window.location.href = "{:url('User/detail','','')}/id/{$ulist.id}";
+		        }  
+	        });
+        })
+    </script>
+</body>
+</html>

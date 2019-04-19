@@ -1,0 +1,31 @@
+<!--pages/list/list.wxml-->
+<view style='padding:0 20rpx 20rpx 20rpx;background:#fff'>
+  <view class='flex' style='margin-bottom:20rpx;'>
+    <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='xialak'>
+      <view class="flex-bet">{{array[index]}}
+        <image src='/pages/images/icon-jiantou-r.png' class='icon'></image>
+      </view>
+    </picker> -->
+    <input placeholder='请输入商品名称' class='ipt' bindinput='searchInput'></input>
+    <button class='flex btn' bindtap='search'>搜索</button>
+  </view>
+  <navigator url='/pages/detail/detail?id={{item.id}}' wx:for='{{product}}' wx:key="{{item}}">
+    <view class="flex jx-list">
+      <view class="jx-img">
+        <image src="{{item.thumbpicture.picture}}"></image>
+      </view>
+      <view class="flex-col-bet" style="height: 320rpx;width: 100%;">
+        <view style="margin-bottom: 5px;font-size:0.85rem">{{item.name}}</view>
+        <view><text style="color:red;margin-left:5px;font-size:12px;">优惠价：{{item.price}}</text> </view>
+        <view class="flex-bet" style="line-height:22px;margin-right: 15px;">
+          <view>
+            <text style="text-decoration:line-through;color:#999;font-size:10px;">价格：￥{{item.original_price}}</text>
+          </view>
+          <view class='gray-text'>
+            <text style='font-size:10px;'>分享赚：{{item.rebate}}</text> 
+          </view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,106 @@
+<!--pages/detail/detail.wxml-->
+<view class="flex-row tab-bar">
+    <view class="flex-grow-1">
+        <navigator class="{{cat_id==1?'active':''}}" url="/pages/member-upgrade-list/member-upgrade-list?cat_id=1" open-type="redirect">
+            <text>店主</text>
+        </navigator>
+    </view>
+    <view class="flex-grow-1">
+        <navigator class="{{cat_id==2?'active':''}}" url="/pages/member-upgrade-list/member-upgrade-list?cat_id=2" open-type="redirect">
+            <text>皇冠店主</text>
+        </navigator>
+    </view>
+    <view class="flex-grow-1">
+        <navigator class="{{cat_id==3?'active':''}}" url="/pages/member-upgrade-list/member-upgrade-list?cat_id=3" open-type="redirect">
+            <text>联合创始人</text>
+        </navigator>
+    </view>
+</view>
+<view style='height:60px;'></view>
+<navigator class="flex jx-list" url='/pages/member-upgrade/member-upgrade?id={{item.id}}' wx:for="{{product}}" wx:key="{{item}}">
+  <view class="jx-img">
+    <image src="{{item.thumbpicture.picture}}"></image>
+  </view>
+  <view class="flex-col-bet" style="height: 320rpx;width: 100%;">
+    <view style="margin-bottom: 5px;font-size:0.85rem">{{item.name}}</view>
+    <view class="" style="line-height:22px;margin-right: 15px;">
+      <view>
+        <text style="text-decoration:line-through;color:#999;font-size:10px;">￥{{item.original_price}}</text>
+        <text style="color:red;margin-left:5px;font-size:12px;">优惠价{{item.price}}</text> 
+      </view>
+      <view class='gray-text'>
+        <text>分享赚：{{item.rebate}}元</text> 
+      </view>
+    </view>
+    
+  </view>
+</navigator>
+<!-- 
+<swiper autoplay="true" circular="true" class="goods-image-swiper" duration="300" indicatorActiveColor="#ff5c5c" indicatorDots="true" interval="5000">
+  <swiper-item wx:for="{{product.picturelist}}" wx:key="{{item}}">
+    <image bindtap="onGoodsImageClick" class="goods-image" data-index="{{index}}" mode="aspectFill" src="{{item.picture}}"></image>
+  </swiper-item>
+</swiper>
+<view class="goods_info_box" style='margin-bottom:20rpx;'>
+  <view class="goods_name">{{product.name}}</view>
+  <view class="flex-row flex-y-center store_goods_info">
+    <view class="flex-grow-1 flex-col">
+      <view class="flex-row flex-y-center" style="margin-top:7px;">
+        <view class="flex-grow-0 view2">
+          <text class="renminbi is_member">\n ￥</text>
+          <text class="min_price is_member">{{product.price}}</text>
+        </view>
+<view bindtap='payelmentaftersuccess'>测试</view>
+      </view>
+    </view>
+    <view class="flex-grow-0">
+      <button class="share_btn" plain="" open-type='share'>
+        <image class="img" src="/pages/images/icon-share.png"></image>
+        <view class="share">分享</view>
+      </button>
+    </view>
+  </view>
+</view>
+<view class="mb-20"></view>
+<view class="flex-row flex-y-center select_attrs">
+  <view class="flex-grow-1 flex-row flex-y-center">
+    <text style='margin-top:-44rpx;'>商品详情</text>
+  </view>
+</view>
+<view class='detail-img'>
+  <image src='/pages/images/xq.jpg' style='width:100%;height:1400rpx'></image>
+  <view>{{product.detail}}</view>
+  <view>
+    <import src="../../utils/js/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:detail.nodes}}"/>
+  </view>
+</view>
+<view class="flex-row bar-bottom">
+  <view class="flex-grow-0 flex-row" bindtap='firstPage'>
+    <view class="flex-grow-0 flex-y-center bar-bottom-btn">
+      <view>
+        <image src="/pages/images/xsy.png">
+        </image>
+        <text>\n 首页</text>
+      </view>
+    </view>
+  </view>
+  <view class="flex-grow-1 flex-row">
+    <view class="flex-grow-1 flex-y-center flex-x-center buy-now" wx:if="{{isSellOut == 2}}">联合创始人限额980人</view>
+    <view class="flex-grow-1 flex-y-center flex-x-center buy-now" bindtap='pay' wx:else>立即购买</view>
+  </view>
+</view>
+授权弹窗
+<view class="{{showAuthView?'show':'hide'}}">
+  <view class='zhaoc'></view>
+  <view class='code-box' style='top:15%'>
+    <view class='title'>需要您的授权</view>
+    <view class='ftitle'>
+    <text>为了提供更好的服务\n请稍后的提示框中点击"允许"</text>
+    </view>
+    <view style='text-align:center'>
+    <image src='/pages/images/sq.png' class='windows'></image>
+    </view>
+    <button class='buy-btn confirm-btn' style='background-color:#04be01;line-height:69rpx;width:415rpx;' open-type="getUserInfo" bindgetuserinfo="myLogin">我知道了</button>
+  </view>
+</view> -->

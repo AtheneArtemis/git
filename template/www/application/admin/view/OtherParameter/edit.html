@@ -1,0 +1,108 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>其他参数设置</h3></div>
+                        <div class="col-sm-3 text-right">
+                            <a href="{:url('OtherParameter/index')}">
+                                <button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="{:url('OtherParameter/update')}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">联系我们-电话号码</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="mobile" value="{$list.mobile}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">每天抽奖轮数</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="number" value="{$list.number}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">每轮抽奖人数</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="humanNum" value="{$list.humanNum}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">是否开启中奖公告</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="switch_jackpot">
+                                        <option value="1" <if condition="$list.switch_jackpot eq 1">selected</if> >开启</option>
+                                        <option value="0" <if condition="$list.switch_jackpot eq 0">selected</if>>关闭</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">是否开启新会员公告</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="switch_member">
+                                        <option value="1" <if condition="$list.switch_member eq 1">selected</if> >开启</option>
+                                        <option value="0" <if condition="$list.switch_member eq 0">selected</if>>关闭</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">全商品包邮</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="switch_freight">
+                                        <option value="1" <if condition="$list.switch_freight eq 1">selected</if> >开启</option>
+                                        <option value="0" <if condition="$list.switch_freight eq 0">selected</if>>关闭</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现最小金额</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="withdraw_min" value="{$list.withdraw_min}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现最大金额</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="withdraw_max" value="{$list.withdraw_max}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">提现手续费</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="withdraw_commission" value="{$list.withdraw_commission}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">收取手续费的起始金额</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="withdraw_commission_initiation" value="{$list.withdraw_commission_initiation}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <input type="hidden" name="id" value="{$list.id}">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-sm-offset-10">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                    <button class="btn btn-white" type="reset">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="Public/footer" />

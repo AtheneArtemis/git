@@ -1,0 +1,123 @@
+<!--pages/order-submint/order-submint.wxml-->
+<view class="block">
+  <view bindtap="goToAddress" class="address-picker flex-row" hoverClass="none">
+    <view class="flex-grow-0 flex-y-center" style='font-size:0.95rem'>
+      收货地址
+    </view>
+    <view class="flex-grow-1" wx:if="{{picker_address}}">
+      <view class="flex-row" style="margin-bottom: 20rpx">
+        <view class="flex-grow-1">收货人:{{picker_address.username}}</view>
+        <view class="flex-grow-0">{{picker_address.mobile}}</view>
+      </view>
+      <view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis">收货地址：{{picker_address.province.name}}{{picker_address.city.name}}{{picker_address.district.name}}{{picker_address.address}}</view>
+    </view>
+    <view class="flex-grow-1" wx:else>
+      <view style="color:#888;text-align:center">未选择收货地址</view>
+    </view>
+    <view class="flex-grow-0 flex-y-center">
+      <image src="/pages/images/icon-jiantou-r.png" style="width: 12rpx; height: 22rpx;margin-left: 24rpx"></image>
+    </view>
+  </view>
+</view>
+<view class="flex-row flex-y-center" style="background: #fff;padding: 0 24rpx;height: 90rpx;margin-bottom: 20rpx;">
+  <view class="flex-grow-1">支付方式</view>
+  <view class="flex-grow-0">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="flex-grow-0">
+    <image src="/pages/images/icon-jiantou-r.png" style="width: 12rpx;height: 22rpx;margin-left: 12rpx"></image>
+  </view>
+</view>
+<view class="block">
+  <view wx:for="{{product_list}}" wx:key="{{item}}" class="flex-row goods-item">
+    <view class="flex-grow-0">
+      <navigator url="/pages/goods/goods?id={{item.id}}" style="font-size: 0">
+        <image mode="aspectFill" style="width: 156rpx;height: 156rpx" src="{{item.thumbpicture.picture}}"></image>
+      </navigator>
+    </view>
+    <view class="flex-grow-1" style="padding-left: 20rpx">
+      <view style="margin-bottom: 10rpx">
+        <navigator url="/pages/goods/goods?id={{item.id}}">{{item.name}}</navigator>
+      </view>
+      <view class="flex-row">
+        <view class="flex-grow-1">
+          <view style="font-size: 9pt;color: #888;margin-right: 20rpx;display: inline-block">
+            规格：{{item.specification}}
+          </view>
+        </view>
+        <view class="flex-grow-0" style="text-align: right;">
+          <view wx:if="{{number}}">×{{number}}</view>
+          <view wx:else>×{{item.number}}</view>
+          <view style="color: #ff4544">￥：{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="flex-row flex-y-center" style="background: #fff;padding: 0 24rpx;height: 90rpx;margin-bottom: 20rpx;">
+  <view class="flex-grow-1">运费</view>
+  <view class="flex-grow-0">{{freight}}元</view>
+</view>
+<view class="flex-row flex-y-center" style="background: #fff;padding: 0 24rpx;height: 90rpx;margin-bottom: 20rpx;" wx:if="{{userinfo.manual_integral_used != 0}}">
+  <view class="flex-grow-1">购物券抵扣</view>
+  <view class="flex-grow-0">{{userinfo.manual_integral_used}}元</view>
+</view>
+<view class="flex-row flex-y-center" style="background: #fff;padding: 0 24rpx;height: 90rpx;margin-bottom: 20rpx;" wx:if="{{userinfo.commission != 0}}">
+  <view class="flex-grow-1">使用佣金</view>
+  <view class="flex-grow-0">{{userinfo.commission}}</view>
+  <view style='margin-left:30px;'>
+    <checkbox-group bindchange="checkCommission">
+      <checkbox value="{{userinfo.commission}}" checked="{{commission}}" />
+    </checkbox-group>
+  </view>
+</view>
+<view class="flex-row flex-y-center" style="background: #fff;padding: 0 24rpx;height: 90rpx;margin-bottom: 20rpx;" wx:if="{{userinfo.dividend != 0}}">
+  <view class="flex-grow-1">使用积分</view>
+  <view class="flex-grow-0">{{userinfo.dividend}}</view>
+  <view style='margin-left:30px;'>
+    <checkbox-group bindchange="checkDividend">
+      <checkbox value="{{userinfo.dividend}}" checked="{{dividend}}" />
+    </checkbox-group>
+  </view>
+</view>
+
+
+<view class="flex-row" style="background: #fff;padding: 24rpx;height: 120rpx;margin-bottom: 20rpx;">
+  <view class="flex-grow-0">买家留言</view>
+  <view class="flex-grow-1">
+    <textarea placeholder='请填写备注' bindinput="setNote" style='display:{{textareaDisplay}}'></textarea>
+  </view>
+</view>
+<view style='height:100rpx;'></view>
+<view class="bottom-bar flex-row">
+  <view class="flex-y-center flex-grow-1" style="padding: 0 24rpx">
+    <view class="flex-grow-1" style="color:#ff4544 ">
+      总计：￥{{total_price}}元
+    </view>
+  </view>
+  <view class="flex-y-center flex-grow-0 flex-x-center submit-btn" bindtap='pay'>
+    <view style="white-space:normal;">立即支付</view>
+  </view>
+
+</view>
+<!-- 邀请弹窗  showView?'show':'hide'-->
+<view class="{{showView?'show':'hide'}}">
+  <form bindsubmit='setuserinfo'>
+    <view class='zhaoc'></view>
+    <view class='code-box'>
+      <view class='code-text'>注册</view>
+      <input class='code-ipt' placeholder='请输入姓名' name="realname"/>
+      <input class='code-ipt' placeholder='请输入手机号码' name='phoneNo' data-id="phoneNo" bindinput="changeponeNo"/>
+      <view class="flex" style="width:80%;margin: 30rpx auto;">
+        <input class='code-ipt' name="captcha" style='width:54%;margin:0px 0px' placeholder='请输入验证码'/>
+        <button style='width:40%;font-size:0.65rem;margin-left:5%;line-height:40px;' disabled="{{disabled}}" bindtap="getcaptcha">{{time}}</button>
+      </view>
+      <input class='code-ipt' name="invitationCode" placeholder='请输入邀请码，可忽略'/>
+      <button class='buy-btn confirm-btn' form-type='submit'>提交</button>
+    </view>
+  </form>
+</view>
