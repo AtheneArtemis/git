@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+/*
+* @Author: chenkeyu
+* @Date:   2017-07-21 11:28:42
+* @file name: app.css
+*/
+select {
+	width:100%;
+	height: 35px;
+	margin-left: 0px;
+	/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+	border: none;
+	/*很关键：将默认的select选择框样式清除*/
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	/*为下拉小箭头留出一点位置，避免被文字覆盖*/
+	padding-right: 14px;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+/*SELECT W/DOWN-ARROW*/
+select.selectPointOfInterest{
+   width                    : 100%;
+   height                   : 35px;
+   line-height              : 35px;
+   padding-right            : 20px;
+   text-indent              : 4px;
+   text-align               : left;
+   vertical-align           : middle;
+   border                   : 1px solid #e5e5e5;
+   -moz-border-radius       : 6px;
+   -webkit-border-radius    : 6px;
+   border-radius            : 6px;
+   -webkit-appearance       : none;
+   -moz-appearance          : none;
+   appearance               : none;
+   font-family              : SimHei;
+/*    font-size                : 18px; */
+   font-weight              : 500;
+   color                    : RGBA(102,102,102,0.7);
+   cursor                   : pointer;
+   outline                  : none;
+}
+#lblSelect{width:100%;}
+/*LABEL FOR SELECT*/
+label#lblSelect{ position: relative; display: inline-block;}
+/*DOWNWARD ARROW (25bc)*/
+label#lblSelect::after{
+    content                 : "\25bc";
+    position                : absolute;
+    top                     : 0;
+    right                   : 1px;
+    bottom                  : 0;
+    width                   : 32px;
+    height                  : 24px;
+    margin-top              : 3px;
+    line-height             : 30px;
+    vertical-align          : middle;
+    text-align              : center;
+    background              : #FFFFFF;
+    color                   : RGBA(102,102,102,0.7);/* #949494; */
+   -moz-border-radius       : 6px;
+   -webkit-border-radius    : 6px;
+    border-radius           : 6px;
+    pointer-events          : none;
+}
