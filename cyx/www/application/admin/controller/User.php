@@ -6,7 +6,7 @@ class User extends Publictable{
     
     function _initialize(){
         parent::_initialize();
-        
+        $i = 0;
     }
     function _filter(&$map,&$querycond){
         $map["is_delete"] = array('eq','0');
