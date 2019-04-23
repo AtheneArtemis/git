@@ -1,0 +1,102 @@
+<include file="Public:left_nav" />
+<div class="layui-body" style="background-color:#f2f2f2">
+    <div style="padding: 10px; background-color: #F2F2F2;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <div class="layui-form-item"> 
+                              <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj-choose layui-btn-sm layui-btn-normal"><a href="__APP__/admin/win/index" style="color:#fff">中奖列表</a></button>
+                               <div class="layui-inline" style="float:right">
+                                <button class="layui-btn layui-btn-sm"><a href="" style="color:#fff">导出EXCEL</a></button>
+                               
+                               </div>
+                        </div>
+                        <div class="layui-form">
+                            <table class="layui-hide" id="test" lay-filter="test">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html><style>
+.layui-layer-content {
+	padding: 30px 0;
+	text-align: center;
+}
+.layui-layer-btn1 {
+	color: #009f95;
+	background-color: #fff;
+}
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #4f76eb;
+    background-color: #4f76eb;
+	}
+.btn-chouj-choose{
+	border-radius:3px;
+	background-color:#1781ed;
+	color:#fff;
+	}
+.btn-chouj
+{
+	border-radius:5px;
+	background-color:#fff;
+	color:#1781ed;
+	border:1px solid #1781ed;
+	}
+tbody tr{
+	height:50px;}
+.layui-table-cell{
+	height:50px;}
+</style>
+<script src="__PUBLIC__/js/jquery-3.3.1.min.js"></script>
+<script type="text/html" id="barDemo">
+  <a href="__APP__/admin/win/check/?demo-id={{d.id}}" lay-event="detail" style="color:#31a544">点击查看</a>
+</script>
+<script type="text/javascript">
+layui.use('table', function(){
+  var table = layui.table;
+  table.render({
+    elem: '#test'
+  /*  ,url:'/demo/table/user/'*/
+    ,cols: [[
+      {field:'id', title: '用户ID',}
+	   ,{field: 'pic', title: '头像', templet: '<div><img src="{{d.idImgFront}}" style="width:50px;height:50px"></div>'}
+      ,{field:'name',  title: '名称'}
+	    ,{field:'money',  title: '中奖金额'}
+		  ,{field:'number',  title: '手机号码'}
+		    ,{field:'address',  title: '归属地'}
+      ,{fixed:'right', title:'答题情况', toolbar: '#barDemo'}
+   
+    ]] ,data: [{
+		 "id":"半透明",
+		  "idImgFront": "__PUBLIC__/images/tx.jpg",
+		  "money":"20",
+	 "name":"王哈哈",	 
+	 "number":"13788933049",
+	 "address":"重庆市.重庆市"
+    }, {
+		 "id":"半透明",
+		  "idImgFront": "__PUBLIC__/images/tx.jpg",
+		  "money":"30",
+	 "name":"王哈哈",	 
+	 "number":"13788933049",
+	 "address":"重庆市.重庆市"
+    }, {
+  		 "id":"半透明",
+		  "idImgFront": "__PUBLIC__/images/tx.jpg",
+		  "money":"50",
+	 "name":"王哈哈",	 
+	 "number":"13788933049",
+	 "address":"重庆市.重庆市"
+    }] 
+    ,page: true
+  });
+
+});
+</script>
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经销商服务系统管理后台</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+	<link href="__PUBLIC__/css/bootstrap.min14ed.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/font-awesome.min93e3.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style.min862f.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/app/select.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/app/admin.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>角色管理</h3></div>
+                <div class="col-sm-6 text-right">
+					<!-- 
+					<a href="javascript:adduser()"><button class="btn btn-primary">添加用户</button></a>
+					-->
+					<a href="javascript:addrole()"><button class="btn btn-primary">新增</button></a>
+					<!-- <a href="javascript:edit('{:url('edit','','')}')"><button class="btn btn-primary">修改</button></a> -->
+					<a href="javascript:dele('{:url('shiftdelete')}')"><button class="btn btn-primary">删除</button></a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+			</div>
+			<!-- 搜索栏 end -->
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=""><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th>
+										<th>序号</th>
+										<th>角色名称</th>
+										<th>角色描述</th>
+										<th>开启状态</th>
+										<th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<volist name="list" id="v">
+									<tr>
+										<td class="bs-checkbox"><input data-index="3" name="btSelectItem" type="checkbox" value="{$v.id}"></td>
+										<td>{$v.number}</td>
+										<td>{$v.name}</td>
+										<td>{$v.remark}</td>
+										<td><if condition="$v.status eq 1">开启<else />关闭</if></td>
+										<td>
+											<a href="{:url('Role/access','','')}/roleid/{$v.id}">授权</a>
+											<!-- &nbsp;|&nbsp;
+											<a href="__URL__/detail/id/{$v.id}">用户列表</a> -->
+										</td>
+									</tr>
+									</volist>
+								</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$page}</div>
+                            <div><input type="hidden" id="orderSequence" name="" value="{$ordersequence}"/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script src="__PUBLIC__/js/demo/bootstrap-table-demo.min.js"></script>
+    <script src="__PUBLIC__/js/app/admin.js"></script>
+    <script type="text/javascript">  
+		//排序
+		function orderby(orderitem){
+			var orderSequence = document.getElementById('orderSequence').value;
+			window.location.href = "{:url('Role/query','','')}/orderitem/"+orderitem+"/ordersequence/"+orderSequence;
+		}
+		function adduser(){
+			var roleid = $("input[type='checkbox']:checked").val();
+			if (roleid =='' || roleid == undefined){
+				alert("请选择编辑项");
+				return;
+			}
+			window.location.href = "__URL__/addUser/role_id/"+roleid;
+		}
+		
+		function addrole(id){
+			window.location.href = "{:url('add')}";
+		}
+	</script> 
+</body>
+</html>

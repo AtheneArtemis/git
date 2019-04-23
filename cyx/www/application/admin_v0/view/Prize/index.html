@@ -1,0 +1,107 @@
+<include file="Public:left_nav" />
+<div class="layui-body" style="background-color:#f2f2f2">
+    <div style="padding: 10px; background-color: #F2F2F2;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <div class="layui-form-item">
+                           
+                            <form class="layui-form" action="">
+                              <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj-choose layui-btn-sm layui-btn-normal"><a href="__APP__/admin/prize/index" style="color:#fff">奖品列表</a></button>
+                                <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj layui-btn-sm layui-btn-normal"><a href="__APP__/admin/prize/add" style="color:#1781ed">添加奖品</a></button>
+                            </form>
+                        </div>
+                        <div class="layui-form">
+                            <table class="layui-hide" id="test" lay-filter="test">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html><style>
+.layui-layer-content {
+	padding: 30px 0;
+	text-align: center;
+}
+.layui-layer-btn1 {
+	color: #009f95;
+	background-color: #fff;
+}
+.layui-layer-btn .layui-layer-btn0 {
+    border-color: #4f76eb;
+    background-color: #4f76eb;
+	}
+.btn-chouj-choose{
+	border-radius:3px;
+	background-color:#1781ed;
+	color:#fff;
+	}
+.btn-chouj
+{
+	border-radius:5px;
+	background-color:#fff;
+	color:#1781ed;
+	border:1px solid #1781ed;
+	}
+tbody tr{
+	height:50px;}
+.layui-table-cell{
+	height:50px;}
+</style>
+<script src="__PUBLIC__/js/jquery-3.3.1.min.js"></script>
+<script type="text/html" id="barDemo">
+  <a href="__APP__/admin/prize/edit/?demo-id={{d.id}}" lay-event="detail"> <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button></a>
+   <a lay-event="del"><button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button></a>
+</script>
+<script type="text/javascript">
+layui.use('table', function(){
+  var table = layui.table;
+  table.render({
+    elem: '#test'
+  /*  ,url:'/demo/table/user/'*/
+    ,cols: [[
+      {field:'id', title: 'ID', style:'color:#4f76eb',sort: true}
+	    ,{field:'name',  title: '名称'}
+		 ,{field:'num',  title: '奖品数量'}
+		  ,{field:'way',  title: '领取方式'}
+	   ,{field: 'pic', title: '图片', templet: '<div><img src="{{d.idImgFront}}" style="width:80px;height:50px"></div>'}
+      ,{fixed:'right', title:'操作', toolbar: '#barDemo'}
+   
+    ]] ,data: [{
+		 "id":"NO.1",
+		  "name":"现金红包30元",
+		 "num":"20",
+	 "way":"请到公众号页面发送F20，等客户回复",
+	 "idImgFront": "__PUBLIC__/images/51.png",
+    }, {
+		 "id":"NO.2",
+		  "name":"现金红包30元",
+		 "num":"20",
+	 "way":"请到公众号页面发送F20，等客户回复",
+	 "idImgFront": "__PUBLIC__/images/101.png",
+    }, {
+ 		 "id":"NO.2",
+		  "name":"现金红包30元",
+		 "num":"20",
+	 "way":"请到公众号页面发送F20，等客户回复",
+	 "idImgFront": "__PUBLIC__/images/201.png",
+    }] 
+    ,page: true
+  });
+   table.on('tool(test)', function(obj){
+    var data = obj.data;
+    if(obj.event === 'del'){
+      layer.confirm('真的删除此奖品吗？', function(index){
+        obj.del();
+        layer.close(index);
+      });
+    }
+  }); 
+});
+</script>
+
+

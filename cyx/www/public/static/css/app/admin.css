@@ -1,0 +1,313 @@
+@CHARSET "UTF-8";
+*{ padding:0; margin:0;}
+ul, ol,li{ list-style-type:none;}
+body{ margin:0;font-size:14px; font-family:"microsoft yahei"; background:#f6f6f6;}
+body {background:white;}
+img{border:0; }
+/* a{ text-decoration:none; color:#5a5a5a; outline:none;}
+a:hover{color:#5a5a5a; cursor:pointer;background:#e5e5e5;} */
+.app-max img{max-width:100%;max-height:100%;}
+.app-min img{min-width:100%;min-height:100%;}
+.app-full img{max-width:100%;max-height:100%;min-width:100%;}
+.gotop{width:30px;height:50px;position:fixed;right:0px;bottom:50px;z-index:102;}
+.orange{color:#ef6600;}
+.table-word-wrap{table-layout:fixed;}
+.table-word-wrap td{width:25%;word-wrap:break-word;}
+.float-div div{float:left;}
+.clear{clear:both;}
+img{max-height:100%;max-width:100%;}
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip{
+	margin-left:8px;
+	line-height:20px;
+	height:20px;
+	overflow:hidden;
+	color:#999;
+	font-size:12px;
+}
+.Validform_right{
+	color:#71b83d;
+	padding-left:20px;
+	background:url(../images/right.png) no-repeat left center;
+}
+.Validform_wrong{
+	color:red;
+	padding-left:20px;
+	white-space:nowrap;
+	background:url(../images/error.png) no-repeat left center;
+}
+.Validform_loading{
+	padding-left:20px;
+	background:url(../images/onLoad.gif) no-repeat left center;
+}
+.Validform_error{
+	background-color:#ffe7e7;
+}
+#Validform_msg{color:#7d8289; width:280px; -webkit-box-shadow:2px 2px 3px #aaa; -moz-box-shadow:2px 2px 3px #aaa; background:#fff; position:absolute; top:0px; right:50px; z-index:99999; display:none;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');}
+#Validform_msg .iframe{position:absolute; left:0px; top:-1px; z-index:-1;}
+#Validform_msg .Validform_title{line-height:38px; height:40px; text-align:left; font-weight:bold; padding:0 8px; color:#fff; position:relative; background-color:#5a5a5a;}
+#Validform_msg a.Validform_close:link,#Validform_msg a.Validform_close:visited{line-height:22px; position:absolute; right:8px; top:0px; color:#fff; text-decoration:none;}
+#Validform_msg a.Validform_close:hover{color:#cc0;}
+#Validform_msg .Validform_info{padding:8px;border:1px solid #5a5a5a; border-top:none; text-align:center;font-size:20px;color:#5a5a5a;line-height:65px;}
+/*==========以上部分是Validform必须的===========*/
+/*重复验证显示*/
+#edie{
+	margin-left:20px;
+	line-height:28px;
+}
+/*节点*/
+.controllerframe>div,.actionframe>div{
+	float:left;
+}
+.groupframe{
+	background:#f8f8f8;
+}
+.group{
+	font-size:18px;
+	line-height:40px;
+	background:#e3e3e3;/* #56b2ff #bde0de*/
+	color:#4068bd;
+	width:300px;
+	margin:5px;
+	padding-left:20px;
+}
+.controllerframe{
+	background:#f8f8f8;
+}
+.controller{
+	font-size:16px;
+	line-height:40px;
+	background:#f0eeee;/* #56b2ff #bde0de*/
+	color:#4068bd;
+	width:100%;
+	margin:5px;
+	padding-left:20px;
+}
+.group a{
+	color:#ffffff;
+}
+.controllerframe>div{
+	
+}
+/* .controller{
+	font-size:17px;
+	line-height:30px;
+	width:200px;
+	background:#ffffff;
+	margin:5px;
+	padding-left:20px;
+} */
+.action{
+	font-size:14px;
+	line-height:30px;
+	margin-right:20px;
+	background:#ffffff;
+	margin:15px 5px;
+	padding-left:20px;
+	width:200px;
+}
+#groupframe{
+	position:relative;
+}
+#groupframe input{
+	margin-right:5px;
+}
+#accessbtn{
+	width:200px;
+	height:50px;
+	line-height:28px;
+	margin:0px auto;
+	cursor:pointer;
+	font-size:24px;
+}
+/* #accessBtn{
+	width:180px;
+	height:50px;
+	line-height:50px;
+	font-size:18px;
+	margin:20px auto;
+	cursor:pointer;
+} */
+/*角色管理*/
+.roleTable{
+	width:90%;
+	line-height:38px;
+	font-size:16px;
+	margin:10px;
+}
+.roleAddBtn{
+	width:100px;
+	height:30px;
+	margin:10px;
+}
+/*table 定位*/
+.tableposition{
+	position:relative;
+	width:68%;
+}
+/*--------------上传-------------*/
+.upload05{
+	width:600px;
+	float:left;
+}
+.uploadbox05{
+	margin-left:10px;
+	float:left;
+	width:200px;
+}
+.uploadbuttombox05{
+	position:relative;
+	left:0px;
+	top:-120px;
+}
+.uploadbuttombox05 div{
+	position:absolute;
+}
+.uploadinput05{
+	position:absolute;
+	width:120px;
+	height:180px;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+.articleFormFrame{
+	margin-left:20px;
+}
+.articleCommonDiv select,.articleCommonDiv input{
+	width:70%;
+	margin:7px 0px 7px;
+}
+.articleDescription,.articleContent{
+	line-height:58px;
+}
+#description{
+	width:800px;
+	height:100px;
+}
+.articleDetailFrame>div{
+	line-height:38px;
+}
+.articleGoback{
+	position:relative;
+	left:58%;
+}
+.articleGoback a{
+	text-decoration:underline; 
+	color:#329ecc;
+}
+/*表格*/
+.example table tr th{
+	position:relative;
+}
+.example table tr th a{
+	color:#5a5a5a;
+}
+.example table tr th img{
+	position:absolute;
+	right:10px;
+}
+/*-------------------认证信息(总经销商)------------------------------*/
+.ibox-title h3{
+	color:#203375;
+}
+.example table thead tr{
+	background:#e3e3e3;
+	border:1px solid #ffffff;
+}
+.example table thead tr th{
+	border:1px solid #ffffff;
+}
+.example table tbody tr:nth-child(3n){
+	background:#f5f5f5;
+}
+.example table tbody tr:nth-child(3n) td{
+	border:1px solid #ffffff;
+}
+.btn-primary{background:#4068bd;border:1px solid #4068bd;}
+.btn-primary:hover{background:#4068bd;border:1px solid #4068bd;}
+.btn-primary:focus{background:#4068bd;border:1px solid #4068bd;}
+
+.qd{display:none;}
+#qdheader td,#qdbody td{border:none;}
+#qdbody,#qdheader{background:#f5f5f5;}
+
+.nodeCheckbox{
+	position:absolute;
+	top:12px;
+	left:10px;
+	z-index:1000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

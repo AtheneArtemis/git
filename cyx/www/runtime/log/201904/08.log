@@ -1,0 +1,195 @@
+---------------------------------------------------------------
+[ 2019-04-08T08:42:12+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.120000s] [吞吐率：8.33req/s] [内存消耗：2,102.41kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-08T08:42:12+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：2,112.49kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=r9a334erl491v25t0569an5l91',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\wamp\wwwroot\www\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp\wwwroot\www/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-08T08:42:17+08:00 ] 127.0.0.1 POST localhost/index.php/admin/Login/login.html
+[运行时间：0.220000s] [吞吐率：4.55req/s] [内存消耗：3,053.94kb] [文件加载：51]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=r9a334erl491v25t0569an5l91',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\wamp\wwwroot\www\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_user` [ RunTime:0.090000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_user` WHERE  `status` > 0  AND `account` = 'admin' LIMIT 1 [ RunTime:0.020000s ]
+---------------------------------------------------------------
+[ 2019-04-08T08:42:17+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/index.html
+[运行时间：0.130000s] [吞吐率：7.69req/s] [内存消耗：3,555.84kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=r9a334erl491v25t0569an5l91',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\wamp\wwwroot\www\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\wwwroot\www/application/admin\view\Index\index.html [ array (
+  0 => 'adminid',
+  1 => 'menu',
+  2 => 'ulist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_group` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_group` WHERE  `name` = 'admin'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort` FROM `cyx_group` WHERE  `parent_id` = 'vkqcwn1520320816oyqxml'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_node` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname` FROM `cyx_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-04-08T08:42:17+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/welcome.html
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,138.63kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=r9a334erl491v25t0569an5l91',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\wamp\wwwroot\www\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp\wwwroot\www/application/admin\view\Index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

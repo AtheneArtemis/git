@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经销商服务系统管理后台</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="__PUBLIC__/css/bootstrap.min14ed.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/font-awesome.min93e3.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/style.min862f.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/css/app/admin.css">
+</head>
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>新增用户</h3></div>
+					    <div class="col-sm-3 text-right">
+						    <a href="{:url('index','','')}/pagenumber/{$pagenumber}">
+						    	<button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+						    </a>
+					    </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="{:url('insert')}">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">账号</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="account" value="">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">密码</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" name="password" value="">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">昵称</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="nickname" value="">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                               <label for="form-field-1" class="col-sm-2 control-label">所在区域</label>
+					           <div class="col-sm-4">
+					            <select name="province_id" class="form-control" id="province" onchange="obtaincitylist('{:url(\'obtaincitylist\')}')">
+									<volist name="provincelist" id="p">
+										<option value="{$p.id}" <if condition="$p.id eq aowcap1449552726biegdw">selected</if>>{$p.name}</option>
+									  </volist>
+								</select>
+							   </div>
+							   <div class="col-sm-3">
+								<select name="city_id" class="form-control" id="city" onchange="obtainzonelist('{:url(\'obtainzonelist\')}')">
+									<volist name="citylist" id="c">
+										<option value="{$c.id}">{$c.name}</option>
+									</volist>
+								</select>
+							   </div>
+							   <div class="col-sm-3">
+								<select name="zone_id" class="form-control" id="zone">
+									<volist name="zonelist" id="z">
+										<option value="{$z.id}">{$z.name}</option>
+									</volist>
+								</select>
+					           </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">用户类别</label>
+                                <div class="col-sm-10">
+                                    <select name="usertype_id" class="form-control">
+										<volist name="usertypelist" id="ut">
+											<option value="{$ut.itemname}">{$ut.itemvalue}</option>
+										</volist>
+									</select>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">用户组别</label>
+                                <div class="col-sm-10">
+                                    <select name="role_id" class="form-control">
+										<volist name="rolelist" id="r">
+											<option value="{$r.id}">{$r.name}</option>
+										</volist>
+									 </select>
+                                </div>
+                            </div>
+                            <input type="hidden" name="whetheridentified_id" value="unwhetheridentified"/>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-12 col-sm-offset-10">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                    <button class="btn btn-white" type="reset">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/iCheck/icheck.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/layer/laydate/laydate.js"></script>
+    <script>
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+    </script>
+    <script src="__PUBLIC__/js/app/admin.js"></script>
+</body>
+</html>

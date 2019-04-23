@@ -1,0 +1,1212 @@
+---------------------------------------------------------------
+[ 2019-04-16T14:02:31+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,083.83kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:07:18+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.040001s] [吞吐率：25.00req/s] [内存消耗：2,084.83kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:13:05+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,084.83kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:13:38+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,251.04kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:14:18+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.050001s] [吞吐率：20.00req/s] [内存消耗：2,084.84kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:16:35+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：2,084.52kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:16:36+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.046003s] [吞吐率：21.74req/s] [内存消耗：2,084.50kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:16:57+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：2,250.42kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:17:33+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.046002s] [吞吐率：21.74req/s] [内存消耗：2,084.38kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:17:44+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：2,084.05kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:18:22+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.049003s] [吞吐率：20.41req/s] [内存消耗：2,251.31kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:18:24+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/index.html
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：2,085.49kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:18:30+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/index.html
+[运行时间：0.044002s] [吞吐率：22.73req/s] [内存消耗：2,085.54kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:19:08+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/index.html
+[运行时间：0.042003s] [吞吐率：23.81req/s] [内存消耗：2,085.52kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:19:43+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/index.html
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：2,251.70kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:20:14+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.048002s] [吞吐率：20.83req/s] [内存消耗：2,250.95kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:20:23+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.056004s] [吞吐率：17.86req/s] [内存消耗：2,085.19kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:20:25+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：2,085.19kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:20:54+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.056004s] [吞吐率：17.86req/s] [内存消耗：2,251.28kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:21:01+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/index.html
+[运行时间：0.036002s] [吞吐率：27.78req/s] [内存消耗：2,085.42kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:21:03+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/index.html
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：2,085.52kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:22:06+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.039003s] [吞吐率：25.64req/s] [内存消耗：2,084.79kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:22:56+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：1,849.58kb] [文件加载：42]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-16T14:23:28+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.028001s] [吞吐率：35.71req/s] [内存消耗：1,850.26kb] [文件加载：42]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-16T14:24:05+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.029001s] [吞吐率：34.48req/s] [内存消耗：1,850.76kb] [文件加载：42]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-16T14:24:08+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.029001s] [吞吐率：34.48req/s] [内存消耗：1,850.43kb] [文件加载：42]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-16T14:24:12+08:00 ] 127.0.0.1 GET localhost/index.php/
+[运行时间：0.034002s] [吞吐率：29.41req/s] [内存消耗：1,850.49kb] [文件加载：42]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-16T14:24:29+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/
+[运行时间：0.027002s] [吞吐率：37.03req/s] [内存消耗：1,850.51kb] [文件加载：42]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-16T14:25:28+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：2,085.88kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:26:11+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Homepage/
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：2,252.08kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Homepage',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:26:17+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：2,085.38kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:26:55+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：2,085.20kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]
+---------------------------------------------------------------
+[ 2019-04-16T14:27:13+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.078005s] [吞吐率：12.82req/s] [内存消耗：2,084.80kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0002cyx\cyx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\Controller\Homepage->index[ F:\Sublime Project\0002cyx\cyx\application\admin\controller\Homepage.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0002cyx\cyx/application/admin\view\homepage\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:91]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:92]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:93]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:94]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:95]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:96]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:97]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:98]
+[ error ] [8]Use of undefined constant CONTROLLER_NAME - assumed 'CONTROLLER_NAME'[F:\Sublime Project\0002cyx\cyx\runtime\temp\8954714e80e5e061557cc91752611732.php:99]

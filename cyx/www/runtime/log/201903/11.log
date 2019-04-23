@@ -1,0 +1,518 @@
+---------------------------------------------------------------
+[ 2019-03-11T22:43:39+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：2,097.51kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-11T22:43:39+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.048003s] [吞吐率：20.83req/s] [内存消耗：2,270.74kb] [文件加载：46]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-11T22:43:51+08:00 ] 127.0.0.1 POST localhost/index.php/admin/Login/login.html
+[运行时间：1.634093s] [吞吐率：0.61req/s] [内存消耗：3,048.71kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.330076s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_user` WHERE  `status` > 0  AND `account` = 'admin' LIMIT 1 [ RunTime:0.118007s ]
+---------------------------------------------------------------
+[ 2019-03-11T22:43:51+08:00 ] 127.0.0.1 POST localhost/index.php/admin/Login/login.html
+[运行时间：7.075405s] [吞吐率：0.14req/s] [内存消耗：3,048.71kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:6.752386s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.128007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_user` WHERE  `status` > 0  AND `account` = 'admin' LIMIT 1 [ RunTime:0.127007s ]
+---------------------------------------------------------------
+[ 2019-03-11T22:44:04+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/index.html
+[运行时间：12.754730s] [吞吐率：0.08req/s] [内存消耗：3,866.19kb] [文件加载：60]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Index\index.html [ array (
+  0 => 'adminid',
+  1 => 'menu',
+  2 => 'ulist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.159639s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_group` [ RunTime:0.101006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_group` WHERE  `name` = 'admin'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort` FROM `dd_group` WHERE  `parent_id` = 'vkqcwn1520320816oyqxml'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.100005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_node` [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.106006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.108006s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`usertype_id` FROM `dd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_enumeration` [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SELECT `itemname`,`itemvalue` FROM `dd_enumeration` WHERE  `itemname` = 'superadministrator' LIMIT 1 [ RunTime:0.090005s ]
+---------------------------------------------------------------
+[ 2019-03-11T22:44:04+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/welcome.html
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：2,291.66kb] [文件加载：46]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-11T22:44:24+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Node
+[运行时间：14.394824s] [吞吐率：0.07req/s] [内存消耗：3,775.08kb] [文件加载：57]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Node',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Node->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Node.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Node\index.html [ array (
+  0 => 'nodelist',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.147638s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_group` [ RunTime:0.100006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `dd_group` WHERE  `parent_id` = 'app'  AND `status` > 0 [ RunTime:0.100006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `dd_group` WHERE  `status` > 0  AND `parent_id` = 'vkqcwn1520320816oyqxml' ORDER BY `sort` ASC [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_node` [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'nmupca1550474630izdouh' ORDER BY `sort` ASC [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'yzmohy1550555738mbtrdl' ORDER BY `sort` ASC [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'hawmfm1551270283wadbsl' ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'uhkpqo1552294085pgxuks' ORDER BY `sort` ASC [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'fbepbd1550469413znyoco' ORDER BY `sort` ASC [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'unicwr1550650007yrqvjf' ORDER BY `sort` ASC [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'nhruda1550650063xhqunx' ORDER BY `sort` ASC [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'nkfdfx1550650103dpzbno' ORDER BY `sort` ASC [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'gekkmp1550650474lhprer' ORDER BY `sort` ASC [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'fprnbn1550469507vtmstw' ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.101006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 3  AND `pid` = 'npdbjp1550469741pgynsz' ORDER BY `sort` ASC [ RunTime:0.098005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 3  AND `pid` = 'qneukq1551268606jjpbsc' ORDER BY `sort` ASC [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 3  AND `pid` = 'qnaudt1551268632meebxv' ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 3  AND `pid` = 'lamxow1551255392epfdcs' ORDER BY `sort` ASC [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'acsdrk1550545981txtnkj' ORDER BY `sort` ASC [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'rriffb1550629084pkbosn' ORDER BY `sort` ASC [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'pcjoky1550804535qqkwub' ORDER BY `sort` ASC [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'dfaqrg1550557260rwlwbs' ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 3  AND `pid` = 'kraksr1520323227trzxbz' ORDER BY `sort` ASC [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 3  AND `pid` = 'rjpetn1520320951zkrumt' ORDER BY `sort` ASC [ RunTime:0.100006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 3  AND `pid` = 'ynegba1520323809unbemg' ORDER BY `sort` ASC [ RunTime:0.093005s ]
+---------------------------------------------------------------
+[ 2019-03-11T22:44:36+08:00 ] 127.0.0.1 GET localhost/index.php/admin/MemberUpgrade
+[运行时间：21.445227s] [吞吐率：0.05req/s] [内存消耗：3,852.12kb] [文件加载：64]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'MemberUpgrade',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MemberUpgrade->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\MemberUpgrade.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\MemberUpgrade\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.228642s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_member_upgrade` [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dd_member_upgrade` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_member_upgrade` WHERE  `is_delete` = 0 ORDER BY `sort` LIMIT 0,20 [ RunTime:0.129008s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_member_upgrade` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_member_upgrade` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_member_upgrade` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.119006s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\MemberUpgrade::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\MemberUpgrade[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Publictable.php:67]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\MemberUpgrade::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\MemberUpgrade[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Publictable.php:67]
+[ error ] [8]未定义变量: cardurl[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\MemberUpgrade.php:29]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\MemberUpgrade::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\MemberUpgrade[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Publictable.php:67]
+[ error ] [8]未定义变量: cardurl[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\MemberUpgrade.php:29]
+[ error ] [8]未定义变量: theFirst[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-03-11T22:44:47+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/index.html
+[运行时间：11.531660s] [吞吐率：0.09req/s] [内存消耗：3,684.13kb] [文件加载：58]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Index\index.html [ array (
+  0 => 'adminid',
+  1 => 'menu',
+  2 => 'ulist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:9.073519s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_group` [ RunTime:0.099005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_group` WHERE  `name` = 'admin'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort` FROM `dd_group` WHERE  `parent_id` = 'vkqcwn1520320816oyqxml'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_node` [ RunTime:0.100006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.094006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.094006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.101006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`usertype_id` FROM `dd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.093006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_enumeration` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `itemname`,`itemvalue` FROM `dd_enumeration` WHERE  `itemname` = 'superadministrator' LIMIT 1 [ RunTime:0.097005s ]
+---------------------------------------------------------------
+[ 2019-03-11T22:44:47+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/welcome.html
+[运行时间：0.063003s] [吞吐率：15.87req/s] [内存消耗：2,133.86kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-11T22:45:00+08:00 ] 127.0.0.1 GET localhost/index.php/admin/MemberUpgrade
+[运行时间：9.417539s] [吞吐率：0.11req/s] [内存消耗：3,686.45kb] [文件加载：62]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'MemberUpgrade',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=7i5pj5qtmk1h80kqkae6gujq62',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\MemberUpgrade->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\MemberUpgrade.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\MemberUpgrade\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:8.725499s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_member_upgrade` [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dd_member_upgrade` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_member_upgrade` WHERE  `is_delete` = 0 ORDER BY `sort` LIMIT 0,20 [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_member_upgrade` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.098005s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_member_upgrade` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_member_upgrade` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.096006s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\MemberUpgrade::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\MemberUpgrade[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Publictable.php:67]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\MemberUpgrade::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\MemberUpgrade[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Publictable.php:67]
+[ error ] [8]未定义变量: cardurl[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\MemberUpgrade.php:29]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\MemberUpgrade::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\MemberUpgrade[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Publictable.php:67]
+[ error ] [8]未定义变量: cardurl[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\MemberUpgrade.php:29]
+[ error ] [8]未定义变量: theFirst[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[F:\Sublime Project\0009dongdongshop\dongdong\application\common\Ajaxpage.php:145]

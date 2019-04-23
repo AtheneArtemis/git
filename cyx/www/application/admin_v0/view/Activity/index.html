@@ -1,0 +1,104 @@
+<include file="Public:left_nav" />
+<div class="layui-body" style="background-color:#f2f2f2">
+    <div style="padding: 10px; background-color: #F2F2F2;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <div class="layui-form-item">
+                           
+                            <form class="layui-form" action="">
+                              <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj-choose layui-btn-sm layui-btn-normal"><a href="__APP__/admin/activity/index" style="color:#fff">活动列表</a></button>
+                               <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj layui-btn-sm layui-btn-normal"><a href="__APP__/admin/activity/add" style="color:#1781ed">添加活动</a></button>
+                            </form> 
+                        </div>
+                        <div class="layui-form">
+                            <table class="layui-hide" id="test" lay-filter="test">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html><style>
+.layui-layer-content {
+	padding: 30px 0;
+	text-align: center;
+}
+.layui-layer-btn1 {
+	color: #009f95;
+	background-color: #fff;
+}
+.btn-chouj-choose{
+	border-radius:3px;
+	background-color:#1781ed;
+	color:#fff;
+	}
+.btn-chouj
+{
+	border-radius:5px;
+	background-color:#fff;
+	color:#1781ed;
+	border:1px solid #1781ed;
+	}
+</style>
+<script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script type="text/html" id="barDemo">
+  <a href="__APP__/admin/activity/check/?demo-id={{d.id}}" lay-event="detail"> <button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button></a>
+   <a lay-event="del"><button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button></a>
+</script>
+<script type="text/javascript">
+layui.use('table', function(){
+  var table = layui.table;
+  table.render({
+    elem: '#test'
+  /*  ,url:'/demo/table/user/'*/
+    ,cols: [[
+      {field:'id', title: 'ID', style:'color:#4f76eb',sort: true} 
+      ,{field:'title',  title: '活动标题'}
+		  ,{field:'statu', title: '状态',templet: '#statuTpl'}
+      ,{fixed:'right', title:'操作', toolbar: '#barDemo'}
+   
+    ]] ,data: [{
+		 "id":"NO.1",
+		 "title":"抽奖活动",
+	  "statu":"上架"
+    }, {
+		 "id":"NO.2",
+		 "title":"活动调查",
+	  "statu":"下架"
+    }, {
+  		 "id":"NO.2",
+		 "title":"抽奖活动",
+	  "statu":"上架"
+    }] 
+    ,page: true
+  });
+   table.on('tool(test)', function(obj){
+    var data = obj.data;
+    if(obj.event === 'del'){
+      layer.confirm('确定要删除此活动？', function(index){
+        obj.del();
+        layer.close(index);
+      });
+    }
+  }); 
+});
+layui.use(['form', 'layedit', 'laydate'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate; 
+});
+</script>
+<script type="text/html" id="statuTpl">
+   {{#  if(d.statu === '上架'){ }}
+    <span style="color: #1781ee;">{{ d.statu }}</span>
+  {{#  } else { }}
+     <span style="color:#f38a42;">{{ d.statu }}</span>
+  {{#  } }}
+</script>
+
+

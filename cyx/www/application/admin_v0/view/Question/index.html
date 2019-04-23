@@ -1,0 +1,99 @@
+<include file="Public:left_nav" />
+<div class="layui-body" style="background-color:#f2f2f2">
+    <div style="padding: 10px; background-color: #F2F2F2;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                        <div class="layui-form-item">
+                           
+                           
+                              <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj-choose layui-btn-sm layui-btn-normal"><a href="__APP__/admin/question/add" style="color:#fff">问卷列表</a></button>
+                             <button style="float: left;margin-right: 10px;background-color:#fff" class="layui-btn btn-chouj layui-btn-sm layui-btn-normal"><a href="__APP__/admin/question/add" style="color:#1781ed">添加类目</a></button>
+                              
+                        </div>
+                        <div class="layui-form">
+                            <table class="layui-hide" id="test" lay-filter="test">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html><style>
+.layui-layer-content {
+	padding: 30px 0;
+	text-align: center;
+}
+.layui-layer-btn1 {
+	color: #009f95;
+	background-color: #fff;
+}
+.btn-chouj-choose{
+	border-radius:3px;
+	background-color:#1781ed;
+	color:#fff;
+	}
+.btn-chouj
+{
+	border-radius:5px;
+	background-color:#fff;
+	color:#1781ed;
+	border:1px solid #1781ed;
+	}
+</style>
+<script src="__PUBLIC__/js/jquery-3.3.1.min.js"></script>
+<script type="text/html" id="barDemo">
+  <a href="__APP__/admin/question/check/?demo-id={{d.id}}" lay-event="detail"> <button class="layui-btn layui-btn-sm layui-btn-primary"><img src="__PUBLIC__/images/check.png" class="check-img"/></button></a>
+   <a lay-event="del"><button class="layui-btn layui-btn-primary layui-btn-sm"><i class="layui-icon"></i></button></a>
+</script>
+<script type="text/javascript">
+layui.use('table', function(){
+  var table = layui.table;
+  table.render({
+    elem: '#test'
+  /*  ,url:'/demo/table/user/'*/
+    ,cols: [[
+      {field:'id', title: 'ID', style:'color:#4f76eb',sort: true}
+	    ,{field:'title', title: '名称'}
+      ,{field:'sort',  title: '排序'}
+	    ,{field:'type',  title: '内容类型'}
+		  ,{field:'content',  title: '内容'}
+      ,{fixed:'right', title:'操作', toolbar: '#barDemo'}
+   
+    ]] ,data: [{
+		 "id":"NO.1",
+		 "title":"你喜欢什么颜色",
+	 "sort":"1",
+	 "type":"单选",
+	 "content":"红"
+    }, {
+		 "id":"NO.2",
+		 "title":"您的性别",
+	 "sort":"2",
+	 "type":"复选",
+	 "content":"女"
+    }, {
+  		 "id":"NO.3",
+		 "title":"您的年龄阶段",
+	 "sort":"3",
+	 "type":"单选",
+	 "content":"18岁以下"
+    }] 
+    ,page: true
+  });
+   table.on('tool(test)', function(obj){
+    var data = obj.data;
+    if(obj.event === 'del'){
+      layer.confirm('是否确定要删除此问卷?', function(index){
+        obj.del();
+        layer.close(index);
+      });
+    }
+  }); 
+});
+</script>
+
+

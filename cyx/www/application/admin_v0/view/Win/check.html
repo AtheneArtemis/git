@@ -1,0 +1,142 @@
+<include file="Public:left_nav" />
+<div class="layui-body" style="background-color:#f2f2f2">
+ <div style="padding: 10px 0 0px 15px;">
+        <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj layui-btn-sm layui-btn-normal">
+        <a href="__APP__/admin/win/index" style="color:#1781ed">中奖列表</a>
+        </button>
+    </div>
+    <div style="padding: 10px; background-color: #F2F2F2;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                   <div class="layui-card-header">内容查看</div>
+                    <div class="layui-card-body">  
+                          <div class="layui-form-item">
+                                <label class="layui-form-label">用户ID：</label>
+                                <div class="layui-input-inline">
+                                   <label class="layui-form-label" style="text-align: left;width:200px;">半透明</label>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">头像：</label>
+                                <div class="layui-input-inline">
+                                   <label class="layui-form-label" style="text-align: left;width:200px;"><img src="__PUBLIC__/images/tx.jpg" style="width:30px;height:30px"/></label>
+                                </div>
+                            </div>
+                             <div class="layui-form-item">
+                                <label class="layui-form-label">名称：</label>
+                               <div class="layui-input-inline">
+                                   <label class="layui-form-label" style="text-align: left;width:200px;">王哈哈</label>
+                                </div>
+                            </div>
+                             <div class="layui-form-item">
+                                <label class="layui-form-label">中奖金额：</label>
+                               <div class="layui-input-inline">
+                                   <label class="layui-form-label" style="text-align: left;width:200px;">30元</label>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">
+                                手机号码：</label>
+                                <div class="layui-input-inline">
+                                   <label class="layui-form-label" style="text-align: left;width:200px;">134563727444</label>
+                                </div>
+                            </div>
+   <div class="layui-form-item layui-form-text">
+    <label class="layui-form-label">归属地：</label>
+    <div class="layui-input-block">
+      <label class="layui-form-label" style="text-align: left;width:200px;">重庆市.重庆市</label>
+    </div>
+  </div>
+   <div class="layui-form-item>
+    <label class="layui-form-label">答题情况：</label>
+    </div>
+    <div class="layui-form" style="padding-left:40px;">
+                            <table class="layui-hide" id="test" lay-filter="test">
+                            </table>
+                        </div>
+  </div>
+ 
+                    <div class="layui-form-item">
+                                <div class="layui-input-block"> 
+                                    <button class="layui-btn layui-btn-primary" style="margin-bottom: 11px;">
+                                    <a href="__APP__/admin/win/index">返回</a>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html><style>
+.tishitiao {
+	background-color: #ff794e;
+	color: #fff;
+	border-left: none;
+	line-height: 3px;
+}
+.layui-layer-content {
+	padding: 20px 0;
+	text-align: center;
+}
+.layui-layer-molv .layui-layer-title {
+	color: #009f95
+}
+.layui-laydate .layui-this {
+    background-color: #4f76eb!important;
+    color: #fff!important;
+}
+.btn-chouj-choose{
+	border-radius:3px;
+	background-color:#1781ed;
+	color:#fff;
+	}
+.btn-chouj
+{
+	border-radius:5px;
+	background-color:#fff;
+	color:#1781ed;
+	border:1px solid #1781ed;
+	}
+</style>
+
+<script type="text/javascript">
+
+layui.use(['form', 'layedit', 'laydate','table'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate;
+    var table = layui.table;
+  table.render({
+    elem: '#test'
+	,width: 892
+  /*  ,url:'/demo/table/user/'*/
+    ,cols: [[
+      {field:'id', title: '顺序',}
+      ,{field:'title',  title: '名称'}
+	    ,{field:'answer',  title: '答案'}
+   
+    ]] ,data: [{
+		 "id":"NO.1",
+		  "title":"您的性别",
+	 "answer":"女",	 
+    }, {
+		 "id":"NO.2",
+		  "title":"您的年龄阶段",
+	 "answer":"18岁以下",	 
+    }, {
+		 "id":"NO.3",
+		  "title":"您喜欢的颜色",
+	 "answer":"红、黄、蓝 ",
+    }] 
+  });
+  
+    /*layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })*/
+    return false;
+});
+</script>

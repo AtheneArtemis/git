@@ -1,0 +1,159 @@
+<include file="Public:left_nav" />
+<div class="layui-body" style="background-color:#f2f2f2">
+    <div style="padding: 10px 0 0px 15px;">
+        <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj-choose layui-btn-sm layui-btn-normal">
+        <a href="__APP__/admin/setting/index" style="color:#fff">系统设置</a>
+        </button>
+    </div>
+    <div style="padding: 10px; background-color: #F2F2F2;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-header">内容设置</div>
+                    <div class="layui-card-body">
+                        <form class="layui-form" action="">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">公众号ID：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击填写" class="layui-input long-input" value="57849354">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">APPSECRET：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击填写" class="layui-input long-input"  value="fjklgdjspdf">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">原始ID：</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击填写" class="layui-input long-input" value="hfdkifjdkel">
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">商户号：</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击填写" class="layui-input long-input" value="5849038594035904389">
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="layui-form-item">
+                                <div class="layui-inline">
+                                    <label class="layui-form-label">商户密码：</label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击填写" class="layui-input long-input" value="4859fjdkshafjkd">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn site-demo-layedit btn-chouj-choose" data-type="content" lay-submit="" lay-filter="demo1">提交</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html><style>
+.tishitiao {
+	background-color: #ff794e;
+	color: #fff;
+	border-left: none;
+	line-height: 3px;
+}
+.layui-layer-content {
+	padding: 20px 0;
+	text-align: center;
+}
+.layui-layer-molv .layui-layer-title {
+	color: #009f95
+}
+.layui-laydate .layui-this {
+	background-color: #4f76eb!important;
+	color: #fff!important;
+}
+.btn-chouj-choose {
+	border-radius: 2px;
+	background-color: #1781ed;
+	color: #fff;
+}
+.btn-chouj {
+	border-radius: 2px;
+	background-color: #fff;
+	color: #1781ed;
+	border: 1px solid #1781ed;
+}
+</style>
+<script type="text/javascript">
+layui.use('laydate', function(){
+  var laydate = layui.laydate;
+ laydate.render({
+    elem: '#begtime'
+    ,type: 'datetime'
+  });
+  laydate.render({
+    elem: '#endtime'
+    ,type: 'datetime'
+  });
+});
+layui.use(['form', 'layedit', 'laydate'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate;
+  
+  //创建一个编辑器
+  var editIndex = layedit.build('LAY_demo_editor');
+ 
+  //自定义验证规则
+  form.verify({
+/*    title: function(value){
+      if(value.length < 5){
+        return '标题至少得5个字符啊';
+      }
+    }*/
+	pass: [/(.+){6,12}$/, '密码必须6到12位']
+    ,content: function(value){
+      layedit.sync(editIndex);
+    }
+  });
+  
+  //监听提交
+  form.on('submit(demo1)', function(){
+layer.open({
+  type: 1,
+  skin: 'layui-layer-molv',
+  closeBtn: 0, 
+  anim: 2,
+  area: ['300px', '150px'],
+  shadeClose: false, 
+  content: '加载中，请耐心等待...',
+  title:' ',
+  time:2000 ,
+   end: function(){
+    layer.open({
+      type: 1,
+      title: ' ',
+	  icon: 1,
+      content: '修改成功',
+	  time:2000 ,
+	   skin: 'layui-layer-molv',
+       closeBtn: 0,
+	   area: ['300px', '150px'],
+    });
+  }
+});
+
+    /*layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })*/
+    return false;
+  });
+});
+</script>

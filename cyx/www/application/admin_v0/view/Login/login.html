@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>亮剑科技后台登录</title>
+<style>
+.bj {
+	background: url(/Public/images/login2.jpg) no-repeat bottom;
+	background-size: 100%;
+}
+body {
+	margin: 0
+}
+.ipt_btn {
+	background-color: #d1eafe;
+	width: 300px;
+	padding: 3px;
+	border-radius: 3px;
+	margin-top: 30px;
+	text-align:left;
+}
+.ipt {
+	background-color: #d1eafe;
+	border: 0;
+	padding: 6px;
+	outline: none;
+	border: none;
+}
+.img {
+	width: 20px;
+	margin: 3px;
+	float: right;
+}
+.center_box {
+	margin-top: 63px;
+}
+ input::-webkit-input-placeholder {
+ color:#5eacfe;;
+}
+ input::-moz-placeholder {   /* Mozilla Firefox 19+ */
+ color:#5eacfe;;
+}
+ input:-moz-placeholder {    /* Mozilla Firefox 4 to 18 */
+ color:#5eacfe;;
+}
+ input:-ms-input-placeholder {  /* Internet Explorer 10-11 */
+ color:#5eacfe;;
+}
+.btn {
+	background-color: #43a7fe;;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	margin-top: 30px;
+	width: 300px;
+	padding: 10px;
+}
+</style>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+</head>
+
+<body>
+<div class="bj" id="box">
+    <center style="padding: 176px;float:right;margin-right: 107px;">
+        <h2 style="color:white;letter-spacing: 4px;">亮剑科技后台登录系统</h2>
+        <div class="center_box">
+            <div class="ipt_btn">
+                <input placeholder="请输入用户名" class="ipt" id="username" name="user" value=""/>
+                <img src="__PUBLIC__/images/login_yhm.png" class="img"/> </div>
+            <div class="ipt_btn">
+                <input placeholder="请输入密码" class="ipt" id="password" type="password" name="password" value=""/>
+                <img src="__PUBLIC__/images/login_mm.png" class="img"/> </div>
+            <button class="btn submit" type="submit">登录</button>
+        </div>
+    </center>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$('.submit').click(function(){
+var username = $('#username').val();
+var password = $('#password').val();
+if(username==''){
+    layer.msg('请输入用户名');
+    return false;
+}
+if(password==''){
+    layer.msg('请输入密码');
+    return false;
+}
+$.ajax({
+    url:"__APP__/admin/login/loginact",
+    type:'post',
+    dataType:'json',
+    data:{
+        username:username,
+        password:password
+    },
+    success:function(res){
+        if(res.code==0){
+            layer.msg(res.msg, {shift: -1},function(){
+                        location.href='__APP__/admin/homepage/index';
+                    });
+        }else{
+            layer.msg(res.msg);
+        }
+    }
+})
+
+})
+window.onload = function(){
+$("#box").css("height",window.innerHeight);
+};
+</script>

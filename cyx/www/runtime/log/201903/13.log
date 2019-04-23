@@ -1,0 +1,276 @@
+---------------------------------------------------------------
+[ 2019-03-13T23:33:29+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.068004s] [吞吐率：14.71req/s] [内存消耗：2,107.22kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T23:33:39+08:00 ] 127.0.0.1 GET localhost/index.php/admin/DividendStatistics
+[运行时间：0.065004s] [吞吐率：15.38req/s] [内存消耗：2,497.68kb] [文件加载：48]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'DividendStatistics',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T23:33:39+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.040003s] [吞吐率：25.00req/s] [内存消耗：2,107.42kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=vu882lhilnbt541l2nmt6ae076',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T23:34:15+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：2,107.42kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=vu882lhilnbt541l2nmt6ae076',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T23:34:28+08:00 ] 127.0.0.1 GET localhost/index.php/admin/DividendStatistics
+[运行时间：9.801560s] [吞吐率：0.10req/s] [内存消耗：2,957.36kb] [文件加载：54]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'DividendStatistics',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=vu882lhilnbt541l2nmt6ae076',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php:20]
+[ error ] [8]未定义变量: count[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php:20]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= 'is_delete' ORDER BY `id` LIMIT 0,20' at line 1[F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\library\think\db\Connection.php:390]
+[ sql ] [ DB ] CONNECT:[ UseTime:9.524545s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.119007s ]
+---------------------------------------------------------------
+[ 2019-03-13T23:34:54+08:00 ] 127.0.0.1 GET localhost/index.php/admin/DividendStatistics
+[运行时间：7.927453s] [吞吐率：0.13req/s] [内存消耗：2,952.77kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'DividendStatistics',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=vu882lhilnbt541l2nmt6ae076',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: page[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php:20]
+[ error ] [8]未定义变量: count[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php:20]
+[ sql ] [ DB ] CONNECT:[ UseTime:7.552432s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.152008s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,20 [ RunTime:0.150009s ]
+---------------------------------------------------------------
+[ 2019-03-13T23:37:54+08:00 ] 127.0.0.1 GET localhost/index.php/admin/DividendStatistics
+[运行时间：0.055004s] [吞吐率：18.18req/s] [内存消耗：1,707.08kb] [文件加载：38]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'DividendStatistics',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=vu882lhilnbt541l2nmt6ae076',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '$res' (T_VARIABLE)[F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php:29]
+---------------------------------------------------------------
+[ 2019-03-13T23:38:01+08:00 ] 127.0.0.1 GET localhost/index.php/admin/DividendStatistics
+[运行时间：0.063004s] [吞吐率：15.87req/s] [内存消耗：2,884.52kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'DividendStatistics',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=vu882lhilnbt541l2nmt6ae076',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [4096]Argument 1 passed to think\db\Query::insert() must be of the type array, string given, called in F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php on line 29 and defined[F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\library\think\db\Query.php:2240]
+[ error ] [2]array_merge(): Argument #2 is not an array[F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\library\think\db\Query.php:2244]
+---------------------------------------------------------------
+[ 2019-03-13T23:38:22+08:00 ] 127.0.0.1 GET localhost/index.php/admin/DividendStatistics
+[运行时间：8.412481s] [吞吐率：0.12req/s] [内存消耗：2,890.95kb] [文件加载：48]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'DividendStatistics',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=vu882lhilnbt541l2nmt6ae076',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:8.097463s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] INSERT INTO `dd_user` (`account` , `nickname` , `createtime` , `status`) VALUES ('1552491493' , '测试用户1552491493' , 1552491493 , 1) [ RunTime:0.129008s ]

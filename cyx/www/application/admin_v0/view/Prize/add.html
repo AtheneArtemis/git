@@ -1,0 +1,162 @@
+<include file="Public:left_nav" />
+<div class="layui-body" style="background-color:#f2f2f2">
+    <div style="padding: 10px 0 0px 15px;">
+        <button style="float: left;margin-right: 10px;" class="layui-btn  btn-chouj layui-btn-sm layui-btn-normal">
+        <a href="__APP__/admin/prize/index" style="color:#1781ed">奖品列表</a>
+        </button>
+        <button style="float: left;margin-right: 10px;" class="layui-btn btn-chouj-choose layui-btn-sm layui-btn-normal">
+        <a href="__APP__/admin/prize/add" style="color:#fff">添加奖品</a>
+        </button>
+    </div>
+    <div style="padding: 10px; background-color: #F2F2F2;">
+        <div class="layui-row layui-col-space15">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-header">添加奖品</div>
+                    <div class="layui-card-body">
+                        <form class="layui-form" action="">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">ID：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击输入" class="layui-input long-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">奖品名称：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击输入" class="layui-input long-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">奖品数量：</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请点击输入" class="layui-input long-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">奖品图片：</label>
+                                <div class="layui-upload">
+                                    <button type="button" class="layui-btn" id="test1" style="background-color:#ddd;color:#333">选择图片</button>
+                                    <div class="layui-upload-list" style="margin: 10px 105px;"> <img class="layui-upload-img" id="demo1" src="__PUBLIC__/images/no.jpg" style="width:80px;height:50px">
+                                    <p style="color:#999;font-size:12px">*建议图片宽高80*50</p>
+                                        <p id="demoText"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layui-form-item layui-form-text">
+                                <label class="layui-form-label">领取方式：</label>
+                                <div class="layui-input-block">
+                                    <textarea placeholder="请点击输入" class="layui-textarea"></textarea>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn site-demo-layedit btn-chouj-choose" data-type="content" lay-submit="" lay-filter="demo1">提交</button>
+                                    <button class="layui-btn layui-btn-primary">
+                                    <a href="__APP__/admin/question/index">返回</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html><style>
+.tishitiao {
+	background-color: #ff794e;
+	color: #fff;
+	border-left: none;
+	line-height: 3px;
+}
+.layui-layer-content {
+	padding: 20px 0;
+	text-align: center;
+}
+.layui-layer-molv .layui-layer-title {
+	color: #009f95
+}
+.layui-laydate .layui-this {
+	background-color: #4f76eb!important;
+	color: #fff!important;
+}
+.btn-chouj-choose {
+	border-radius: 3px;
+	background-color: #1781ed;
+	color: #fff;
+}
+.btn-chouj {
+	border-radius: 5px;
+	background-color: #fff;
+	color: #1781ed;
+	border: 1px solid #1781ed;
+}
+</style>
+<script type="text/javascript">
+layui.use(['form', 'layedit', 'laydate','upload'], function(){
+  var form = layui.form
+  ,layer = layui.layer
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate;
+    var $ = layui.jquery
+  ,upload = layui.upload;
+ var uploadInst = upload.render({
+    elem: '#test1'
+    ,url: '/upload/'
+    ,before: function(obj){
+      //预读本地文件示例，不支持ie8
+      obj.preview(function(index, file, result){
+        $('#demo1').attr('src', result); //图片链接（base64）
+      });
+    }
+    ,done: function(res){
+      //如果上传失败
+      if(res.code > 0){
+        return layer.msg('上传失败');
+      }
+      //上传成功
+    }
+    ,error: function(){
+      //演示失败状态，并实现重传
+      var demoText = $('#demoText');
+      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+      demoText.find('.demo-reload').on('click', function(){
+        uploadInst.upload();
+      });
+    }
+  });
+  //监听提交
+  form.on('submit(demo1)', function(){
+layer.open({
+  type: 1,
+  skin: 'layui-layer-molv',
+  closeBtn: 0, 
+  anim: 2,
+  area: ['300px', '150px'],
+  shadeClose: false, 
+  content: '加载中，请耐心等待...',
+  title:' ',
+  time:2000 ,
+   end: function(){
+    layer.open({
+      type: 1,
+      title: ' ',
+	  icon: 1,
+      content: '添加成功',
+	  time:2000 ,
+	   skin: 'layui-layer-molv',
+       closeBtn: 0,
+	   area: ['300px', '150px'],
+    });
+  }
+});
+
+    /*layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })*/
+    return false;
+  });
+});
+</script>

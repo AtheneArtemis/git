@@ -1,0 +1,337 @@
+---------------------------------------------------------------
+[ 2019-03-21T23:20:25+08:00 ] 0.0.0.0 GET localhost/
+[运行时间：0.065004s] [吞吐率：15.38req/s] [内存消耗：2,097.57kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-21T23:20:25+08:00 ] 0.0.0.0 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.067004s] [吞吐率：14.92req/s] [内存消耗：2,270.77kb] [文件加载：46]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d19qqm9d58l96lu8aohv4n56g7',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-21T23:31:03+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：0.086005s] [吞吐率：11.63req/s] [内存消耗：1,965.91kb] [文件加载：41]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-21T23:33:06+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：0.040002s] [吞吐率：25.00req/s] [内存消耗：1,967.23kb] [文件加载：41]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-21T23:33:42+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：0.604034s] [吞吐率：1.66req/s] [内存消耗：2,896.46kb] [文件加载：48]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.196011s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.132008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,20 [ RunTime:0.159009s ]
+---------------------------------------------------------------
+[ 2019-03-21T23:36:46+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：1.205069s] [吞吐率：0.83req/s] [内存消耗：2,923.17kb] [文件加载：48]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.142008s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.093006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.093006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.094006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.096005s ]
+---------------------------------------------------------------
+[ 2019-03-21T23:38:11+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：5.145295s] [吞吐率：0.19req/s] [内存消耗：2,922.15kb] [文件加载：48]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:3.151180s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:1.018058s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.099005s ]
+---------------------------------------------------------------
+[ 2019-03-21T23:51:53+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：0.060004s] [吞吐率：16.67req/s] [内存消耗：2,030.35kb] [文件加载：45]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]Missing argument 1 for app\eastshop\controller\DividendStatistics::statistics(), called in F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php on line 27 and defined[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:55]
+---------------------------------------------------------------
+[ 2019-03-21T23:52:38+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：21.101207s] [吞吐率：0.05req/s] [内存消耗：2,885.73kb] [文件加载：49]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
+[F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-03-21T23:53:18+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：15.066862s] [吞吐率：0.07req/s] [内存消耗：2,985.24kb] [文件加载：48]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:12.468714s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.099005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 3 [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 9 [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.098006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.093006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.092005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.094006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.093005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.095005s ]

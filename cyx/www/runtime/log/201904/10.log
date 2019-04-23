@@ -1,0 +1,2585 @@
+---------------------------------------------------------------
+[ 2019-04-10T09:01:49+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,102.45kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:01:49+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,112.49kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=21n66pe1ma8kkf4o0h2q35bv34',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\wamp\wwwroot\www\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp\wwwroot\www/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:04:20+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：1,989.22kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:10:26+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.102006s] [吞吐率：9.80req/s] [内存消耗：1,989.30kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:11:05+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.084005s] [吞吐率：11.90req/s] [内存消耗：1,989.30kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:16:12+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：1,989.30kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:28:46+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.075004s] [吞吐率：13.33req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:32:31+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.061004s] [吞吐率：16.39req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:37:52+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:41:57+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.079004s] [吞吐率：12.66req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:42:34+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:42:40+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.062003s] [吞吐率：16.13req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:42:57+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.062003s] [吞吐率：16.13req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:43:15+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.059003s] [吞吐率：16.95req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:43:39+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.055003s] [吞吐率：18.18req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:50:06+08:00 ] 0.0.0.0 GET localhost/index.php/eastshop/ApiEntrance/apiRoute?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.081004s] [吞吐率：12.35req/s] [内存消耗：1,851.91kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'ApiEntrance',
+    2 => 'apiRoute',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\ApiEntrance->apiRoute[ D:\wamp\wwwroot\www\application\eastshop\controller\ApiEntrance.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:52:00+08:00 ] 0.0.0.0 GET localhost/index.php/mini?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.073004s] [吞吐率：13.70req/s] [内存消耗：1,716.52kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:53:14+08:00 ] 0.0.0.0 GET localhost/index.php/mini?m=eastshop&c=Eastshop&a=index&p=pages&sign=22e8f682e1de6bbd27a1e22a43d301a4&id=12138
+[运行时间：0.091005s] [吞吐率：10.99req/s] [内存消耗：1,716.52kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'm' => 'eastshop',
+  'c' => 'Eastshop',
+  'a' => 'index',
+  'p' => 'pages',
+  'sign' => '22e8f682e1de6bbd27a1e22a43d301a4',
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:57:23+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index&p=pages?id=12138
+[运行时间：0.090005s] [吞吐率：11.11req/s] [内存消耗：2,106.38kb] [文件加载：42]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index&p=pages',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T09:57:51+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index&p=pages?id=12138
+[运行时间：0.085004s] [吞吐率：11.76req/s] [内存消耗：2,376.48kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index&p=pages',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function app\eastshop\controller\getParameterByRedirect()[D:\wamp\wwwroot\www\application\eastshop\controller\Base.php:13]
+---------------------------------------------------------------
+[ 2019-04-10T09:59:16+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index&p=pages?id=12138
+[运行时间：0.069004s] [吞吐率：14.49req/s] [内存消耗：2,375.63kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index&p=pages',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function app\eastshop\controller\getParameterByRedirect()[D:\wamp\wwwroot\www\application\eastshop\controller\Base.php:13]
+---------------------------------------------------------------
+[ 2019-04-10T09:59:42+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index&p=pages?id=12138
+[运行时间：0.096005s] [吞吐率：10.42req/s] [内存消耗：2,375.63kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index&p=pages',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function app\eastshop\controller\getParameterByRedirect()[D:\wamp\wwwroot\www\application\eastshop\controller\Base.php:13]
+---------------------------------------------------------------
+[ 2019-04-10T10:02:00+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index&p=pages?id=12138
+[运行时间：0.098006s] [吞吐率：10.20req/s] [内存消耗：2,277.12kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index&p=pages',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T10:08:56+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.096005s] [吞吐率：10.42req/s] [内存消耗：2,291.37kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\mini\controller\Eastshop::getCarousellist()[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:21]
+---------------------------------------------------------------
+[ 2019-04-10T10:26:19+08:00 ] 0.0.0.0 GET localhost/index.php/Eastshop/index?id=12138
+[运行时间：0.063004s] [吞吐率：15.87req/s] [内存消耗：1,927.64kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Eastshop',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\eastshop\controller\Index->index[ D:\wamp\wwwroot\www\application\eastshop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T10:27:05+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.088005s] [吞吐率：11.36req/s] [内存消耗：2,291.37kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\mini\controller\Eastshop::getCarousellist()[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:21]
+---------------------------------------------------------------
+[ 2019-04-10T10:28:38+08:00 ] 0.0.0.0 GET localhost/index.php/mini/mini/Eastshop/index?id=12138
+[运行时间：0.120007s] [吞吐率：8.33req/s] [内存消耗：1,653.16kb] [文件加载：38]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'mini',
+    2 => 'Eastshop',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T10:29:18+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.118007s] [吞吐率：8.47req/s] [内存消耗：2,291.37kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\mini\controller\Eastshop::getCarousellist()[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:21]
+---------------------------------------------------------------
+[ 2019-04-10T10:29:56+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.106006s] [吞吐率：9.43req/s] [内存消耗：2,201.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+---------------------------------------------------------------
+[ 2019-04-10T10:30:10+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.106006s] [吞吐率：9.43req/s] [内存消耗：2,201.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+---------------------------------------------------------------
+[ 2019-04-10T10:31:01+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.097005s] [吞吐率：10.31req/s] [内存消耗：2,201.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+---------------------------------------------------------------
+[ 2019-04-10T10:31:12+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.085005s] [吞吐率：11.76req/s] [内存消耗：2,201.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+---------------------------------------------------------------
+[ 2019-04-10T10:32:09+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.100005s] [吞吐率：10.00req/s] [内存消耗：2,201.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+---------------------------------------------------------------
+[ 2019-04-10T10:35:33+08:00 ] 0.0.0.0 GET localhost/index.php/mini/Eastshop/index?id=12138
+[运行时间：0.111006s] [吞吐率：9.01req/s] [内存消耗：2,201.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+---------------------------------------------------------------
+[ 2019-04-10T10:38:53+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.092005s] [吞吐率：10.87req/s] [内存消耗：2,201.45kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+---------------------------------------------------------------
+[ 2019-04-10T10:39:54+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.091005s] [吞吐率：10.99req/s] [内存消耗：2,202.17kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:57]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:58]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:59]
+---------------------------------------------------------------
+[ 2019-04-10T10:53:09+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.053003s] [吞吐率：18.87req/s] [内存消耗：2,058.83kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T10:53:09+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.039002s] [吞吐率：25.64req/s] [内存消耗：2,068.85kb] [文件加载：44]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ce78p8tbithja51sihlu3gu5h3',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\wamp\wwwroot\www\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp\wwwroot\www/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:00:39+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.076005s] [吞吐率：13.16req/s] [内存消耗：2,305.23kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\mini\controller\Eastshop::getUserinfo()[D:\wamp\wwwroot\www\application\mini\controller\ApiEntrance.php:16]
+---------------------------------------------------------------
+[ 2019-04-10T11:02:32+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.068004s] [吞吐率：14.70req/s] [内存消耗：2,223.43kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: plist[D:\wamp\wwwroot\www\application\mini\controller\ApiEntrance.php:37]
+---------------------------------------------------------------
+[ 2019-04-10T11:03:20+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.082005s] [吞吐率：12.19req/s] [内存消耗：2,229.58kb] [文件加载：45]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ RUN ] app\mini\controller\Eastshop->index[ D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: plist[D:\wamp\wwwroot\www\application\mini\controller\ApiEntrance.php:39]
+[ error ] [8]未定义变量: carousel[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:48]
+[ error ] [8]未定义变量: productCat[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:49]
+[ error ] [8]未定义变量: newMember[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:50]
+[ error ] [8]未定义变量: newProduct[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:51]
+[ error ] [8]未定义变量: hotsell[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:52]
+[ error ] [8]未定义变量: featured[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:53]
+[ error ] [8]未定义变量: userinfo[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:54]
+[ error ] [8]未定义变量: memberUpgrade[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:55]
+[ error ] [8]未定义变量: newMemberOpen[D:\wamp\wwwroot\www\application\mini\controller\Eastshop.php:56]
+---------------------------------------------------------------
+[ 2019-04-10T11:05:29+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,148.10kb] [文件加载：42]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:05:45+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：2,148.10kb] [文件加载：42]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:36:28+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.136008s] [吞吐率：7.35req/s] [内存消耗：2,323.04kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function app\mini\controller\getParameterByRedirect()[D:\wamp\wwwroot\www\application\mini\controller\Base.php:11]
+---------------------------------------------------------------
+[ 2019-04-10T11:37:03+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.078005s] [吞吐率：12.82req/s] [内存消耗：2,298.76kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\wamp\wwwroot\www\application\mini\controller\Base.php:12]
+---------------------------------------------------------------
+[ 2019-04-10T11:37:29+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.048003s] [吞吐率：20.83req/s] [内存消耗：2,298.84kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\wamp\wwwroot\www\application\mini\controller\Base.php:12]
+---------------------------------------------------------------
+[ 2019-04-10T11:38:58+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.075004s] [吞吐率：13.33req/s] [内存消耗：2,299.62kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\wamp\wwwroot\www\application\mini\controller\Base.php:12]
+---------------------------------------------------------------
+[ 2019-04-10T11:39:46+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.161009s] [吞吐率：6.21req/s] [内存消耗：2,299.97kb] [文件加载：46]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[D:\wamp\wwwroot\www\application\mini\controller\Base.php:12]
+---------------------------------------------------------------
+[ 2019-04-10T11:52:46+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.054003s] [吞吐率：18.52req/s] [内存消耗：2,228.43kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:53:36+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.074005s] [吞吐率：13.51req/s] [内存消耗：2,228.43kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:54:07+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.082004s] [吞吐率：12.19req/s] [内存消耗：2,228.43kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:54:17+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.082005s] [吞吐率：12.19req/s] [内存消耗：2,228.43kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:56:15+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.072004s] [吞吐率：13.89req/s] [内存消耗：2,228.39kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:56:20+08:00 ] 0.0.0.0 GET localhost/index.php/mini/ApiEntrance/miniProgramLogin?code=021UYSxy1LtYWa01i0xy1qkcyy1UYSxA&nickname=%E3%81%98%E9%80%86%E9%A2%A8%E9%A3%9B%E8%8D%87&avatar_url=https%3A%2F%2Fwx.qlogo.cn%2Fmmopen%2Fvi_32%2FQ0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA%2F132&parent_id=0
+[运行时间：0.069004s] [吞吐率：14.49req/s] [内存消耗：1,980.08kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021UYSxy1LtYWa01i0xy1qkcyy1UYSxA',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:57:11+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.091005s] [吞吐率：10.99req/s] [内存消耗：2,228.39kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:57:15+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.132008s] [吞吐率：7.58req/s] [内存消耗：1,980.70kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '061YCFte2w6VpG0M9Zue2PaCte2YCFtu',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:57:46+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.059003s] [吞吐率：16.95req/s] [内存消耗：1,981.17kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '011pirz70dCjdE1Cpgx70Zvvz70pirzY',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T11:58:41+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.109007s] [吞吐率：9.17req/s] [内存消耗：2,228.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:00:04+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.072005s] [吞吐率：13.89req/s] [内存消耗：2,228.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:00:06+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,981.17kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '011gYjwi2raXEB0Wb4yi2WRhwi2gYjwL',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:00:42+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.074004s] [吞吐率：13.51req/s] [内存消耗：2,228.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:01:31+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.087005s] [吞吐率：11.49req/s] [内存消耗：2,228.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:01:42+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.066004s] [吞吐率：15.15req/s] [内存消耗：1,981.17kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '061YFYqi0e4bWo1nJQpi0KXgri0YFYq0',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:01:43+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.045003s] [吞吐率：22.22req/s] [内存消耗：1,981.17kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '021j5wRB0CRX0j2XbNRB07EqRB0j5wRA',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:03:16+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：1,982.20kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '011gDed22LoyuW0IGVb22nfXc22gDedA',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:03:44+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.070004s] [吞吐率：14.28req/s] [内存消耗：2,229.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:03:47+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.046002s] [吞吐率：21.74req/s] [内存消耗：1,982.20kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '071xgUqI1z34d10Wb2pI1SACqI1xgUqr',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:04:04+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.096005s] [吞吐率：10.42req/s] [内存消耗：2,229.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:04:16+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.083005s] [吞吐率：12.05req/s] [内存消耗：2,229.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:04:55+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.112006s] [吞吐率：8.93req/s] [内存消耗：2,229.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:04:58+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,982.20kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '061Ag8qt1uVfOd0ialst1laWpt1Ag8qW',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:05:33+08:00 ] 0.0.0.0 POST localhost/index.php/mini/Eastshop/index
+[运行时间：0.058003s] [吞吐率：17.24req/s] [内存消耗：2,229.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'Eastshop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '8',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12138',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-10T12:05:35+08:00 ] 0.0.0.0 POST localhost/index.php/mini/ApiEntrance/miniProgramLogin
+[运行时间：0.065004s] [吞吐率：15.38req/s] [内存消耗：1,982.20kb] [文件加载：41]
+[ info ] [ LANG ] D:\wamp\wwwroot\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mini',
+    1 => 'ApiEntrance',
+    2 => 'miniProgramLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '258',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'origin' => 'http://127.0.0.1:27183',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.02.1902010 MicroMessenger/6.7.3 Language/zh_CN webview/ token/1151367132c0f90ee2a1ea45bebcee5c',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'referer' => 'https://servicewechat.com/wx57bd7abcfd38cbb6/devtools/page-frame.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'code' => '011gEigw1gGbMh0xGZhw1OXhgw1gEigV',
+  'nickname' => 'じ逆風飛荇',
+  'avatar_url' => 'https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIRdRic7Jujz7SVpHQnBY1XicAntkMETRibtyVgnasYZU2zAyqGaJVnn5BfShWIibiaSUmTYFftnL77qzA/132',
+  'parent_id' => '0',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => NULL,
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File

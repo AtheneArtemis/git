@@ -1,0 +1,1521 @@
+---------------------------------------------------------------
+[ 2019-03-24T14:56:33+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：2,097.59kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-24T14:56:33+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.042002s] [吞吐率：23.81req/s] [内存消耗：2,107.41kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-24T14:56:48+08:00 ] 127.0.0.1 POST localhost/index.php/admin/Login/login.html
+[运行时间：10.681611s] [吞吐率：0.09req/s] [内存消耗：3,048.73kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.217585s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_user` WHERE  `status` > 0  AND `account` = 'admin' LIMIT 1 [ RunTime:0.117007s ]
+---------------------------------------------------------------
+[ 2019-03-24T14:56:48+08:00 ] 127.0.0.1 POST localhost/index.php/admin/Login/login.html
+[运行时间：10.340591s] [吞吐率：0.10req/s] [内存消耗：3,048.73kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:9.884565s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_user` WHERE  `status` > 0  AND `account` = 'admin' LIMIT 1 [ RunTime:0.119007s ]
+---------------------------------------------------------------
+[ 2019-03-24T14:56:48+08:00 ] 127.0.0.1 POST localhost/index.php/admin/Login/login.html
+[运行时间：8.893509s] [吞吐率：0.11req/s] [内存消耗：3,048.76kb] [文件加载：51]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:8.468484s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_user` WHERE  `status` > 0  AND `account` = 'admin' LIMIT 1 [ RunTime:0.148008s ]
+---------------------------------------------------------------
+[ 2019-03-24T14:57:01+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/index.html
+[运行时间：12.491715s] [吞吐率：0.08req/s] [内存消耗：3,700.66kb] [文件加载：58]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Index\index.html [ array (
+  0 => 'adminid',
+  1 => 'menu',
+  2 => 'ulist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.237586s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_group` [ RunTime:0.168010s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_group` WHERE  `name` = 'admin'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort` FROM `dd_group` WHERE  `parent_id` = 'vkqcwn1520320816oyqxml'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_node` [ RunTime:0.144009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.136008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.169010s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.157009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`usertype_id` FROM `dd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_enumeration` [ RunTime:0.156009s ]
+[ sql ] [ SQL ] SELECT `itemname`,`itemvalue` FROM `dd_enumeration` WHERE  `itemname` = 'superadministrator' LIMIT 1 [ RunTime:0.136007s ]
+---------------------------------------------------------------
+[ 2019-03-24T14:57:01+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/welcome.html
+[运行时间：0.078004s] [吞吐率：12.82req/s] [内存消耗：2,133.88kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-24T14:57:22+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Role
+[运行时间：10.509601s] [吞吐率：0.10req/s] [内存消耗：3,762.29kb] [文件加载：60]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Role',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Role->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Role\index.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.183582s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_role` [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_role` WHERE  `status` > 0 [ RunTime:0.101006s ]
+[ error ] [8]未定义变量: page[F:\Sublime Project\0009dongdongshop\dongdong\runtime\temp\972e0e998db19c9716d17c7ae655f673.php:67]
+[ error ] [8]未定义变量: ordersequence[F:\Sublime Project\0009dongdongshop\dongdong\runtime\temp\972e0e998db19c9716d17c7ae655f673.php:68]
+---------------------------------------------------------------
+[ 2019-03-24T14:57:53+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Role/access/roleid/zfqndp1553410402udpngr
+[运行时间：19.888137s] [吞吐率：0.05req/s] [内存消耗：3,985.70kb] [文件加载：60]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Role',
+    2 => 'access',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Role',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'roleid' => 'zfqndp1553410402udpngr',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Role->access[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Role\access.html [ array (
+  0 => 'rlist',
+  1 => 'roleid',
+  2 => 'module',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.211584s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_role` [ RunTime:0.116006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_role` WHERE  `id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_group` [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `dd_group` WHERE  `parent_id` = 'app'  AND `status` > 0 [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `dd_group` WHERE  `parent_id` = 'vkqcwn1520320816oyqxml'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_access` [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'itwdvp1550474599xwpwcw'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.112007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_node` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'nmupca1550474630izdouh'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'nmupca1550474630izdouh' ORDER BY `sort` ASC [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'yzmohy1550555738mbtrdl'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'yzmohy1550555738mbtrdl' ORDER BY `sort` ASC [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'koultm1552979151rufbrd'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'koultm1552979151rufbrd' ORDER BY `sort` ASC [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'hawmfm1551270283wadbsl'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'hawmfm1551270283wadbsl' ORDER BY `sort` ASC [ RunTime:0.112007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'uhkpqo1552294085pgxuks'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'itwdvp1550474599xwpwcw'  AND `level` = 3  AND `pid` = 'uhkpqo1552294085pgxuks' ORDER BY `sort` ASC [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'sjoxen1550469322qprvrc'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.115007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'fbepbd1550469413znyoco'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'fbepbd1550469413znyoco' ORDER BY `sort` ASC [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'unicwr1550650007yrqvjf'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.114007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'unicwr1550650007yrqvjf' ORDER BY `sort` ASC [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'nhruda1550650063xhqunx'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.112007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'nhruda1550650063xhqunx' ORDER BY `sort` ASC [ RunTime:0.112007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'nkfdfx1550650103dpzbno'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'nkfdfx1550650103dpzbno' ORDER BY `sort` ASC [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'gekkmp1550650474lhprer'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.115007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'gekkmp1550650474lhprer' ORDER BY `sort` ASC [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'fprnbn1550469507vtmstw'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'sjoxen1550469322qprvrc'  AND `level` = 3  AND `pid` = 'fprnbn1550469507vtmstw' ORDER BY `sort` ASC [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'ymnrow1550469585slffnv'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.119006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'npdbjp1550469741pgynsz'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'ymnrow1550469585slffnv'  AND `level` = 3  AND `pid` = 'npdbjp1550469741pgynsz' ORDER BY `sort` ASC [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'cgrsgg1551255314bavbrg'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.113007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'qneukq1551268606jjpbsc'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 3  AND `pid` = 'qneukq1551268606jjpbsc' ORDER BY `sort` ASC [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'qnaudt1551268632meebxv'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.112006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 3  AND `pid` = 'qnaudt1551268632meebxv' ORDER BY `sort` ASC [ RunTime:0.113007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'lamxow1551255392epfdcs'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'cgrsgg1551255314bavbrg'  AND `level` = 3  AND `pid` = 'lamxow1551255392epfdcs' ORDER BY `sort` ASC [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'bcavbf1550469710zyrkmq'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.114007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'acsdrk1550545981txtnkj'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.114007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'acsdrk1550545981txtnkj' ORDER BY `sort` ASC [ RunTime:0.116006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'rriffb1550629084pkbosn'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'rriffb1550629084pkbosn' ORDER BY `sort` ASC [ RunTime:0.111007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'pcjoky1550804535qqkwub'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'pcjoky1550804535qqkwub' ORDER BY `sort` ASC [ RunTime:0.116006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'dfaqrg1550557260rwlwbs'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'bcavbf1550469710zyrkmq'  AND `level` = 3  AND `pid` = 'dfaqrg1550557260rwlwbs' ORDER BY `sort` ASC [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'edfkoe1520320929ycwrnj'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'kraksr1520323227trzxbz'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 3  AND `pid` = 'kraksr1520323227trzxbz' ORDER BY `sort` ASC [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'ysther1521424407yvzlrc'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.111007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'xtvrzg1521424438ukxthp'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'owykuw1521424455qfiyqz'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'wzatbi1521424476dcbiii'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'xufvfp1521424502zdwypl'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.112007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'rjpetn1520320951zkrumt'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 3  AND `pid` = 'rjpetn1520320951zkrumt' ORDER BY `sort` ASC [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'zsbmdj1521424535cosfvy'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'udpvbj1521424559ptsbcs'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'jgyacf1521424586hsmntb'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'irfnia1521424606qmhyfq'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.112006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'opmtsd1521424664hgayfo'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'ynegba1520323809unbemg'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.112006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `dd_node` WHERE  `status` > 0  AND `group_id` = 'edfkoe1520320929ycwrnj'  AND `level` = 3  AND `pid` = 'ynegba1520323809unbemg' ORDER BY `sort` ASC [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'yjqwix1521424710qnfodx'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'lrklda1521424726fpxxlp'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.113007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'rrzdou1521424749xnmkev'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.117006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'uiehcu1521424769ryvitf'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.112007s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'gytugf1521424813jzvahp'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.111006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'czzryi1521424841pihxnm'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.116006s ]
+[ sql ] [ SQL ] SELECT * FROM `dd_access` WHERE  `node_id` = 'dzkqnp1521424884twpelc'  AND `role_id` = 'zfqndp1553410402udpngr' LIMIT 1 [ RunTime:0.120006s ]
+[ error ] [8]未定义变量: pagenumber[F:\Sublime Project\0009dongdongshop\dongdong\runtime\temp\c6b7b0bee07b72b85e77decd05541acc.php:26]
+---------------------------------------------------------------
+[ 2019-03-24T14:58:10+08:00 ] 127.0.0.1 POST localhost/index.php/admin/role/setAccess
+[运行时间：10.626607s] [吞吐率：0.09req/s] [内存消耗：3,505.27kb] [文件加载：53]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'role',
+    2 => 'setAccess',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Role/access/roleid/zfqndp1553410402udpngr',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '293',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+)
+[ info ] [ PARAM ] array (
+  'access' => 
+  array (
+    0 => 'sjoxen1550469322qprvrc',
+    1 => 'fbepbd1550469413znyoco-2',
+    2 => 'unicwr1550650007yrqvjf-2',
+    3 => 'nhruda1550650063xhqunx-2',
+    4 => 'nkfdfx1550650103dpzbno-2',
+    5 => 'gekkmp1550650474lhprer-2',
+    6 => 'fprnbn1550469507vtmstw-2',
+  ),
+  'roleid' => 'zfqndp1553410402udpngr',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Role->setAccess[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.162581s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_group` [ RunTime:0.101006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_group` WHERE  `parent_id` = 'app' [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_access` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] DELETE FROM `dd_access`    WHERE  `role_id` = 'zfqndp1553410402udpngr' [ RunTime:0.097006s ]
+---------------------------------------------------------------
+[ 2019-03-24T14:58:21+08:00 ] 127.0.0.1 POST localhost/index.php/admin/role/setAccess
+[运行时间：14.190811s] [吞吐率：0.07req/s] [内存消耗：3,505.22kb] [文件加载：53]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'role',
+    2 => 'setAccess',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Role/access/roleid/zfqndp1553410402udpngr',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '293',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=dr2tha4pf926uj4bsrnmtblgn1',
+)
+[ info ] [ PARAM ] array (
+  'access' => 
+  array (
+    0 => 'sjoxen1550469322qprvrc',
+    1 => 'fbepbd1550469413znyoco-2',
+    2 => 'unicwr1550650007yrqvjf-2',
+    3 => 'nhruda1550650063xhqunx-2',
+    4 => 'nkfdfx1550650103dpzbno-2',
+    5 => 'gekkmp1550650474lhprer-2',
+    6 => 'fprnbn1550469507vtmstw-2',
+  ),
+  'roleid' => 'zfqndp1553410402udpngr',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Role->setAccess[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Role.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.233586s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_group` [ RunTime:0.138008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_group` WHERE  `parent_id` = 'app' [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_access` [ RunTime:0.138008s ]
+[ sql ] [ SQL ] DELETE FROM `dd_access`    WHERE  `role_id` = 'zfqndp1553410402udpngr' [ RunTime:0.137008s ]
+---------------------------------------------------------------
+[ 2019-03-24T15:49:47+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,097.20kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-24T15:49:47+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,107.52kb] [文件加载：44]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\Sublime Project\0009dongdongshop\dongdong\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\Sublime Project\0009dongdongshop\dongdong/application/admin\view\Login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-24T15:50:13+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：14.490020s] [吞吐率：0.07req/s] [内存消耗：3,394.05kb] [文件加载：52]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.170016s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.110000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.100001s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.090000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.090000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.100001s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.090000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.100001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.090000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.090000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.100001s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.090000s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.100000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.100000s ]
+---------------------------------------------------------------
+[ 2019-03-24T15:53:12+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：10.940015s] [吞吐率：0.09req/s] [内存消耗：3,412.46kb] [文件加载：56]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.210014s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.140000s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.140001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.150000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.160000s ]
+[ error ] [8]未定义变量: stock[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:66]
+[ error ] [1]Call to a member function where() on a non-object[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:66]
+---------------------------------------------------------------
+[ 2019-03-24T15:54:43+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：10.750015s] [吞吐率：0.09req/s] [内存消耗：3,412.52kb] [文件加载：56]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.180014s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.110000s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.110001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.120000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.120000s ]
+[ error ] [8]未定义变量: stock[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:66]
+[ error ] [1]Call to a member function where() on a non-object[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:66]
+---------------------------------------------------------------
+[ 2019-03-24T15:57:18+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：16.582948s] [吞吐率：0.06req/s] [内存消耗：3,419.44kb] [文件加载：52]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.216642s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.130008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.129007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.134008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.133008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.120006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.129007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.138008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.130007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.127007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.121006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`number`,`stock_profit` FROM `dd_stock` WHERE  `is_delete` = 0 ORDER BY `id` [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.129007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.121006s ]
+---------------------------------------------------------------
+[ 2019-03-24T16:00:15+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：15.692897s] [吞吐率：0.06req/s] [内存消耗：3,537.46kb] [文件加载：56]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.228585s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.143009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.147008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.149008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.147009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.153009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.166009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.158009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.154008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.142009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.151009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.149009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.153009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.150008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.148008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.145009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.159009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.157009s ]
+---------------------------------------------------------------
+[ 2019-03-24T16:03:31+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：15.615893s] [吞吐率：0.06req/s] [内存消耗：3,536.48kb] [文件加载：56]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.237586s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.148008s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.139007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.145009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.147008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.149008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.138008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.151008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.137008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.144009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.138007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.138008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.138008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.137008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.161009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.152008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.154009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.158009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.156009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.149008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.169009s ]
+---------------------------------------------------------------
+[ 2019-03-24T16:04:33+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：14.653838s] [吞吐率：0.07req/s] [内存消耗：3,536.70kb] [文件加载：56]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.177582s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.134007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.116007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.127007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.132007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.117006s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.126008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.120006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.115007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.128008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.115007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.114006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.115006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.117006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.116006s ]
+---------------------------------------------------------------
+[ 2019-03-24T16:07:00+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：15.675897s] [吞吐率：0.06req/s] [内存消耗：3,539.04kb] [文件加载：56]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.224585s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.147008s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.157009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.144009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.156009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.148008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.154009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.159009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.148009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.148008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.154009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.144009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.145009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.158009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.145009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.156009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.151009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.145008s ]
+---------------------------------------------------------------
+[ 2019-03-24T16:08:39+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：14.864850s] [吞吐率：0.07req/s] [内存消耗：3,539.24kb] [文件加载：56]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:10.191583s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.132008s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.134008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.128008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.127007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.128007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.128007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.119006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.124008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.143009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.149008s ]
+---------------------------------------------------------------
+[ 2019-03-24T16:18:57+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：22.649295s] [吞吐率：0.04req/s] [内存消耗：3,788.12kb] [文件加载：62]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.232643s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.148009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.147009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.153008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.148008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.145009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.147009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_dividend_record` [ RunTime:0.145008s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (2 , 1 , 0.00063061224489796 , 1553415527 , 1) [ RunTime:0.154008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415528  WHERE  `id` = 1 [ RunTime:0.161010s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0.00063061224489796,`updatetime`=1553415528  WHERE  `id` = 2 [ RunTime:0.151008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (5 , 1 , 0.00063061224489796 , 1553415529 , 1) [ RunTime:0.149008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.155009s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (6 , 1 , 0.00063061224489796 , 1553415529 , 1) [ RunTime:0.150009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.150009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0.00063061224489796,`updatetime`=1553415529  WHERE  `id` = 5 [ RunTime:0.154008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0.00063061224489796,`updatetime`=1553415530  WHERE  `id` = 6 [ RunTime:0.149008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.155009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.159009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415530  WHERE  `id` = 7 [ RunTime:0.156009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415531  WHERE  `id` = 8 [ RunTime:0.148008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.153009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415531  WHERE  `id` = 10 [ RunTime:0.151008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.143009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415532  WHERE  `id` = 11 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.151009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415533  WHERE  `id` = 12 [ RunTime:0.152008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415533  WHERE  `id` = 13 [ RunTime:0.148009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.148009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415534  WHERE  `id` = 14 [ RunTime:0.162010s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415534  WHERE  `id` = 15 [ RunTime:0.149008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.155009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.147009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415535  WHERE  `id` = 16 [ RunTime:0.157009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415535  WHERE  `id` = 17 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.151009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.147009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.150009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415536  WHERE  `id` = 18 [ RunTime:0.151009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.155009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415536  WHERE  `id` = 19 [ RunTime:0.157009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.149009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415537  WHERE  `id` = 20 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.146008s ]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:107]
+---------------------------------------------------------------
+[ 2019-03-24T16:22:04+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：0.047003s] [吞吐率：21.28req/s] [内存消耗：1,716.05kb] [文件加载：38]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected ';', expecting ']'[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:33]
+---------------------------------------------------------------
+[ 2019-03-24T16:22:47+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：20.875194s] [吞吐率：0.05req/s] [内存消耗：3,788.55kb] [文件加载：62]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.202641s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.123008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.127007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.132008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.129008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.116006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.118007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.127007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_dividend_record` [ RunTime:0.124007s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (2 , 1 , 0.51020408163265 , 1553415758 , 1) [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.127007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415759  WHERE  `id` = 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0.51020408163265,`updatetime`=1553415759  WHERE  `id` = 2 [ RunTime:0.132008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.118006s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (5 , 1 , 0.51020408163265 , 1553415760 , 1) [ RunTime:0.135008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.126008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (6 , 1 , 0.51020408163265 , 1553415760 , 1) [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.129007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0.51020408163265,`updatetime`=1553415760  WHERE  `id` = 5 [ RunTime:0.120006s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0.51020408163265,`updatetime`=1553415760  WHERE  `id` = 6 [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.134007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415761  WHERE  `id` = 7 [ RunTime:0.126008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.116006s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415761  WHERE  `id` = 8 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.118007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415762  WHERE  `id` = 10 [ RunTime:0.131008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.129008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415762  WHERE  `id` = 11 [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.125007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.117006s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415763  WHERE  `id` = 12 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.121006s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415763  WHERE  `id` = 13 [ RunTime:0.126008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.129008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.119007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.128008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415764  WHERE  `id` = 14 [ RunTime:0.128007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415764  WHERE  `id` = 15 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.132008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.120007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.134008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415765  WHERE  `id` = 16 [ RunTime:0.126007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.118006s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415765  WHERE  `id` = 17 [ RunTime:0.124007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.122007s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.117007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.127007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415766  WHERE  `id` = 18 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.123007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415766  WHERE  `id` = 19 [ RunTime:0.121007s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.137008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.125008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.120007s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415766  WHERE  `id` = 20 [ RunTime:0.128008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.125007s ]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+---------------------------------------------------------------
+[ 2019-03-24T16:24:30+08:00 ] 127.0.0.1 GET localhost/index.php/eastshop/DividendStatistics/index
+[运行时间：22.473286s] [吞吐率：0.04req/s] [内存消耗：3,788.87kb] [文件加载：62]
+[ info ] [ LANG ] F:\Sublime Project\0009dongdongshop\dongdong\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'eastshop',
+    1 => 'DividendStatistics',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=ntcecot6g7129l9qahigguqec0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\eastshop\controller\DividendStatistics->index[ F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:11.241643s ] mysql:host=shop.changzhenlong.com;port=3306;dbname=shopchangzhenlongcom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_order` [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT SUM(product_price) AS tp_sum FROM `dd_order` WHERE  `is_delete` = 0  AND `paytime` BETWEEN 1553270400 AND 1553356799 LIMIT 1 [ RunTime:0.159009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_user` [ RunTime:0.144009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 0,2 [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock_user` [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 2 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_stock` [ RunTime:0.147008s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.148009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dd_dividend_record` [ RunTime:0.150009s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (2 , 1 , 0.51020408163265 , 1553415861 , 1) [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415861  WHERE  `id` = 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.146009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=1.0202040816327,`updatetime`=1553415861  WHERE  `id` = 2 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 2,2 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 5 [ RunTime:0.153009s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (5 , 1 , 0.51020408163265 , 1553415862 , 1) [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 6 [ RunTime:0.139007s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`price`,`number`,`stock_profit`,`switch_btn`,`sort` FROM `dd_stock` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] INSERT INTO `dd_dividend_record` (`user_id` , `stock_id` , `dividend` , `createtime` , `status`) VALUES (6 , 1 , 0.51020408163265 , 1553415862 , 1) [ RunTime:0.147009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.151009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=1.0202040816327,`updatetime`=1553415863  WHERE  `id` = 5 [ RunTime:0.156009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=1.0202040816327,`updatetime`=1553415863  WHERE  `id` = 6 [ RunTime:0.146008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 4,2 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 7 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 8 [ RunTime:0.159010s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415864  WHERE  `id` = 7 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.156008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415864  WHERE  `id` = 8 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 6,2 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 10 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 11 [ RunTime:0.145009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 10 LIMIT 1 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415865  WHERE  `id` = 10 [ RunTime:0.173010s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.149008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415865  WHERE  `id` = 11 [ RunTime:0.149008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 8,2 [ RunTime:0.160009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 12 [ RunTime:0.152009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 13 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415866  WHERE  `id` = 12 [ RunTime:0.147009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415866  WHERE  `id` = 13 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 10,2 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 14 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 15 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.147009s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415867  WHERE  `id` = 14 [ RunTime:0.153009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.139008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415867  WHERE  `id` = 15 [ RunTime:0.157009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 12,2 [ RunTime:0.143009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 16 [ RunTime:0.145008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 17 [ RunTime:0.139008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 16 LIMIT 1 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415868  WHERE  `id` = 16 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 17 LIMIT 1 [ RunTime:0.141008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415868  WHERE  `id` = 17 [ RunTime:0.143009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 14,2 [ RunTime:0.143008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 18 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 19 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 18 LIMIT 1 [ RunTime:0.142008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415869  WHERE  `id` = 18 [ RunTime:0.160009s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 19 LIMIT 1 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415869  WHERE  `id` = 19 [ RunTime:0.147008s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 16,2 [ RunTime:0.149009s ]
+[ sql ] [ SQL ] SELECT `id`,`stock_id`,`user_id`,`number` FROM `dd_stock_user` WHERE  `is_delete` = 0  AND `user_id` = 20 [ RunTime:0.144008s ]
+[ sql ] [ SQL ] SELECT `id`,`dividend` FROM `dd_user` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.140008s ]
+[ sql ] [ SQL ] UPDATE `dd_user`  SET `dividend`=0,`updatetime`=1553415870  WHERE  `id` = 20 [ RunTime:0.155009s ]
+[ sql ] [ SQL ] SELECT `id` FROM `dd_user` WHERE  `is_delete` = 0 ORDER BY `id` LIMIT 18,2 [ RunTime:0.151008s ]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
+[ error ] [8]未定义数组索引: total_dividend[F:\Sublime Project\0009dongdongshop\dongdong\application\eastshop\controller\DividendStatistics.php:111]
