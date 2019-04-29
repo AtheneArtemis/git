@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"F:\git\cyx\www/application/admin\view\Articletype\index.html";i:1556502829;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:57:"F:\git\cyx\www/application/admin\view\Advantage\edit.html";i:1556528260;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,61 +21,81 @@
 </head>
 <body class="gray-bg">
 
+<style type="text/css">
+    .cat-type{display: none;}
+</style>
     <div class="wrapper wrapper-content animated fadeInRight">
-        <div class="ibox float-e-margins">
-            <div class="ibox-title col-sm-12">
-                <div class="col-sm-6"><h3>文章类型列表</h3></div>
-                <div class="col-sm-6 text-right">
-                    <a href="/index.php/admin/articletype/add"><button class="btn btn-primary">新增</button></a>
-	                <a href="javascript:multidel()"><button class="btn btn-primary">批量删除</button></a>
-				</div>
-                <div style="clear:both;height:10px"></div>
-                
-			</div>
-            <div class="ibox-content">
-                <div class="row row-lg">
-                    <div class="col-sm-12">
-                        <h4 class="example-title"></h4>
-                        <div class="example">
-                            <table data-toggle="table" data-mobile-responsive="true">
-                                <thead>
-                                    <tr>
-                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox" value="0"></div><div class="fht-cell"></div></th>
-                                        <th>ID</th>
-                                        <th>属性</th>
-										<th>名称</th>
-										<th>描述</th>
-                                        <th>分组</th>
-                                        <th>上级</th>
-                                        <th>等级</th>
-                                        <th>排序</th>
-										<th>操作</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="datalist" >
-                            		<?php echo $datalist["html"]; ?>
-                            	</tbody>
-                            </table>
-                            <div id="page" class="col-sm-12 text-right"><?php echo $datalist["page"]; ?></div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <?php if($list['id'] > 0): ?>
+                            <div class="col-sm-9"><h3>编辑我们的优势</h3></div>
+                        <?php else: ?>
+                            <div class="col-sm-9"><h3>新增我们的优势</h3></div>
+                        <?php endif; ?>
+                        <div class="col-sm-3 text-right">
+                            <a href="/index.php/admin/advantage/index">
+                                <button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+                            </a>
                         </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <?php if($list['id'] > 0): ?>
+                            <form method="post" class="form-horizontal" action="/index.php/admin/advantage/update" enctype="multipart/form-data">
+                        <?php else: ?>
+                            <form method="post" class="form-horizontal" action="/index.php/admin/advantage/insert" enctype="multipart/form-data">
+                        <?php endif; ?>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">名称</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="name" value="<?php echo $list['name']; ?>">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Icon</label>
+                                <div class="col-sm-10">
+                                    <div style="height:198px;width:198px;padding:10px;padding-top:5px;">
+                                        <div class="upload05" style="width:800px;margin-left:0px;">
+                                            <div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;">
+                                                <img id="uploadmainpicture1" src="<?php echo $uploadurl; ?><?php echo $list['icon']; ?>" style="width:240px;height:200px;">
+                                                <div class="uploadbuttombox05">
+                                                    <div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" 
+                                                    name="icon" onchange="return onUploadImgChange(this,'uploadmainpicture1','240px','200px')"/></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传缩略图</div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">描述</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" name="intro"><?php echo $list['intro']; ?></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">排序</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="sort" value="<?php echo $list['sort']; ?>">
+                                </div>
+                            </div>
+                            
+                            <input type="hidden" name="id" value="<?php echo $list['id']; ?>">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-sm-offset-10">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                    <button class="btn btn-white" type="reset">重置</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Panel Basic -->
     </div>
-    
-    <script type="text/javascript">
-    	function querysubmit(id) {
-			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
-			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
-    		$.get('/index.php/admin/articletype/index',{'p':id,'account':$('#account').val()},function(json){
-                $("#datalist").empty();
-                $("#datalist").html(json.data.html);
-                $("#page").html(json.data.page);
-            },'json');
-		}
-	</script> 
 </body>
 <script src="/public/static/js/content.min.js?v=1.0.0"></script>
 <script src="/public/static/js/plugins/staps/jquery.steps.min.js"></script>
@@ -144,10 +164,10 @@
 	//单软删除
 	function del(id){
 		if (confirm('确认删除该条记录？')) {
-			$.post('/index.php/admin/articletype/delete',{id:id},function(json){
+			$.post('/index.php/admin/advantage/delete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/articletype/index';
+					window.location.href = '/index.php/admin/advantage/index';
 				}
 			},'json')
 		}
@@ -155,10 +175,10 @@
 	//单硬删除
 	function shiftdelete(id){
 		if (confirm('确认删除该条记录,删除后不可恢复？')) {
-			$.post('/index.php/admin/articletype/shiftdelete',{id:id},function(json){
+			$.post('/index.php/admin/advantage/shiftdelete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/articletype/index';
+					window.location.href = '/index.php/admin/advantage/index';
 				}
 			},'json')
 		}
@@ -173,10 +193,10 @@
 		}
 
 		if (confirm('确认删除选中记录？')) {
-			$.post('/index.php/admin/articletype/multidelete',{ids:ids},function(json){
+			$.post('/index.php/admin/advantage/multidelete',{ids:ids},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/articletype/index';
+					window.location.href = '/index.php/admin/advantage/index';
 				}
 			},'json')
 		}

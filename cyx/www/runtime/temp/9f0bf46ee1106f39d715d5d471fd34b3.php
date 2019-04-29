@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"F:\git\cyx\www/application/admin\view\Articletype\index.html";i:1556502829;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:61:"F:\git\cyx\www/application/admin\view\Servicetitle\index.html";i:1556526867;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,10 +24,9 @@
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="ibox float-e-margins">
             <div class="ibox-title col-sm-12">
-                <div class="col-sm-6"><h3>文章类型列表</h3></div>
+                <div class="col-sm-6"><h3>定制服务标题</h3></div>
                 <div class="col-sm-6 text-right">
-                    <a href="/index.php/admin/articletype/add"><button class="btn btn-primary">新增</button></a>
-	                <a href="javascript:multidel()"><button class="btn btn-primary">批量删除</button></a>
+                    <a href="/index.php/admin/servicetitle/add"><button class="btn btn-primary">新增</button></a>
 				</div>
                 <div style="clear:both;height:10px"></div>
                 
@@ -42,12 +41,9 @@
                                     <tr>
                                         <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox" value="0"></div><div class="fht-cell"></div></th>
                                         <th>ID</th>
-                                        <th>属性</th>
 										<th>名称</th>
-										<th>描述</th>
-                                        <th>分组</th>
-                                        <th>上级</th>
-                                        <th>等级</th>
+                                        <th>简介</th>
+                                        <th>数据表</th>
                                         <th>排序</th>
 										<th>操作</th>
                                     </tr>
@@ -69,7 +65,7 @@
     	function querysubmit(id) {
 			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
 			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
-    		$.get('/index.php/admin/articletype/index',{'p':id,'account':$('#account').val()},function(json){
+    		$.get('/index.php/admin/servicetitle/index',{'p':id,'account':$('#account').val()},function(json){
                 $("#datalist").empty();
                 $("#datalist").html(json.data.html);
                 $("#page").html(json.data.page);
@@ -144,10 +140,10 @@
 	//单软删除
 	function del(id){
 		if (confirm('确认删除该条记录？')) {
-			$.post('/index.php/admin/articletype/delete',{id:id},function(json){
+			$.post('/index.php/admin/servicetitle/delete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/articletype/index';
+					window.location.href = '/index.php/admin/servicetitle/index';
 				}
 			},'json')
 		}
@@ -155,10 +151,10 @@
 	//单硬删除
 	function shiftdelete(id){
 		if (confirm('确认删除该条记录,删除后不可恢复？')) {
-			$.post('/index.php/admin/articletype/shiftdelete',{id:id},function(json){
+			$.post('/index.php/admin/servicetitle/shiftdelete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/articletype/index';
+					window.location.href = '/index.php/admin/servicetitle/index';
 				}
 			},'json')
 		}
@@ -173,10 +169,10 @@
 		}
 
 		if (confirm('确认删除选中记录？')) {
-			$.post('/index.php/admin/articletype/multidelete',{ids:ids},function(json){
+			$.post('/index.php/admin/servicetitle/multidelete',{ids:ids},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/articletype/index';
+					window.location.href = '/index.php/admin/servicetitle/index';
 				}
 			},'json')
 		}

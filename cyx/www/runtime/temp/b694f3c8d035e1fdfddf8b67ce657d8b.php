@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Station\index.html";i:1556530903;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Aboutus\index.html";i:1556520081;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,100 +26,26 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title col-sm-12">
-                        <div class="col-sm-9"><h3>站点信息</h3></div>
+                        <div class="col-sm-9"><h3>关于我们</h3></div>
 					    <div class="col-sm-3 text-right">
-						    <a href="/index.php/admin/station/index">
+						    <a href="/index.php/admin/aboutus/index">
 						    	<button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
 						    </a>
 					    </div>
                     </div>
                     <div class="ibox-content"> 
-                        <form method="post" class="form-horizontal" action="/index.php/admin/station/update" enctype="multipart/form-data">
+                        <form method="post" class="form-horizontal" action="/index.php/admin/aboutus/update" enctype="multipart/form-data">
                             <div class="form-group">
-                                <label class="col-sm-1 control-label">网站全称</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" name="benelux_name" value="<?php echo $list['benelux_name']; ?>">
-                                </div>
-                                <label class="col-sm-1 control-label">网站简称</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" name="short_name" value="<?php echo $list['short_name']; ?>">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-1 control-label">电话</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" name="tel" value="<?php echo $list['tel']; ?>">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-1 control-label">网站logo</label>
-                                <div class="col-sm-5">
-                                    <!-- <input type="text" class="form-control" name="logo" value="<?php echo $list['logo']; ?>"> -->
-                                    <div style="height:198px;width:198px;padding:10px;padding-top:5px;">
-                                        <div class="upload05" style="width:800px;margin-left:0px;">
-                                            <div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;">
-                                                <img id="uploadmainpicture1" src="<?php echo $uploadurl; ?><?php echo $list['logo']; ?>" style="width:240px;height:200px;">
-                                                <div class="uploadbuttombox05">
-                                                    <div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" 
-                                                    name="logo" onchange="return onUploadImgChange(this,'uploadmainpicture1','240px','200px')"/></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传</div>
-                                </div>
-                                <label class="col-sm-1 control-label">网站标题Icon</label>
-                                <div class="col-sm-5">
-                                    <!-- <input type="text" class="form-control" name="icon" value="<?php echo $list['icon']; ?>"> -->
-                                     <div style="height:198px;width:198px;padding:10px;padding-top:5px;">
-                                        <div class="upload05" style="width:800px;margin-left:0px;">
-                                            <div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;">
-                                                <img id="uploadmainpicture2" src="<?php echo $uploadurl; ?><?php echo $list['icon']; ?>" style="width:240px;height:200px;">
-                                                <div class="uploadbuttombox05">
-                                                    <div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" 
-                                                    name="icon" onchange="return onUploadImgChange(this,'uploadmainpicture2','240px','200px')"/></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传</div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-1 control-label">网站关键字</label>
+                                <label class="col-sm-1 control-label">公司简介</label>
                                 <div class="col-sm-11">
-                                    <input type="text" class="form-control" name="keywords" value="<?php echo $list['keywords']; ?>">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-1 control-label">网站描述</label>
-                                <div class="col-sm-11">
-                                    <input type="text" class="form-control" name="description" value="<?php echo $list['description']; ?>">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-1 control-label">网站底部信息</label>
-                                <div class="col-sm-11">
-                                    <input type="text" class="form-control" name="foot" value="<?php echo $list['foot']; ?>">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-1 control-label">网站Banner标题</label>
-                                <div class="col-sm-11">
-                                    <input type="text" class="form-control" name="banner_title" value="<?php echo $list['banner_title']; ?>">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-1 control-label">网站Banner正文</label>
-                                <div class="col-sm-11">
-                                    <input type="text" class="form-control" name="banner_content" value="<?php echo $list['banner_content']; ?>">
+                                    <script id="container" name="description" type="text/plain" style="width: 100%;height: 260px;"><?php echo $list['description']; ?></script>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-1 control-label">资质荣誉</label>
                                 <div class="col-sm-11" id="commodityimg">
                                     <div><button type="button" class="btn btn-primary" onclick="addpicturebox()">增加一张</button></div>
-                                    <?php if(is_array($list['newbanner']) || $list['newbanner'] instanceof \think\Collection || $list['newbanner'] instanceof \think\Paginator): $i = 0; $__LIST__ = $list['newbanner'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                                    <?php if(is_array($list['newloginbg']) || $list['newloginbg'] instanceof \think\Collection || $list['newloginbg'] instanceof \think\Paginator): $i = 0; $__LIST__ = $list['newloginbg'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
                                         <div class="col-sm-4">
                                             <div style="height:198px;width:198px;padding:10px;padding-top:5px;">
                                                 <div class="upload05" style="width:800px;margin-left:0px;">
@@ -155,7 +81,7 @@
     <script type="text/javascript">
         var number = parseInt("<?php echo $number; ?>");
         function addpicturebox(){
-            var str = '<div class="col-sm-4"><div style="height:198px;width:198px;padding:10px;padding-top:5px;"><div class="upload05" style="width:800px;margin-left:0px;"><div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;border:1px solid #e3e3e3;"><img id="picture'+number+'" src="" style="width:240px;height:200px;"><div class="uploadbuttombox05"><div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" name="picture'+number+'" onchange="return onUploadImgChange(this,\'picture'+number+'\',\'240px\',\'200px\')"/></div></div></div></div></div><div id="np_'+number+'" class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传图片 <a href="javascript:delnewPicture(\''+number+'\')">删除</a></div></div>';
+            var str = '<div class="col-sm-4"><div style="height:198px;width:198px;padding:10px;padding-top:5px;"><div class="upload05" style="width:800px;margin-left:0px;"><div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;border:1px solid #e3e3e3;"><img id="picture'+number+'" src="" style="width:240px;height:200px;"><div class="uploadbuttombox05"><div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" name="picture'+number+'" onchange="return onUploadImgChange(this,\'picture'+number+'\',\'240px\',\'200px\')"/></div></div></div></div></div><div id="np_'+number+'" class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传商品图片 <a href="javascript:delnewPicture(\''+number+'\')">删除</a></div></div>';
             $("#commodityimg").append(str);
             number++;
         }
@@ -234,10 +160,10 @@
 	//单软删除
 	function del(id){
 		if (confirm('确认删除该条记录？')) {
-			$.post('/index.php/admin/station/delete',{id:id},function(json){
+			$.post('/index.php/admin/aboutus/delete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/station/index';
+					window.location.href = '/index.php/admin/aboutus/index';
 				}
 			},'json')
 		}
@@ -245,10 +171,10 @@
 	//单硬删除
 	function shiftdelete(id){
 		if (confirm('确认删除该条记录,删除后不可恢复？')) {
-			$.post('/index.php/admin/station/shiftdelete',{id:id},function(json){
+			$.post('/index.php/admin/aboutus/shiftdelete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/station/index';
+					window.location.href = '/index.php/admin/aboutus/index';
 				}
 			},'json')
 		}
@@ -263,10 +189,10 @@
 		}
 
 		if (confirm('确认删除选中记录？')) {
-			$.post('/index.php/admin/station/multidelete',{ids:ids},function(json){
+			$.post('/index.php/admin/aboutus/multidelete',{ids:ids},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/station/index';
+					window.location.href = '/index.php/admin/aboutus/index';
 				}
 			},'json')
 		}

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"F:\git\cyx\www/application/index\view\homepage\index.html";i:1556529777;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"F:\git\cyx\www/application/index\view\Homepage\index.html";i:1556531198;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -207,13 +207,13 @@
 	<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:320px;">
 		<div id='layerF4F0B761EAF8A796CF5A8FE6BCADFF6E' type='title'  class='cstlayer' style='left: 0px; top: 80px; position: absolute; z-index: 104; width: 1200px; height: 68px; display: block;display:none;'  mid=""  fatherid='layer08980ED91003FC76D3D2CD4FEB8C22E2'   deg='0'>
 			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 68px; width: 1200px; display: block;">
-				<div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 40px;">科技创造生活 · 精诚赢得未来</span></font></div>
+				<div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 40px;"><?php echo $list['banner_title']; ?></span></font></div>
 			</div>
 		</div>
 		<script>		         $('#layerF4F0B761EAF8A796CF5A8FE6BCADFF6E').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});		         $('#layerF4F0B761EAF8A796CF5A8FE6BCADFF6E').triggerHandler('layer_ready');</script>
 		<div id='layer18E3E9B709E04186F2E4A818568C8058' type='title'  class='cstlayer' style='left: 293px; top: 150px; position: absolute; z-index: 137; width: 613px; height: 74px; display: block;display:none;'  mid=""  fatherid='layer08980ED91003FC76D3D2CD4FEB8C22E2'   deg='0'>
 			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 74px; width: 613px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 14px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);">依托网络科技数据中心，以行业内领先的大数据技术及产品体系为基础， 运用成熟的运营模式为企业和个人提供定制化的大数据产品和服务。</span></div>
+				<div style="text-align: center;"><span style="font-size: 14px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);"><?php echo $list['banner_content']; ?></span></div>
 				<div style="text-align: center; color: rgb(90, 90, 90); font-family: Arial, 宋体, Helvetica, sans-serif, Verdana; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;"><br>
 				</div>
 			</div>
@@ -242,10 +242,13 @@
 			<!-- loop star -->
 			<div id="layer25B5B793AC633032B5185DE79C248DA9html5zoo-1">
 				<ul class="html5zoo-slides" style="display:none;">
-					<li><img alt="" src="/public/static/images/bg_home.png" class="html5lightbox" /></a></li>
+					<!-- <li><img alt="" src="/public/static/images/bg_home.png" class="html5lightbox" /></a></li>
 					<li><img alt="" src="/public/static/images/hkglobal.jpg" class="html5lightbox" /></a></li>
 					<li><img alt="" src="/public/static/images/5.jpg" class="html5lightbox" /></a></li>
-      				<li><img alt="" src="/public/static/images/4.jpg" class="html5lightbox" /></a></li>
+      				<li><img alt="" src="/public/static/images/4.jpg" class="html5lightbox" /></a></li> -->
+      				<?php if(is_array($list['newbanner']) || $list['newbanner'] instanceof \think\Collection || $list['newbanner'] instanceof \think\Paginator): $i = 0; $__LIST__ = $list['newbanner'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+      					<li><img alt="" src="<?php echo $uploadurl; ?><?php echo $v['picture']; ?>" class="html5lightbox" /></li>
+      				<?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 			</div>
 			<!-- loop end --> 

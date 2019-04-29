@@ -8,11 +8,13 @@ class Index extends Controller {
 
 		\think\Url::root('/index.php');
 
-		$station = db('station')->where(['id'=>1])->find();
- 		$this->assign('station',$station);
-
- 		$this->uploadurl = config('UPLOADIMG_URL');
+		$this->uploadurl = config('UPLOADIMG_URL');
  		$this->assign('uploadurl',$this->uploadurl);
+
+		$station = db('station')->where(['id'=>1])->find();
+ 		$station['logo'] = $this->uploadurl.$station['logo'];
+ 		$station['icon'] = $this->uploadurl.$station['icon'];
+ 		$this->assign('station',$station);
 	}
 
     public function index(){

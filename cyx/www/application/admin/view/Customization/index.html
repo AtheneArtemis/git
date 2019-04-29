@@ -1,0 +1,53 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>定制开发服务</h3></div>
+                <div class="col-sm-6 text-right">
+                    <a href="__URL__/add"><button class="btn btn-primary">新增</button></a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+                
+			</div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox" value="0"></div><div class="fht-cell"></div></th>
+                                        <th>ID</th>
+										<th>名称</th>
+                                        <th>图标</th>
+										<th class="col-sm-4">描述</th>
+                                        <th>排序</th>
+										<th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="datalist" >
+                            		{$datalist["html"]}
+                            	</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$datalist["page"]}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    
+    <script type="text/javascript">
+    	function querysubmit(id) {
+			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
+			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
+    		$.get('__URL__/index',{'p':id,'account':$('#account').val()},function(json){
+                $("#datalist").empty();
+                $("#datalist").html(json.data.html);
+                $("#page").html(json.data.page);
+            },'json');
+		}
+	</script> 
+<include file="Public/footer" />

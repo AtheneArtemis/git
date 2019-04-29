@@ -12,7 +12,7 @@
 					    </div>
                     </div>
                     <div class="ibox-content"> 
-                        <form method="post" class="form-horizontal" action="__URL__/update">
+                        <form method="post" class="form-horizontal" action="__URL__/update" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label class="col-sm-1 control-label">网站全称</label>
                                 <div class="col-sm-5">
@@ -24,10 +24,6 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-1 control-label">网站标题Icon</label>
-                                <div class="col-sm-5">
-                                    <input type="text" class="form-control" name="icon" value="{$list.icon}">
-                                </div>
                                 <label class="col-sm-1 control-label">电话</label>
                                 <div class="col-sm-5">
                                     <input type="text" class="form-control" name="tel" value="{$list.tel}">
@@ -35,11 +31,38 @@
                             </div>
                             <div class="form-group">
                                 <label class="col-sm-1 control-label">网站logo</label>
-                                <div class="col-sm-11">
-                                    <input type="text" class="form-control" name="logo" value="{$list.logo}">
+                                <div class="col-sm-5">
+                                    <!-- <input type="text" class="form-control" name="logo" value="{$list.logo}"> -->
+                                    <div style="height:198px;width:198px;padding:10px;padding-top:5px;">
+                                        <div class="upload05" style="width:800px;margin-left:0px;">
+                                            <div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;">
+                                                <img id="uploadmainpicture1" src="{$uploadurl}{$list.logo}" style="width:240px;height:200px;">
+                                                <div class="uploadbuttombox05">
+                                                    <div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" 
+                                                    name="logo" onchange="return onUploadImgChange(this,'uploadmainpicture1','240px','200px')"/></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传</div>
+                                </div>
+                                <label class="col-sm-1 control-label">网站标题Icon</label>
+                                <div class="col-sm-5">
+                                    <!-- <input type="text" class="form-control" name="icon" value="{$list.icon}"> -->
+                                     <div style="height:198px;width:198px;padding:10px;padding-top:5px;">
+                                        <div class="upload05" style="width:800px;margin-left:0px;">
+                                            <div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;">
+                                                <img id="uploadmainpicture2" src="{$uploadurl}{$list.icon}" style="width:240px;height:200px;">
+                                                <div class="uploadbuttombox05">
+                                                    <div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" 
+                                                    name="icon" onchange="return onUploadImgChange(this,'uploadmainpicture2','240px','200px')"/></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传</div>
                                 </div>
                             </div>
-                            <div class="form-group">
                             <div class="form-group">
                                 <label class="col-sm-1 control-label">网站关键字</label>
                                 <div class="col-sm-11">
@@ -58,6 +81,41 @@
                                     <input type="text" class="form-control" name="foot" value="{$list.foot}">
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站Banner标题</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" name="banner_title" value="{$list.banner_title}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站Banner正文</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" name="banner_content" value="{$list.banner_content}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">资质荣誉</label>
+                                <div class="col-sm-11" id="commodityimg">
+                                    <div><button type="button" class="btn btn-primary" onclick="addpicturebox()">增加一张</button></div>
+                                    <volist name="list.newbanner" id="v">
+                                        <div class="col-sm-4">
+                                            <div style="height:198px;width:198px;padding:10px;padding-top:5px;">
+                                                <div class="upload05" style="width:800px;margin-left:0px;">
+                                                    <div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;">
+                                                        <img id="picture{$v.id}" src="{$uploadurl}{$v.picture}" style="width:240px;height:200px;">
+                                                        <input type="hidden" name="picture{$v.id}" value="{$v.picture}">
+                                                        <div class="uploadbuttombox05">
+                                                            <div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" 
+                                                            name="picture{$v.id}" onchange="return onUploadImgChange(this,'picture{$v.id}','240px','200px')"/></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id='p_{$v.id}' class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传图片 <a href="javascript:delPicture('{$v.id}')">删除</a></div>
+                                        </div>
+                                    </volist>
+                                </div>
+                            </div>
 
                             <input type="hidden" name="id" value="{$list.id}">
                             <div class="form-group">
@@ -72,4 +130,18 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        var number = parseInt("{$number}");
+        function addpicturebox(){
+            var str = '<div class="col-sm-4"><div style="height:198px;width:198px;padding:10px;padding-top:5px;"><div class="upload05" style="width:800px;margin-left:0px;"><div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;border:1px solid #e3e3e3;"><img id="picture'+number+'" src="" style="width:240px;height:200px;"><div class="uploadbuttombox05"><div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" name="picture'+number+'" onchange="return onUploadImgChange(this,\'picture'+number+'\',\'240px\',\'200px\')"/></div></div></div></div></div><div id="np_'+number+'" class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传图片 <a href="javascript:delnewPicture(\''+number+'\')">删除</a></div></div>';
+            $("#commodityimg").append(str);
+            number++;
+        }
+        function delPicture(id){
+            $("#p_"+id).parent().remove();
+        }
+        function delnewPicture(id){
+            $("#np_"+id).parent().remove();
+        }
+    </script>
 <include file="Public/footer" />

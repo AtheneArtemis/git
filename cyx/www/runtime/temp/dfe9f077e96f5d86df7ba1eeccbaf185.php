@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/admin\view\Article\edit.html";i:1556504781;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1555645288;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556247719;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/admin\view\Article\edit.html";i:1556510476;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1555645288;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,7 +69,7 @@
                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>
-                                <input type="hidden" name="articletype_id" value="<?php echo $list['articletype_id']; ?>" id="articletypeId">
+                                <input type="hidden" name="articletype_id" value="<?php echo $list['articletype_id']; ?>" datatype="*1-10" id="articletypeId">
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
@@ -148,8 +148,6 @@
     <script type="text/javascript" src="/public/static/js/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" src="/public/static/js/ueditor/ueditor.all.min.js"></script>
     <script type="text/javascript">
-        var ue = UE.getEditor('container');
-
         function changeGroup(){
             var group = $("#group option:selected").val();
             $.post("/index.php/admin/article/getArticleType",{id:group,type:'group'},function(json){
@@ -188,6 +186,10 @@
 <script src="/public/static/js/Validform_v5.3.2_min.js"></script>
 <!-- 基础公众js函数 -->
 <script type="text/javascript">
+	//表单检查
+	$(".form-horizontal").Validform();
+	//实例化百度编辑器
+	var ue = UE.getEditor('container');
 	//日期选择器
 	$(function(){  
         var start = {  

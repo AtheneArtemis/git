@@ -1,7 +1,7 @@
 <?php
 namespace app\admin\controller;
 use app\admin\controller\Base;
-class Station extends Base{
+class Aboutus extends Base{
 
 	protected function _initialize(){
 		parent::_initialize();
@@ -11,44 +11,29 @@ class Station extends Base{
     
     public function index(){
 
-    	$list = db('station')->where(['is_delete'=>0,'id'=>1,'status'=>1])->find();
-    	
-        $banner = unserialize($list['banner']);
+    	$list = db('station')->where(['is_delete'=>0,'id'=>2,'status'=>1])->find();
+        $loginbg = unserialize($list['loginbg']);
         $i=0;
-        if (!empty($banner)) {
-            foreach ($banner as $k1 => $v1) {
-                $list['newbanner'][$i] = $v1;
+        if (!empty($loginbg)) {
+            foreach ($loginbg as $k1 => $v1) {
+                $list['newloginbg'][$i] = $v1;
                 $i++;
             }
         }
 
-        $number = count($list['banner']) + 1;
+        $number = count($list['newloginbg']) + 1;
         $this->assign('number',$number);
 
-        $this->assign('list',$list);
+    	$this->assign('list',$list);
     	return $this->fetch(request()->controller().'/index');
     }
     public function update(){
         $plist = getparameter('post.');
         $model = $this->model;
 
-        $fieldinfo = $this->obtainTableStructure($model);
-        foreach ($plist as $key =>$value){
-            if(strcmp(stristr($key,'date'),'date') === 0 || strcmp(stristr($key,'time'),'time') === 0){
-                $data[$key] = strtotime($value);
-            }elseif (strcmp($key,'id') !== 0 && strcmp($key,'__token__') !== 0 && in_array($key, $fieldinfo)){
-                $data[$key] = $value;
-            }else {
-                $parameter[$key] = $value;
-            }
-        }
-        //修改数据
-        if (in_array('updateuser_id', $fieldinfo)){
-            $data['updateuser_id'] = session('uid');
-        }
-        if (in_array('updatetime', $fieldinfo)){
-            $data['updatetime'] = time();
-        }
+        $data['description'] = $plist['description'];
+        $data['updateuser_id'] = session('uid');
+        $data['updatetime'] = time();
         if (!empty($_FILES)) {
             $newFiles = false;
             foreach ($_FILES as $kf => $vf) {
@@ -75,7 +60,7 @@ class Station extends Base{
                 $i++;
             }
         }
-        $data['banner'] = serialize($picture);
+        $data['loginbg'] = serialize($picture);
 
         $sprdata = $this->saveOperateRecord('修改数据',$plist['id'],serialize($data));
         $tdata = [
