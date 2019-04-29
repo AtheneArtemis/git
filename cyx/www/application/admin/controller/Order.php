@@ -1,8 +1,8 @@
 <?php
 namespace app\admin\controller;
-use app\admin\controller\Publictable;
+use app\admin\controller\Base;
 
-class Order extends Publictable{
+class Order extends Base{
     
     function _initialize(){
         parent::_initialize();

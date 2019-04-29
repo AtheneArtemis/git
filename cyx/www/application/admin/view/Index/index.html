@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>宸亦轩管理后台</title>
+    <title>{$sysset.storename}管理后台</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!--[if lt IE 9]>
@@ -56,37 +56,40 @@
                             </ul>
                         </div>
                         <!--小菜单标题-->
-                        <div class="logo-element">宸亦轩</div>
+                        <div class="logo-element">{$sysset.storename}</div>
                     </li>
                     <!--菜单栏-->
-                    <volist name="menu" id="g">
-                    	<li>
-	                        <a href="#">
-	                            <i class="fa {$g.icon}"></i>
-	                            <span class="nav-label"style="color:#ffffff;">{$g.title}</span>
-	                            <span class="fa arrow"></span>
-	                        </a>
-	                        <ul class="nav nav-second-level">
-	                            <volist name="g.controller" id="c">
-		                            <li>
-		                                <a class="J_menuItem" href="/index.php/admin/{$c.name}">{$c.title}</a>
-		                            </li>
-	                            </volist>
-	                        </ul>
-	                    </li>
-                    </volist>
-                    <li>
-                        <a href="#">
-                            <i class="fa {$g.icon}"></i>
-                            <span class="nav-label"style="color:#ffffff;">系统设置</span>
-                            <span class="fa arrow"></span>
-                        </a>
-                        <ul class="nav nav-second-level">
+                    <empty name="menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-cog"></i>
+                                <span class="nav-label">系统设置</span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a class="J_menuItem" href="/index.php/admin/Node">节点设置</a>
+                                </li>
+                            </ul>
+                        </li>
+                    <else />
+                        <volist name="menu" id="g">
                             <li>
-                                <a class="J_menuItem" href="/index.php/admin/Node">节点设置</a>
+                                <a href="#">
+                                    <i class="fa {$g.icon}"></i>
+                                    <span class="nav-label"style="color:#ffffff;">{$g.title}</span>
+                                    <span class="fa arrow"></span>
+                                </a>
+                                <ul class="nav nav-second-level">
+                                    <volist name="g.controller" id="c">
+                                        <li>
+                                            <a class="J_menuItem" href="/index.php/admin/{$c.name}">{$c.title}</a>
+                                        </li>
+                                    </volist>
+                                </ul>
                             </li>
-                        </ul>
-                    </li>
+                        </volist>
+                    </empty>
                 </ul>
             </div>
         </nav>
@@ -101,7 +104,7 @@
                     		<i class="fa fa-bars"></i>
                     	</a>
                     	<!--蓝色 color:#1ab294; 直接去掉color属性即为灰色-->
-                    	<span style="font-size:18px;line-height:60px;color:#0e1e7d;">宸亦轩管理后台</span>                    	
+                    	<span style="font-size:18px;line-height:60px;color:#0e1e7d;">{$sysset.storename}管理后台</span>                    	
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                     	<!--消息-->
@@ -168,7 +171,7 @@
                 <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="{:url('Index/welcome')}" frameborder="0" data-id="" seamless></iframe>
             </div>
             <div class="footer">
-                <div class="pull-right">&copy; 2019 dongdong Rights Reserved.  <a href="" target="_blank">技术支持：重庆亮剑科技公司</a>
+                <div class="pull-right">&copy; 2019 CKG Rights Reserved.  <a href="" target="_blank">技术支持</a>
                 </div>
             </div>
         </div>

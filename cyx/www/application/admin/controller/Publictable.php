@@ -15,18 +15,27 @@ class Publictable extends Publicmidmethods{
 	* @return 
 	*/
     function _listByAjaxPage($modelname,$map=null,$fields="id",$order=null,$join=null,$limitRows=null,
-		$ajaxfunc = "submitquery",$classname=null,$havetabletitle=false,$funcfortableheadertitle="_maketableheaderhtml",$funcfortablelistdata="_generatetabledatahtml") {
+		$ajaxfunc = "querysubmit",$classname=null,$havetabletitle=false,$funcfortableheadertitle="_maketableheaderhtml",$funcfortablelistdata="_generatetabledatahtml") {
 		
 		if(empty($classname)) $classname = "app\\".request()->module()."\controller\\".request()->controller();
 		if(empty($limitRows)) $limitRows = config('PAGE_LISTROWS');
 		if(empty($order)) {
-			$ret = checkTableColumnExist($modelname,"createtime");
-			if($ret) {
-				$order = 'createtime desc';
-			} else {
-				 $order = 'id desc';
-			}
+            if (empty($this->order)) {
+                $ret = checkTableColumnExist($modelname,"createtime");
+                if($ret) {
+                    $order = 'createtime desc';
+                } else {
+                     $order = 'id desc';
+                }
+            }else{
+                $order = $this->order;
+            }
 		}
+        if (empty($fields)) {
+            if (empty($this->field)) {
+                $fields = $this->field;
+            }
+        }
 		$model = db($modelname);
 		if(empty($join)) {
 			if(empty($map)) {
@@ -91,7 +100,7 @@ class Publictable extends Publicmidmethods{
     * @return 
     */
 	function _index($modelname=null,$map=null,$fields="id",$order=null,$join=null,$listname="datalist",$limitRows=null,
-		$ajaxfunc = "submitquery",$classname=null,$havetabletitle=false,$funcfortableheadertitle="_maketableheaderhtml",$funcfortablelistdata="_generatetabledatahtml") {
+		$ajaxfunc = "querysubmit",$classname=null,$havetabletitle=false,$funcfortableheadertitle="_maketableheaderhtml",$funcfortablelistdata="_generatetabledatahtml") {
 	    
 		if(empty($modelname)) $modelname=$this->modelname;
 		if(empty($map)) $this->_filter($map,$querycond);
@@ -170,9 +179,8 @@ class Publictable extends Publicmidmethods{
                 $this->assign($displaylist.'list',$querybarlist);
             }
         }
-        //获得省市区
-        // $this->obtainprovincecityzonelist();
-        return $this->fetch(request()->controller().'/add');
+        // return $this->fetch(request()->controller().'/add');
+        return $this->fetch(request()->controller().'/edit');
     }
     /**
     * 编辑函数
@@ -231,10 +239,6 @@ class Publictable extends Publicmidmethods{
                 $this->assign($displaylist.'list',$querybarlist);
             }
         }
-        $tablestructure = $this->obtaintablestructure($this->model);
-        /*if (in_array('province_id',$tablestructure)){
-            $this->getinitprovincecityzonedata($id);
-        }*/
         return $this->fetch(request()->controller().'/edit');
     }
     /**
@@ -353,10 +357,6 @@ class Publictable extends Publicmidmethods{
                 $this->assign($displaylist.'list',$querybarlist);
             }
         }
-        $tablestructure = $this->obtaintablestructure($this->model);
-        if (in_array('province_id',$tablestructure)){
-            $this->getinitprovincecityzonedata($id);
-        }
         return $this->fetch(request()->controller().'/detailedit');
     }
     /**
@@ -386,7 +386,6 @@ class Publictable extends Publicmidmethods{
             }
         */
         // 实例化excel类
-        // include dirname(dirname(__DIR__)).'/common/Classes/PHPExcel.php';
         include './application/common/Classes/PHPExcel.php';
         $objPHPExcel = new \PHPExcel();
         // 操作第一个工作表

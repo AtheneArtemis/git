@@ -1,7 +1,7 @@
 <?php
 namespace app\admin\controller;
-use app\admin\controller\Publictable;
-class Group extends Publictable{
+use app\admin\controller\Base;
+class Group extends Base{
     
     function _initialize(){
         

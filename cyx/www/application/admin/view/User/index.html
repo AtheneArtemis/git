@@ -4,21 +4,33 @@
             <div class="ibox-title col-sm-12">
                 <div class="col-sm-6"><h3>用户信息</h3></div>
                 <div class="col-sm-6 text-right">
-                    <a href="{:url('User/add')}"><button class="btn btn-primary">新增</button></a>
-	                <!-- <a href="{:url('User/exportexcel')}"><button class="btn btn-primary">导出</button></a> -->
+                    <a href="__URL__/add"><button class="btn btn-primary">新增</button></a>
+	                <a href="javascript:multidel()"><button class="btn btn-primary">批量删除</button></a>
 	                <button type="button" class="btn btn-primary" onclick="resetuserpassword()">重置密码</button>
 				</div>
                 <div style="clear:both;height:10px"></div>
-            <!-- 搜索栏 start -->
-			<div>
-			<!-- <form action="" method="post" id="queryForm">
-				
-			</form> -->
-            
+                <!-- 搜索栏 start -->
+                <div>
+                    <form action="__URL__/importExcel" method="get" id="queryForm">
+                        <div class="col-sm-12">
+                            <div class="col-sm-2" style="padding-right: 5px"><input type="text" id="start" name="start" class="form-control" placeholder="起始时间"/></div>
+                            <div class="col-sm-2" style="padding-left: 5px"><input type="text" id="end" name="end" class="form-control" placeholder="结束时间"/></div>
+                            <div class="col-sm-2"><input type="text" name="nickname" id="nickname" class="form-control" placeholder="用户昵称"/></div>
+                            <div class="col-sm-2 text-right"><!--  -->
+                                <div class="col-sm-3"><input type="button" onclick="submitquery(1)" id="submitBtn" value="查询" class="btn  btn-outline btn-default"></div>
+                                <div class="col-sm-3" id="loading" style="margin-top:5px;"></div>
+                            </div>
+                            <input type="hidden" name="orderby" id="orderby" value="id">
+                            <input type="hidden" name="orderway" id="orderway" value="asc">
+                            <div class="col-sm-2">
+                                <a href=""><button class="btn btn-primary" type="submit">导出</button></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 搜索栏 end -->
+                <div style="clear:both;"></div>
 			</div>
-			<div style="clear:both;"></div>
-			</div>
-			<!-- 搜索栏 end -->
             <div class="ibox-content">
                 <div class="row row-lg">
                     <div class="col-sm-12">
@@ -27,7 +39,7 @@
                             <table data-toggle="table" data-mobile-responsive="true">
                                 <thead>
                                     <tr>
-                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox"></div><div class="fht-cell"></div></th>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox" value="0"></div><div class="fht-cell"></div></th>
                                         <th>ID</th>
 										<th>用户帐号</th>
 										<th>用户昵称</th>
@@ -49,38 +61,15 @@
     </div>
     
     <script type="text/javascript">
-    	function complete_query(data) {
-    		$("#datalist").empty();
-    		$("#datalist").html(data.data.html);
-    		$("#page").html(data.data.page);
-    	}
-    	function submitquery(id) {
+    	function querysubmit(id) {
 			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
 			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
-    		$.get('__URL__/index',{'p':id,'account':$('#account').val(),'provinceid':$('#provinceid').val(),'cityid':$('#cityid').val(),'zoneid':$('#zoneid').val(),'usertypeid':$('#usertypeid').val()},complete_query,'json');
+    		$.get('__URL__/index',{'p':id,'account':$('#account').val()},function(json){
+                $("#datalist").empty();
+                $("#datalist").html(json.data.html);
+                $("#page").html(json.data.page);
+            },'json');
 		}
-		
-		function completegetcityzonelist(data) {
-    		$('#cityid').empty();
-    		$('#cityid').html(data.data.citylist);
-    		$('#zoneid').empty();
-    		$('#zoneid').html(data.data.zonelist);
-    	}
-    	function getcitylist() {
-			$.post('__URL__/getcityzonelist',{'provinceid':$('#provinceid').val(),"haveall":"true"},completegetcityzonelist,'json');
-		}
-		function completegetzonelist(data) {
-    		$('#zoneid').empty();
-    		$('#zoneid').html(data.data.zonelist);
-    	}
-		function getzonelist() {
-			$.post('__URL__/getzonelist',{'cityid':$('#cityid').val(),"haveall":"true"},completegetzonelist,'json');
-		}
-		
-		function detail(id){
-    		window.location.href = "{:url('detail','','')}/uid/"+id;
-    	}
-		
 		function resetuserpassword(id){
         	if (id){
         		var inputValue = id;

@@ -6,8 +6,7 @@ class Homepage extends Index {
 
 
  	public function index(){
-
  	
-       return $this->fetch();
+       	return $this->fetch();
     }
 }

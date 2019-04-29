@@ -6,8 +6,8 @@
 * @author: Administrator：chenkeyu
 */
 namespace app\admin\controller;
-use app\admin\controller\Publictable; 
-class Node extends Publictable{
+use app\admin\controller\Base; 
+class Node extends Base{
     
     function _initialize(){
         parent::_initialize();
@@ -169,29 +169,32 @@ class Node extends Publictable{
                 'operate' => 'insert',
                 'data' => $gdata,
             ];
+            $operate = '添加模块';
         }elseif (strcmp($plist['nodetype'],'g') ===0){
             //添加分组
             $tdata['group'] = [
                 'operate' => 'insert',
                 'data' => $gdata,
             ];
+            $operate = '添加分组';
         }else{
             //添加控制器、操作
             $tdata['node'] = [
                 'operate' => 'insert',
                 'data' => $ndata,
             ];
+            $operate = '添加控制器、操作';
         }
-        $sprdata = $this->saveorgoperaterecord('添加节点', $nodeid);
+        $sprdata = $this->saveOperateRecord($operate, $nodeid,serialize($tdata['node']['data']));
         $tdata['dboperationhistory'] = [
             'operate' => 'insert',
             'data' => $sprdata,
         ];
         $result = $this->transevent($tdata);
-        if ($result['code']){
+        if ($result['code'] == 0){
             $this->success('操作成功',url(request()->controller().'/index'));
         }else{
-            $this->error('操作失败',url(request()->controller().'/index'));
+            $this->error('操作失败');
         }
     }
     function edit(){
@@ -249,6 +252,7 @@ class Node extends Publictable{
                 'data' => $gdata,
                 'map' => ['id'=>$nodeid]
             ];
+            $operate = '修改模块';
         }elseif (strcmp($plist['nodetype'],'g') ===0){
             //修改分组
             $tdata['group'] = [
@@ -256,6 +260,7 @@ class Node extends Publictable{
                 'data' => $gdata,
                 'map' => ['id'=>$nodeid]
             ];
+            $operate = '修改分组';
         }else{
             //修改控制器、操作
             $tdata['node'] = [
@@ -263,14 +268,15 @@ class Node extends Publictable{
                 'data' => $ndata,
                 'map' => ['id'=>$nodeid]
             ];
+            $operate = '修改控制器、操作';
         }
-        $sprdata = $this->saveorgoperaterecord('修改节点', $nodeid);
+        $sprdata = $this->saveOperateRecord($operate, $nodeid,serialize($tdata['node']['data']));
         $tdata['dboperationhistory'] = [
             'operate' => 'insert',
             'data' => $sprdata,
         ];
         $result = $this->transevent($tdata);
-        if ($result['code']){
+        if ($result['code'] == 0){
             $this->success('操作成功',url(request()->controller().'/index'));
         }else{
             $this->error('操作失败',url(request()->controller().'/index'));

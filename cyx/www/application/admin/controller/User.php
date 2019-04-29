@@ -1,23 +1,26 @@
 <?php
 namespace app\admin\controller;
-use app\admin\controller\Publictable;
-
-class User extends Publictable{
+use app\admin\controller\Base;
+class User extends Base{
     
     function _initialize(){
         parent::_initialize();
-        
+        $this->model = 'user';
+        $this->controllername = '用户管理';
+        $this->querybar = [
+            'role' => [
+                'map' => ['status'=>1],
+            ],
+        ];
     }
     function _filter(&$map,&$querycond){
         $map["is_delete"] = array('eq','0');
-        // $map["account"] = array('neq','admin');
         $map['usertype_id'] = array('neq','member');
     }
     function _generatetabledatahtml($html,$id=null){
-        $model = model("user");
+        $model = model($this->model);
         $value = $model->where("id",$id)->find();
        	$createtime = date('Y-m-d H:i:s',$value["createtime"]);
-        
         $html = $html.'
     		<tr>
     			<td class="bs-checkbox"><input data-index="3" name="btSelectItem" type="checkbox" value="'.$value["id"].'"></td>
@@ -25,23 +28,18 @@ class User extends Publictable{
     			<td>'.$value["account"].'</td>
     			<td>'.$value["nickname"].'</td>
                 <td>'.$value["roles"][0]['name'].'</td>
-                <td><a href="'.url(request()->controller().'/edit',array('id'=>$value['id'])).'"><button class="btn btn-outline btn-default">修改</button></td>
+                <td><a href="'.url(request()->controller().'/edit',array('id'=>$value['id'])).'"><button class="btn btn-outline btn-default">修改</button>
+                    <a href="javascript:del(\''.$value['id'].'\')"><button class="btn btn-outline btn-default">删除</button>
+                </td>
     		</tr>';
         return $html;
     }
     
     function index(){
-    	// $this->getinitprovincecityzonelist(true);
+
         $this->_filter($map,$querycond);
-        $this->_index("user",$map);
+        $this->_index($this->model,$map);
     	return $this->fetch(request()->controller().'/index');
-    }
-    function add(){
-
-        $rolelist = db('role')->where(['status'=>1])->select();
-        $this->assign('rolelist',$rolelist);
-
-        return $this->fetch(request()->controller().'/add');
     }
     function insert(){
         $account = getparameter('account');
@@ -66,6 +64,8 @@ class User extends Publictable{
             'status' => 1
         ];
         $urRes = db('role_user')->insert($role_user_data);
+        $sprdata = $this->saveOperateRecord('新增用户',$user_id,serialize($user_data));
+        $sprRes = db('dboperationhistory')->insert($sprdata);
         if ($res && $urRes) {
             $this->success('操作成功',url(request()->controller().'/index'));
         }else{
@@ -103,10 +103,12 @@ class User extends Publictable{
             'status' => 1
         ];
         $urRes = db('role_user')->insert($role_user_data);
+        $sprdata = $this->saveOperateRecord('修改用户',$id,serialize($user_data));
+        $sprRes = db('dboperationhistory')->insert($sprdata);
         if ($res && $urRes) {
-            $this->success('操作成功',url(request()->controller().'/index'));
+            $this->success('修改成功',url(request()->controller().'/index'));
         }else{
-            $this->error('操作失败');
+            $this->error('系统繁忙');
         }
     }
     public function resetuserpassword(){

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>宸亦轩管理后台</title>
+    <title>{$sysset.storename}管理后台</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
@@ -15,16 +15,16 @@
         if(window.top!==window.self){window.top.location=window.location};
     </script>
 </head>
-<body class="signin">
+<body class="signin" style="background-image:url('{$sysset.loginbg}');background-size: 100% 100%">
     <div class="signinpanel">
         <div class="row">
             <div class="col-sm-7">
                 <div class="signin-info">
                     <div class="logopanel m-b">
-                        <h1>宸亦轩管理后台</h1>
+                        <h1>{$sysset.storename}管理后台</h1>
                     </div>
                     <div class="m-b"></div>
-                    <h4>欢迎使用 <strong>宸亦轩管理后台</strong></h4>
+                    <h4>欢迎使用 <strong>{$sysset.storename}管理后台</strong></h4>
                     <!-- <ul class="m-b">
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>1</li>
                         <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>2</li>
@@ -40,7 +40,7 @@
             <div class="col-sm-5" style="background:#f6f6f6;filter:alpha(opacity=90);opacity:0.90;">
                 <form method="post" action="" id="loginform">
                     <!-- <h3 class="no-margins" style="color:#5a5a5a;margin-bottom:40px;">登录到经销商服务系统管理后台</h3> -->
-                    <p class="m-t-md" style="color:#5a5a5a;font-size:16px;">登录到宸亦轩管理后台</p>
+                    <p class="m-t-md" style="color:#5a5a5a;font-size:16px;">登录到{$sysset.storename}管理后台</p>
                     <div id="loginsuccess"></div>
                     <input type="text" name="account" class="form-control uname" placeholder="用户名" />
                     <input type="password" name="password" class="form-control pword m-b" placeholder="密码" onkeydown="javascript:dealpresskeyevent(event)"/>

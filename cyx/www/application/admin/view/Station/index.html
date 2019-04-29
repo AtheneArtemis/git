@@ -1,0 +1,75 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title col-sm-12">
+                        <div class="col-sm-9"><h3>站点信息</h3></div>
+					    <div class="col-sm-3 text-right">
+						    <a href="__URL__/index">
+						    	<button type="submit" class="btn btn-sm btn-primary">返回上一级</button>
+						    </a>
+					    </div>
+                    </div>
+                    <div class="ibox-content"> 
+                        <form method="post" class="form-horizontal" action="__URL__/update">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站全称</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="benelux_name" value="{$list.benelux_name}">
+                                </div>
+                                <label class="col-sm-1 control-label">网站简称</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="short_name" value="{$list.short_name}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站标题Icon</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="icon" value="{$list.icon}">
+                                </div>
+                                <label class="col-sm-1 control-label">电话</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" name="tel" value="{$list.tel}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站logo</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" name="logo" value="{$list.logo}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站关键字</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" name="keywords" value="{$list.keywords}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站描述</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" name="description" value="{$list.description}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">网站底部信息</label>
+                                <div class="col-sm-11">
+                                    <input type="text" class="form-control" name="foot" value="{$list.foot}">
+                                </div>
+                            </div>
+
+                            <input type="hidden" name="id" value="{$list.id}">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-sm-offset-10">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                    <button class="btn btn-white" type="reset">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="Public/footer" />

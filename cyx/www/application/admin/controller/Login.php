@@ -6,6 +6,12 @@ class Login extends Controller{
     public function _initialize(){
         // $map = [];
         // $sysset = db('sysset')->where($map)->find();
+        $sysset = [
+            'storename' => '宸亦轩',
+            'loginbg' =>dirname(config('UPLOADIMG_URL')).'/img/login-background.jpg'
+        ];
+        $this->assign('sysset',$sysset);
+    
     }
     function index(){
         $this->redirect(url('login'));
@@ -27,7 +33,7 @@ class Login extends Controller{
             $condition['status'] = array('gt','0');
             */
             // 检查账号
-            $list = $model->where('status','gt','0')->where('account',$plist['account'])->find();
+            $list = $model->where(['status'=>['gt','0'],'is_delete'=>0])->where('account',$plist['account'])->find();
             if(empty($list)) {
             	 $this->result(url('Login/login'),-1,'帐户不存在...','json');
             	 return false;

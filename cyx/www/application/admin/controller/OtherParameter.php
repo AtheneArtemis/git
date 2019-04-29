@@ -1,8 +1,8 @@
 <?php
 namespace app\admin\controller;
-use app\admin\controller\Publictable;
+use app\admin\controller\Base;
 
-class OtherParameter extends Publictable{
+class OtherParameter extends Base{
     
     function _initialize(){
         parent::_initialize();

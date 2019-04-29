@@ -72,8 +72,8 @@
         subopen="" submethod=""
         >
         <ul id="nav_layerD92D99C73DA8F30432197CC8CCC81ED0" class="navigation">
-          <li style="width:50%;z-index:2;"  class="wp_subtop"  pid="12" ><a class="  " href="__APP__/home/news/index.html"  ><span style="display:block;overflow:hidden;">行业新闻</span></a></li>
-          <li style="width:50%;z-index:2;"  class="wp_subtop"  pid="1" ><a class="  " href="__APP__/home/news/index.html"  ><span style="display:block;overflow:hidden;">公司动态</span></a></li>
+          <li style="width:50%;z-index:2;"  class="wp_subtop"  pid="12" ><a class="  " href="__URL__/index"  ><span style="display:block;overflow:hidden;">行业新闻</span></a></li>
+          <li style="width:50%;z-index:2;"  class="wp_subtop"  pid="1" ><a class="  " href="__URL__/index"  ><span style="display:block;overflow:hidden;">公司动态</span></a></li>
         </ul>
         <div class="default_pid" style="display:none; width:0px; height:0px;"></div>
       </div>
@@ -166,67 +166,29 @@
   </div>
   <div class="article_list-layerA1D998D55A012C2791F039D132C196AC" style="overflow:hidden;">
     <ul>
-      <li class="wpart-border-line" style=" margin-bottom:45px;padding-bottom:45px;">
-        <div class="wp-new-article-style-01-left" style="height:150px;width:240px;text-align:center;position: relative;overflow: hidden">
-          <div class="imgloading" style="height:148px;width:238px;"> </div>
-          <a href="__APP__/home/news/article.html"><img onload="set_thumb_layerA1D998D55A012C2791F039D132C196AC(this);" src="__PUBLIC__/images/17961491_103201528000_2.jpg" class="wp-article_list-thumbnail img_lazy_load" style="position: relative;height:150px;width:240px;"/></a> </div>
+      <volist name="list" id="v">
+        <li class="wpart-border-line" style=" margin-bottom:45px;padding-bottom:45px;">
+          <div class="wp-new-article-style-01-left" style="height:150px;width:240px;text-align:center;position: relative;overflow: hidden">
+            <div class="imgloading" style="height:148px;width:238px;"> </div>
+            <a href="__URL__/article/id/{$v.id}"><img onload="set_thumb_layerA1D998D55A012C2791F039D132C196AC(this);" src="{$uploadurl}{$v.thumbpicture}" class="wp-article_list-thumbnail img_lazy_load" style="position: relative;height:150px;width:240px;"/></a>
+          </div>
           <!--wp-new-article-style-01-left-->
           <div class="wp-new-article-style-01-right">
-            <p class="title"> <span class="category">[行业新闻]</span> <a href="__APP__/home/news/article.html"> 数腾软件出席Ucon2015第二届中国信息安全用户大会</a> </p>
-            <p class="time"><span class="wp-new-ar-pro-time">2017-03-06</span></p>
-            <p class="abstract">2015年10月29日，数腾作为合作单位，受邀参加了在上海龙之梦万丽大酒店隆重举行的第二届中国信息安全用户大会。作为中国信息安全用户较高规格的会议，汇集了来自金融、国资、通信、医疗、工控、政务、教育、互联网等重点行业用户。是“第五届上海市信息安全活动周”的重点</p>
+            <p class="title"> <span class="category">[{$v.articletype.name}]</span> <a href="__URL__/article/id/{$v.id}">{$v.title}</a> </p>
+            <p class="time"><span class="wp-new-ar-pro-time">{:date('Y-m-d',$v.publishtime)}</span></p>
+            <p class="abstract">{$v.intro}</p>
             <input type="hidden" class="articleid">
             <input type="hidden" class="abstract">
           </div>
           <!--wp-new-article-style-01-right--> 
         </li>
-        <li class="wpart-border-line" style=" margin-bottom:45px;padding-bottom:45px;">
-          <div class="wp-new-article-style-01-left" style="height:150px;width:240px;text-align:center;position: relative;overflow: hidden">
-            <div class="imgloading" style="height:148px;width:238px;"> </div>
-            <a href="__APP__/home/news/article.html"><img onload="set_thumb_layerA1D998D55A012C2791F039D132C196AC(this);" src="__PUBLIC__/images/11635558_160159618000_2.jpg" class="wp-article_list-thumbnail img_lazy_load" style="position: relative;height:150px;width:240px;"/></a> </div>
-            <!--wp-new-article-style-01-left-->
-            <div class="wp-new-article-style-01-right">
-              <p class="title"> <span class="category">[行业新闻]</span> <a href="__APP__/home/news/article.html">数腾软件与华三通信签约云计算技术联盟</a> </p>
-              <p class="time"><span class="wp-new-ar-pro-time">2017-03-06</span></p>
-              <p class="abstract">数腾软件针对用户在运维管理过程中遇到的核心安全问题，搭建了展台，为用户更好的提供解决的方案和思路；深入洞察用户在信息安全的痛点与困惑，为前来咨询的用户解决实际的问题，得到了参会领导与嘉宾的一致好评!</p>
-              <input type="hidden" class="articleid">
-              <input type="hidden" class="abstract" >
-            </div>
-            <!--wp-new-article-style-01-right--> 
-          </li>
-          <li class="wpart-border-line" style=" margin-bottom:45px;padding-bottom:45px;">
-            <div class="wp-new-article-style-01-left" style="height:150px;width:240px;text-align:center;position: relative;overflow: hidden">
-              <div class="imgloading" style="height:148px;width:238px;"> </div>
-              <a href="__APP__/home/news/article.html"><img onload="set_thumb_layerA1D998D55A012C2791F039D132C196AC(this);" src="__PUBLIC__/images/4562496_081453448000_2.jpg" class="wp-article_list-thumbnail img_lazy_load" style="position: relative;height:150px;width:240px;"/></a> </div>
-              <!--wp-new-article-style-01-left-->
-              <div class="wp-new-article-style-01-right">
-                <p class="title"> <span class="category">[行业新闻]</span> <a href="__APP__/home/news/article.html">完美登录全球云计算大会，云迁移/云保障双线出击</a> </p>
-                <p class="time"><span class="wp-new-ar-pro-time">2017-03-06</span></p>
-                <p class="abstract">2016第四届全球云计算大会于9月20-22日在上海国际会议中心成功举办。大会吸引了众多业内领先云计算厂商企业和开发者，涉及金融、制造、电商、教育、等诸多热门应用领域。</p>
-                <input type="hidden" class="articleid">
-                <input type="hidden" class="abstract">
-              </div>
-              <!--wp-new-article-style-01-right--> 
-            </li>
-            <li class="wpart-border-line" style=" margin-bottom:45px;padding-bottom:45px;">
-              <div class="wp-new-article-style-01-left" style="height:150px;width:240px;text-align:center;position: relative;overflow: hidden">
-                <div class="imgloading" style="height:148px;width:238px;"> </div>
-                <a href="__APP__/home/news/article.html"><img onload="set_thumb_layerA1D998D55A012C2791F039D132C196AC(this);" src="__PUBLIC__/images/17961491_161827535000_2.jpg" class="wp-article_list-thumbnail img_lazy_load" style="position: relative;height:150px;width:240px;" /></a> </div>
-                <!--wp-new-article-style-01-left-->
-                <div class="wp-new-article-style-01-right">
-                  <p class="title"> <span class="category">[公司动态]</span> <a href="__APP__/home/news/article.html">烽火普天与咸宁日报就大数据服务项目达成合作</a> </p>
-                  <p class="time"><span class="wp-new-ar-pro-time">2016-09-04</span></p>
-                  <p class="abstract">据美国“侨报”报道，当地时间12月23日，美国公民及移民服务局（USCIS）将实施新费用。&nbsp;很多申请费飙升，较高的一个上涨了258％。&nbsp;入境事务处提醒入境移民申请人，在二十三日或之后向美国公民及移民服务处提交的个案，将会收取新费用。</p>
-                  <input type="hidden" class="articleid">
-                  <input type="hidden" class="abstract">
-                </div>
-                <!--wp-new-article-style-01-right--> 
-              </li>
-            </ul>
-            <div class="wp-pager_link" style="text-align:center"><span class="disabled"> &lt; </span><span class="current">1</span><a href="###2">2</a><a href="###2"> &gt; </a></div>
+      </volist>
+    </ul>
+           <!--  <div class="wp-pager_link" style="text-align:center"><span class="disabled"> &lt; </span><span class="current">1</span><a href="###2">2</a><a href="###2"> &gt; </a></div>
           </div>
-          <div class="article_list_save_itemList"  openCategoryUrl="0" openMoreUrl="0"  openDetailUrl="0"  pagerstyle="style2/skin4" pagernum="4" pageralign="center" morealign="left" showpager="1" articleCategroies="1,12" articleTags="" linkCategoryUrl="100" linkMoreUrl="100" isShowMore="No" isShowMoreCn="No" linkDetailUrl="91" isShowDots="No" introWordNum="130" titleWordNum="30" listNum="600" sortType="i_order" sortValue="desc" articleStyle="default" getParamCategoryId="empty" imgwnode="240" imghnode="150" imgtnode="Tile" memberartshow='off' pageskip="2" pageop="0"  pagepar="p_article_list" style="display:none;"></div>
-        </div>
+          <div class="article_list_save_itemList"  openCategoryUrl="0" openMoreUrl="0"  openDetailUrl="0"  pagerstyle="style2/skin4" pagernum="4" pageralign="center" morealign="left" showpager="1" articleCategroies="1,12" articleTags="" linkCategoryUrl="100" linkMoreUrl="100" isShowMore="No" isShowMoreCn="No" linkDetailUrl="91" isShowDots="No" introWordNum="130" titleWordNum="30" listNum="600" sortType="i_order" sortValue="desc" articleStyle="default" getParamCategoryId="empty" imgwnode="240" imghnode="150" imgtnode="Tile" memberartshow='off' pageskip="2" pageop="0"  pagepar="p_article_list" style="display:none;"></div> -->
+  </div>
+  <div>{$page}</div>
         <script language="javascript">
           layer_img_lzld('layerA1D998D55A012C2791F039D132C196AC');
 

@@ -1,0 +1,106 @@
+<include file="Public/top" />
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title col-sm-12">
+                <div class="col-sm-6"><h3>文章列表</h3></div>
+                <div class="col-sm-6 text-right">
+                    <a href="__URL__/add"><button class="btn btn-primary">新增</button></a>
+	                <a href="javascript:multidel()"><button class="btn btn-primary">批量删除</button></a>
+				</div>
+                <div style="clear:both;height:10px"></div>
+                <!-- 搜索栏 start -->
+                <div>
+                    <form action="__URL__/importExcel" method="get" id="queryForm">
+                        <div class="col-sm-12">
+                            <div class="col-sm-2" style="padding-right: 5px"><input type="text" id="start" name="start" class="form-control" placeholder="起始时间"/></div>
+                            <div class="col-sm-2" style="padding-left: 5px"><input type="text" id="end" name="end" class="form-control" placeholder="结束时间"/></div>
+                            <div class="col-sm-2"><input type="text" name="nickname" id="nickname" class="form-control" placeholder="文章名称"/></div>
+                            <div class="col-sm-2 text-right">
+                                <div class="col-sm-3"><input type="button" onclick="submitquery(1)" id="submitBtn" value="查询" class="btn  btn-outline btn-default"></div>
+                                <div class="col-sm-3" id="loading" style="margin-top:5px;"></div>
+                            </div>
+                            <!-- <div class="col-sm-2">
+                                <a href=""><button class="btn btn-primary" type="submit">导出</button></a>
+                            </div> -->
+                        </div>
+                    </form>
+                </div>
+                <!-- 搜索栏 end -->
+                <div style="clear:both;"></div>
+			</div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <h4 class="example-title"></h4>
+                        <div class="example">
+                            <table data-toggle="table" data-mobile-responsive="true">
+                                <thead>
+                                    <tr>
+                                        <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox" value="0"></div><div class="fht-cell"></div></th>
+                                        <th>ID</th>
+										<th>文章类型</th>
+										<th>标题</th>
+                                        <th>副标题</th>
+                                        <th class="col-sm-4">简介</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="datalist" >
+                            		{$datalist["html"]}
+                            	</tbody>
+                            </table>
+                            <div id="page" class="col-sm-12 text-right">{$datalist["page"]}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Basic -->
+    </div>
+    
+    <script type="text/javascript">
+    	function querysubmit(id) {
+			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
+			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
+    		$.get('__URL__/index',{'p':id,'account':$('#account').val()},function(json){
+                $("#datalist").empty();
+                $("#datalist").html(json.data.html);
+                $("#page").html(json.data.page);
+            },'json');
+		}
+		function resetuserpassword(id){
+        	if (id){
+        		var inputValue = id;
+        	}else{
+        		var inputValue = $("input[type='checkbox']:checked").val();
+        	}
+        	if ($("#page .active span").html()){
+        		var page = $("#page .active span").html().replace(/\D+/g,"")
+        	}
+        	if (inputValue == undefined){
+        		alert("请选择用户帐户");
+        		return;
+        	} else {
+        		if (window.confirm('确实要重置用户密码吗？')) {
+        			$.post('__URL__/resetuserpassword',{'uid':inputValue},function(json){
+    					if(json.code == 0){
+    						alert(json.msg);
+    						location.reload();
+    					} else {
+    						alert(json.msg);
+    					}
+    				},'json')
+    			}
+        	}
+        }
+        function publish(id,status){
+            $.post('__URL__/publish',{id:id,status:status},function(json){
+                alert(json.msg);
+                if (json.code == 0) {
+                    window.location.href = '__URL__/index';
+                }
+            },'json')
+        }
+	</script> 
+<include file="Public/footer" />

@@ -389,3 +389,54 @@ function getmsectime() {
     $msectime = (float)sprintf('%.0f', (floatval($msec) + floatval($sec)) * 1000);
     return $msectime;
 }
+//判断字段是否存在
+function checkTableColumnExist($tablename,$columnname){
+    //先判断表是否存在
+    if(!checkTableExist($tablename)) return false;
+    //再判断字段是否存在
+    $tableprefix = config("database.prefix");
+    $sql = "SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = '".$tablename."' AND column_name = '".$columnname."'";
+    $model = db();
+    $result = $model->query($sql);
+    if(empty($result)){
+        return false;
+    } else {
+        return true;
+    }
+}
+//判断表是否存在
+function checkTableExist($tablename){
+    $tableprefix = tableprefix();
+    $sql = "show tables like '".$tableprefix.$tablename."'";
+    $model = db();
+    $result = $model->query($sql);
+    if(empty($result)) {
+        return false;
+    } else {
+        return true;
+    }
+}
+//获取表前缀
+function tablePrefix() {
+    $tableprefix = config("database.prefix");
+    if(empty($tableprefix)) $tableprefix = "";
+    return $tableprefix;
+}
+//分页参数
+function parameternameforpage() {
+    $varname = config("VAR_PAGE");
+    if(empty($varname)) $varname = "";
+    return $varname;
+}
+// 过滤掉emoji表情
+function filterEmoji($str){
+    $str = preg_replace_callback(
+        '/./u',
+        function (array $match) {
+            return strlen($match[0]) >= 4 ? '' : $match[0];
+        },
+        $str);
+
+    return $str;
+ }

@@ -1,7 +1,7 @@
 <?php
 namespace app\admin\controller;
-use app\admin\controller\Publictable;
-class Role extends Publictable{
+use app\admin\controller\Base;
+class Role extends Base{
     
     function _initialize(){
         parent::_initialize();

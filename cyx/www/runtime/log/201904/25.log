@@ -1,0 +1,874 @@
+---------------------------------------------------------------
+[ 2019-04-25T09:02:30+08:00 ] 127.0.0.1 GET localhost/
+[运行时间：0.837048s] [吞吐率：1.19req/s] [内存消耗：2,392.64kb] [文件加载：47]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-25T09:02:31+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Login/login.html
+[运行时间：0.103006s] [吞吐率：9.71req/s] [内存消耗：2,082.35kb] [文件加载：44]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\git\cyx\www\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Login\login.html [ array (
+  0 => 'sysset',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-25T09:02:41+08:00 ] 127.0.0.1 POST localhost/index.php/admin/Login/login.html
+[运行时间：0.524030s] [吞吐率：1.91req/s] [内存消耗：3,024.23kb] [文件加载：51]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '29',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ F:\git\cyx\www\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105006s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_user` [ RunTime:0.169010s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_user` WHERE  `status` > 0  AND `is_delete` = 0  AND `account` = 'admin' LIMIT 1 [ RunTime:0.017001s ]
+---------------------------------------------------------------
+[ 2019-04-25T09:02:42+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/index.html
+[运行时间：0.468027s] [吞吐率：2.14req/s] [内存消耗：3,804.38kb] [文件加载：57]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Login/login.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ F:\git\cyx\www\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Index\index.html [ array (
+  0 => 'sysset',
+  1 => 'adminid',
+  2 => 'menu',
+  3 => 'ulist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_group` [ RunTime:0.097005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_group` WHERE  `name` = 'admin'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort` FROM `cyx_group` WHERE  `parent_id` = '1'  AND `status` > 0 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_node` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = '3'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = '4'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title`,`sort`,`pid` FROM `cyx_node` WHERE  `status` > 0  AND `group_id` = '2'  AND `level` = 2 ORDER BY `sort` ASC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname` FROM `cyx_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-04-25T09:02:42+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Index/welcome.html
+[运行时间：0.125007s] [吞吐率：8.00req/s] [内存消耗：2,429.41kb] [文件加载：47]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ F:\git\cyx\www\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Index\welcome.html [ array (
+  0 => 'sysset',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-25T09:02:48+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Article
+[运行时间：0.467027s] [吞吐率：2.14req/s] [内存消耗：3,987.84kb] [文件加载：65]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Article',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ F:\git\cyx\www\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\index.html [ array (
+  0 => 'sysset',
+  1 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] show tables like 'cyx_article' [ RunTime:0.035002s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'article' AND column_name = 'createtime' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.073004s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_article` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_article` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.027001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Article::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Article[F:\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-25T09:02:50+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/add
+[运行时间：0.143008s] [吞吐率：6.99req/s] [内存消耗：2,699.27kb] [文件加载：54]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Article',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Publictable->add[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\add.html [ array (
+  0 => 'sysset',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: clist[F:\git\cyx\www\runtime\temp\af820c1a5b0e5e7ac5f49966993ef3e3.php:65]
+---------------------------------------------------------------
+[ 2019-04-25T09:04:31+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/add
+[运行时间：0.044002s] [吞吐率：22.73req/s] [内存消耗：2,700.26kb] [文件加载：54]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Article',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Publictable->add[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\add.html [ array (
+  0 => 'sysset',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: clist[F:\git\cyx\www\runtime\temp\af820c1a5b0e5e7ac5f49966993ef3e3.php:65]
+---------------------------------------------------------------
+[ 2019-04-25T09:06:53+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/add
+[运行时间：0.152009s] [吞吐率：6.58req/s] [内存消耗：3,629.63kb] [文件加载：61]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Article',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publictable->add[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\add.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.073005s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: clist[F:\git\cyx\www\runtime\temp\af820c1a5b0e5e7ac5f49966993ef3e3.php:70]
+---------------------------------------------------------------
+[ 2019-04-25T09:16:39+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/add
+[运行时间：0.089005s] [吞吐率：11.24req/s] [内存消耗：3,629.52kb] [文件加载：61]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Article',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publictable->add[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\add.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: clist[F:\git\cyx\www\runtime\temp\af820c1a5b0e5e7ac5f49966993ef3e3.php:69]
+---------------------------------------------------------------
+[ 2019-04-25T09:16:41+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/index
+[运行时间：0.133007s] [吞吐率：7.52req/s] [内存消耗：4,170.64kb] [文件加载：67]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/article/add',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ F:\git\cyx\www\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\index.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] show tables like 'cyx_article' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'article' AND column_name = 'createtime' [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_article` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_article` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Article::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Article[F:\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-25T09:16:44+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Article/edit/id/1.html
+[运行时间：0.175010s] [吞吐率：5.71req/s] [内存消耗：4,004.13kb] [文件加载：62]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/article/index',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publictable->edit[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\edit.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.009001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [0]类的属性不存在:app\admin\model\Article->account[F:\git\cyx\www\thinkphp\library\think\Model.php:626]
+---------------------------------------------------------------
+[ 2019-04-25T09:16:47+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/index
+[运行时间：0.126007s] [吞吐率：7.94req/s] [内存消耗：3,998.96kb] [文件加载：65]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/article/add',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ F:\git\cyx\www\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\index.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables like 'cyx_article' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'article' AND column_name = 'createtime' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_article` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_article` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Article::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Article[F:\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-25T09:19:07+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/index
+[运行时间：0.120007s] [吞吐率：8.33req/s] [内存消耗：3,999.32kb] [文件加载：65]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/article/add',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ F:\git\cyx\www\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\index.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables like 'cyx_article' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'article' AND column_name = 'createtime' [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_article` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_article` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Article::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Article[F:\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-25T09:19:08+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Article/edit/id/1.html
+[运行时间：0.093005s] [吞吐率：10.75req/s] [内存消耗：3,966.27kb] [文件加载：60]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/article/index',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publictable->edit[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\edit.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-04-25T09:19:08+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Article/edit/id/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A014
+[运行时间：0.109006s] [吞吐率：9.17req/s] [内存消耗：3,787.57kb] [文件加载：58]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Article/edit/id/1.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+)
+[ info ] [ PARAM ] array (
+  'id' => '测试文章14',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publictable->edit[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\edit.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-04-25T09:19:09+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Article/edit/id/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A014
+[运行时间：0.101005s] [吞吐率：9.90req/s] [内存消耗：3,787.57kb] [文件加载：58]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'image/webp,*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Article/edit/id/1.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+)
+[ info ] [ PARAM ] array (
+  'id' => '测试文章14',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publictable->edit[ F:\git\cyx\www\application\admin\controller\Publictable.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\edit.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-04-25T09:19:30+08:00 ] 127.0.0.1 GET localhost/index.php/admin/article/index
+[运行时间：0.110006s] [吞吐率：9.09req/s] [内存消耗：3,998.96kb] [文件加载：65]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/article/add',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ F:\git\cyx\www\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] F:\git\cyx\www/application/admin\view\Article\index.html [ array (
+  0 => 'sysset',
+  1 => 'articletype',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=localhost;port=3306;dbname=cyx;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_articletype` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_articletype` WHERE  `is_delete` = 0 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] show tables like 'cyx_article' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'article' AND column_name = 'createtime' [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_article` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_article` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_article` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Article::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Article[F:\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[F:\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-25T16:39:02+08:00 ] 127.0.0.1 GET localhost/index.php/admin/Station
+[运行时间：0.058003s] [吞吐率：17.24req/s] [内存消耗：1,663.52kb] [文件加载：38]
+[ info ] [ LANG ] F:\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Station',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/index.php/admin/Index/index.html',
+  'connection' => 'keep-alive',
+  'cookie' => 'pgv_pvi=7376621568; UM_distinctid=16a4df0e8c21e5-09bde0c8d76042-14387740-1fa400-16a4df0e8c39a; CNZZDATA1261418685=1135333100-1556084157-%7C1556096178; PHPSESSID=e0hrnth3ok5qgmtvd57tch8cg4',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,12 +1,13 @@
 <?php
 namespace app\admin\controller;
-use think\Controller;
+use app\admin\controller\Publictable;
 use app\common\RBAC;
 use think\Db;
 use think\Url;
-class Index extends Controller{
+class Index extends Publictable{
 
-    function _initialize(){
+    protected function _initialize(){
+        parent::_initialize();
         Url::root('/index.php');
         if (!session('?uid')){
             $this->redirect(url('Login/login'));
@@ -17,6 +18,11 @@ class Index extends Controller{
                 $this->error('没有权限');
             }
         }
+        $sysset = [
+            'storename' => '宸亦轩',
+            'loginbg' =>dirname(config('UPLOADIMG_URL')).'/img/login-background.jpg'
+        ];
+        $this->assign('sysset',$sysset);
     }
     public function index(){
         
@@ -33,8 +39,6 @@ class Index extends Controller{
             }
         }
         $this->assign('menu',$list);
-        //获取商城名称
-        $storename = 
         
         $ulist = model('user')->where('id',session('uid'))->field('id,nickname')->find();
        	$this->assign('ulist',$ulist);
@@ -42,9 +46,8 @@ class Index extends Controller{
     }
     function geticon($name){
         switch ($name){
-            case 'systemgroup':$icon = 'fa-cog';
-            break;
-            default:$icon = 'fa-th-list';
+            case 'system':$icon = 'fa-cog';break;
+            default:$icon = 'fa-table';
         }
         return $icon;
     }
