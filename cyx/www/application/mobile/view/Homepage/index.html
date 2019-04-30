@@ -1,4 +1,18 @@
 <include file="Public:head" />
+<style type="text/css">
+  #hotnewsdata .title a{
+    display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 1; /** 显示的行数，显示高度设置成行高，多余部分隐藏 **/
+     overflow: hidden;
+  }
+  #hotnewsdata .abstract{
+    display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数，显示高度设置成行高，多余部分隐藏 **/
+     overflow: hidden;
+  }
+</style>
 <div id='layerA8F121CB94D29A8803848047DD73CA40' type='mbuttons' class='cstlayer' style='left: 169px; top: 470px; position: absolute; z-index: 161; width: 62px; height: 62px;' mid="" deg='0'>
   <div class="wp-mbuttons_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 62px; height: 62px; border-style: solid;">
     <a href="__APP__/mobile/service/index.html" class="btnarea button_btndefault-link" style="width:60px;height:60px;line-height:60px;"><span class="button_btndefault-label">按钮文本</span></a>
@@ -240,7 +254,7 @@
       img.fadeIn('slow',function(){
         img.data('is_loading',true).closest('.img,.wp-new-product-style-01-left').children('.imgloading').remove();
         imgharr.push(img.height());loop++; layer19E30ECE757DC0090D7C4C478E99DEB7_imgels.push(img)
-       });  
+       });
        var noimg=false;
        $('#layer19E30ECE757DC0090D7C4C478E99DEB7 img.img_lazy_load').each(function(){
          if($(this).attr('data-original')!=$(this).prop('src')) noimg=true;
@@ -252,15 +266,15 @@
 
   var layerid = 'layer19E30ECE757DC0090D7C4C478E99DEB7';
   var this_dom = $('#'+layerid);
-  this_dom.find(".wp-pager_link").css({'position':'relative','bottom':'auto','width':'100%'});  
+  this_dom.find(".wp-pager_link").css({'position':'relative','bottom':'auto','width':'100%'});
   wp_heightAdapt(this_dom);
   var cheight = this_dom.find(".wp-product_content").height();
   var oulheight = this_dom.find(".product_list-"+layerid).height();
   var olkheight = this_dom.find(".wp-pager_link").outerHeight();
   if(cheight>oulheight+olkheight){
     this_dom.find(".wp-pager_link").css({'position':'absolute','bottom':'0px','width':'100%'})
-  }  
-              
+  }
+
                          $(window).scrollTop(scrollt);
                          var ua = /micromessenger/i.test(navigator.userAgent.toLowerCase());
                          if(ua && !$('#layer19E30ECE757DC0090D7C4C478E99DEB7').data('_pager_delay_scroll_')){
@@ -283,10 +297,10 @@
     $(obj).each(function() {
       var img=$(this);
       callback(img);
-    });      
+    });
   }
     $('#layer19E30ECE757DC0090D7C4C478E99DEB7').data('not_need_heightadapt',true);
-    
+
   $(function(){
   var len=$('#layer19E30ECE757DC0090D7C4C478E99DEB7 img.img_lazy_load').length;
   if(len){
@@ -328,7 +342,7 @@
     };
     setCurtop();
   }
-  })  
+  })
   if ("01" === "01"||"01" === "02") {
     $('#layer19E30ECE757DC0090D7C4C478E99DEB7').data('deferred',$.Deferred());
     setTimeout(function(){
@@ -365,7 +379,7 @@
     });
                 var tmptimer = setTimeout(function(){
       $(tmplayerid).triggerHandler("fixedmarginright");
-      clearTimeout(tmptimer);tmplayerid = null; 
+      clearTimeout(tmptimer);tmplayerid = null;
     }, 50);
             // <<End
     $tmpnode = null;
@@ -383,25 +397,27 @@
 
     <div class="product_list-layer19E30ECE757DC0090D7C4C478E99DEB7" style="overflow:hidden;">
       <ul>
-        <li class="wp-new-article-style_lis" style="width:320px;margin-right:10px;">
-          <div class="img" style="height:auto;width:320px;">
-            <div class="imgloading" style="height:auto;width:318px;"></div><a href="__APP__/mobile/news/article.html"><img onerror="set_thumb_layer19E30ECE757DC0090D7C4C478E99DEB7(this);" onload="set_thumb_layer19E30ECE757DC0090D7C4C478E99DEB7(this);" src="__PUBLIC__/images/200712613315816_2.jpg" class="wp-product_list-thumbnail" style="display:none;height:auto;width:320px;" /></a>
-          </div>
 
-          <div class="wp-new-article-style-c">
-            <p class="title"><a href="__APP__/mobile/news/article.html">本地应急与运维保障解决方案</a></p>
-
-            <p class="mcate"><span class="category"><a href="__APP__/mobile/solution/index.html?product_category=21">企事业单位</a></span></p>
-
-            <div class="wp-new-ar-pro-style-description">
-              <textarea style="display:none;">
-&lt;p&gt;数据中心业务系统缺乏有效的监控手段，无从知晓业务系统服务器的性能，整个单位应用系统的安全性和&lt;/p&gt;
-</textarea>
+        <volist name="solution" id="vo">
+          <li class="wp-new-article-style_lis" style="width:320px;margin-right:10px;">
+            <div class="img" style="height:auto;width:320px;">
+              <div class="imgloading" style="height:auto;width:318px;"></div>
+              <a href="__APP__/mobile/news/article/article_id/{$vo.id}.html">
+                <img onerror="set_thumb_layer19E30ECE757DC0090D7C4C478E99DEB7(this);" onload="set_thumb_layer19E30ECE757DC0090D7C4C478E99DEB7(this);" src="{$uploadurl}{$vo.thumbpicture}" style="display:none;height:auto;width:320px;" />
+              </a>
             </div>
-          </div>
-        </li>
 
-        <li class="wp-new-article-style_lis" style="width:320px;margin-right:10px;">
+            <div class="wp-new-article-style-c">
+              <p class="title"><a href="__APP__/mobile/news/article.html">{$vo.title}</a></p>
+
+              <div class="wp-new-ar-pro-style-description">
+                <textarea style="display:none;">{$vo.intro}</textarea>
+              </div>
+            </div>
+          </li>
+        </volist>
+
+        <!-- <li class="wp-new-article-style_lis" style="width:320px;margin-right:10px;">
           <div class="img" style="height:auto;width:320px;">
             <div class="imgloading" style="height:auto;width:318px;"></div><a href="__APP__/mobile/news/article.html"><img onerror="set_thumb_layer19E30ECE757DC0090D7C4C478E99DEB7(this);" onload="set_thumb_layer19E30ECE757DC0090D7C4C478E99DEB7(this);" src="__PUBLIC__/images/17961491_103133557000_2.jpg" class="wp-product_list-thumbnail" style="display:none;height:auto;width:320px;" /></a>
           </div>
@@ -412,9 +428,7 @@
             <p class="mcate"><span class="category"><a href="__APP__/mobile/solution/index.html">企事业单位</a></span></p>
 
             <div class="wp-new-ar-pro-style-description">
-              <textarea style="display:none;">
-&lt;p&gt;随着检察院信息系统的不断发展，一体化数字化检察院在全国范围内快速发展，信息化程度越来越高，信&lt;/p&gt;
-</textarea>
+              <textarea style="display:none;">&lt;p&gt;随着检察院信息系统的不断发展，一体化数字化检察院在全国范围内快速发展，信息化程度越来越高，信&lt;/p&gt;</textarea>
             </div>
           </div>
         </li>
@@ -430,12 +444,10 @@
             <p class="mcate"><span class="category"><a href="__APP__/mobile/solution/index.html">教育行业</a></span></p>
 
             <div class="wp-new-ar-pro-style-description">
-              <textarea style="display:none;">
-&lt;p&gt;在搬迁过程中，如何应对操作系统或服务器硬件损坏的情况下的业务系统快速恢复，在搬迁过程中，对不&lt;/p&gt;
-</textarea>
+              <textarea style="display:none;">&lt;p&gt;在搬迁过程中，如何应对操作系统或服务器硬件损坏的情况下的业务系统快速恢复，在搬迁过程中，对不&lt;/p&gt;</textarea>
             </div>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
 
@@ -445,14 +457,14 @@
 
   $('#layer19E30ECE757DC0090D7C4C478E99DEB7').find('img.img_lazy_load').lazyload({
    threshold  : 200,
-   failure_limit : $('#layer19E30ECE757DC0090D7C4C478E99DEB7').find('img.img_lazy_load').length,  
+   failure_limit : $('#layer19E30ECE757DC0090D7C4C478E99DEB7').find('img.img_lazy_load').length,
     placeholder:"__PUBLIC__/images/blank.gif",
     load:function(){
      var self=$(this);
      var id=self.closest('.cstlayer').prop('id');
     if(window['set_thumb_'+id]) window['set_thumb_'+id](this);
    }
-  }); 
+  });
 
   //]]>
   </script>
@@ -517,7 +529,7 @@
 //<![CDATA[
 
 
-      $(function(){ 
+      $(function(){
       if ("skin1" != "skin1"&&"skin1" != "default"&&"skin1" != "ylist2"&&"skin1" != "skin2"&&"skin1" != "skin2c"&&"skin1" != "listStyle"&&"skin1" != "ylist1") {
       $("#layer62047CEDE307A86BE3E7B3E1451EB146").find(".wpart-border-line").eq(0).css("border","0");
       }
@@ -528,46 +540,22 @@
     </div>
 
     <div class="article_list-layer62047CEDE307A86BE3E7B3E1451EB146" style="overflow:hidden;">
-      <ul>
-        <li>
-          <p class="title"><a href="__APP__/mobile/news/article.html?article_id=55">数腾软件出席Ucon2015第二届</a></p>
+      <ul id="hotnewsdata">
+        <volist name="hotnews" id="vo">
+          <li>
+            <!-- 1行 -->
+            <p class="title">
+              <a href="__APP__/mobile/news/article.html?article_id={$vo.id}">{$vo.title}</a>
+            </p>
 
-          <p class="time"><span class="wp-new-ar-pro-time">2017-03-06</span></p>
+            <p class="time"><span class="wp-new-ar-pro-time">{:date('Y-m-d', $vo.createtime)}</span></p>
 
-          <p class="abstract">2015年10月29日，数腾作为合作单位，受邀参加了在上海龙之梦万丽大酒店隆重举行的第二届中</p>
+            <!-- 2行 -->
+            <p class="abstract">{$vo.intro}</p>
 
-          <p class="wpart-border-line"></p>
-        </li>
-
-        <li>
-          <p class="title"><a href="__APP__/mobile/news/article.html?article_id=54">数腾软件与华三通信签约云计算技术联盟</a></p>
-
-          <p class="time"><span class="wp-new-ar-pro-time">2017-03-06</span></p>
-
-          <p class="abstract">数腾软件针对用户在运维管理过程中遇到的核心安全问题，搭建了展台，为用户更好的提供解决的方案和</p>
-
-          <p class="wpart-border-line"></p>
-        </li>
-
-        <li>
-          <p class="title"><a href="__APP__/mobile/news/article.html">完美登录全球云计算大会，云迁移/云保</a></p>
-
-          <p class="time"><span class="wp-new-ar-pro-time">2017-03-06</span></p>
-
-          <p class="abstract">2016第四届全球云计算大会于9月20-22日在上海国际会议中心成功举办。大会吸引了众多业内</p>
-
-          <p class="wpart-border-line"></p>
-        </li>
-
-        <li>
-          <p class="title"><a href="__APP__/mobile/news/article.html">烽火普天与咸宁日报就大数据服务项目达</a></p>
-
-          <p class="time"><span class="wp-new-ar-pro-time">2016-09-04</span></p>
-
-          <p class="abstract">据美国“侨报”报道，当地时间12月23日，美国公民及移民服务局（USCIS）将实施新费用。</p>
-
-          <p class="wpart-border-line"></p>
-        </li>
+            <p class="wpart-border-line"></p>
+          </li>
+        </volist>
       </ul>
     </div>
 

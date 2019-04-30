@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/admin\view\Article\index.html";i:1556595884;s:78:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\view\Public\top.html";i:1556531645;s:81:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\view\Public\footer.html";i:1556531645;s:83:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556531645;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:86:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/admin\view\Customertype\index.html";i:1556531645;s:78:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\view\Public\top.html";i:1556531645;s:81:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\view\Public\footer.html";i:1556531645;s:83:"D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556531645;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,31 +24,12 @@
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="ibox float-e-margins">
             <div class="ibox-title col-sm-12">
-                <div class="col-sm-6"><h3>文章列表</h3></div>
+                <div class="col-sm-6"><h3>客户分类</h3></div>
                 <div class="col-sm-6 text-right">
-                    <a href="/index.php/admin/article/add"><button class="btn btn-primary">新增</button></a>
-	                <!-- <a href="javascript:multidel()"><button class="btn btn-primary">批量删除</button></a> -->
+                    <a href="/index.php/admin/customertype/add"><button class="btn btn-primary">新增</button></a>
 				</div>
                 <div style="clear:both;height:10px"></div>
-                <!-- 搜索栏 start -->
-                <div>
-                    <form action="/index.php/admin/article/importExcel" method="get" id="queryForm">
-                        <div class="col-sm-12">
-                            <!-- <div class="col-sm-2" style="padding-right: 5px"><input type="text" id="start" name="start" class="form-control" placeholder="起始时间"/></div>
-                            <div class="col-sm-2" style="padding-left: 5px"><input type="text" id="end" name="end" class="form-control" placeholder="结束时间"/></div> -->
-                            <div class="col-sm-2"><input type="text" name="name" id="name" class="form-control" placeholder="文章名称"/></div>
-                            <div class="col-sm-2 text-right">
-                                <div class="col-sm-3"><input type="button" onclick="submitquery(1)" id="submitBtn" value="查询" class="btn  btn-outline btn-default"></div>
-                                <div class="col-sm-3" id="loading" style="margin-top:5px;"></div>
-                            </div>
-                            <!-- <div class="col-sm-2">
-                                <a href=""><button class="btn btn-primary" type="submit">导出</button></a>
-                            </div> -->
-                        </div>
-                    </form>
-                </div>
-                <!-- 搜索栏 end -->
-                <div style="clear:both;"></div>
+                
 			</div>
             <div class="ibox-content">
                 <div class="row row-lg">
@@ -60,12 +41,10 @@
                                     <tr>
                                         <th class="bs-checkbox " style="width: 36px; " data-field="state" tabindex="0"><div class=" "><input name="btSelectAll" type="checkbox" value="0"></div><div class="fht-cell"></div></th>
                                         <th>ID</th>
-										<th>文章类型</th>
-										<th>标题</th>
-                                        <th>副标题</th>
-                                        <th class="col-sm-4">简介</th>
-                                        <th>状态</th>
-                                        <th>操作</th>
+										<th>名称</th>
+										<th class="col-sm-6">描述</th>
+                                        <th>排序</th>
+										<th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody id="datalist" >
@@ -85,45 +64,12 @@
     	function querysubmit(id) {
 			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
 			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
-    		$.get('/index.php/admin/article/index',{'p':id,'name':$('#name').val()},function(json){
+    		$.get('/index.php/admin/customertype/index',{'p':id,'account':$('#account').val()},function(json){
                 $("#datalist").empty();
                 $("#datalist").html(json.data.html);
                 $("#page").html(json.data.page);
             },'json');
 		}
-		function resetuserpassword(id){
-        	if (id){
-        		var inputValue = id;
-        	}else{
-        		var inputValue = $("input[type='checkbox']:checked").val();
-        	}
-        	if ($("#page .active span").html()){
-        		var page = $("#page .active span").html().replace(/\D+/g,"")
-        	}
-        	if (inputValue == undefined){
-        		alert("请选择用户帐户");
-        		return;
-        	} else {
-        		if (window.confirm('确实要重置用户密码吗？')) {
-        			$.post('/index.php/admin/article/resetuserpassword',{'uid':inputValue},function(json){
-    					if(json.code == 0){
-    						alert(json.msg);
-    						location.reload();
-    					} else {
-    						alert(json.msg);
-    					}
-    				},'json')
-    			}
-        	}
-        }
-        function publish(id,status){
-            $.post('/index.php/admin/article/publish',{id:id,status:status},function(json){
-                // alert(json.msg);
-                if (json.code == 0) {
-                    window.location.href = '/index.php/admin/article/index';
-                }
-            },'json')
-        }
 	</script> 
 </body>
 <script src="/public/static/js/content.min.js?v=1.0.0"></script>
@@ -193,10 +139,10 @@
 	//单软删除
 	function del(id){
 		if (confirm('确认删除该条记录？')) {
-			$.post('/index.php/admin/article/delete',{id:id},function(json){
+			$.post('/index.php/admin/customertype/delete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/article/index';
+					window.location.href = '/index.php/admin/customertype/index';
 				}
 			},'json')
 		}
@@ -204,10 +150,10 @@
 	//单硬删除
 	function shiftdelete(id){
 		if (confirm('确认删除该条记录,删除后不可恢复？')) {
-			$.post('/index.php/admin/article/shiftdelete',{id:id},function(json){
+			$.post('/index.php/admin/customertype/shiftdelete',{id:id},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/article/index';
+					window.location.href = '/index.php/admin/customertype/index';
 				}
 			},'json')
 		}
@@ -222,10 +168,10 @@
 		}
 
 		if (confirm('确认删除选中记录？')) {
-			$.post('/index.php/admin/article/multidelete',{ids:ids},function(json){
+			$.post('/index.php/admin/customertype/multidelete',{ids:ids},function(json){
 				alert(json.msg);
 				if (json.code == 0) {
-					window.location.href = '/index.php/admin/article/index';
+					window.location.href = '/index.php/admin/customertype/index';
 				}
 			},'json')
 		}
