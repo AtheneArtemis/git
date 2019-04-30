@@ -65,7 +65,7 @@
                                     <select name="gid" class="form-control" id="cat-group" onchange="changeGroup()">
                                         <option value="0">无分组</option>
                                         <volist name="grouplist" id="v">
-                                            <option value="{$v.id}" <if condition="$list.gid eq $v.id">selected</if> >{$v.name}</option>
+                                            <option value="{$v.id}" <if condition="$list.gid eq $v.id">selected</if> >{$v.title}</option>
                                         </volist>
                                     </select>
                                 </div>
@@ -76,7 +76,7 @@
                                     <select name="pid" class="form-control" id="cat-parent" onchange="changeParent()">
                                         <option value="-10000">无上级</option>
                                         <volist name="parentlist" id="v">
-                                            <option value="{$v.id}" <if condition="$list.pid eq $v.id">selected</if> >{$v.name}</option>
+                                            <option value="{$v.id}" <if condition="$list.pid eq $v.id">selected</if> >{$v.title}</option>
                                         </volist>
                                     </select>
                                 </div>
@@ -124,7 +124,10 @@
         }
         //上级切换
         function changeParent(){
-            $("#level").val(2);
+            var pid = $("#cat-parent option:selected").val();
+            if (pid != -10000) {
+                $("#level").val(2);
+            }
         }
     </script>
 <include file="Public/footer" />

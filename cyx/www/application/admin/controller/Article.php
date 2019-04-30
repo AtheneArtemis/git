@@ -96,15 +96,15 @@ class Article extends Base{
         $shtml = '';
 
         if (strcmp($type, 'group') === 0) {
-            $parent = $articletype->where(['is_delete'=>0,'gid'=>$id,'level'=>1])->field('id,name')->select();
+            $parent = $articletype->where(['is_delete'=>0,'gid'=>$id,'level'=>1])->field('id,name,title')->select();
             if (!empty($parent)) {
                 foreach ($parent as $k1 => $v1) {
-                    $phtml .= '<option value="'.$v1['id'].'">'.$v1['name'].'</option>';
+                    $phtml .= '<option value="'.$v1['id'].'">'.$v1['title'].'</option>';
                 }
-                $sub = $articletype->where(['is_delete'=>0,'gid'=>$id,'pid'=>$parent[0]['id'],'level'=>2])->field('id,name')->select();
+                $sub = $articletype->where(['is_delete'=>0,'gid'=>$id,'pid'=>$parent[0]['id'],'level'=>2])->field('id,name,title')->select();
                 if (!empty($sub)) {
                     foreach ($sub as $k2 => $v2) {
-                        $shtml .= '<option value="'.$v2['id'].'">'.$v2['name'].'</option>';
+                        $shtml .= '<option value="'.$v2['id'].'">'.$v2['title'].'</option>';
                     }
                 }else{
                     $shtml = '<option value="-10000">暂无下属分类</option>';
@@ -113,10 +113,10 @@ class Article extends Base{
                 $phtml = '<option value="-10000">暂无下属分类</option>';
             }
         }elseif (strcmp($type, 'parent') === 0) {
-            $sub = $articletype->where(['is_delete'=>0,'pid'=>$id,'level'=>2])->field('id,name')->select();
+            $sub = $articletype->where(['is_delete'=>0,'pid'=>$id,'level'=>2])->field('id,name,title')->select();
             if (!empty($sub)) {
                 foreach ($sub as $k2 => $v2) {
-                    $shtml .= '<option value="'.$v2['id'].'">'.$v2['name'].'</option>';
+                    $shtml .= '<option value="'.$v2['id'].'">'.$v2['title'].'</option>';
                 }
             }else{
                 $shtml = '<option value="-10000">暂无下属分类</option>';

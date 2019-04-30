@@ -1,5 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/index\view\news\article.html";i:1556590266;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:57:"F:\git\cyx\www/application/index\view\Solution\index.html";i:1556594114;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<script src="/public/static/js/floating.js"></script>
@@ -202,9 +202,9 @@
     					<script>		         $('#layerF7E21885D347DE8B4B0271F6D7E12D5C').triggerHandler('layer_ready');</script>			</div>
 </div>
     					
-  <link rel="stylesheet" type="text/css" href="/public/static/css/cyx/article_detail.css">
-  <link rel="stylesheet" type="text/css" href="/public/static/css/cyx/615255f261874b289d8a985fd7d88bb8.cssx">
-    <script>
+<link rel="stylesheet" type="text/css" href="/public/static/css/cyx/61b12e9945c9deaa3494c24c4efe2e5c.cssx">
+
+  <script>
     var $fullwidth=$('#layer9EAF89AF7AC38ADE518847573DD9C1AF .full_width');
     $fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
     $(function () {
@@ -271,204 +271,822 @@
             </div>
             <script>                 $('#layer4033C5A1D8D22A7D37C61FE267DDE4F2').triggerHandler('layer_ready');</script>
 
+<div id="layer59115A9781731147FB7F323B59F581C8" class="full_column"   style="width:1200px;position:absolute;top:440px;height:50px;z-index:105;">
+    <div class="full_width" style="position:absolute;height:50px;background-color:#f6f6f6;background:;">            </div>
+    <div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:50px;">
+        <div id='layer38ED725A7E9AC4F0F8E39A58A5272044' type='product_category'  class='cstlayer' style='left: 0px; top: 0px; position: absolute; z-index: 135; width: 1200px; height: 50px;'  mid=""  fatherid='layer59115A9781731147FB7F323B59F581C8'   deg='0'><script type="text/javascript">
+
+            function wp_showdefaultHoverCss(layer_id){
+                var layertype=$('#'+layer_id).attr('type');
+                if(layertype && window['wp_showdefaultHoverCss_'+layertype]){
+                    return window['wp_showdefaultHoverCss_'+layertype](layer_id);
+                }
+                return false;
+            }
+
+            function wp_showdefaultHoverCss_product_category(layer_id)
+            {
+                var plugin_name=$("#"+layer_id).attr('type');
+                var hover=$("#"+layer_id).find('.nav1').attr('hover');
+                if(hover!=1){ return;}
+
+                wp_getdefaultHoverCss(layer_id);
+                var n=0;
+
+                if(plugin_name=='new_navigation'){
+                    var page_id=$("#page_id").val();
+                    var rootpid=$("#page_id").attr("rpid")*1;
+                }else{
+                    var page_id=$('#'+layer_id+'').find(".default_pid").html();
+                    if(page_id==0 || page_id.length==0){
+                        page_id=$('#nav_'+layer_id+'').children('li:first').attr('pid');    
+                    }
+                }
+
+                $('#nav_'+layer_id+'').children('li').each(function(){
+                    var type_pid=$(this).attr('pid');       
+                    if(type_pid==page_id){
+                        $(this).addClass("lihover").children('a').addClass("ahover");
+
+                    }else if(type_pid==rootpid){
+                        $(this).addClass("lihover").children('a').addClass("ahover");
+
+                    }
+
+                    if(window.location.href == $(this).find("a").attr("href") || window.location.href == $(this).find("a").attr("href")+"&brd=1"){  $(this).addClass("lihover").children('a').addClass("ahover"); }
+                    n++;
+                });
+
+                if(!$('#nav_'+layer_id+'').children('li.lihover').length){
+                    $('#nav_'+layer_id+' ul').children('li').each(function(){
+                        var lochref=window.location.href.replace(/^https?:/,'').replace(/&brd=1$/,'');
+                        var subahref= $(this).find('a').attr("href").replace(/^https?:/,'').replace(/&brd=1$/,'');
+                        if(lochref == subahref || lochref ==subahref+"&brd=1"){ 
+                            $(this).parents(".wp_subtop").addClass("lihover").children('a').addClass("ahover"); 
+                            return;
+                        }
+                    })
+                }
+
+                if(hover==1){        
+                    if($('#nav_'+layer_id+'').children('li').children('a.ahover').length<1){
+                        $('#nav_'+layer_id+'').children('li:first').addClass("lihover").children('a').addClass("ahover");
+                    }    
+                }
+            }
+            var wp_showdefaultHoverCss_layer38ED725A7E9AC4F0F8E39A58A5272044=wp_showdefaultHoverCss;
+            function wp_addMoreButton(layer_id){
+                var layertype=$('#'+layer_id).attr('type');
+                if(layertype && window['wp_addMoreButton_'+layertype]){
+                    return window['wp_addMoreButton_'+layertype](layer_id);
+                }
+                return false;
+            }
+            function wp_addMoreButton_product_category(layer_id)
+            {
+                var firstLiTop = 0;
+                var hasMore = false;
+                $('#nav_'+layer_id).children('li.wp_subtop').each(function(i){
+                    if(i == 0) {firstLiTop = $(this).offset().top;return true;} 
+                    if($(this).offset().top > firstLiTop)
+                    {
+        $('#'+layer_id).data('hasMore','yes');//配置逻辑获取
+        var more = $.trim($('#'+layer_id).children('.wp-product_category_content').children('.nav1').attr('more'));
+        var doms = $(this).prev().prev().nextAll().clone();
+        var objA = $(this).prev().children('a');
+        if(objA.children('span').length > 0) objA.children('span').html(more);
+        else objA.html(more);
+
+        if(objA.hasClass('sub'))
+        {
+            objA.next('ul').empty();
+            doms.appendTo(objA.next('ul'));
+        }
+        else
+        {
+            objA.after('<ul></ul>');
+            doms.appendTo(objA.next('ul'));
+            objA.addClass('sub');
+        }
+        
+        $(this).prev().nextAll().remove();
+        objA.next('ul').children('li').removeClass('wp_subtop');
+        hasMore = true;
+
+        objA.attr('href','javascript:void(0);');
+        
+        //点击"更多"弹出全站导航
+        if($("#"+layer_id).find('.nav1').attr('moreshow') == 1)
+        {
+            objA.click(function (e){
+                $('#'+layer_id).find('#basic-modal-content_'+layer_id).modal({
+                    containerId:'wp-product_category-simplemodal-container_'+layer_id,
+                    zIndex:9999,
+                    close:false,
+                    onOpen:function(dialog){
+                        dialog.overlay.fadeIn('slow', function(){
+                            dialog.container.slideDown('slow',function(){
+                                dialog.data.fadeIn('slow','swing',function(){
+                                    $('.wp_menus').not('.wp_thirdmenu0').each(function(){
+                                        var left = $(this).parent().parent().children('a').eq(0).outerWidth()+5;
+                                        $(this).css({position:'relative',left:left+'px'});
+                                    });
+                                });
+                            });
+                        });
+                    },
+                    onClose:function(dialog){
+                        dialog.data.fadeOut('slow',function (){
+                            dialog.container.slideUp('slow', function () {
+                                dialog.overlay.fadeOut('slow', function () {
+                                    $.modal.close();
+                                });
+                            });
+                        });
+                    }
+                });
+                return false;
+            });
+        }
+        return false;
+    }
+});
+                if(!hasMore) $('#'+layer_id).data('hasMore','no');
+                wp_showdefaultHoverCss(layer_id);
+            }
+
+//编辑模式水平拖动动态刷新修改More按钮
+function wp_updateMoreButton(layer_id)
+{
+    var $layer = $('#'+layer_id);
+    var $nav1 = $layer.children('.wp-product_category_content').children('.nav1');
+    var tmp_css = $.trim($("#datastys_"+layer_id).text());
+    var tmp_cssa = $.trim($("#datasty_"+layer_id).text());
+    $.post(parseToURL("product_category","refreshNavigator",{menustyle:$.trim($nav1.attr('skin')),saveCss:'yes',page_id:$("#page_id").val(),blockid:layer_id,typeval:$.trim($layer.find(".wp-product_category_content").attr('type')),colorstyle:$.trim($nav1.attr('colorstyle')),direction:$.trim($nav1.attr('direction')),more:$.trim($nav1.attr('more')),hover:$.trim($nav1.attr('hover')),moreshow:$.trim($nav1.attr('moreshow')),morecolor:$.trim($nav1.attr('morecolor'))}),function(data){
+        $layer.find('.wp-product_category_content').html(data);
+        $("#datastys_"+layer_id).text(tmp_css);
+
+        var setcss=$("#page_set_css").html();
+        setcss=setcss.replace(/<style>/i,'').replace(/<\/style>/i,'');
+        var reg=new RegExp("(.*)([/][/*]"+layer_id+"[/*][/])(.*)([/][/*]"+layer_id+"[/*][/])(.*)","gmi");
+        var url=setcss;
+        var rep=url.replace(reg,"$1 $5");
+        var tempcss=rep + " /*"+ layer_id +"*/ "+tmp_cssa+" "+tmp_css+" /*"+ layer_id +"*/ ";
+        tempcss = tempcss.replace(/[\r\n]/g, " ").replace(/\s+/g, " "); 
+        $("#page_set_css").html('<style> '+tempcss+ '</style>');
+    });
+    wp_showdefaultHoverCss(layer_id);
+}
 
 
-<div id="layer3D61E8896E9E119372DE2ECB454DD187" class="full_column"   style="width:1200px;position:absolute;top:440px;height:50px;z-index:134;">
-    <div class="full_width" style="position:absolute;height:50px;background-color:#f6f6f6;background:;">		    </div>
-			<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:50px;">
-								<div id='layerEECF8F395F15819D11CE7C0BFB7266AD' type='article_category'  class='cstlayer' style='left: 0px; top: 0px; position: absolute; z-index: 135; width: 1200px; height: 50px;'  mid=""  fatherid='layer3D61E8896E9E119372DE2ECB454DD187'   deg='0'><div class="wp-article_category_content" id="wp-atype_layerEECF8F395F15819D11CE7C0BFB7266AD" style="border-color: transparent; border-width: 0px; width: 1200px; height: 50px;">
-<script type="text/javascript"> 
-    var jeditMode = 1,jlayerid='layerEECF8F395F15819D11CE7C0BFB7266AD';
-		
-	        jeditMode = 0;
-		
-</script>
-<div skin="hs9" class="nav1 menu_hs9" ishorizon="" colorstyle="black" direction="0" more="更多" moreshow="1" morecolor="darkorange" hover="1"
-subopen="" submethod=""
->
-	  <ul id="nav_layerEECF8F395F15819D11CE7C0BFB7266AD" class="navigation"><li style="width:50%;z-index:2;"  class="wp_subtop"  pid="12" ><a class="  " href="news.html?article_category=12&brd=1"  ><span style="display:block;overflow:hidden;">行业新闻</span></a></li><li style="width:50%;z-index:2;"  class="wp_subtop"  pid="1" ><a class="  " href="news.html?article_category=1&brd=1"  ><span style="display:block;overflow:hidden;">公司动态</span></a></li></ul>
-   <div class="default_pid" style="display:none; width:0px; height:0px;">12</div>
- </div> 
- 
+function wp_removeLoading(layer_id)
+{
+
+    var $nav1 = $('#'+layer_id).find(".nav1");
+    var ishorizon=$nav1.attr("ishorizon");
+    if(ishorizon=='1'){
+        $("#"+layer_id).find('.wp-new_navigation_content').css({height:'auto',overflow:'hidden'});
+    }else{
+        $("#"+layer_id).find('.wp-new_navigation_content').css({width:'auto',overflow:'hidden'});
+    }
+// 修复IE浏览器部分版本导航无法显示问题 2013/12/26
+
+var temptimer = setTimeout(function(){
+    $("#"+layer_id).find('.wp-new_navigation_content').css("overflow", 'visible');
+    clearTimeout(temptimer);
+}, 50);
+}
+</script><div class="wp-product_category_content" id="wp-ptype_layer38ED725A7E9AC4F0F8E39A58A5272044" style="border-color: transparent; border-width: 0px; width: 1200px; height: 50px;">
+    <script type="text/javascript"> 
+        $("#layer38ED725A7E9AC4F0F8E39A58A5272044").data("jeditMode",0);
+        layer_prdcat_setvar({"isedit":0,"layerid":"layer38ED725A7E9AC4F0F8E39A58A5272044"});
+        $(function(){
+            setTimeout(function(){
+                var layerids = "ul#nav_layer38ED725A7E9AC4F0F8E39A58A5272044";
+                if($(layerids).find('.wp_subtop:last').children('a').html() == ""){
+                    $(layerids).find('.wp_subtop:last').children('a').html('更多');
+                }
+            },500)
+        })
+
+        var wp_showdefaultHoverCss_layer38ED725A7E9AC4F0F8E39A58A5272044=wp_showdefaultHoverCss;
+        $("#layer38ED725A7E9AC4F0F8E39A58A5272044").data("datasty_", '@charset "utf-8";  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044, #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul {padding:0; margin:0; list-style:none; }  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 {padding-left:15px; padding-right:15px;position:relative; background-position:top left;background-repeat:repeat-x;background-color:transparent;background-image:url("http://static.websiteonline.cn/website/plugin/new_navigation/styles/hs9/dbj.jpg");line-height:50px;height:50px; }  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop {text-align:center;float:left; height:50px;line-height:50px;background-image:url(http://static.websiteonline.cn/website/plugin/new_navigation/view/images/png_bg.png);background-color:transparent;background-position:top left;background-repeat:repeat;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop:hover{text-align:center; background-color:transparent;background-position:top left;height:50px;line-height:50px; background-image:url("http://static.websiteonline.cn/website/plugin/new_navigation/styles/hs9/dhover.jpg");background-repeat:repeat-x;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a {white-space: nowrap;overflow:hidden;padding-left:15px;padding-right:15px;text-align:center;display:block;  font-family:arial; font-size:14px; color:#FFFFFF; text-decoration:none; font-weight:normal;font-style:normal;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a:hover{color:#333333;text-align:center;font-family:arial; font-size:14px; font-weight:normal;font-style:normal;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul{display:none;width:100%;position:absolute; top:38px; left:-9999px;background-image:url(http://static.websiteonline.cn/website/plugin/new_navigation/view/images/png_bg.png);background-repeat:repeat;background-color:transparent;background-position:top left;padding-bottom:3px;padding-top:3px;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li{text-align:center;float:left; background-color:#fbfbfb;background-position:top left;background-repeat:repeat;background-image:url(http://static.websiteonline.cn/website/plugin/new_navigation/view/images/png_bg.png);height:25px;line-height:25px;font-weight:normal;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li:hover{text-align:center;  background-position:top left;background-repeat:repeat;background-image:url(http://static.websiteonline.cn/website/plugin/new_navigation/view/images/png_bg.png);background-color:#2f2f2f;height:25px;line-height:25px;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a {white-space: nowrap;color:#666666;text-align:center;float:left; display:block; padding:0 10px 0 10px; font-family:arial; font-size:12px; text-decoration:none; font-weight:normal;font-style:normal;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{color:#fff;text-align:center;float:left; padding:0 10px 0 10px; font-family:arial; font-size:12px; text-decoration:none; font-weight:normal;font-style:normal;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li ul.floatRight li {float:right;}  #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul ul {background-image:url(http://static.websiteonline.cn/website/plugin/new_navigation/view/images/png_bg.png);}');
+        $("#layer38ED725A7E9AC4F0F8E39A58A5272044").data("datastys_", '#nav_layer38ED725A7E9AC4F0F8E39A58A5272044{background-color:transparent;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044{background-image:url(http://static.websiteonline.cn/website/plugin/product_category/view/images/png_bg.png);}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a{color:#000000;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a{font-size:15px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop{line-height:50px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop:hover{background-image:url(http://static.websiteonline.cn/website/plugin/product_category/view/images/png_bg.png);}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a:hover{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li{height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li{line-height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a{font-size:14px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li:hover{height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li:hover{line-height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{font-size:14px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop:hover{background-color:transparent;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a:hover{color:#ff9424;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a:hover{font-size:15px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li:hover{background-color:#ff9424;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{color:#ffffff;}');
+    </script>
+    <div skin="hs9" class="nav1 menu_hs9" ishorizon="" colorstyle="black" direction="0" more="更多" moreshow="1" morecolor="darkorange" hover="1" subopen="" submethod="">
+        <div id="datasty_layer38ED725A7E9AC4F0F8E39A58A5272044" style="display:none;width:0px;height:0px;">
+        </div>
+        <div id="datastys_layer38ED725A7E9AC4F0F8E39A58A5272044" style=" display:none; width:0px; height:0px;">
+        </div>
+        <div id="hoverlayer38ED725A7E9AC4F0F8E39A58A5272044" style=" display:none; width:0px; height:0px;"></div>   
+        <ul id="nav_layer38ED725A7E9AC4F0F8E39A58A5272044" class="navigation">
+            <!-- <li style="width:50%;z-index:2;"  class="wp_subtop"  pid="5" ><a class=" sub " href="/index.php/home/solution/index.html?product_category=5&brd=1"  ><span style="display:block;overflow:hidden;">行业解决方案</span></a>
+                <ul style="z-index:2;">
+                    <li style="z-index:3;"  class="">
+                        <a class=" " href="/index.php/home/solution/index.html?product_category=18&brd=1">政府机构</a>
+                    </li>
+                    <li style="z-index:3;"  class="">
+                        <a class=" " href="/index.php/home/solution/index.html?product_category=19&brd=1">医疗卫生</a>
+                    </li>
+                    <li style="z-index:3;"  class="">
+                        <a class=" " href="/index.php/home/solution/index.html?product_category=20&brd=1">教育行业</a>
+                    </li>
+                    <li style="z-index:3;"  class="">
+                        <a class=" " href="/index.php/home/solution/index.html?product_category=21&brd=1">企事业单位</a>
+                    </li>
+                </ul>
+            </li>
+            <li style="width:50%;z-index:2;"  class="wp_subtop"  pid="6" ><a class="  " href="/index.php/home/solution/index.htmlproduct_category=6&brd=1"  ><span style="display:block;overflow:hidden;">产品解决方案</span></a></li> -->
+            <?php if(is_array($articletype) || $articletype instanceof \think\Collection || $articletype instanceof \think\Paginator): $i = 0; $__LIST__ = $articletype;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                <li style="width:50%;z-index:2;"  class="wp_subtop"  pid="5" >
+                    <a class=" sub " href="<?php echo url('Solution/index',['articletype_id'=>$v['id']]); ?>"  ><span style="display:block;overflow:hidden;"><?php echo $v['title']; ?></span></a>
+                    <?php if(!(empty($v['subtype']) || (($v['subtype'] instanceof \think\Collection || $v['subtype'] instanceof \think\Paginator ) && $v['subtype']->isEmpty()))): ?>
+                        <ul style="z-index:2;">
+                            <?php if(is_array($v['subtype']) || $v['subtype'] instanceof \think\Collection || $v['subtype'] instanceof \think\Paginator): $i = 0; $__LIST__ = $v['subtype'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                <li style="z-index:3;"  class="">
+                                    <a class=" " href="<?php echo url('Solution/index',['articletype_id'=>$vo['id']]); ?>"><?php echo $vo['title']; ?></a>
+                                </li>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </ul>
+                    <?php endif; ?>
+                </li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+        <div class="default_pid" style="display:none; width:0px; height:0px;"></div>
+    </div>
 </div>
+<style type="text/css">
+ #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{
+    background-color:rgba(255,148,36);  
+    color: #fff;
+}
+</style>
 <script type="text/javascript">
-layer_article_category_hs9_func({
-	"layer_id": 'layerEECF8F395F15819D11CE7C0BFB7266AD',
-	"menustyle": 'hs9',
-	"editmode": parseInt('0')
-})
-</script>
+    function layer38ED725A7E9AC4F0F8E39A58A5272044_liHoverCallBack()
+    {
+        $(".menu_hs9 #nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li").hover(function(){
+            $(this).children("ul").css("left", "0px").show();
+        },function(){
+            $(this).children("ul").hide();
 
-<script>	
-    var $skin=$("#layerEECF8F395F15819D11CE7C0BFB7266AD").find('.nav1');
-    if($skin.attr('skin')=='vertical_vs10_1' && $skin.attr('subopen')=='1'){
-        $('#nav_'+'layerEECF8F395F15819D11CE7C0BFB7266AD'+' .wp_subtop >ul.subse').css("display",'block');
-        var menul=$('#layerEECF8F395F15819D11CE7C0BFB7266AD').find('ul.navigation'),off_height=parseInt(menul.outerHeight(true)), manli_height=0;
-        $.each(menul.find('ul.subse'),function(){
-            manli_height+=parseInt($(this).height());
+
         });
-        off_height=off_height-manli_height;
-        var input_height='<input type="hidden" id="input_height" value="'+off_height+'" />';
-        $('#layerEECF8F395F15819D11CE7C0BFB7266AD').find('ul.navigation').append(input_height);
+
     }
 
-(function(){
-        var layer_id='layerEECF8F395F15819D11CE7C0BFB7266AD';
-        var menustyle='hs9';
-        var contentfunc=function(){
-            if($("#"+layer_id).is(':visible')){
-                    $("#"+layer_id).find('.wp-article_category_content').each(function(){
-                      var wid = $(this).width();
-                      var liwid = $(this).find('li:eq(0)');
-                      var lipadd = parseInt(liwid.css('padding-right'))+parseInt(liwid.css('padding-left'));
-                      if ($.inArray(menustyle, ['hs7','hs9','hs11','hs12']) != -1) {
-                          var bwidth = parseInt(liwid.css("borderRightWidth") || '0');
-                          if(bwidth > 0) $('li.wp_subtop', this).width(function(i, h){return h - bwidth - 1});
-                      }
-                      if(parseInt(liwid.width())>(wid-lipadd)){
-                        $(this).find('li.wp_subtop').css('width',wid-lipadd);
-                      }
-                    });
-             }else{
-                     setTimeout(contentfunc,60);
-             }
+    function layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss(css_pro,type)
+    {
+        var typeval=type;
+        if(typeval==1){
+            var regex = "#nav_layer[0-9|a-z|A-Z]+\\s+ul+\\s+li+\\s+a:\\s*hover\\s*{\\s*"+css_pro+"\\s*:[^;]+";
+        }else if(typeval == 2){
+            var regex = "#nav_layer[0-9|a-z|A-Z]+\\s+ul\\s+li\\s*{\\s*"+css_pro+"\\s*:[^;]+";
+        }else if(typeval == 3){
+            var regex = "#nav_layer[0-9|a-z|A-Z]+\\s+ul\\s+li\\s*:\\s*hover\\s*{\\s*"+css_pro+"\\s*:[^;]+";
         }
-	contentfunc();
-})()
-$(function(){
-		});
+        else{
+            var regex = "#nav_layer[0-9|a-z|A-Z]+\\s+li\.wp_subtop>a:\\s*hover\\s*{\\s*"+css_pro+"\\s*:[^;]+";
+        }
+        var navStyle = $.trim($("#layer38ED725A7E9AC4F0F8E39A58A5272044").data("datastys_"));
+        if(navStyle.length > 0)
+        {
+            var patt1 =new RegExp(regex,'i');
+            var tmp = patt1.exec($.trim(navStyle));
+            if(tmp)
+            {
+                return $.trim((tmp[0].match(/{[^:]+:[^;]+/)[0]).match(/:[^;]+/)[0].replace(':',''));
+            }
+        }
+        navStyle = $.trim($("#layer38ED725A7E9AC4F0F8E39A58A5272044").data("datasty_"));
+
+        if(navStyle.length > 0)
+        {
+            if(typeval==1){
+                var patt1 = new RegExp("#nav_layer[0-9|a-z|A-Z]+\\s+ul+\\s+li+\\s+a:\\s*hover\\s*{[^}]+}",'i');
+            }else if(typeval == 2){
+                var patt1 = new RegExp("#nav_layer[0-9|a-z|A-Z]+\\s+ul\\s+li\\s*{[^}]+}",'i');
+            }else if(typeval == 3){
+                var patt1 = new RegExp("#nav_layer[0-9|a-z|A-Z]+\\s+ul\\s+li\\s*:\\s*hover\\s*{[^}]+}",'i');
+            }else{
+                var patt1 = new RegExp("#nav_layer[0-9|a-z|A-Z]+\\s+li\.wp_subtop>a:\\s*hover\\s*{[^}]+}",'i');
+            }
+            var tmp = patt1.exec(navStyle);
+
+            if(tmp)
+            {
+                var tmp1 = tmp[0].match(/{[^}]+}/)[0];
+                var patt2 = new RegExp(css_pro+"\\s*:\\s*[^;]+;",'i');
+                tmp = patt2.exec(tmp1);
+                if(tmp) return $.trim(tmp[0].replace(/[^:]+:/,'').replace(';',''));
+            }
+        }
+
+        return $.trim($("#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a").css(css_pro));
+    }
+
+    layer38ED725A7E9AC4F0F8E39A58A5272044_liHoverCallBack;
+    $(document).ready(function(){
+        layer38ED725A7E9AC4F0F8E39A58A5272044_liHoverCallBack();
+
+//第三级即下级菜单随高度增加位置动态修改
+$('#layer38ED725A7E9AC4F0F8E39A58A5272044 .menu_hs9 li').hover(function(){
+    $(this).children('ul').css('top',$(this).outerHeight());
+});
+
+function getSubMenuHoverCsslayer38ED725A7E9AC4F0F8E39A58A5272044(css_pro,regex,isLi)
+{
+    var navStyle = $.trim($("#layer38ED725A7E9AC4F0F8E39A58A5272044").data("datastys_"));
+    if(navStyle.length > 0)
+    {
+        var patt1 =new RegExp(regex,'i');
+        var tmp = patt1.exec($.trim(navStyle));
+        if(tmp)
+        {
+            return $.trim((tmp[0].match(/{[^:]+:[^;]+/)[0]).match(/:[^;]+/)[0].replace(':',''));
+        }
+    }
+    navStyle = $.trim($("#layer38ED725A7E9AC4F0F8E39A58A5272044").data("datasty_"));
+    
+    
+    if(navStyle.length > 0)
+    {
+        var patt1 = new RegExp("#nav_layer[0-9|a-z|A-Z]+\\s+ul\\s+li\\s+a\\s*\\s*{[^}]+}",'i');
+        if(isLi)
+            patt1 = new RegExp("#nav_layer[0-9|a-z|A-Z]+\\s+ul\\s+li\\s*\\s*{[^}]+}",'i');
+        var tmp = patt1.exec(navStyle);
+        
+        if(tmp)
+        {
+            var tmp1 = tmp[0].match(/{[^}]+}/)[0];
+            var patt2 = new RegExp(css_pro+"\\s*:\\s*[^;]+;",'i');
+            tmp = patt2.exec(tmp1);
+            if(tmp) return $.trim(tmp[0].replace(/[^:]+:/,'').replace(';',''));
+        }
+    }
+    return false;
+}
+
+$("#layer38ED725A7E9AC4F0F8E39A58A5272044 li").hover(function(){            
+    var thisleft=$(this).offset().left;
+    var thiswidth=$(this).outerWidth(); 
+        //父中心点坐标
+        var thiswidthcenter=0;
+        //子中心点坐标
+        var thischildwidthcenter=0;         
+        var orgleft = $("#layer38ED725A7E9AC4F0F8E39A58A5272044").offset().left;
+        var orgright = $("#layer38ED725A7E9AC4F0F8E39A58A5272044").outerWidth();
+        orgright=orgright+orgleft;
+        thiswidthcenter=thisleft+thiswidth/2;
+
+        //计算子菜单总宽度
+        var childlidom=$(this).children('ul').children('li');
+        var childliwidth=0;
+        childlidom.each(function(){
+            childliwidth=childliwidth+$(this).outerWidth();         
+        });
+        
+        thischildwidthcenter=childliwidth/2;            
+        var chavalue=thiswidthcenter-thischildwidthcenter;
+        var charightvalue=thiswidthcenter+thischildwidthcenter;         
+        
+        var ulwidth=$("#layer38ED725A7E9AC4F0F8E39A58A5272044").width();
+        if(chavalue<orgleft && charightvalue>orgright){ 
+            //超出边界不做处理          
+        }else{
+            if(chavalue>orgleft && charightvalue<orgright){
+                $(this).children("ul:eq(0)").css("padding-left", (chavalue-orgleft)+"px");              
+                if(ulwidth>0){
+                    $(this).children("ul:eq(0)").css("width", (ulwidth-chavalue+orgleft)+"px");
+                }   
+            }else{
+                if(chavalue>orgleft && charightvalue>orgright){
+                    $(this).children("ul:eq(0)").css("padding-left", (ulwidth-childliwidth)+"px");
+                    if(ulwidth>0){
+                        $(this).children("ul:eq(0)").css("width", (childliwidth)+"px");
+                    }
+                }
+            }       
+        }
+        
+        if(!$(this).hasClass('wp_subtop'))
+        {
+            $(this).css('background-image',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-image',3));
+            $(this).css('background-repeat',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-repeat',3));
+            $(this).css('background-color',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-color',3));
+            $(this).css('background-position',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-position',3));
+        }
+        if($(this).children('ul').length > 0)
+        {
+            $(this).children('ul').css('background-image',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-image',2));
+            $(this).children('ul').css('background-repeat',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-repeat',2));
+            $(this).children('ul').css('background-color',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-color',2));
+            $(this).children('ul').css('background-position',layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss('background-position',2));
+
+            $(this).children('ul').children('li').css({'background-image':'none','background-color':'transparent'});
+        }   
+        
+    },function(){ 
+        if(!$(this).hasClass('wp_subtop'))
+            $(this).css({'background-color':'transparent','background-image':'none'});
+        $(this).children("ul:eq(0)").css("left", "-99999px").hide(); 
+    });
+
+$('.menu_hs9 #nav_layer38ED725A7E9AC4F0F8E39A58A5272044').find('li').hover(function(){
+    var direction=$("#layer38ED725A7E9AC4F0F8E39A58A5272044").find('.nav1').attr('direction');
+    var height = parseInt($(this).outerHeight());
+    if(direction==1){               
+        $(this).children('ul').css('top','auto').css('bottom',height + 'px');
+    }else{              
+        $(this).children('ul').css('top',height+'px').css('bottom','auto'); 
+    }
+    if($(this).parent().hasClass('navigation'))
+    {           
+        $(this).children('a').css({'font-family':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-family",0),'font-size':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-size",0),'color':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("color",0),'font-weight':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-weight",0),'font-style':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-style",0)});
+    }else{          
+        $(this).children('a').css({'font-family':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-family",1),'font-size':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-size",1),'color':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("color",1),'font-weight':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-weight",1),'font-style':layer38ED725A7E9AC4F0F8E39A58A5272044_getSubMenuHoverCss("font-style",1)});
+    }
+    if($(this).parent().hasClass('navigation'))
+    {
+        $('#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 .wp_subtop').removeClass("lihover").children('a').removeClass("ahover");
+    }
+},function(){
+    if($(this).parent().hasClass('navigation'))
+    {
+        wp_showdefaultHoverCss('layer38ED725A7E9AC4F0F8E39A58A5272044');
+    }
+    $(this).children('a').attr("style",'');
+});
+wp_showdefaultHoverCss('layer38ED725A7E9AC4F0F8E39A58A5272044');
+wp_removeLoading('layer38ED725A7E9AC4F0F8E39A58A5272044');
+});
 </script>
 
-</div><script>		         $('#layerEECF8F395F15819D11CE7C0BFB7266AD').triggerHandler('layer_ready');</script>			</div>
+<script>
+    $("#layer38ED725A7E9AC4F0F8E39A58A5272044").layer_ready(function(){
+        var el = $("#layer38ED725A7E9AC4F0F8E39A58A5272044");
+        var menustyle="hs9";
+        var contentfunc=function(intrigger){
+            if(el.is(':visible')){
+               el.find('.wp-product_category_content').each(function(){
+                  var wid = $(this).width();
+                  var liwid = $(this).find('li:eq(0)');
+                  if(!intrigger){
+                      $('li.wp_subtop', this).each(function(){
+                          $(this).data('oriliw',$(this).width());
+                      })
+                  }
+                  var lipadd = parseInt(liwid.css('padding-right'))+parseInt(liwid.css('padding-left'));
+                  if ($.inArray(menustyle, ['hs7','hs9','hs11','hs12']) != -1) {
+                      var bwidth = parseInt(liwid.css("borderRightWidth") || '0');
+                      if(bwidth > 0 || intrigger){
+                          $('li.wp_subtop', this).width(function(i, h){
+                              h=$(this).data('oriliw');
+                              return h - bwidth - 1
+                          });
+                      }
+                  }
+                  if(parseInt(liwid.width())>(wid-lipadd)){
+                    $(this).find('li.wp_subtop').css('width',wid-lipadd);
+                }
+            });
+               var contenth=el.find(".wp-product_category_content").height();
+               if(contenth==0){
+                el.find(".wp-product_category_content").css('height','');
+            }
+        }else{
+         setTimeout(contentfunc,60);
+     }
+ }
+ contentfunc();
+})
+</script>
+<script>
+    $(function(){
+        var options=$.extend({},{"morecolor":"darkorange","moreshow":"1","hover":"1","more":"\u66f4\u591a","direction":"0","colorstyle":"black","menustyle":"hs9","typeval":"","customcss":"#nav_layer38ED725A7E9AC4F0F8E39A58A5272044{background-color:transparent;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044{background-image:url(plugin\/product_category\/view\/images\/png_bg.png);}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a{color:#000000;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a{font-size:15px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop{line-height:50px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop:hover{background-image:url(plugin\/product_category\/view\/images\/png_bg.png);}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a:hover{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li{height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li{line-height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a{font-size:14px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li:hover{height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li:hover{line-height:40px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{font-family:Microsoft YaHei;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{font-size:14px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop:hover{background-color:transparent;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a:hover{color:#ff9424;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 li.wp_subtop>a:hover{font-size:15px;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li:hover{background-color:#ff9424;}#nav_layer38ED725A7E9AC4F0F8E39A58A5272044 ul li a:hover{color:#ffffff;}","oldparam":{"pcids":"5,18,19,20,21,6","showtype":"mhover","link":"101","isfirst":"true","version":"2","openNewWindow":"0"},"userstyle":{"skin":"skin5","styles":[]}});
+        $('#layer38ED725A7E9AC4F0F8E39A58A5272044').mod_property(options);
+        $('#wp-product_category-style').data('userstyle',options['userstyle']);
+        $('#wp-product_category-style').trigger('setStyle');        
+        $('#layer38ED725A7E9AC4F0F8E39A58A5272044').find('.mask').css({'width':$('#layer38ED725A7E9AC4F0F8E39A58A5272044').width(),height:$('#layer38ED725A7E9AC4F0F8E39A58A5272044').height()}).show();
+    }); 
+</script>
+</div><script>               $('#layer38ED725A7E9AC4F0F8E39A58A5272044').triggerHandler('layer_ready');</script>            </div>
 </div>
 <script>
-	var $fullwidth=$('#layer3D61E8896E9E119372DE2ECB454DD187 .full_width');
-	$fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
-	$(function () {
-				var videoParams={"id":"layer3D61E8896E9E119372DE2ECB454DD187","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
-		fullcolumn_bgvideo_init_func(videoParams);
-	});
+    var $fullwidth=$('#layer59115A9781731147FB7F323B59F581C8 .full_width');
+    $fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
+    $(function () {
+        var videoParams={"id":"layer59115A9781731147FB7F323B59F581C8","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
+        fullcolumn_bgvideo_init_func(videoParams);
+    });
 </script>
 
 
-<div id='layer5F5FA7C5D36431659E9A1EB42ECFEF31' type='box'  class='cstlayer' style='left: 0px; top: 520px; position: absolute; z-index: 118; width: 1200px; height: 816px;'  mid=""   deg='0'><div class="wp-box_content drop_box" style="word-wrap: break-word; padding: 0px; border-color: rgb(249, 249, 249); border-width: 20px; height: 776px; background-color: transparent; width: 1160px; border-style: solid;">
-    <div id='layerACAA257CE6ABAEDF7A45C4CFE9E117FC' type='article_detail'  class='cstlayer' style='left: 60px; top: 60px; position: absolute; z-index: 130; width: 1080px; height: 717px;'  mid=""  fatherid='layer5F5FA7C5D36431659E9A1EB42ECFEF31'   deg='0'><div class="wp-article_detail_content" style="border: 0px solid rgb(249, 249, 249); overflow: hidden; width: 1080px; height: 717px; padding: 0px;">
-<script type="text/javascript">
+<div id='layerA1533A46BA234C9B612644B60FC9F8FA' type='product_list'  class='cstlayer' style='left: 0px; top: 520px; position: absolute; z-index: 104; width: 1200px; height: 779px;'  mid=""   deg='0'><script language="javascript">
+    $(window).load(function(){ 
+        wp_heightAdapt($('#layerA1533A46BA234C9B612644B60FC9F8FA'));
+        window.scroll_container_adjust();
+        var oriheight=$('#layerA1533A46BA234C9B612644B60FC9F8FA').data('oriheight');
+        if(oriheight && $('#layerA1533A46BA234C9B612644B60FC9F8FA').height()-oriheight>200){
+            setTimeout(function(){
+             wp_heightAdapt($('#layerA1533A46BA234C9B612644B60FC9F8FA'));
+             window.scroll_container_adjust();
+         },1000)
+        }
+    });
+    function set_thumb_layerA1533A46BA234C9B612644B60FC9F8FA(obj) {
+        var callback=function(img){
+            img.fadeIn('slow',function(){
+                img.closest('.img,.wp-new-product-style-01-left').children('.imgloading').remove();
+            });  
+        }
+        $(obj).each(function() {
+            var img=$(this);
+            callback(img);
+        });      
+    }
+    $(function(){
+      $('#layerA1533A46BA234C9B612644B60FC9F8FA').find('.wp-new-ar-pro-style-description').each(function(){
+         if($(this).find('textarea').length){
+             $(this).html($(this).find('textarea').val());
+         }
+     })
+  })
+    $(function(){
+        function inlineToDisplay(){
+            if($.browser.msie){
+                var $imgs = $('#layerA1533A46BA234C9B612644B60FC9F8FA').find('img.img_lazy_load');
+                if($imgs.length > 0){
+            // fixed bug#4411
+            var nwidth = $._parseFloat('352'),
+            ihack = (nwidth && ($.browser.version<9) && ('Proportion'=='210'))?true:false;
+            $imgs.each(function(){
+                if($(this).css('display') == 'inline'){
+                    $(this).css('display','block');
+                    // fixed bug#4411
+                    ihack && $(this).parent('a').css({"display": 'inline-block',"width": nwidth+'px'});
+                }
+            });
+        }
+    }
+}
+inlineToDisplay();
+});
 </script>
- <style>
-.wp-article_detail_content .artview_info{ text-align:center; margin:0 auto; padding:10px 0 15px; line-height:21px; overflow:hidden;}
-.wp-article_detail_content .detail_head_title{ float:left; display:inner_block; }
-.wp-article_detail_content .sourcedata{ text-align:center; margin:0 auto;  line-height:21px; }
-.wp-article_detail_content .text-source-left01{ float:left; color:transparent; padding:0 15px; display:inner_block; }
-.wp-article_detail_content .text-source-left02{  float:left; text-align:left;   padding-right:8px; display:inner_block;}
-.wp-article_detail_content .up_arrow{ background-image:url(/public/static/images/sitestar_productdetailspage_up_arrow.png); background-repeat:no-repeat; width:11px; height:10px; display:block; float:left; background-color:#c2c2c2; margin-right:8px; margin-top:8px;}
-.wp-article_detail_content .down_arrow{ background-image:url(/public/static/images/sitestar_productdetailspage_down_arrow.png); background-repeat:no-repeat; width:11px; height:10px; display:block; float:left; background-color:#C2C2C2; margin-right:8px; margin-top:8px;}
-.wp-article_detail_content .down_arrow_textover{ color:#048bcd;}
-.wp-article_detail_content .up_arrow_textover{ color:#727272;}
-.wp-article_detail_content .shareshow{ display:none; }
+<div class="wp-product_content wp-product_list_content" style="border-color: rgb(247, 247, 247); border-width: 0px; overflow: hidden; width: 1200px; height: 779px; border-style: solid; padding: 0px;">
+    <div skin="01" class="wp-product_css wp-product_list_css" style="display:none;">
+        <script type="text/javascript">
 
-</style>
-	<div class="artdetail_title" style="display:block;font-family:Microsoft YaHei;font-size:20px;color:#434343;font-weight:bold;text-decoration:none;"> 数腾软件出席Ucon2015第二届中国信息安全用户大会</div>
-	
-	<div class="artview_info" style="display:block;font-family:Microsoft YaHei;font-size:12px;color:#5A5A5A;font-weight:normal;text-decoration:none;">
-		<div class="sourcedata">
-	<span class="detail_head_title org_txt_span"><span class="org_txt">来源:</span></span>
-	<span class="text-source-left01">|</span>
-	<span class="detail_head_title aut_txt_span"><span class="aut_txt">作者:</span>it-442</span>
-	<span class="text-source-left01">|</span>
-	<span class="detail_head_title pub_txt_span"><span class="pub_txt">发布时间: </span>2017-03-06</span>
-	<span class="text-source-left01">|</span>
-	<span class="detail_head_title times_txt_span">520 <span class="times_txt">次浏览</span></span>            
-		</div>
-	</div>
-	
-	<div class="artview_intro" style="display:block;font-family:Microsoft YaHei;font-size:14px;color:#868686;font-weight:normal;text-decoration:none;line-height:28px;background:#F5F5F5;border-style:solid solid solid solid;border-color:#E5E5E5 #E5E5E5 #E5E5E5 #E5E5E5;border-width:1px 1px 1px 1px;">
-	2015年10月29日，数腾作为合作单位，受邀参加了在上海龙之梦万丽大酒店隆重举行的第二届中国信息安全用户大会。作为中国信息安全用户较高规格的会议，汇集了来自金融、国资、通信、医疗、工控、政务、教育、互联网等重点行业用户。是“第五届上海市信息安全活动周”的重点活动，也是安全周的压轴盛宴。	</div>
-	
-	<div class="artview_content" style="display:block;font-family:Microsoft YaHei;font-size:16px;color:#5A5A5A;font-weight:normal;text-decoration:none;">
+        </script>
+    </div>
+    <div class="product_list-layerA1533A46BA234C9B612644B60FC9F8FA" style="overflow:hidden;"> 
+        <ul style='margin:0px;'>
+            <?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                <li class="wp-new-article-style_lis" style="vertical-align:top;width:344px;margin-right:22px;;margin-bottom:22px;">
+                    <div class="img" style="height:220px;width:344px;text-align:center;vertical-align:middle;display:table-cell;"><div class="imgloading" style="height:218px;width:350px;"></div><a href="<?php echo url('News/article',['id'=>$v['id']]); ?>"  class="aeffect"><img src="<?php echo $uploadurl; ?><?php echo $v['thumbpicture']; ?>" class="wp-product_list-thumbnail img_lazy_load bottom-into" style="position: relative;max-width:344px;margin:0 auto;max-height:220px;height:220px;width:344px;"/></a></div>
+                    <div class="wp-new-article-style-c">
 
-		<div class="artview_detail" setsid="article55">
-			<span style="line-height:32px;"><br />
-智能网络科技有限公司始建于二〇〇八年，于二〇一五年更名为智能信息技术有限公司。我公司是专业从事计算机信息系统集成、建筑智能化系统工程的高新技术企业， 我们的核心业务为中小企业提供弱电系统整体解决方案，内容涉及范围：综合布线（大型机房建设、中小型网络系统布线）、电话程控交换系统(PBX)、安全防范系统（远程高清监控、手机监控、联网报警系统、电子围栏）、音响控制系统（背景音乐、会议室扩声系统）、远程智能视频会议系统、大屏幕显示系统、智能楼宇控制系统等。</span><br />
-<span style="line-height:32px;"></span><br />
-<span style="line-height:32px;">公司立足，八年专注扎根于政府、教育和金融行业，项目遍布国内主要大型城市，目前公司设计施工的客户已达数百家，在、上海、北京、西安、苏州、山西等地均成功项目案例，已成为华东地区较具竞争力的弱电智能化系统综合方案提供商。</span><br />
-<span style="line-height:32px;"></span><br />
-<span style="line-height:32px;">公司提供从技术咨询、工程设计、产品供应、安装施工、调试开通到售后服务及长期维修保养等全方位的支持，为客户的信息智能化系统提供一站式服务，公司除了提供前期的弱电系统建设，另针对中小企业还提供了IT外包一体式服务，包括简单的网络布线，电话分机布署，网站建设，计算机及周边办公设备产品销售维护服务。 弱电工程的完美竣工，只是我们服务的开始，期望能与广大中小企业达成长期的合作伙伴关系，携手发展、共创辉煌！<br />
-</span><br />              <div style="clear:both;"></div>
-		</div>
-		
-	</div>
-  		<div class="artview_prev_next">
-		<div style="margin-top:20px;width:100%;">
-		<div style="" class="prevlist">
-			<span class="up_arrow"></span>
-			<span class="prev_next_text prev_txt" style="display:block;float:left;margin-right: 5px;">上一篇： </span> 
-						<a class="prev_next_link" style="display:block;float:left;" href="page91.html?article_id=54" title="数腾软件与华三通信签约云计算技术联盟">
-				数腾软件与华三通信签约云计算技术联盟			</a>
-						<div style="clear:both;"></div>
-		</div>
-		<div style=""  class="nextlist">
-			<span class="down_arrow"></span>
-			<span class="prev_next_text next_txt" style="display:block;float:left;margin-right: 5px;">下一篇：</span>
-						<span class="prev_next_link" style="display:block;float:left;" >无</span>
-						<div style="clear:both;"></div>
-		</div>
-</div>	</div>
-	</div>
-<script type="text/javascript">
-	$(function(){
-		var layer = $('#layerACAA257CE6ABAEDF7A45C4CFE9E117FC');
- 	  
-	  layer.find('.prevlist,.nextlist').mouseenter(function(e){
-			$(this).find('.up_arrow,.down_arrow').addClass("arrowbj");
-			$(this).find('.prev_next_text,.prev_next_link').addClass("arrowfontcolor");			
-			$(this).css("cursor","pointer");
-		}).mouseleave(function(e){
-			$(this).find('.up_arrow,.down_arrow').removeClass("arrowbj");
-			$(this).find('.prev_next_text,.prev_next_link').removeClass("arrowfontcolor");
-		});	
-	
-		var this_span = 0;
-		var sharelen = 0; 
-				layer.find('.sourcedata').children("span").not(".bdsharebuttonbox").each(function(){
-			if($(this).css("display")=="none"){}else{
-				var shis_spanw = $(this).outerWidth();
-				this_span = this_span + shis_spanw;
-			}
-			
-		})
-		
-				this_span = this_span + sharelen*28 + 4; 
-                var sourcmax_width = $('.artview_info').width();
-		layer.find('.sourcedata').width(this_span); 
-                layer.find('.sourcedata').css("max-width",sourcmax_width); 
-				 
-})
-	
-</script>
+                        <p class="title"  style="font: normal 120% 'Microsoft yahei', Arial, Verdana;"><a  href="<?php echo url('News/article',['id'=>$v['id']]); ?>" ><?php echo $v['title']; ?></a></p>
 
-<script type="text/javascript">
-	setTimeout(function(){
-		var $artdetailayer = $('#layerACAA257CE6ABAEDF7A45C4CFE9E117FC');
-		var $artdetai = $artdetailayer.find('div.wp-article_detail_content');
-		var $site_footer = $('#site_footer');
-		var artdetaibortop = parseInt($artdetai.css('border-top-width'));
-		var artdetaiborbot = parseInt($artdetai.css('border-bottom-width'));
-		var artdetailayerhei = parseInt($artdetailayer.height());
-		var artdetaihei = parseInt($artdetai.height());
-		var site_footertop = parseInt($site_footer.css('top'));
-		var artdetaiall = artdetaihei + artdetaibortop + artdetaiborbot;
-		if(artdetaibortop == 0 && artdetaiborbot == 0){return false;}
-		$artdetai.height(artdetaiall);
-		$artdetailayer.height(artdetailayerhei + artdetaiborbot + artdetaibortop);
-		$site_footer.css('top',(site_footertop+artdetaibortop+artdetaiborbot)+'px');
-	},1000);
-</script>
-</div><script>		         $('#layerACAA257CE6ABAEDF7A45C4CFE9E117FC').triggerHandler('layer_ready');</script>    
+                        <p class="category_p"><span class="category"><a  href="solution.html?product_category=21"><?php echo $v['articletype']['title']; ?></a></span></p>
+                        <p  class="wp-new-ar-pro-style-price market_price"><label class="list_price_f_title">市场价:</label><span class="list_price_f">0.00</span></p>
+                        <p  class="wp-new-ar-pro-style-price" id="price"><label class="price_f_title">价格:</label><span class="price_f">0.00</span></p>
+                        <div class="wp-new-ar-pro-style-description"> 
+                            <textarea style="display:none;">&lt;p&gt;<?php echo $v['intro']; ?>&lt;/p&gt;</textarea>
+                        </div>
+                    </div>
+                    <input type="hidden" class="product_desc">
+                </li>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+    <style>
+    <!--
+    #layerA1533A46BA234C9B612644B60FC9F8FA .wp-new-article-style_lis:hover {
+        border-color:#ff9424;}
+        #layerA1533A46BA234C9B612644B60FC9F8FA .wp-new-article-style_lis{
+        }
+        -->
+    </style>
 </div>
-</div><script>		         $('#layer5F5FA7C5D36431659E9A1EB42ECFEF31').triggerHandler('layer_ready');</script>    </div>
-     </div>	<div id="site_footer" style="width:1200px;position:absolute;height:600px;z-index:500;margin-top:50px">
-                 <div class="full_width" margintopheight=50 style="position:absolute;height:600px;background-color:#434343;background-position:center top;background-image:url('http://tpl-c383b95.pic32.websiteonline.cn/upload/z_bg2.jpg');"></div>
+<div><?php echo $page; ?></div>
+<script language="javascript">
+// 修复“chrome下部分图片不显示（bug#4322）”问题 2015/11/17
+var chromebug = $('#scroll_container').data('chrome_bug');
+var imgcontainer = chromebug ? window : $('#scroll_container');
+$('#layerA1533A46BA234C9B612644B60FC9F8FA').find('img.img_lazy_load').lazyload({
+    threshold  : 300,
+    failure_limit : $('#layerA1533A46BA234C9B612644B60FC9F8FA').find('img.img_lazy_load').length,  
+    container : imgcontainer, 
+    load:function(){
+     var self=$(this);
+     var id=self.closest('.cstlayer').prop('id');
+     if(window['set_thumb_'+id]) window['set_thumb_'+id](this);
+ }
+}); 
+function showlazyimg(){
+    setTimeout(function(){
+        $('#layerA1533A46BA234C9B612644B60FC9F8FA').find('img.img_lazy_load').lazyload({
+         threshold  : 300,
+         failure_limit : $('#layerA1533A46BA234C9B612644B60FC9F8FA').find('img.img_lazy_load').length,  
+         container : $('#scroll_container'),   
+         load:function(){
+             var self=$(this);
+             var id=self.closest('.cstlayer').prop('id');
+             if(window['set_thumb_'+id]) window['set_thumb_'+id](this);
+             var img_border_txtsize = parseInt('0');
+             self.width(parseInt(self.width())-img_border_txtsize).height(parseInt(self.height())-img_border_txtsize);
+         }
+     });
+
+    },200)
+
+}
+showlazyimg();
+</script>
+<script language="javascript">
+    $(function(){
+        var pageskips = '1';
+        var layerid = "layerA1533A46BA234C9B612644B60FC9F8FA",$cstlayer = $('#'+layerid),
+        $pglnker = $cstlayer.find('.wp-product_list_content .wp-pager_link');
+        $pglnker.find('a').unbind("click.te").bind("click.te", function(e,page){
+            var urlhrf = $(this).attr("href");
+            if(urlhrf.indexOf("##")>-1){
+                e.preventDefault();
+                e.stopPropagation();
+                var pageid = page||$(this).attr("href").replace("###",'');
+                if("" == "1") $.method.product_list.refreshProductList({"page":pageid,"layerid":layerid});  
+                else {
+                    var dom = $cstlayer.find('.product_list_save_itemList'),
+                    params = {};
+        //if($.browser.msie){
+            if(pageid!= $("#"+layerid).data("pagecid") && $("#"+layerid).data("pagecid")){
+                return false;
+            }
+        //}
+        $.ajax({
+          type: "GET",
+          url: parseToURL("product_list","get_page"),
+          data: {product_category:"",product_category_more:"",layer_id: layerid,page: pageid},
+          success: function(data){
+            var $layer = $("#"+layerid);
+            var prediv = $layer;
+            prediv.data('pagecid',pageid);
+            setTimeout(function(){prediv.data('pagecid','');},500);
+            var oldHeight = $layer.find('.product_list-'+layerid).height();
+            $layer.children('.wp-product_list_content').before(data).remove();
+            var this_dom = $('#'+layerid);
+            this_dom.find(".wp-pager_link").css({'position':'relative','bottom':'auto','width':'100%'});    
+            wp_heightAdapt($layer);
+            var cheight = this_dom.find(".wp-product_content").height();
+            var oulheight = this_dom.find(".product_list-"+layerid).height();
+            var olkheight = this_dom.find(".wp-pager_link").outerHeight();
+            if(cheight>oulheight+olkheight){
+                this_dom.find(".wp-pager_link").css({'position':'absolute','bottom':'0px','width':'100%'})
+            }  
+
+            var oriheight=$layer.data('oriheight');
+            if(oriheight && $layer.height()-oriheight>200){
+                setTimeout(function(){
+                    var this_dom = $('#'+layerid);
+                    this_dom.find(".wp-pager_link").css({'position':'relative','bottom':'auto','width':'100%'});    
+                    wp_heightAdapt($layer);
+                    var cheight = this_dom.find(".wp-product_content").height();
+                    var oulheight = this_dom.find(".product_list-"+layerid).height();
+                    var olkheight = this_dom.find(".wp-pager_link").outerHeight();
+                    if(cheight>oulheight+olkheight){
+                        this_dom.find(".wp-pager_link").css({'position':'absolute','bottom':'0px','width':'100%'})
+                    } 
+                },1000)
+            }
+
+
+
+
+        }
+    });
+        
+        //explain:产品列表模块刷新后将页面定位到该模块距离浏览器顶部的距离,author:fpf,date:2014-12-18,action:modify;
+        //1/定位到网站页首2/定位到产品列表页首
+        if(pageskips == 1){
+            $('#scroll_container').scrollTop(0);
+        } else if(pageskips == 2){ 
+
+            var product_listtop = $cstlayer.css('top').replace('px','');
+            var father = $cstlayer.attr('fatherid')||'';                                 
+            if(father){
+                var father_top = $('#'+father).css('top').replace('px','');
+                product_listtop = parseInt(product_listtop)+parseInt(father_top);
+                if($("#"+father).length>0){
+                    var fathers = $("#"+father).attr('fatherid')||'';
+                    if(fathers){
+                        var father_tops = $('#'+fathers).css('top').replace('px','');
+                        product_listtop = parseInt(product_listtop)+parseInt(father_tops);
+                    }
+                }
+            }   
+            
+            if(product_listtop){$('#scroll_container').scrollTop(product_listtop);}
+        }
+    }
+    return false;
+}
+});
+        if($.cookie('wp_layer_page_'+layerid) && $.cookie('wp_layer_page_'+layerid) != 1&&!$.browser.msie){
+           $pglnker.find('a:first').trigger('click',$.cookie('wp_layer_page_'+layerid));
+       }
+    // About input
+    $pglnker.find(':input').each(function(i,dom){
+        var $input = $(this),ent = pgid = '',fnc;
+        switch($input.attr("type")) {
+            case "text":
+            ent = 'keyup';
+            fnc = function(){
+                pgid = this.value = this.value.replace(/(?:\b0|[^\d+])/i,'');
+                return false;
+            };
+            break;
+            case "button":
+            ent = 'click';
+            fnc = function(){
+                if (pgid.length && /^[1-9]{1}\d*$/.test(pgid)) {
+                    var maxpg = _int($pglnker.find('span.total').html());
+                    if(!maxpg) maxpg = 1;
+                    $pglnker.find('a').triggerHandler('click',[Math.min(pgid,maxpg)]);
+                }
+                function _int(numString){
+                    var number = parseInt(numString);
+                    if(isNaN(number)) return 0;
+                    return number;
+                }
+                return false;
+            };
+            break;
+        }
+        if(fnc && $.isFunction(fnc)) $input[ent](fnc);
+    });
+});
+$(window).load(function(){ 
+    $('#layerA1533A46BA234C9B612644B60FC9F8FA').find(".wp-pager_link").css({'position':'relative','bottom':'auto','width':'100%'}); 
+    wp_heightAdapt($('#layerA1533A46BA234C9B612644B60FC9F8FA'));
+    var cheight = $('#layerA1533A46BA234C9B612644B60FC9F8FA').find(".wp-product_content").height();
+    var oulheight = $('#layerA1533A46BA234C9B612644B60FC9F8FA').find(".product_list-layerA1533A46BA234C9B612644B60FC9F8FA").height();
+    var olkheight = $('#layerA1533A46BA234C9B612644B60FC9F8FA').find(".wp-pager_link").outerHeight();
+    if(cheight>oulheight+olkheight){
+        $('#layerA1533A46BA234C9B612644B60FC9F8FA').find(".wp-pager_link").css({'position':'absolute','bottom':'0px','width':'100%'})
+    } 
+})
+</script>
+<script>
+    $(function () {
+        var $curlayer=$('#layerA1533A46BA234C9B612644B60FC9F8FA');
+        $curlayer.find('.mask').mouseover(function () {
+            $(this).css('z-index','-1001');
+        })
+        $curlayer.find('.wp-product_list-thumbnail').mouseover(function (event) {
+            event.stopPropagation();
+            $(this).data('over',1);
+            var running=$(this).data('run');
+            var effect=$curlayer.data('wopop_imgeffects');
+            var $this=$(this);
+            if(effect && running!=1){
+                $this.setimgEffects(true,effect,1);
+                var effectrole = effect['effectrole'];
+                var dset = effect['dset']; 
+                if(effectrole !='dantu' && typeof(dset)!="undefined"){
+                    var temp_effect = {};
+                    temp_effect['type'] = effect['type'];
+                    temp_effect['effectrole'] = 'dantu';
+                    temp_effect['effect'] = effect['dset']['effect'];
+                    temp_effect['duration'] =  effect['dset']['duration'];
+                    $this.setimgEffects(true,temp_effect,1);
+                }
+            }
+        });
+    });
+</script>
+</div>
+<style type="text/css">
+    #layer38ED725A7E9AC4F0F8E39A58A5272044 li>a.ahover {
+        color: #333333;
+        text-align: center;
+        font-family: arial;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-family: Microsoft YaHei;
+        color: #ff9424;
+        font-size: 15px;
+    }
+    @keyframes bounceInBottom {
+        from, 60%, 75%, 90%, to {animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+        0% {opacity: 0;transform: translate3d(0, 3000px, 0);}
+        100% {opacity: 1;transform: none;}
+    }
+    .bottom-into{
+    animation: bounceInBottom 1s 0s linear forwards;
+}
+</style>   </div>
+</div> <div id="site_footer" style="width:1200px;position:absolute;height:600px;z-index:500;margin-top:50px">
+            <div class="full_width" margintopheight=50 style="position:absolute;height:600px;background-color:#434343;background-position:center top;background-image:url('http://tpl-c383b95.pic32.websiteonline.cn/upload/z_bg2.jpg');"></div>
         <div id="footer_content" class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:600px;">
             <div id='layer93923DB32704FF1B6A4ABD34B659E864' type='line'  inbuttom='1' class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 102; width: 340px; height: 31px;'  mid=""   deg='0'>
                 <div class="wp-line_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 340px; height: 31px; border-style: solid;">

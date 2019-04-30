@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Article\index.html";i:1556502963;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Article\index.html";i:1556587898;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,16 +27,16 @@
                 <div class="col-sm-6"><h3>文章列表</h3></div>
                 <div class="col-sm-6 text-right">
                     <a href="/index.php/admin/article/add"><button class="btn btn-primary">新增</button></a>
-	                <a href="javascript:multidel()"><button class="btn btn-primary">批量删除</button></a>
+	                <!-- <a href="javascript:multidel()"><button class="btn btn-primary">批量删除</button></a> -->
 				</div>
                 <div style="clear:both;height:10px"></div>
                 <!-- 搜索栏 start -->
                 <div>
                     <form action="/index.php/admin/article/importExcel" method="get" id="queryForm">
                         <div class="col-sm-12">
-                            <div class="col-sm-2" style="padding-right: 5px"><input type="text" id="start" name="start" class="form-control" placeholder="起始时间"/></div>
-                            <div class="col-sm-2" style="padding-left: 5px"><input type="text" id="end" name="end" class="form-control" placeholder="结束时间"/></div>
-                            <div class="col-sm-2"><input type="text" name="nickname" id="nickname" class="form-control" placeholder="文章名称"/></div>
+                            <!-- <div class="col-sm-2" style="padding-right: 5px"><input type="text" id="start" name="start" class="form-control" placeholder="起始时间"/></div>
+                            <div class="col-sm-2" style="padding-left: 5px"><input type="text" id="end" name="end" class="form-control" placeholder="结束时间"/></div> -->
+                            <div class="col-sm-2"><input type="text" name="name" id="name" class="form-control" placeholder="文章名称"/></div>
                             <div class="col-sm-2 text-right">
                                 <div class="col-sm-3"><input type="button" onclick="submitquery(1)" id="submitBtn" value="查询" class="btn  btn-outline btn-default"></div>
                                 <div class="col-sm-3" id="loading" style="margin-top:5px;"></div>
@@ -85,7 +85,7 @@
     	function querysubmit(id) {
 			//set_querinstyle("btn_query");	//设置查询过程中按钮的显示样式
 			if(!id) id = 1;  //设置为1表示为1个非负数，代表分页
-    		$.get('/index.php/admin/article/index',{'p':id,'account':$('#account').val()},function(json){
+    		$.get('/index.php/admin/article/index',{'p':id,'name':$('#name').val()},function(json){
                 $("#datalist").empty();
                 $("#datalist").html(json.data.html);
                 $("#page").html(json.data.page);
@@ -118,7 +118,7 @@
         }
         function publish(id,status){
             $.post('/index.php/admin/article/publish',{id:id,status:status},function(json){
-                alert(json.msg);
+                // alert(json.msg);
                 if (json.code == 0) {
                     window.location.href = '/index.php/admin/article/index';
                 }

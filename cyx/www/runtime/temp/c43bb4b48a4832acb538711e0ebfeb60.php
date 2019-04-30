@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/index\view\news\article.html";i:1556590266;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:54:"F:\git\cyx\www/application/index\view\About\index.html";i:1556589731;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -202,8 +202,6 @@
     					<script>		         $('#layerF7E21885D347DE8B4B0271F6D7E12D5C').triggerHandler('layer_ready');</script>			</div>
 </div>
     					
-  <link rel="stylesheet" type="text/css" href="/public/static/css/cyx/article_detail.css">
-  <link rel="stylesheet" type="text/css" href="/public/static/css/cyx/615255f261874b289d8a985fd7d88bb8.cssx">
     <script>
     var $fullwidth=$('#layer9EAF89AF7AC38ADE518847573DD9C1AF .full_width');
     $fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
@@ -270,205 +268,236 @@
                 </div>
             </div>
             <script>                 $('#layer4033C5A1D8D22A7D37C61FE267DDE4F2').triggerHandler('layer_ready');</script>
-
-
-
-<div id="layer3D61E8896E9E119372DE2ECB454DD187" class="full_column"   style="width:1200px;position:absolute;top:440px;height:50px;z-index:134;">
-    <div class="full_width" style="position:absolute;height:50px;background-color:#f6f6f6;background:;">		    </div>
-			<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:50px;">
-								<div id='layerEECF8F395F15819D11CE7C0BFB7266AD' type='article_category'  class='cstlayer' style='left: 0px; top: 0px; position: absolute; z-index: 135; width: 1200px; height: 50px;'  mid=""  fatherid='layer3D61E8896E9E119372DE2ECB454DD187'   deg='0'><div class="wp-article_category_content" id="wp-atype_layerEECF8F395F15819D11CE7C0BFB7266AD" style="border-color: transparent; border-width: 0px; width: 1200px; height: 50px;">
-<script type="text/javascript"> 
-    var jeditMode = 1,jlayerid='layerEECF8F395F15819D11CE7C0BFB7266AD';
-		
-	        jeditMode = 0;
-		
+            <div id='layer9B61F2BBCB3265C86B0E54ADFC2FA77D' type='title'  class='cstlayer' style='left: 0px; top: 480px; position: absolute; z-index: 103; width: 1200px; height: 46px; transform: rotate(0deg); transform-origin: 0px 0px 0px;'  mid=""   deg='0'>
+                <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 46px; width: 1200px; display: block;">
+                    <div style="text-align: center;"><font color="#434343" face="微软雅黑"><span style="font-size: 30px;">公司简介</span></font></div>
+                </div>
+            </div>
+            <script>		         $('#layer9B61F2BBCB3265C86B0E54ADFC2FA77D').triggerHandler('layer_ready');</script>
+            <div id='layerB4AAD8E5A0330B7AD701B21AC27233CC' type='title'  class='cstlayer' style='left: 40px; top: 560px; position: absolute; z-index: 104; width: 1120px; height: 358px;'  mid=""   deg='0'>
+                <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 358px; width: 1120px; display: block; border-style: solid; overflow: hidden;">
+                    <!-- <p style="box-sizing: border-box; margin-bottom: 10px; text-indent: 2em; line-height: 1.7em; widows: 1; background-color: rgb(255, 255, 255);"><font color="#333333" face="微软雅黑"><span style="font-size: 16px; letter-spacing: 1.4px; color: rgb(102, 102, 102); line-height: 200%;">智能网络科技有限公司始建于二〇〇八年，于二〇一五年更名为智能信息技术有限公司。我公司是专业从事计算机信息系统集成、建筑智能化系统工程的高新技术企业， 我们的核心业务为中小企业提供弱电系统整体解决方案，内容涉及范围：综合布线（大型机房建设、中小型网络系统布线）、电话程控交换系统(PBX)、安全防范系统（远程高清监控、手机监控、联网报警系统、电子围栏）、音响控制系统（背景音乐、会议室扩声系统）、远程智能视频会议系统、大屏幕显示系统、智能楼宇控制系统等。</span></font></p>
+                    <p style="box-sizing: border-box; margin-bottom: 10px; text-indent: 2em; line-height: 1.7em; widows: 1; background-color: rgb(255, 255, 255);"><span style="color: rgb(102, 102, 102); font-family: 微软雅黑; font-size: 16px; letter-spacing: 1.4px; text-indent: 2em; line-height: 200%;">公司立足，八年专注扎根于政府、教育和金融行业，项目遍布国内主要大型城市，目前公司设计施工的客户已达数百家，在、上海、北京、西安、苏州、山西等地均成功项目案例，已成为华东地区较具竞争力的弱电智能化系统综合方案提供商。</span></p>
+                    <p style="box-sizing: border-box; margin-bottom: 10px; text-indent: 2em; line-height: 1.7em; widows: 1; background-color: rgb(255, 255, 255);"><font color="#333333" face="微软雅黑"><span style="font-size: 16px; letter-spacing: 1.4px; color: rgb(102, 102, 102); line-height: 200%;">公司提供从技术咨询、工程设计、产品供应、安装施工、调试开通到售后服务及长期维修保养等全方位的支持，为客户的信息智能化系统提供一站式服务，公司除了提供前期的弱电系统建设，另针对中小企业还提供了IT外包一体式服务，包括简单的网络布线，电话分机布署，网站建设，计算机及周边办公设备产品销售维护服务。 弱电工程的完美竣工，只是我们服务的开始，期望能与广大中小企业达成长期的合作伙伴关系，携手发展、共创辉煌！</span></font></p> -->
+                    <?php echo $about['description']; ?>
+                </div>
+            </div>
+            <script>		         $('#layerB4AAD8E5A0330B7AD701B21AC27233CC').triggerHandler('layer_ready');</script>
+            <div id="layerAFE92A5D3CB22353BC14886C5D225669" class="full_column"   style="width:1200px;position:absolute;top:950px;height:510px;z-index:105;">
+                <div class="full_width" style="position:absolute;height:510px;background-color:#CCCCCC;background-image:url('/public/static/images/bg_rongyu.png');background-position:center center;"> </div>
+                <div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:510px;">
+                    <div id='layer0C6C46518B9FA7EE70617A9D40C72796' type='title'  class='cstlayer' style='left: 0px; top: 60px; position: absolute; z-index: 137; width: 1200px; height: 49px; transform: rotate(0deg); transform-origin: 0px 0px 0px;'  mid=""  fatherid='layerAFE92A5D3CB22353BC14886C5D225669'   deg='0'>
+                        <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 49px; width: 1200px; display: block;">
+                            <div style="text-align: center;"><font color="#434343" face="微软雅黑"><span style="font-size: 30px; color: rgb(255, 255, 255);">资质荣誉</span></font></div>
+                        </div>
+                    </div>
+                    <div id='layer3D41E2966F105BC01BDE66BCA1327793' type='blocksit'  class='cstlayer' style='left: 0px; top: 150px; position: absolute; z-index: 139; width: 1200px; height: 300px;'> 
+                        <script type="text/javascript">
 </script>
-<div skin="hs9" class="nav1 menu_hs9" ishorizon="" colorstyle="black" direction="0" more="更多" moreshow="1" morecolor="darkorange" hover="1"
-subopen="" submethod=""
->
-	  <ul id="nav_layerEECF8F395F15819D11CE7C0BFB7266AD" class="navigation"><li style="width:50%;z-index:2;"  class="wp_subtop"  pid="12" ><a class="  " href="news.html?article_category=12&brd=1"  ><span style="display:block;overflow:hidden;">行业新闻</span></a></li><li style="width:50%;z-index:2;"  class="wp_subtop"  pid="1" ><a class="  " href="news.html?article_category=1&brd=1"  ><span style="display:block;overflow:hidden;">公司动态</span></a></li></ul>
-   <div class="default_pid" style="display:none; width:0px; height:0px;">12</div>
- </div> 
- 
-</div>
-<script type="text/javascript">
-layer_article_category_hs9_func({
-	"layer_id": 'layerEECF8F395F15819D11CE7C0BFB7266AD',
-	"menustyle": 'hs9',
-	"editmode": parseInt('0')
-})
-</script>
-
-<script>	
-    var $skin=$("#layerEECF8F395F15819D11CE7C0BFB7266AD").find('.nav1');
-    if($skin.attr('skin')=='vertical_vs10_1' && $skin.attr('subopen')=='1'){
-        $('#nav_'+'layerEECF8F395F15819D11CE7C0BFB7266AD'+' .wp_subtop >ul.subse').css("display",'block');
-        var menul=$('#layerEECF8F395F15819D11CE7C0BFB7266AD').find('ul.navigation'),off_height=parseInt(menul.outerHeight(true)), manli_height=0;
-        $.each(menul.find('ul.subse'),function(){
-            manli_height+=parseInt($(this).height());
-        });
-        off_height=off_height-manli_height;
-        var input_height='<input type="hidden" id="input_height" value="'+off_height+'" />';
-        $('#layerEECF8F395F15819D11CE7C0BFB7266AD').find('ul.navigation').append(input_height);
-    }
-
+                        <div class="wp-blocksit_content" style="overflow: hidden; border-color: transparent; border-width: 0px; width: 1200px; height: 300px;">
+                            <div id="layer3D41E2966F105BC01BDE66BCA1327793_container" class="container" style="visibility:hidden;">
+                                <!-- <div class="grid" style="width:350px;border-color:transparent;border-style:none;">
+                                    <div class="imgholder"> <a href="/public/static/images/honor_6_2_meitu_1.jpg" target="_blank"><img  src="/public/static/images/honor_6_2_meitu_1.jpg" /></a> </div>
+                                </div>
+                                <div class="grid" style="width:350px;border-color:transparent;border-style:none;">
+                                    <div class="imgholder"> <a href="/public/static/images/honor_8_2_meitu_1.jpg" target="_blank"><img  src="/public/static/images/honor_8_2_meitu_1.jpg" /></a> </div>
+                                </div>
+                                <div class="grid" style="width:350px;border-color:transparent;border-style:none;">
+                                    <div class="imgholder"> <a href="/public/static/images/honor_6_2_meitu_1.jpg" target="_blank"><img  src="/public/static/images/honor_6_2_meitu_1.jpg" /></a> </div>
+                                </div> -->
+                                <?php if(is_array($about['newloginbg']) || $about['newloginbg'] instanceof \think\Collection || $about['newloginbg'] instanceof \think\Paginator): $i = 0; $__LIST__ = $about['newloginbg'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                                    <div class="grid" style="width:350px;border-color:transparent;border-style:none;">
+                                        <div class="imgholder"> 
+                                            <a href="<?php echo $uploadurl; ?><?php echo $v['picture']; ?>" target="_blank">
+                                                <img  src="<?php echo $uploadurl; ?><?php echo $v['picture']; ?>" />
+                                            </a> 
+                                        </div>
+                                    </div>
+                                <?php endforeach; endif; else: echo "" ;endif; ?>
+                            </div>
+                        </div>
+                        <script>
 (function(){
-        var layer_id='layerEECF8F395F15819D11CE7C0BFB7266AD';
-        var menustyle='hs9';
-        var contentfunc=function(){
-            if($("#"+layer_id).is(':visible')){
-                    $("#"+layer_id).find('.wp-article_category_content').each(function(){
-                      var wid = $(this).width();
-                      var liwid = $(this).find('li:eq(0)');
-                      var lipadd = parseInt(liwid.css('padding-right'))+parseInt(liwid.css('padding-left'));
-                      if ($.inArray(menustyle, ['hs7','hs9','hs11','hs12']) != -1) {
-                          var bwidth = parseInt(liwid.css("borderRightWidth") || '0');
-                          if(bwidth > 0) $('li.wp_subtop', this).width(function(i, h){return h - bwidth - 1});
-                      }
-                      if(parseInt(liwid.width())>(wid-lipadd)){
-                        $(this).find('li.wp_subtop').css('width',wid-lipadd);
-                      }
-                    });
-             }else{
-                     setTimeout(contentfunc,60);
-             }
-        }
-	contentfunc();
-})()
-$(function(){
-		});
-</script>
-
-</div><script>		         $('#layerEECF8F395F15819D11CE7C0BFB7266AD').triggerHandler('layer_ready');</script>			</div>
-</div>
-<script>
-	var $fullwidth=$('#layer3D61E8896E9E119372DE2ECB454DD187 .full_width');
-	$fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
-	$(function () {
-				var videoParams={"id":"layer3D61E8896E9E119372DE2ECB454DD187","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
-		fullcolumn_bgvideo_init_func(videoParams);
-	});
-</script>
-
-
-<div id='layer5F5FA7C5D36431659E9A1EB42ECFEF31' type='box'  class='cstlayer' style='left: 0px; top: 520px; position: absolute; z-index: 118; width: 1200px; height: 816px;'  mid=""   deg='0'><div class="wp-box_content drop_box" style="word-wrap: break-word; padding: 0px; border-color: rgb(249, 249, 249); border-width: 20px; height: 776px; background-color: transparent; width: 1160px; border-style: solid;">
-    <div id='layerACAA257CE6ABAEDF7A45C4CFE9E117FC' type='article_detail'  class='cstlayer' style='left: 60px; top: 60px; position: absolute; z-index: 130; width: 1080px; height: 717px;'  mid=""  fatherid='layer5F5FA7C5D36431659E9A1EB42ECFEF31'   deg='0'><div class="wp-article_detail_content" style="border: 0px solid rgb(249, 249, 249); overflow: hidden; width: 1080px; height: 717px; padding: 0px;">
-<script type="text/javascript">
-</script>
- <style>
-.wp-article_detail_content .artview_info{ text-align:center; margin:0 auto; padding:10px 0 15px; line-height:21px; overflow:hidden;}
-.wp-article_detail_content .detail_head_title{ float:left; display:inner_block; }
-.wp-article_detail_content .sourcedata{ text-align:center; margin:0 auto;  line-height:21px; }
-.wp-article_detail_content .text-source-left01{ float:left; color:transparent; padding:0 15px; display:inner_block; }
-.wp-article_detail_content .text-source-left02{  float:left; text-align:left;   padding-right:8px; display:inner_block;}
-.wp-article_detail_content .up_arrow{ background-image:url(/public/static/images/sitestar_productdetailspage_up_arrow.png); background-repeat:no-repeat; width:11px; height:10px; display:block; float:left; background-color:#c2c2c2; margin-right:8px; margin-top:8px;}
-.wp-article_detail_content .down_arrow{ background-image:url(/public/static/images/sitestar_productdetailspage_down_arrow.png); background-repeat:no-repeat; width:11px; height:10px; display:block; float:left; background-color:#C2C2C2; margin-right:8px; margin-top:8px;}
-.wp-article_detail_content .down_arrow_textover{ color:#048bcd;}
-.wp-article_detail_content .up_arrow_textover{ color:#727272;}
-.wp-article_detail_content .shareshow{ display:none; }
-
-</style>
-	<div class="artdetail_title" style="display:block;font-family:Microsoft YaHei;font-size:20px;color:#434343;font-weight:bold;text-decoration:none;"> 数腾软件出席Ucon2015第二届中国信息安全用户大会</div>
-	
-	<div class="artview_info" style="display:block;font-family:Microsoft YaHei;font-size:12px;color:#5A5A5A;font-weight:normal;text-decoration:none;">
-		<div class="sourcedata">
-	<span class="detail_head_title org_txt_span"><span class="org_txt">来源:</span></span>
-	<span class="text-source-left01">|</span>
-	<span class="detail_head_title aut_txt_span"><span class="aut_txt">作者:</span>it-442</span>
-	<span class="text-source-left01">|</span>
-	<span class="detail_head_title pub_txt_span"><span class="pub_txt">发布时间: </span>2017-03-06</span>
-	<span class="text-source-left01">|</span>
-	<span class="detail_head_title times_txt_span">520 <span class="times_txt">次浏览</span></span>            
-		</div>
-	</div>
-	
-	<div class="artview_intro" style="display:block;font-family:Microsoft YaHei;font-size:14px;color:#868686;font-weight:normal;text-decoration:none;line-height:28px;background:#F5F5F5;border-style:solid solid solid solid;border-color:#E5E5E5 #E5E5E5 #E5E5E5 #E5E5E5;border-width:1px 1px 1px 1px;">
-	2015年10月29日，数腾作为合作单位，受邀参加了在上海龙之梦万丽大酒店隆重举行的第二届中国信息安全用户大会。作为中国信息安全用户较高规格的会议，汇集了来自金融、国资、通信、医疗、工控、政务、教育、互联网等重点行业用户。是“第五届上海市信息安全活动周”的重点活动，也是安全周的压轴盛宴。	</div>
-	
-	<div class="artview_content" style="display:block;font-family:Microsoft YaHei;font-size:16px;color:#5A5A5A;font-weight:normal;text-decoration:none;">
-
-		<div class="artview_detail" setsid="article55">
-			<span style="line-height:32px;"><br />
-智能网络科技有限公司始建于二〇〇八年，于二〇一五年更名为智能信息技术有限公司。我公司是专业从事计算机信息系统集成、建筑智能化系统工程的高新技术企业， 我们的核心业务为中小企业提供弱电系统整体解决方案，内容涉及范围：综合布线（大型机房建设、中小型网络系统布线）、电话程控交换系统(PBX)、安全防范系统（远程高清监控、手机监控、联网报警系统、电子围栏）、音响控制系统（背景音乐、会议室扩声系统）、远程智能视频会议系统、大屏幕显示系统、智能楼宇控制系统等。</span><br />
-<span style="line-height:32px;"></span><br />
-<span style="line-height:32px;">公司立足，八年专注扎根于政府、教育和金融行业，项目遍布国内主要大型城市，目前公司设计施工的客户已达数百家，在、上海、北京、西安、苏州、山西等地均成功项目案例，已成为华东地区较具竞争力的弱电智能化系统综合方案提供商。</span><br />
-<span style="line-height:32px;"></span><br />
-<span style="line-height:32px;">公司提供从技术咨询、工程设计、产品供应、安装施工、调试开通到售后服务及长期维修保养等全方位的支持，为客户的信息智能化系统提供一站式服务，公司除了提供前期的弱电系统建设，另针对中小企业还提供了IT外包一体式服务，包括简单的网络布线，电话分机布署，网站建设，计算机及周边办公设备产品销售维护服务。 弱电工程的完美竣工，只是我们服务的开始，期望能与广大中小企业达成长期的合作伙伴关系，携手发展、共创辉煌！<br />
-</span><br />              <div style="clear:both;"></div>
-		</div>
-		
-	</div>
-  		<div class="artview_prev_next">
-		<div style="margin-top:20px;width:100%;">
-		<div style="" class="prevlist">
-			<span class="up_arrow"></span>
-			<span class="prev_next_text prev_txt" style="display:block;float:left;margin-right: 5px;">上一篇： </span> 
-						<a class="prev_next_link" style="display:block;float:left;" href="page91.html?article_id=54" title="数腾软件与华三通信签约云计算技术联盟">
-				数腾软件与华三通信签约云计算技术联盟			</a>
-						<div style="clear:both;"></div>
-		</div>
-		<div style=""  class="nextlist">
-			<span class="down_arrow"></span>
-			<span class="prev_next_text next_txt" style="display:block;float:left;margin-right: 5px;">下一篇：</span>
-						<span class="prev_next_link" style="display:block;float:left;" >无</span>
-						<div style="clear:both;"></div>
-		</div>
-</div>	</div>
-	</div>
-<script type="text/javascript">
-	$(function(){
-		var layer = $('#layerACAA257CE6ABAEDF7A45C4CFE9E117FC');
- 	  
-	  layer.find('.prevlist,.nextlist').mouseenter(function(e){
-			$(this).find('.up_arrow,.down_arrow').addClass("arrowbj");
-			$(this).find('.prev_next_text,.prev_next_link').addClass("arrowfontcolor");			
-			$(this).css("cursor","pointer");
-		}).mouseleave(function(e){
-			$(this).find('.up_arrow,.down_arrow').removeClass("arrowbj");
-			$(this).find('.prev_next_text,.prev_next_link').removeClass("arrowfontcolor");
-		});	
-	
-		var this_span = 0;
-		var sharelen = 0; 
-				layer.find('.sourcedata').children("span").not(".bdsharebuttonbox").each(function(){
-			if($(this).css("display")=="none"){}else{
-				var shis_spanw = $(this).outerWidth();
-				this_span = this_span + shis_spanw;
-			}
+	var imgdefereds=[];
+	$('#layer3D41E2966F105BC01BDE66BCA1327793_container').find('img').each(function(){
+		var dfd=$.Deferred();
+		$(this).bind('load',function(){
+			dfd.resolve();
+		}).bind('error',function(){
+			dfd.resolve();
+		})
+		if(this.complete) setTimeout(function(){
+			dfd.resolve();
+		},1000);
+		imgdefereds.push(dfd);
+	})
+	$('#layer3D41E2966F105BC01BDE66BCA1327793').layer_ready(function() {
+		$LAB
+		 .script('/public/static/js/jquery_blocksit.js')
+		 .wait(function(){
+			var modwidth=$('#layer3D41E2966F105BC01BDE66BCA1327793 .wp-blocksit_content').width();
+			var offsetXY=parseInt('16');
+			var grid_width=$('#layer3D41E2966F105BC01BDE66BCA1327793_container .grid').outerWidth()+offsetXY;
+			offsetXY=offsetXY/2;
+			var cols=Math.floor(modwidth/grid_width);
+			if(cols<=0) cols=1;
+			var cnterwidth=grid_width*cols;
+			$.when.apply(null,imgdefereds).done(function(){
+				 $('#layer3D41E2966F105BC01BDE66BCA1327793_container').css('visibility','');
+				$('#layer3D41E2966F105BC01BDE66BCA1327793_container').width(cnterwidth).BlocksIt({
+					numOfCol: cols,
+					offsetX: offsetXY,
+					offsetY: offsetXY
+				});
+			})
 			
 		})
 		
-				this_span = this_span + sharelen*28 + 4; 
-                var sourcmax_width = $('.artview_info').width();
-		layer.find('.sourcedata').width(this_span); 
-                layer.find('.sourcedata').css("max-width",sourcmax_width); 
-				 
-})
-	
+		$LAB
+		 .script('/public/static/js/jquery.lightbox.js')
+		
+	});
+})()
+</script></div>
+                    <script>		         $('#layer3D41E2966F105BC01BDE66BCA1327793').triggerHandler('layer_ready');</script> </div>
+            </div>
+            <script>
+	var $fullwidth=$('#layerAFE92A5D3CB22353BC14886C5D225669 .full_width');
+	$fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
+	$(function () {
+				var videoParams={"id":"layerAFE92A5D3CB22353BC14886C5D225669","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
+		fullcolumn_bgvideo_init_func(videoParams);
+	});
 </script>
-
+            <div id="layer03D56753C6F01FEFE45E38C3758B362E" class="full_column"   style="width:1200px;position:absolute;top:1460px;height:540px;z-index:106;">
+                <div class="full_width" style="position:absolute;height:540px;background-color:#ffffff;background:;"> </div>
+                <div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:540px;">
+                    <div id='layer8DBE415126D1331901C388CBF6BE3354' type='title'  class='cstlayer' style='left: 0px; top: 60px; position: absolute; z-index: 108; width: 1200px; height: 49px; transform: rotate(0deg); transform-origin: 0px 0px 0px;'  mid=""  fatherid='layer03D56753C6F01FEFE45E38C3758B362E'   deg='0'>
+                        <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 49px; width: 1200px; display: block;">
+                            <div style="text-align: center;"><font color="#434343" face="微软雅黑"><span style="font-size: 30px;">联系我们</span></font></div>
+                        </div>
+                    </div>
+                    <script>		         $('#layer8DBE415126D1331901C388CBF6BE3354').triggerHandler('layer_ready');</script>
+<style type="text/css">
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+  <!--百度地图容器-->
+  <div style="width:100%;height:450px;border:#ccc solid 1px;margin-top:113px; " id="dituContent"></div>
+</body>
 <script type="text/javascript">
-	setTimeout(function(){
-		var $artdetailayer = $('#layerACAA257CE6ABAEDF7A45C4CFE9E117FC');
-		var $artdetai = $artdetailayer.find('div.wp-article_detail_content');
-		var $site_footer = $('#site_footer');
-		var artdetaibortop = parseInt($artdetai.css('border-top-width'));
-		var artdetaiborbot = parseInt($artdetai.css('border-bottom-width'));
-		var artdetailayerhei = parseInt($artdetailayer.height());
-		var artdetaihei = parseInt($artdetai.height());
-		var site_footertop = parseInt($site_footer.css('top'));
-		var artdetaiall = artdetaihei + artdetaibortop + artdetaiborbot;
-		if(artdetaibortop == 0 && artdetaiborbot == 0){return false;}
-		$artdetai.height(artdetaiall);
-		$artdetailayer.height(artdetailayerhei + artdetaiborbot + artdetaibortop);
-		$site_footer.css('top',(site_footertop+artdetaibortop+artdetaiborbot)+'px');
-	},1000);
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(106.551477,29.402986);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+    map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"重庆宸亦轩科技有限公司",content:"重庆巴南区渝南大道c区",point:"106.552007|29.404024",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("/public/static/images/wz2.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
 </script>
-</div><script>		         $('#layerACAA257CE6ABAEDF7A45C4CFE9E117FC').triggerHandler('layer_ready');</script>    
-</div>
-</div><script>		         $('#layer5F5FA7C5D36431659E9A1EB42ECFEF31').triggerHandler('layer_ready');</script>    </div>
-     </div>	<div id="site_footer" style="width:1200px;position:absolute;height:600px;z-index:500;margin-top:50px">
-                 <div class="full_width" margintopheight=50 style="position:absolute;height:600px;background-color:#434343;background-position:center top;background-image:url('http://tpl-c383b95.pic32.websiteonline.cn/upload/z_bg2.jpg');"></div>
+                    <script>		         $('#layer64F564ED85FAD5B94DAE374AB1A04E95').triggerHandler('layer_ready');</script> </div>
+            </div>
+            <script>
+	var $fullwidth=$('#layer03D56753C6F01FEFE45E38C3758B362E .full_width');
+	$fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
+	$(function () {
+				var videoParams={"id":"layer03D56753C6F01FEFE45E38C3758B362E","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
+		fullcolumn_bgvideo_init_func(videoParams);
+	});
+</script> 
+        </div>
+    </div>
+    <div id="site_footer" style="width:1200px;position:absolute;height:600px;z-index:500;margin-top:50px">
+    	         <div class="full_width" margintopheight=50 style="position:absolute;height:600px;background-color:#434343;background-position:center top;background-image:url('http://tpl-c383b95.pic32.websiteonline.cn/upload/z_bg2.jpg');"></div>
         <div id="footer_content" class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:600px;">
             <div id='layer93923DB32704FF1B6A4ABD34B659E864' type='line'  inbuttom='1' class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 102; width: 340px; height: 31px;'  mid=""   deg='0'>
                 <div class="wp-line_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 340px; height: 31px; border-style: solid;">

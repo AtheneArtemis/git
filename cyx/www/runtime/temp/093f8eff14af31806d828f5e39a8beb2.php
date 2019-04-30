@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"F:\git\cyx\www/application/admin\view\Articletype\index.html";i:1556502829;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"F:\git\cyx\www/application/admin\view\Articletype\index.html";i:1556585755;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -44,6 +44,7 @@
                                         <th>ID</th>
                                         <th>属性</th>
 										<th>名称</th>
+                                        <th>标题</th>
 										<th>描述</th>
                                         <th>分组</th>
                                         <th>上级</th>

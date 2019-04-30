@@ -96,7 +96,7 @@
         }
         function publish(id,status){
             $.post('__URL__/publish',{id:id,status:status},function(json){
-                alert(json.msg);
+                // alert(json.msg);
                 if (json.code == 0) {
                     window.location.href = '__URL__/index';
                 }

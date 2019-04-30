@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Aboutus\index.html";i:1556520081;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Aboutus\index.html";i:1556530319;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,7 +81,7 @@
     <script type="text/javascript">
         var number = parseInt("<?php echo $number; ?>");
         function addpicturebox(){
-            var str = '<div class="col-sm-4"><div style="height:198px;width:198px;padding:10px;padding-top:5px;"><div class="upload05" style="width:800px;margin-left:0px;"><div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;border:1px solid #e3e3e3;"><img id="picture'+number+'" src="" style="width:240px;height:200px;"><div class="uploadbuttombox05"><div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" name="picture'+number+'" onchange="return onUploadImgChange(this,\'picture'+number+'\',\'240px\',\'200px\')"/></div></div></div></div></div><div id="np_'+number+'" class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传商品图片 <a href="javascript:delnewPicture(\''+number+'\')">删除</a></div></div>';
+            var str = '<div class="col-sm-4"><div style="height:198px;width:198px;padding:10px;padding-top:5px;"><div class="upload05" style="width:800px;margin-left:0px;"><div class="uploadbox05" style="margin-top:26px;margin-bottom:1px;border:1px solid #e3e3e3;"><img id="picture'+number+'" src="" style="width:240px;height:200px;"><div class="uploadbuttombox05"><div><input type="file" class="uploadinput05" style="width:240px;height:200px;margin-top:-80px;" name="picture'+number+'" onchange="return onUploadImgChange(this,\'picture'+number+'\',\'240px\',\'200px\')"/></div></div></div></div></div><div id="np_'+number+'" class="clear" style="height:35px;text-align:center;line-height:55px;width:240px;">点击图片上传图片 <a href="javascript:delnewPicture(\''+number+'\')">删除</a></div></div>';
             $("#commodityimg").append(str);
             number++;
         }

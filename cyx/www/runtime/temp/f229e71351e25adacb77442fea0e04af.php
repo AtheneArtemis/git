@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/index\view\news\article.html";i:1556590266;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/index\view\News\article.html";i:1556591654;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -368,50 +368,44 @@ $(function(){
 .wp-article_detail_content .shareshow{ display:none; }
 
 </style>
-	<div class="artdetail_title" style="display:block;font-family:Microsoft YaHei;font-size:20px;color:#434343;font-weight:bold;text-decoration:none;"> 数腾软件出席Ucon2015第二届中国信息安全用户大会</div>
+	<div class="artdetail_title" style="display:block;font-family:Microsoft YaHei;font-size:20px;color:#434343;font-weight:bold;text-decoration:none;"><?php echo $article['title']; ?></div>
 	
 	<div class="artview_info" style="display:block;font-family:Microsoft YaHei;font-size:12px;color:#5A5A5A;font-weight:normal;text-decoration:none;">
 		<div class="sourcedata">
-	<span class="detail_head_title org_txt_span"><span class="org_txt">来源:</span></span>
+	<span class="detail_head_title org_txt_span"><span class="org_txt">来源:</span><?php echo $article['comefrom']; ?></span>
 	<span class="text-source-left01">|</span>
-	<span class="detail_head_title aut_txt_span"><span class="aut_txt">作者:</span>it-442</span>
+	<span class="detail_head_title aut_txt_span"><span class="aut_txt">作者:</span><?php echo $article['author']; ?></span>
 	<span class="text-source-left01">|</span>
-	<span class="detail_head_title pub_txt_span"><span class="pub_txt">发布时间: </span>2017-03-06</span>
+	<span class="detail_head_title pub_txt_span"><span class="pub_txt">发布时间: </span><?php echo $article['publishtime']; ?></span>
 	<span class="text-source-left01">|</span>
-	<span class="detail_head_title times_txt_span">520 <span class="times_txt">次浏览</span></span>            
+	<!-- <span class="detail_head_title times_txt_span">520 <span class="times_txt">次浏览</span></span>             -->
 		</div>
 	</div>
 	
 	<div class="artview_intro" style="display:block;font-family:Microsoft YaHei;font-size:14px;color:#868686;font-weight:normal;text-decoration:none;line-height:28px;background:#F5F5F5;border-style:solid solid solid solid;border-color:#E5E5E5 #E5E5E5 #E5E5E5 #E5E5E5;border-width:1px 1px 1px 1px;">
-	2015年10月29日，数腾作为合作单位，受邀参加了在上海龙之梦万丽大酒店隆重举行的第二届中国信息安全用户大会。作为中国信息安全用户较高规格的会议，汇集了来自金融、国资、通信、医疗、工控、政务、教育、互联网等重点行业用户。是“第五届上海市信息安全活动周”的重点活动，也是安全周的压轴盛宴。	</div>
-	
-	<div class="artview_content" style="display:block;font-family:Microsoft YaHei;font-size:16px;color:#5A5A5A;font-weight:normal;text-decoration:none;">
-
-		<div class="artview_detail" setsid="article55">
-			<span style="line-height:32px;"><br />
-智能网络科技有限公司始建于二〇〇八年，于二〇一五年更名为智能信息技术有限公司。我公司是专业从事计算机信息系统集成、建筑智能化系统工程的高新技术企业， 我们的核心业务为中小企业提供弱电系统整体解决方案，内容涉及范围：综合布线（大型机房建设、中小型网络系统布线）、电话程控交换系统(PBX)、安全防范系统（远程高清监控、手机监控、联网报警系统、电子围栏）、音响控制系统（背景音乐、会议室扩声系统）、远程智能视频会议系统、大屏幕显示系统、智能楼宇控制系统等。</span><br />
-<span style="line-height:32px;"></span><br />
-<span style="line-height:32px;">公司立足，八年专注扎根于政府、教育和金融行业，项目遍布国内主要大型城市，目前公司设计施工的客户已达数百家，在、上海、北京、西安、苏州、山西等地均成功项目案例，已成为华东地区较具竞争力的弱电智能化系统综合方案提供商。</span><br />
-<span style="line-height:32px;"></span><br />
-<span style="line-height:32px;">公司提供从技术咨询、工程设计、产品供应、安装施工、调试开通到售后服务及长期维修保养等全方位的支持，为客户的信息智能化系统提供一站式服务，公司除了提供前期的弱电系统建设，另针对中小企业还提供了IT外包一体式服务，包括简单的网络布线，电话分机布署，网站建设，计算机及周边办公设备产品销售维护服务。 弱电工程的完美竣工，只是我们服务的开始，期望能与广大中小企业达成长期的合作伙伴关系，携手发展、共创辉煌！<br />
-</span><br />              <div style="clear:both;"></div>
-		</div>
-		
+		<?php echo $article['content']; ?>
 	</div>
   		<div class="artview_prev_next">
 		<div style="margin-top:20px;width:100%;">
 		<div style="" class="prevlist">
 			<span class="up_arrow"></span>
 			<span class="prev_next_text prev_txt" style="display:block;float:left;margin-right: 5px;">上一篇： </span> 
-						<a class="prev_next_link" style="display:block;float:left;" href="page91.html?article_id=54" title="数腾软件与华三通信签约云计算技术联盟">
-				数腾软件与华三通信签约云计算技术联盟			</a>
-						<div style="clear:both;"></div>
+			<?php if(empty($prvArticle) || (($prvArticle instanceof \think\Collection || $prvArticle instanceof \think\Paginator ) && $prvArticle->isEmpty())): ?>
+				<span class="prev_next_link" style="display:block;float:left;" >无</span>
+			<?php else: ?>
+				<a class="prev_next_link" style="display:block;float:left;" href="/index.php/index/news/article/id/<?php echo $prvArticle['id']; ?>" title="<?php echo $prvArticle['title']; ?>"><?php echo $prvArticle['title']; ?></a>
+			<?php endif; ?>
+			<div style="clear:both;"></div>
 		</div>
 		<div style=""  class="nextlist">
 			<span class="down_arrow"></span>
 			<span class="prev_next_text next_txt" style="display:block;float:left;margin-right: 5px;">下一篇：</span>
-						<span class="prev_next_link" style="display:block;float:left;" >无</span>
-						<div style="clear:both;"></div>
+			<?php if(empty($nextArticle) || (($nextArticle instanceof \think\Collection || $nextArticle instanceof \think\Paginator ) && $nextArticle->isEmpty())): ?>
+				<span class="prev_next_link" style="display:block;float:left;" >无</span>
+			<?php else: ?>
+				<a class="prev_next_link" style="display:block;float:left;" href="/index.php/index/news/article/id/<?php echo $nextArticle['id']; ?>" title="<?php echo $nextArticle['title']; ?>"><?php echo $nextArticle['title']; ?></a>
+			<?php endif; ?>
+			<div style="clear:both;"></div>
 		</div>
 </div>	</div>
 	</div>

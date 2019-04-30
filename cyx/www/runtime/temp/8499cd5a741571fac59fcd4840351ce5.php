@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"F:\git\cyx\www/application/index\view\Homepage\index.html";i:1556531733;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"F:\git\cyx\www/application/index\view\Homepage\index.html";i:1556588055;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -402,7 +402,7 @@
 					<script>		         $('#layer7F2D8071388D29FAB9034DC939628B4A').triggerHandler('layer_ready');</script>
 					<div id='layer85BE3A2C9413D41DF02ADACA6BD53961' type='title'  class='cstlayer' style='left: 783px; top: 22px; position: absolute; z-index: 120; width: 394px; height: 46px;'  mid=""  fatherid='layer6D1423FD1321C204966B927D2C43B75A'   deg='0'>
 						<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 46px; width: 394px; display: block;">
-							<div style="text-align: justify;"><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">​</span><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">某某科技软件股份有限公司是中国领先的科技软件供应商，主要从事管理软件、大数据和移动互联等领域软件的研发与推广。</span></div>
+							<div style="text-align: justify;"><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">​</span><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">重庆宸亦轩科技有限公司</span></div>
 						</div>
 					</div>
 					<script>		         $('#layer85BE3A2C9413D41DF02ADACA6BD53961').triggerHandler('layer_ready');</script>

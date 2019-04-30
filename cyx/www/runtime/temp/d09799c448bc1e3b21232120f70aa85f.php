@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Station\index.html";i:1556530903;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Station\index.html";i:1556586630;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -116,7 +116,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-1 control-label">资质荣誉</label>
+                                <label class="col-sm-1 control-label">Banner</label>
                                 <div class="col-sm-11" id="commodityimg">
                                     <div><button type="button" class="btn btn-primary" onclick="addpicturebox()">增加一张</button></div>
                                     <?php if(is_array($list['newbanner']) || $list['newbanner'] instanceof \think\Collection || $list['newbanner'] instanceof \think\Paginator): $i = 0; $__LIST__ = $list['newbanner'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>

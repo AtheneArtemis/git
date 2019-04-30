@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:53:"F:\git\cyx\www/application/index\view\news\index.html";i:1556438776;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:53:"F:\git\cyx\www/application/index\view\news\index.html";i:1556590071;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -202,69 +202,72 @@
     					<script>		         $('#layerF7E21885D347DE8B4B0271F6D7E12D5C').triggerHandler('layer_ready');</script>			</div>
 </div>
     					
-  <script>
-   var $fullwidth=$('#layer9EAF89AF7AC38ADE518847573DD9C1AF .full_width');
-   $fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
-   $(function () {
-    var videoParams={"id":"layer9EAF89AF7AC38ADE518847573DD9C1AF","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
-    fullcolumn_bgvideo_init_func(videoParams);
-  });
+     <script>
+    var $fullwidth=$('#layer9EAF89AF7AC38ADE518847573DD9C1AF .full_width');
+    $fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
+    $(function () {
+                var videoParams={"id":"layer9EAF89AF7AC38ADE518847573DD9C1AF","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
+        fullcolumn_bgvideo_init_func(videoParams);
+    });
 </script>
-<div id='layer4033C5A1D8D22A7D37C61FE267DDE4F2' type='unslider'  class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 100; width: 1200px; height: 320px;'  mid=""   deg='0'>
-  <style>
-    #layer4033C5A1D8D22A7D37C61FE267DDE4F2html5zoo-1{
-     margin:0 auto;
-   }
- </style>
- <div id="layer4033C5A1D8D22A7D37C61FE267DDE4F2_content" class="wp-unslider_content" style="overflow: hidden; border: none; left: -351.5px; width: 1903px; height: 320px; position: absolute;"> 
-  <script type="text/javascript">
-
-  </script> 
-
-  <!-- loop star -->
-  <div id="layer4033C5A1D8D22A7D37C61FE267DDE4F2html5zoo-1">
-    <ul class="html5zoo-slides" style="display:none;">
-      <li><img alt="" src="/public/static/images/5.jpg" class="html5lightbox" /></a></li>
-      <li><img alt="" src="/public/static/images/4.jpg" class="html5lightbox" /></a></li>
-    </ul>
-  </div>
-  <!-- loop end --> 
-
-  <script language="javascript">
-    (function(){
-      var layerparams={"layerid":"layer4033C5A1D8D22A7D37C61FE267DDE4F2","pstyle":"none","plborder_size":"0","interval":5000,"autoplays":"true","title_size":"40","title_family":"SimSun","title_color":"#FFFFFF","easing":"all","show_title":"1","show_nav":"0","navigation_style":"01","navbg_hover_color":"#660000","nav_margin_bottom_size":"25","nav_arrow":"1","arrow_left":"template\/default\/images\/left_arrow.png","arrow_right":"template\/default\/images\/right_arrow.png","nav_margin_left_size":"25","nav_margin_right_size":"25","skin":"01","default_show":"1","hover_show":"0","pauseonmouseover":"1","nav_arrow_w_size":"32","nav_arrow_h_size":"32"};
-      layer_unslider_init_func(layerparams);
-    })()  
-  </script> 
-</div>
-</div>
-<script>		         $('#layer4033C5A1D8D22A7D37C61FE267DDE4F2').triggerHandler('layer_ready');</script>
-<div id="layer08980ED91003FC76D3D2CD4FEB8C22E2" class="full_column"   style="width:1200px;position:absolute;top:120px;height:320px;z-index:103;">
-  <div class="full_width" style="position:absolute;height:320px;background-color:transparent;background:;"> </div>
-  <div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:320px;">
-    <div id='layerF4F0B761EAF8A796CF5A8FE6BCADFF6E' type='title'  class='cstlayer' style='left: 0px; top: 80px; position: absolute; z-index: 104; width: 1200px; height: 68px; display: block;display:none;'  mid=""  fatherid='layer08980ED91003FC76D3D2CD4FEB8C22E2'   deg='0'>
-      <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 68px; width: 1200px; display: block;">
-        <div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 40px;">科技创造生活 · 精诚赢得未来</span></font></div>
-      </div>
-    </div>
-    <script>		         $('#layerF4F0B761EAF8A796CF5A8FE6BCADFF6E').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});		         $('#layerF4F0B761EAF8A796CF5A8FE6BCADFF6E').triggerHandler('layer_ready');</script>
-    <div id='layer18E3E9B709E04186F2E4A818568C8058' type='title'  class='cstlayer' style='left: 293px; top: 150px; position: absolute; z-index: 137; width: 613px; height: 74px; display: block;display:none;'  mid=""  fatherid='layer08980ED91003FC76D3D2CD4FEB8C22E2'   deg='0'>
-      <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 74px; width: 613px; display: block; border-style: solid;">
-        <div style="text-align: center;"><span style="font-size: 14px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);">依托网络科技数据中心，以行业内领先的大数据技术及产品体系为基础， 运用成熟的运营模式为企业和个人提供定制化的大数据产品和服务。</span></div>
-        <div style="text-align: center; color: rgb(90, 90, 90); font-family: Arial, 宋体, Helvetica, sans-serif, Verdana; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;"><br>
-        </div>
-      </div>
-    </div>
-    <script>		         $('#layer18E3E9B709E04186F2E4A818568C8058').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});		         $('#layer18E3E9B709E04186F2E4A818568C8058').triggerHandler('layer_ready');</script> </div>
-  </div>
-  <script>
-   var $fullwidth=$('#layer08980ED91003FC76D3D2CD4FEB8C22E2 .full_width');
-   $fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
-   $(function () {
-    var videoParams={"id":"layer08980ED91003FC76D3D2CD4FEB8C22E2","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
-    fullcolumn_bgvideo_init_func(videoParams);
-  });
+            <div id="layer08980ED91003FC76D3D2CD4FEB8C22E2" class="full_column"   style="width:1200px;position:absolute;top:120px;height:320px;z-index:103;">
+                <div class="full_width" style="position:absolute;height:320px;background-color:transparent;background:;"> </div>
+                <div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:320px;">
+                    <div id='layerF4F0B761EAF8A796CF5A8FE6BCADFF6E' type='title'  class='cstlayer' style='left: 0px; top: 80px; position: absolute; z-index: 104; width: 1200px; height: 68px; display: block;display:none;'  mid=""  fatherid='layer08980ED91003FC76D3D2CD4FEB8C22E2'   deg='0'>
+                        <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 68px; width: 1200px; display: block;">
+                            <div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 40px;"><?php echo $station['banner_title']; ?></span></font></div>
+                        </div>
+                    </div>
+                    <script>                 $('#layerF4F0B761EAF8A796CF5A8FE6BCADFF6E').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});               $('#layerF4F0B761EAF8A796CF5A8FE6BCADFF6E').triggerHandler('layer_ready');</script>
+                    <div id='layer18E3E9B709E04186F2E4A818568C8058' type='title'  class='cstlayer' style='left: 293px; top: 150px; position: absolute; z-index: 137; width: 613px; height: 74px; display: block;display:none;'  mid=""  fatherid='layer08980ED91003FC76D3D2CD4FEB8C22E2'   deg='0'>
+                        <div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 74px; width: 613px; display: block; border-style: solid;">
+                            <div style="text-align: center;"><span style="font-size: 14px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);"><?php echo $station['banner_content']; ?></span></div>
+                            <div style="text-align: center; color: rgb(90, 90, 90); font-family: Arial, 宋体, Helvetica, sans-serif, Verdana; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;"><br>
+                            </div>
+                        </div>
+                    </div>
+                    <script>                 $('#layer18E3E9B709E04186F2E4A818568C8058').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});               $('#layer18E3E9B709E04186F2E4A818568C8058').triggerHandler('layer_ready');</script> </div>
+            </div>
+            <script>
+    var $fullwidth=$('#layer08980ED91003FC76D3D2CD4FEB8C22E2 .full_width');
+    $fullwidth.css({left:0-$('#canvas').offset().left+$('#scroll_container').offset().left-$('#scroll_container').scrollLeft()-$.parseInteger($('#canvas').css("borderLeftWidth")),width:$('#scroll_container_bg').width()});
+    $(function () {
+                var videoParams={"id":"layer08980ED91003FC76D3D2CD4FEB8C22E2","bgauto":null,"ctauto":null,"bVideouse":null,"cVideouse":null,"bgvHeight":null,"bgvWidth":null};
+        fullcolumn_bgvideo_init_func(videoParams);
+    });
 </script>
+            <div id='layer4033C5A1D8D22A7D37C61FE267DDE4F2' type='unslider'  class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 100; width: 1200px; height: 320px;'  mid=""   deg='0'>
+                <style>
+#layer4033C5A1D8D22A7D37C61FE267DDE4F2html5zoo-1{
+    margin:0 auto;
+}
+</style>
+                <div id="layer4033C5A1D8D22A7D37C61FE267DDE4F2_content" class="wp-unslider_content" style="overflow: hidden; border: none; left: -351.5px; width: 1903px; height: 320px; position: absolute;"> 
+                    <script type="text/javascript">
+     
+</script> 
+                    
+                    <!-- 轮播图位置  -->
+                    <div id="layer4033C5A1D8D22A7D37C61FE267DDE4F2html5zoo-1">
+                        <ul class="html5zoo-slides" style="display:none;">
+                            <!-- <li><img alt="" src="/public/static/images/5.jpg" class="html5lightbox" /></a></li>
+                            <li><img alt="" src="/public/static/images/4.jpg" class="html5lightbox" /></a></li> -->
+                            <?php if(is_array($station['newbanner']) || $station['newbanner'] instanceof \think\Collection || $station['newbanner'] instanceof \think\Paginator): $i = 0; $__LIST__ = $station['newbanner'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                                <li><img alt="" src="<?php echo $uploadurl; ?><?php echo $v['picture']; ?>" class="html5lightbox" /></a></li>
+                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                        </ul>
+                    </div>
+                    <!-- loop end --> 
+                    
+                    <script language="javascript">
+(function(){
+        var layerparams={"layerid":"layer4033C5A1D8D22A7D37C61FE267DDE4F2","pstyle":"none","plborder_size":"0","interval":5000,"autoplays":"true","title_size":"40","title_family":"SimSun","title_color":"#FFFFFF","easing":"all","show_title":"1","show_nav":"0","navigation_style":"01","navbg_hover_color":"#660000","nav_margin_bottom_size":"25","nav_arrow":"1","arrow_left":"template\/default\/images\/left_arrow.png","arrow_right":"template\/default\/images\/right_arrow.png","nav_margin_left_size":"25","nav_margin_right_size":"25","skin":"01","default_show":"1","hover_show":"0","pauseonmouseover":"1","nav_arrow_w_size":"32","nav_arrow_h_size":"32"};
+    layer_unslider_init_func(layerparams);
+})()  
+</script> 
+                </div>
+            </div>
+            <script>                 $('#layer4033C5A1D8D22A7D37C61FE267DDE4F2').triggerHandler('layer_ready');</script>
 <div id="layer40198511F6332DF6F231A2349F92696B" class="full_column"   style="width:1200px;position:absolute;top:440px;height:50px;z-index:138;">
   <div class="full_width" style="position:absolute;height:50px;background-color:#f6f6f6;background:;"> </div>
   <div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:50px;">

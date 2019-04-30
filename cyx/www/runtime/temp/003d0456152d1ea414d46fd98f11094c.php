@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:59:"F:\git\cyx\www/application/admin\view\Articletype\edit.html";i:1556444023;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1555645288;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556247719;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:59:"F:\git\cyx\www/application/admin\view\Articletype\edit.html";i:1556587375;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,6 +64,12 @@
                                 </div>
                             </div>
                             <div class="form-group">
+                                <label class="col-sm-2 control-label">标题</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name="title" value="<?php echo $list['title']; ?>">
+                                </div>
+                            </div>
+                            <div class="form-group">
                                 <label class="col-sm-2 control-label">描述</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" name="intro" value="<?php echo $list['intro']; ?>">
@@ -81,7 +87,7 @@
                                     <select name="gid" class="form-control" id="cat-group" onchange="changeGroup()">
                                         <option value="0">无分组</option>
                                         <?php if(is_array($grouplist) || $grouplist instanceof \think\Collection || $grouplist instanceof \think\Paginator): $i = 0; $__LIST__ = $grouplist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                                            <option value="<?php echo $v['id']; ?>" <?php if($list['gid'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['name']; ?></option>
+                                            <option value="<?php echo $v['id']; ?>" <?php if($list['gid'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['title']; ?></option>
                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>
@@ -92,7 +98,7 @@
                                     <select name="pid" class="form-control" id="cat-parent" onchange="changeParent()">
                                         <option value="-10000">无上级</option>
                                         <?php if(is_array($parentlist) || $parentlist instanceof \think\Collection || $parentlist instanceof \think\Paginator): $i = 0; $__LIST__ = $parentlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                                            <option value="<?php echo $v['id']; ?>" <?php if($list['pid'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['name']; ?></option>
+                                            <option value="<?php echo $v['id']; ?>" <?php if($list['pid'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['title']; ?></option>
                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>
@@ -140,7 +146,10 @@
         }
         //上级切换
         function changeParent(){
-            $("#level").val(2);
+            var pid = $("#cat-parent option:selected").val();
+            if (pid != -10000) {
+                $("#level").val(2);
+            }
         }
     </script>
 </body>
@@ -157,8 +166,16 @@
 
 <script src="/public/static/js/plugins/layer/laydate/laydate.js"></script>
 <script src="/public/static/js/Validform_v5.3.2_min.js"></script>
+
+<script type="text/javascript" src="/public/static/js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/public/static/js/ueditor/ueditor.all.min.js"></script>
+
 <!-- 基础公众js函数 -->
 <script type="text/javascript">
+	//表单检查
+	$(".form-horizontal").Validform();
+	//实例化百度编辑器
+	var ue = UE.getEditor('container');
 	//日期选择器
 	$(function(){  
         var start = {  

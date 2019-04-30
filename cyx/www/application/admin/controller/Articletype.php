@@ -22,10 +22,10 @@ class Articletype extends Base{
         $pid = '';
         $level = '';
         if ($value["gid"] > 0) {
-            $gid = $value["group"]["name"];
+            $gid = $value["group"]["title"];
         }
         if ($value["pid"] > 0) {
-            $pid = $value["parent"]["name"];
+            $pid = $value["parent"]["title"];
         }
         if ($value["level"] > 0) {
             $level = $value["level"];
@@ -80,7 +80,7 @@ class Articletype extends Base{
             $list = db('articletype')->where($map)->field('id,name,title,level')->select();
             $html = '<option value="-10000">无上级</option>';
             foreach ($list as $key => $value) {
-                $html .= '<option value="'.$value['id'].'" >'.$value['name'].'</option>';
+                $html .= '<option value="'.$value['id'].'" >'.$value['title'].'</option>';
             }
         }
 
