@@ -1,7 +1,8 @@
 <?php
 namespace app\mobile\Controller;
-use app\mobile\Controller\Index;
-class About extends Index{
+use app\mobile\Controller\Base;
+
+class About extends Base{
  public function index(){
        return $this->fetch();
     }

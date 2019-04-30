@@ -15871,3 +15871,6 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_station` [ RunTime:0.012000s ]
 [ sql ] [ SQL ] SELECT * FROM `cyx_station` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002001s ]
 [ sql ] [ SQL ] SELECT `id`,`banner_title`,`banner_content`,`banner` FROM `cyx_station` WHERE  `is_delete` = 0  AND `id` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-04-29T17:56:02+08:00 ] 127.0.0.1 GET www.chenyixuan.com/
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
