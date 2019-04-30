@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/admin\view\Article\edit.html";i:1556510476;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1555645288;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:55:"F:\git\cyx\www/application/admin\view\Article\edit.html";i:1556585847;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +49,7 @@
                                     <select name="" class="form-control" id="group" onchange="changeGroup()">
                                         <option value="-10000">请选择文章分组</option>
                                         <?php if(is_array($grouptype) || $grouptype instanceof \think\Collection || $grouptype instanceof \think\Paginator): $i = 0; $__LIST__ = $grouptype;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                                            <option value="<?php echo $v['id']; ?>" <?php if($list['articletype_id'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['name']; ?></option>
+                                            <option value="<?php echo $v['id']; ?>" <?php if($list['articletype_id'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['title']; ?></option>
                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>
@@ -57,7 +57,7 @@
                                     <select name="" class="form-control" id="parent" onchange="changeParent()">
                                         <option value="-10000">请选择文章一级分类</option>
                                         <?php if(is_array($parenttype) || $parenttype instanceof \think\Collection || $parenttype instanceof \think\Paginator): $i = 0; $__LIST__ = $parenttype;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                                            <option value="<?php echo $v['id']; ?>" <?php if($list['articletype_id'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['name']; ?></option>
+                                            <option value="<?php echo $v['id']; ?>" <?php if($list['articletype_id'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['title']; ?></option>
                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>
@@ -65,7 +65,7 @@
                                     <select name="" class="form-control" id="sub" onchange="changeSub()">
                                         <option value="-10000">请选择文章二级分类</option>
                                         <?php if(is_array($subtype) || $subtype instanceof \think\Collection || $subtype instanceof \think\Paginator): $i = 0; $__LIST__ = $subtype;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
-                                            <option value="<?php echo $v['id']; ?>" <?php if($list['articletype_id'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['name']; ?></option>
+                                            <option value="<?php echo $v['id']; ?>" <?php if($list['articletype_id'] == $v['id']): ?>selected<?php endif; ?> ><?php echo $v['title']; ?></option>
                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                     </select>
                                 </div>
@@ -145,8 +145,6 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="/public/static/js/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" src="/public/static/js/ueditor/ueditor.all.min.js"></script>
     <script type="text/javascript">
         function changeGroup(){
             var group = $("#group option:selected").val();
@@ -184,6 +182,10 @@
 
 <script src="/public/static/js/plugins/layer/laydate/laydate.js"></script>
 <script src="/public/static/js/Validform_v5.3.2_min.js"></script>
+
+<script type="text/javascript" src="/public/static/js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/public/static/js/ueditor/ueditor.all.min.js"></script>
+
 <!-- 基础公众js函数 -->
 <script type="text/javascript">
 	//表单检查

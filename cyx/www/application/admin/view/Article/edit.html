@@ -27,7 +27,7 @@
                                     <select name="" class="form-control" id="group" onchange="changeGroup()">
                                         <option value="-10000">请选择文章分组</option>
                                         <volist name="grouptype" id="v">
-                                            <option value="{$v.id}" <if condition="$list.articletype_id eq $v.id">selected</if> >{$v.name}</option>
+                                            <option value="{$v.id}" <if condition="$list.articletype_id eq $v.id">selected</if> >{$v.title}</option>
                                         </volist>
                                     </select>
                                 </div>
@@ -35,7 +35,7 @@
                                     <select name="" class="form-control" id="parent" onchange="changeParent()">
                                         <option value="-10000">请选择文章一级分类</option>
                                         <volist name="parenttype" id="v">
-                                            <option value="{$v.id}" <if condition="$list.articletype_id eq $v.id">selected</if> >{$v.name}</option>
+                                            <option value="{$v.id}" <if condition="$list.articletype_id eq $v.id">selected</if> >{$v.title}</option>
                                         </volist>
                                     </select>
                                 </div>
@@ -43,7 +43,7 @@
                                     <select name="" class="form-control" id="sub" onchange="changeSub()">
                                         <option value="-10000">请选择文章二级分类</option>
                                         <volist name="subtype" id="v">
-                                            <option value="{$v.id}" <if condition="$list.articletype_id eq $v.id">selected</if> >{$v.name}</option>
+                                            <option value="{$v.id}" <if condition="$list.articletype_id eq $v.id">selected</if> >{$v.title}</option>
                                         </volist>
                                     </select>
                                 </div>

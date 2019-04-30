@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Article\index.html";i:1556502963;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1555645288;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/admin\view\Article\index.html";i:1556502963;s:53:"F:\git\cyx\www\application\admin\view\Public\top.html";i:1555645288;s:56:"F:\git\cyx\www\application\admin\view\Public\footer.html";i:1556510548;s:58:"F:\git\cyx\www\application\admin\view\Public\commonjs.html";i:1556510494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -139,6 +139,10 @@
 
 <script src="/public/static/js/plugins/layer/laydate/laydate.js"></script>
 <script src="/public/static/js/Validform_v5.3.2_min.js"></script>
+
+<script type="text/javascript" src="/public/static/js/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/public/static/js/ueditor/ueditor.all.min.js"></script>
+
 <!-- 基础公众js函数 -->
 <script type="text/javascript">
 	//表单检查

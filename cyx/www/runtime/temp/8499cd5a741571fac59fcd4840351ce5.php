@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"F:\git\cyx\www/application/index\view\Homepage\index.html";i:1556531198;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:57:"F:\git\cyx\www/application/index\view\Homepage\index.html";i:1556531733;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -267,7 +267,7 @@
 		<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:600px;">
 			<div id='layer72039C5A322661E2A91A7BD6824E1131' type='title'  class='cstlayer' style='left: 244px; top: 250px; position: absolute; z-index: 166; width: 712px; height: 74px; display: block;display:none;'  mid=""  fatherid='layerB2517C2E770C5A23E2293878852F52D1'   deg='0'>
 				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 74px; width: 712px; display: block;">
-					<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);">依托网络科技数据中心，以行业内领先的大数据技术及产品体系为基础， 运用成熟的运营模式为企业和个人提供定制化的大数据产品和服务。</span></div>
+					<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);"><?php echo $list['banner_content']; ?></span></div>
 					<div style="text-align: center; color: rgb(90, 90, 90); font-family: Arial, 宋体, Helvetica, sans-serif, Verdana; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;"><br>
 					</div>
 				</div>
@@ -275,7 +275,7 @@
 			<script>		         $('#layer72039C5A322661E2A91A7BD6824E1131').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});		         $('#layer72039C5A322661E2A91A7BD6824E1131').triggerHandler('layer_ready');</script>
 			<div id='layer4BEEF81E05D2EF5AD592410B2F09A85B' type='title'  class='cstlayer' style='left: 0px; top: 160px; position: absolute; z-index: 167; width: 1200px; height: 68px; display: block;display:none;'  mid=""  fatherid='layerB2517C2E770C5A23E2293878852F52D1'   deg='0'>
 				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 68px; width: 1200px; display: block;">
-					<div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 48px;"><b>科技创造生活 · 精诚赢得未来</b></span></font></div>
+					<div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 48px;"><b><?php echo $list['banner_title']; ?></b></span></font></div>
 				</div>
 			</div>
 			<script>		         $('#layer4BEEF81E05D2EF5AD592410B2F09A85B').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});		         $('#layer4BEEF81E05D2EF5AD592410B2F09A85B').triggerHandler('layer_ready');</script> </div>
@@ -324,7 +324,7 @@
 						<!-- 新闻标题 -->
 						<div class="article_list-layerBFBC1BCD45218D5D812CAF86DC16747E" style="overflow:hidden;">
 							<ul>
-								<li >
+								<!-- <li >
 									<p class="link title"> <a href="/index.php/home/news/article.html">烽火普天与咸宁日报就大数据服务项目达成合作</a> </p>
 									<p class="time"><span class="wp-new-ar-pro-time">2016-09-04</span></p>
 									<p class="wpart-border-line"></p>
@@ -333,7 +333,14 @@
 									<p class="link title"> <a href="/index.php/home/news/article.html">西部之声与烽火普天战略合作——大数据与媒体价值创新</a> </p>
 									<p class="time"><span class="wp-new-ar-pro-time">2016-09-04</span></p>
 									<p class="wpart-border-line"></p>
-								</li>
+								</li> -->
+								<?php if(is_array($articlelist) || $articlelist instanceof \think\Collection || $articlelist instanceof \think\Paginator): $i = 0; $__LIST__ = $articlelist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+									<li >
+										<p class="link title"> <a href="<?php echo url('News/article',['id'=>$v['id']]); ?>"><?php echo $v['title']; ?></a> </p>
+										<p class="time"><span class="wp-new-ar-pro-time"><?php echo date('Y-m-d',$v['publishtime']); ?></span></p>
+										<p class="wpart-border-line"></p>
+									</li>
+								<?php endforeach; endif; else: echo "" ;endif; ?>
 							</ul>
 						</div>
 						<div class="article_list_save_itemList"  openCategoryUrl="0" openMoreUrl="0"  openDetailUrl="0"  pagerstyle="default/skin1" pagernum="每页显示文章数" pageralign="right" morealign="left" showpager="0" articleCategroies="1" articleTags="" linkCategoryUrl="100" linkMoreUrl="100" isShowMore="No" isShowMoreCn="No" linkDetailUrl="91" isShowDots="No" introWordNum="All" titleWordNum="All" listNum="2" sortType="i_order" sortValue="desc" articleStyle="listStyle" getParamCategoryId="empty" imgwnode="130" imghnode="90" imgtnode="Tile" memberartshow='off' pageskip="1" pageop="0"  pagepar="p_article_list" style="display:none;"></div>

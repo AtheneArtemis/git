@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:54:"F:\git\cyx\www/application/admin\view\Login\login.html";i:1556086965;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:54:"F:\git\cyx\www/application/admin\view\Login\login.html";i:1556532043;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +52,7 @@
         </div>
         <div class="signup-footer">
             <div class="pull-left">
-                &copy; 2018 All Rights Reserved. dongdong
+                &copy; 2018 All Rights Reserved. 
             </div>
         </div>
     </div>

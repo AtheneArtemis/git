@@ -8,11 +8,15 @@ class Article extends Base{
         $this->model = 'article';
         $this->controllername = '文章管理';
 
-        $grouptype = db('articletype')->where(['is_delete'=>0,'type'=>'group'])->select();
+        $grouptype = db('articletype')->where(['is_delete'=>0,'type'=>'group'])->field('id,name,title')->select();
         $this->assign('grouptype',$grouptype);
     }
     function _filter(&$map,&$querycond){
         $map["is_delete"] = array('eq','0');
+        $name = getparameter('name');
+        if (!empty($name)) {
+            $map['name'] = ['like','%'.$name.'%'];
+        }
     }
     function _generatetabledatahtml($html,$id=null){
         $model = model($this->model);
@@ -23,7 +27,7 @@ class Article extends Base{
     		<tr>
     			<td class="bs-checkbox"><input data-index="3" name="btSelectItem" type="checkbox" value="'.$value["id"].'"></td>
                 <td>'.$value["id"].'</td>
-    			<td>'.$value["articletype"]["name"].'</td>
+    			<td>'.$value["articletype"]["title"].'</td>
     			<td>'.$value["title"].'</td>
                 <td>'.$value["secondtitle"].'</td>
                 <td>'.$value["intro"].'</td>
