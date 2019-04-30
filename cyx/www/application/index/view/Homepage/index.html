@@ -64,7 +64,7 @@
 		<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:600px;">
 			<div id='layer72039C5A322661E2A91A7BD6824E1131' type='title'  class='cstlayer' style='left: 244px; top: 250px; position: absolute; z-index: 166; width: 712px; height: 74px; display: block;display:none;'  mid=""  fatherid='layerB2517C2E770C5A23E2293878852F52D1'   deg='0'>
 				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 74px; width: 712px; display: block;">
-					<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);">依托网络科技数据中心，以行业内领先的大数据技术及产品体系为基础， 运用成熟的运营模式为企业和个人提供定制化的大数据产品和服务。</span></div>
+					<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑; line-height: 180%; color: rgb(255, 255, 255);">{$list.banner_content}</span></div>
 					<div style="text-align: center; color: rgb(90, 90, 90); font-family: Arial, 宋体, Helvetica, sans-serif, Verdana; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal;"><br>
 					</div>
 				</div>
@@ -72,7 +72,7 @@
 			<script>		         $('#layer72039C5A322661E2A91A7BD6824E1131').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});		         $('#layer72039C5A322661E2A91A7BD6824E1131').triggerHandler('layer_ready');</script>
 			<div id='layer4BEEF81E05D2EF5AD592410B2F09A85B' type='title'  class='cstlayer' style='left: 0px; top: 160px; position: absolute; z-index: 167; width: 1200px; height: 68px; display: block;display:none;'  mid=""  fatherid='layerB2517C2E770C5A23E2293878852F52D1'   deg='0'>
 				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 68px; width: 1200px; display: block;">
-					<div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 48px;"><b>科技创造生活 · 精诚赢得未来</b></span></font></div>
+					<div style="text-align: center;"><font color="#ffffff" face="微软雅黑"><span style="font-size: 48px;"><b>{$list.banner_title}</b></span></font></div>
 				</div>
 			</div>
 			<script>		         $('#layer4BEEF81E05D2EF5AD592410B2F09A85B').data('wopop_effects',{"effect":"fadeFromTop","delay":0,"duration":1.2,"loop":0,"loop_infinite":"0"});		         $('#layer4BEEF81E05D2EF5AD592410B2F09A85B').triggerHandler('layer_ready');</script> </div>
@@ -121,7 +121,7 @@
 						<!-- 新闻标题 -->
 						<div class="article_list-layerBFBC1BCD45218D5D812CAF86DC16747E" style="overflow:hidden;">
 							<ul>
-								<li >
+								<!-- <li >
 									<p class="link title"> <a href="__APP__/home/news/article.html">烽火普天与咸宁日报就大数据服务项目达成合作</a> </p>
 									<p class="time"><span class="wp-new-ar-pro-time">2016-09-04</span></p>
 									<p class="wpart-border-line"></p>
@@ -130,7 +130,14 @@
 									<p class="link title"> <a href="__APP__/home/news/article.html">西部之声与烽火普天战略合作——大数据与媒体价值创新</a> </p>
 									<p class="time"><span class="wp-new-ar-pro-time">2016-09-04</span></p>
 									<p class="wpart-border-line"></p>
-								</li>
+								</li> -->
+								<volist name="articlelist" id="v">
+									<li >
+										<p class="link title"> <a href="{:url('News/article',['id'=>$v.id])}">{$v.title}</a> </p>
+										<p class="time"><span class="wp-new-ar-pro-time">{:date('Y-m-d',$v.publishtime)}</span></p>
+										<p class="wpart-border-line"></p>
+									</li>
+								</volist>
 							</ul>
 						</div>
 						<div class="article_list_save_itemList"  openCategoryUrl="0" openMoreUrl="0"  openDetailUrl="0"  pagerstyle="default/skin1" pagernum="每页显示文章数" pageralign="right" morealign="left" showpager="0" articleCategroies="1" articleTags="" linkCategoryUrl="100" linkMoreUrl="100" isShowMore="No" isShowMoreCn="No" linkDetailUrl="91" isShowDots="No" introWordNum="All" titleWordNum="All" listNum="2" sortType="i_order" sortValue="desc" articleStyle="listStyle" getParamCategoryId="empty" imgwnode="130" imghnode="90" imgtnode="Tile" memberartshow='off' pageskip="1" pageop="0"  pagepar="p_article_list" style="display:none;"></div>
@@ -192,7 +199,7 @@
 					<script>		         $('#layer7F2D8071388D29FAB9034DC939628B4A').triggerHandler('layer_ready');</script>
 					<div id='layer85BE3A2C9413D41DF02ADACA6BD53961' type='title'  class='cstlayer' style='left: 783px; top: 22px; position: absolute; z-index: 120; width: 394px; height: 46px;'  mid=""  fatherid='layer6D1423FD1321C204966B927D2C43B75A'   deg='0'>
 						<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 46px; width: 394px; display: block;">
-							<div style="text-align: justify;"><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">​</span><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">某某科技软件股份有限公司是中国领先的科技软件供应商，主要从事管理软件、大数据和移动互联等领域软件的研发与推广。</span></div>
+							<div style="text-align: justify;"><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">​</span><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 14px; line-height: 180%;">重庆宸亦轩科技有限公司</span></div>
 						</div>
 					</div>
 					<script>		         $('#layer85BE3A2C9413D41DF02ADACA6BD53961').triggerHandler('layer_ready');</script>
@@ -209,7 +216,7 @@
 								<!-- MAIN CONTENT -->
 								<div class="imgloading" style="z-index:100;"> </div>
 								<div class="main-pichover-content layer571EFD3754E3C3C5F2FC34B5356EFFC3">
-									<div class="worksbox" id="worksbox0"><a href="javascript:void(0);" onclick="setpicture_hover_link('__APP__/home/about/index.html','_self');return false;">
+									<div class="worksbox" id="worksbox0"><a href="javascript:void(0);" onclick="setpicture_hover_link('{:url(\"About/index\")}','_self');return false;">
 										<!-- 新闻右边小图 -->
 										<p class="phbox">
 											<!-- 上边空白图 -->

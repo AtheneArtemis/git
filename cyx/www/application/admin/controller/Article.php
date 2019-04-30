@@ -8,11 +8,15 @@ class Article extends Base{
         $this->model = 'article';
         $this->controllername = '文章管理';
 
-        $grouptype = db('articletype')->where(['is_delete'=>0,'type'=>'group'])->select();
+        $grouptype = db('articletype')->where(['is_delete'=>0,'type'=>'group'])->field('id,name,title')->select();
         $this->assign('grouptype',$grouptype);
     }
     function _filter(&$map,&$querycond){
         $map["is_delete"] = array('eq','0');
+        $name = getparameter('name');
+        if (!empty($name)) {
+            $map['name'] = ['like','%'.$name.'%'];
+        }
     }
     function _generatetabledatahtml($html,$id=null){
         $model = model($this->model);
@@ -23,7 +27,7 @@ class Article extends Base{
     		<tr>
     			<td class="bs-checkbox"><input data-index="3" name="btSelectItem" type="checkbox" value="'.$value["id"].'"></td>
                 <td>'.$value["id"].'</td>
-    			<td>'.$value["articletype"]["name"].'</td>
+    			<td>'.$value["articletype"]["title"].'</td>
     			<td>'.$value["title"].'</td>
                 <td>'.$value["secondtitle"].'</td>
                 <td>'.$value["intro"].'</td>
@@ -92,15 +96,15 @@ class Article extends Base{
         $shtml = '';
 
         if (strcmp($type, 'group') === 0) {
-            $parent = $articletype->where(['is_delete'=>0,'gid'=>$id,'level'=>1])->field('id,name')->select();
+            $parent = $articletype->where(['is_delete'=>0,'gid'=>$id,'level'=>1])->field('id,name,title')->select();
             if (!empty($parent)) {
                 foreach ($parent as $k1 => $v1) {
-                    $phtml .= '<option value="'.$v1['id'].'">'.$v1['name'].'</option>';
+                    $phtml .= '<option value="'.$v1['id'].'">'.$v1['title'].'</option>';
                 }
-                $sub = $articletype->where(['is_delete'=>0,'gid'=>$id,'pid'=>$parent[0]['id'],'level'=>2])->field('id,name')->select();
+                $sub = $articletype->where(['is_delete'=>0,'gid'=>$id,'pid'=>$parent[0]['id'],'level'=>2])->field('id,name,title')->select();
                 if (!empty($sub)) {
                     foreach ($sub as $k2 => $v2) {
-                        $shtml .= '<option value="'.$v2['id'].'">'.$v2['name'].'</option>';
+                        $shtml .= '<option value="'.$v2['id'].'">'.$v2['title'].'</option>';
                     }
                 }else{
                     $shtml = '<option value="-10000">暂无下属分类</option>';
@@ -109,10 +113,10 @@ class Article extends Base{
                 $phtml = '<option value="-10000">暂无下属分类</option>';
             }
         }elseif (strcmp($type, 'parent') === 0) {
-            $sub = $articletype->where(['is_delete'=>0,'pid'=>$id,'level'=>2])->field('id,name')->select();
+            $sub = $articletype->where(['is_delete'=>0,'pid'=>$id,'level'=>2])->field('id,name,title')->select();
             if (!empty($sub)) {
                 foreach ($sub as $k2 => $v2) {
-                    $shtml .= '<option value="'.$v2['id'].'">'.$v2['name'].'</option>';
+                    $shtml .= '<option value="'.$v2['id'].'">'.$v2['title'].'</option>';
                 }
             }else{
                 $shtml = '<option value="-10000">暂无下属分类</option>';

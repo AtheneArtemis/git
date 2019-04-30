@@ -14,6 +14,14 @@ class Index extends Controller {
 		$station = db('station')->where(['id'=>1])->find();
  		$station['logo'] = $this->uploadurl.$station['logo'];
  		$station['icon'] = $this->uploadurl.$station['icon'];
+ 		$banner = unserialize($station['banner']);
+        $i=0;
+        if (!empty($banner)) {
+            foreach ($banner as $k1 => $v1) {
+                $station['newbanner'][$i] = $v1;
+                $i++;
+            }
+        }
  		$this->assign('station',$station);
 	}
 

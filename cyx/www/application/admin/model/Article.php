@@ -5,6 +5,6 @@ class Article extends Model {
 
     
 	public function articletype(){
-		return $this->hasOne('Articletype','id','articletype_id')->field('id,name');
+		return $this->hasOne('Articletype','id','articletype_id')->field('id,name,title');
 	}
 }

@@ -8,7 +8,7 @@ class Articletype extends Base{
         $this->model = 'articletype';
         $this->controllername = '文章类型管理';
 
-        $grouplist = db('articletype')->where(['is_delete'=>0,'type'=>'group'])->field('id,name')->select();
+        $grouplist = db('articletype')->where(['is_delete'=>0,'type'=>'group'])->field('id,name,title')->select();
         $this->assign('grouplist',$grouplist);
     }
     function _filter(&$map,&$querycond){
@@ -22,10 +22,10 @@ class Articletype extends Base{
         $pid = '';
         $level = '';
         if ($value["gid"] > 0) {
-            $gid = $value["group"]["name"];
+            $gid = $value["group"]["title"];
         }
         if ($value["pid"] > 0) {
-            $pid = $value["parent"]["name"];
+            $pid = $value["parent"]["title"];
         }
         if ($value["level"] > 0) {
             $level = $value["level"];
@@ -46,6 +46,7 @@ class Articletype extends Base{
                 <td>'.$value["id"].'</td>
                 <td>'.$type.'</td>
     			<td>'.$value["name"].'</td>
+                <td>'.$value["title"].'</td>
     			<td>'.$value["intro"].'</td>
                 <td>'.$gid.'</td>
                 <td>'.$pid.'</td>
@@ -76,10 +77,10 @@ class Articletype extends Base{
                 'gid' => $gid,
                 'type' => 'cat',
             ];
-            $list = db('articletype')->where($map)->field('id,name,level')->select();
+            $list = db('articletype')->where($map)->field('id,name,title,level')->select();
             $html = '<option value="-10000">无上级</option>';
             foreach ($list as $key => $value) {
-                $html .= '<option value="'.$value['id'].'" >'.$value['name'].'</option>';
+                $html .= '<option value="'.$value['id'].'" >'.$value['title'].'</option>';
             }
         }
 

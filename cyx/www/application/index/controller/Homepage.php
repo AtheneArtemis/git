@@ -17,8 +17,11 @@ class Homepage extends Index {
                 $i++;
             }
         }
- 		
  		$this->assign('list',$list);
+
+ 		$articlelist = db('article')->where(['is_delete'=>0,'status'=>2])->limit(2)->select();
+ 		$this->assign('articlelist',$articlelist);
+
        	return $this->fetch(request()->controller().'/index');
     }
 }
