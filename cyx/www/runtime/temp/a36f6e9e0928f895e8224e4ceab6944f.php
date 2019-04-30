@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:54:"F:\git\cyx\www/application/index\view\Cases\index.html";i:1556604803;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:56:"F:\git\cyx\www/application/index\view\service\index.html";i:1556608433;s:54:"F:\git\cyx\www\application\index\view\public\head.html";i:1556438239;s:56:"F:\git\cyx\www\application\index\view\public\banner.html";i:1556589440;s:54:"F:\git\cyx\www\application\index\view\public\foot.html";i:1556434179;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -268,207 +268,569 @@
                 </div>
             </div>
             <script>                 $('#layer4033C5A1D8D22A7D37C61FE267DDE4F2').triggerHandler('layer_ready');</script>
-
-
-<div class="full_column" style="width:1200px;position:absolute;top:440px;height:420px;z-index:129;">
-	<div class="full_width" style="position:absolute;height:420px;background-color:#ffffff;background:;"> </div>
-	<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:420px;">
-		<div type='title' class='cstlayer' style='left: 82px; top: 340px; position: absolute; z-index: 142; width: 100px; height: 23px;' mid="" deg='0'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">海关总署</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 312px; top: 340px; position: absolute; z-index: 143; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">财政部</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 549px; top: 340px; position: absolute; z-index: 144; width: 100px; height: 23px;' mid="" deg='0'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">人社部</span></div>
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 805px; top: 269px; position: absolute; z-index: 139; width: 64px; height: 64px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 64px; height: 64px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 64px; height: 64px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/case_icon_3.png" style="width: 64px; height: 64px;;" />
+<div id="layerBE6E548F65F743049F62CAC6D6A3309B" class="full_column" style="width:1200px;position:absolute;top:440px;height:360px;z-index:103;">
+	<div class="full_width" style="position:absolute;height:360px;background-color:#ffffff;background:;"> </div>
+	<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:360px;">
+		<div id='layer2E49B035BD0E3815EE269F560DD7FE0D' type='title' class='cstlayer' style='left: 0px; top: 111px; position: absolute; z-index: 152; width: 1200px; height: 27px;' mid="" fatherid='layerBE6E548F65F743049F62CAC6D6A3309B' deg='0'>
+			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 27px; width: 1200px; display: block;">
+				<div style="text-align: center;">
+					<font color="#222222" face="微软雅黑"><span style="font-size: 14px; color: rgb(119, 119, 119);">保证交付率、您的要求就是我们的追求，为您专属定制</span></font>
 				</div>
-
 			</div>
 		</div>
 		<script>
-			$('#layer9D8F4977DFB2C4BCE1BE5D018A4C8EDF').triggerHandler('layer_ready');
+			$('#layer2E49B035BD0E3815EE269F560DD7FE0D').triggerHandler('layer_ready');
 		</script>
-		<div type='media' class='cstlayer' style='left: 754.5px; top: 229px; position: absolute; z-index: 138; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/cjx4.png" style="width: 165px; height: 171px;;" />
+		<div id='layerB3152F72D7105CD39BAAC3528AD4E9CF' type='title' class='cstlayer' style='left: 0px; top: 60px; position: absolute; z-index: 151; width: 1200px; height: 52px;' mid="" fatherid='layerBE6E548F65F743049F62CAC6D6A3309B' deg='0'>
+			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 52px; width: 1200px; display: block;">
+				<div style="text-align: center;">
+					<font color="#222222" face="微软雅黑"><span style="font-size: 30px;">开发流程</span></font>
 				</div>
-
 			</div>
 		</div>
-		<script>
-			$('#layerB301BD58075E9AD78CA2553C6C002D96').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 1036px; top: 270px; position: absolute; z-index: 141; width: 62px; height: 62px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 62px; height: 62px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 62px; height: 62px;'>
 
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/case_icon_4.png" style="width: 62px; height: 62px;;" />
+		<div id='layerC918886D1D98F6984113B90ACA0A239D' type='timeline' class='cstlayer' style='left: 0px; top: 184px; position: absolute; z-index: 139; height: 64px; width: 1200px; display: block;' mid="" fatherid='layerBE6E548F65F743049F62CAC6D6A3309B' deg='0'>
+			<div class="wp-timeline_content" style="border-color: transparent; border-width: 0px; height: 64px; width: 1200px;">
+				<link href="/public/static/css/iconfont.css" rel="stylesheet" type="text/css" />
+				<ul class="timeline-box" id="layerC918886D1D98F6984113B90ACA0A239D_timeline">
+					<li class="year"> <i class="iconfont icon-shijian"></i> <span>2017</span>
+						<p class="line"></p>
+					</li>
+					<?php if(is_array($flow) || $flow instanceof \think\Collection || $flow instanceof \think\Paginator): $i = 0; $__LIST__ = $flow;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+						<li class="month m<?php echo $v['id']; ?>">
+							<span class="icnbox" style="text-align: center;background: <?php echo $v['color']; ?>;border: 6px double #fff;background-image: none;color: #fff;font-size: 23px;line-height: 34px;"><?php echo $v['id']; ?></span>
+							<div class="details"> <i class="tline"></i>
+								<div>
+									<p class="title"><?php echo $v['name']; ?></p>
+									<div class="conts"><br /></div>
+								</div>
+                            </div>
+                            <p class="line"></p>
+						</li>
+					<?php endforeach; endif; else: echo "" ;endif; ?>
+					<li><i class="iconfont icon-shijian"></i></li>
+				</ul>
+				<script>
+					$(function() {
+						layer_timeline_h2core({
+							"layerid": "layerC918886D1D98F6984113B90ACA0A239D",
+							"maxh": 48
+						});
+					})
+				</script>
 				</div>
-
 			</div>
-		</div>
-		<script>
-			$('#layer0927C4C18378B68863CF1E683563C947').triggerHandler('layer_ready');
-		</script>
-		<div type='title' class='cstlayer' style='left: 0px; top: 60px; position: absolute; z-index: 130; width: 1200px; height: 44px;' mid="" fatherid='layerF7CA9D75C805E25ABB66F9114D2EC67A' deg='0'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 44px; width: 1200px; display: block;">
-				<div style="text-align: center;"><span style="line-height: 140%; font-size: 30px; font-family: 微软雅黑;">国家部委</span></div>
-			</div>
-		</div>
-		<script>
-			$('#layerC20EDBD0BF1472DE484F12AA672F7F0D').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 984.5px; top: 229px; position: absolute; z-index: 140; width: 165px; height: 171px;'>
 			<script>
-				create_pc_media_set_pic('layer04A9CAB9022A821B57337AECCD0AA9BE', false);
+				$('#layerC918886D1D98F6984113B90ACA0A239D').triggerHandler('layer_ready');
 			</script>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/cjx4.png" style="width: 165px; height: 171px;;" />
+		</div>
+	</div>
+	<script>
+		var $fullwidth = $('#layerBE6E548F65F743049F62CAC6D6A3309B .full_width');
+		$fullwidth.css({
+			left: 0 - $('#canvas').offset().left + $('#scroll_container').offset().left - $('#scroll_container').scrollLeft() - $.parseInteger($('#canvas').css("borderLeftWidth")),
+			width: $('#scroll_container_bg').width()
+		});
+		$(function() {
+			var videoParams = {
+				"id": "layerBE6E548F65F743049F62CAC6D6A3309B",
+				"bgauto": null,
+				"ctauto": null,
+				"bVideouse": null,
+				"cVideouse": null,
+				"bgvHeight": null,
+				"bgvWidth": null
+			};
+			fullcolumn_bgvideo_init_func(videoParams);
+		});
+	</script>
+	<div id="layer23BB0AC219D175B3DF3B1F3226E8F380" class="full_column" style="width:1200px;position:absolute;top:801px;height:500px;z-index:104;">
+		<div class="full_width" style="position:absolute;height:500px;background-color:transparent;background:;background-image:url('/public/static/images/bg_rongyu.png');background-position:center top;background-repeat:no-repeat;"> </div>
+		<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:500px;">
+			<div id='layer48D1353552924F072ABE2C5F90F06E39' type='title' class='cstlayer' style='left: 0px; top: 125px; position: absolute; z-index: 151; width: 1200px; height: 27px;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 27px; width: 1200px; display: block;">
+					<div style="text-align: center;">
+						<font color="#222222" face="微软雅黑"><span style="font-size: 14px; color: rgb(255, 255, 255);">保证交付率、您的要求就是我们的追求，为您专属定制</span></font>
+					</div>
 				</div>
-
 			</div>
-
-		</div>
-		<script>
-			$('#layer04A9CAB9022A821B57337AECCD0AA9BE').triggerHandler('layer_ready');
-		</script>
-		<div type='title' class='cstlayer' style='left: 789px; top: 340px; position: absolute; z-index: 145; width: 100px; height: 23px;' mid="" fatherid='layerF7CA9D75C805E25ABB66F9114D2EC67A' deg='0'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">气象局</span></div>
-			</div>
-		</div>
-		<script>
-			$('#layer3EB38E97AE2D7179DDBA521873BDF215').triggerHandler('layer_ready');
-		</script>
-		<div type='title' class='cstlayer' style='left: 1019px; top: 340px; position: absolute; z-index: 146; width: 100px; height: 23px;' mid="" fatherid='layerF7CA9D75C805E25ABB66F9114D2EC67A' deg='0'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">新华社</span></div>
-			</div>
-		</div>
-		<script>
-			$('#layer437801BA59E944088D7BF34ADFD0DEE8').triggerHandler('layer_ready');
-		</script>
-		<div type='title' class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 131; width: 1200px; height: 61px;' mid="" fatherid='layerF7CA9D75C805E25ABB66F9114D2EC67A' deg='0'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 61px; width: 1200px; display: block;">
-				<div style="text-align: center;"><span style="font-size: 14px; font-family: 微软雅黑; line-height: 200%; color: rgb(153, 153, 153);">随着“十二五”规划建设完成，我国电子政务建设取得阶段性成果，电子政务的发展由普遍建设向普遍运维转型，面对政府行业多级、分域、面向社会服务的特性，</span></div>
-				<div style="text-align: center; "><span style="font-size: 14px; font-family: 微软雅黑; line-height: 200%; color: rgb(153, 153, 153);">广通提供了从IT可用到服务可用的保障性解决方案，助力政府部门向服务型组织快速转型。</span></div>
-			</div>
-		</div>
-		<script>
-			$('#layer056445C21F1BA635BA3039644CB79A54').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 49.5px; top: 230px; position: absolute; z-index: 132; width: 165px; height: 171px;'>
 			<script>
-				create_pc_media_set_pic('layerC920796C6BDE1378A3E372A6DC5DAD90', false);
+				$('#layer48D1353552924F072ABE2C5F90F06E39').triggerHandler('layer_ready');
 			</script>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/cjx4.png" style="width: 165px; height: 171px;;" />
+			<div id='layerB7BF1ADECDF387452830B5D933EA9DBF' type='title' class='cstlayer' style='left: 0px; top: 75px; position: absolute; z-index: 149; width: 1200px; height: 52px;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 52px; width: 1200px; display: block;">
+					<div style="text-align: center;">
+						<font color="#ffffff" face="微软雅黑"><span style="font-size: 30px;">我们的优势</span></font>
+					</div>
 				</div>
-
 			</div>
-		</div>
-		<script>
-			$('#layerC920796C6BDE1378A3E372A6DC5DAD90').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 106px; top: 271px; position: absolute; z-index: 133; width: 53px; height: 53px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 53px; height: 53px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 53px; height: 53px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/case_icon_1.png" style="width: 53px; height: 53px;;" />
+			<script>
+				$('#layerB7BF1ADECDF387452830B5D933EA9DBF').triggerHandler('layer_ready');
+			</script>
+			<div id='layer96E91310B47F4E1C49C47901FA879882' type='title' class='cstlayer' style='left: 432px; top: 352px; position: absolute; z-index: 105; width: 336px; height: 71px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 71px; width: 336px; display: block; border-style: solid;">
+					<div style="text-align: justify;">
+						<font color="#ffffff" face="微软雅黑"><span style="font-size: 14px;"><span style="line-height:180%;">我们是一支拥有10年以上开发经验的专业团队。包括资深架构师、微软认证工程师、技术研发人员等50多名专业人员，</span><span style="line-height:180%;">​</span><span style="line-height:180%;">积累了深厚的开发经验。</span></span>
+						</font>
+					</div>
 				</div>
-
 			</div>
-		</div>
-		<script>
-			$('#layer2D7BA753D8A3585933F691D53F0BD83D').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 335px; top: 272px; position: absolute; z-index: 135; width: 54px; height: 58px;' mid="" deg='0'>
-			<div class="wp-media_content" style="overflow: hidden; width: 54px; height: 58px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 54px; height: 58px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/case_icon_2.png" type="zoom" style="width: 54px; height: 58px;;" />
+			<script>
+				$('#layer96E91310B47F4E1C49C47901FA879882').data('wopop_effects', {
+					"effect": "fadeFromLeft",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layer96E91310B47F4E1C49C47901FA879882').triggerHandler('layer_ready');
+			</script>
+			<div id='layerA447D3251276920294C5559E2E8D43BC' type='media' class='cstlayer' style='left: 564px; top: 212px; position: absolute; z-index: 102; width: 72px; height: 72px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<script>
+					create_pc_media_set_pic('layerA447D3251276920294C5559E2E8D43BC', false);
+				</script>
+				<div class="wp-media_content" style="overflow: hidden; width: 72px; height: 72px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
+					<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 72px; height: 72px;'>
+						<div class="imgloading" style="z-index:100;"> </div>
+						<img onerror="set_thumb_layerA447D3251276920294C5559E2E8D43BC(this);" onload="set_thumb_layerA447D3251276920294C5559E2E8D43BC(this);" id="wp-media-image_layerA447D3251276920294C5559E2E8D43BC" src="/public/static/images/y3.png" type="zoom" class="paragraph_image" style="width: 72px; height: 72px;;display:none;" /> </div>
 				</div>
+				<script>
+					(function() {
+						layer_media_init_func('layerA447D3251276920294C5559E2E8D43BC');
 
+					})()
+				</script>
 			</div>
-		</div>
-		<script>
-			$('#layer5BAFA605AB6F9CAA653E27FB9721AFE4').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 279.5px; top: 229px; position: absolute; z-index: 134; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/cjx4.png" style="width: 165px; height: 171px" />
+			<script>
+				$('#layerA447D3251276920294C5559E2E8D43BC').data('wopop_effects', {
+					"effect": "fromright",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layerA447D3251276920294C5559E2E8D43BC').triggerHandler('layer_ready');
+			</script>
+			<div id='layerAB1AC77F202D390E646C56F90EA65162' type='title' class='cstlayer' style='left: 931px; top: 308px; position: absolute; z-index: 107; width: 200px; height: 29px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 29px; width: 200px; display: block; border-style: solid;">
+					<div style="text-align: center;">
+						<font color="#ffffff" face="微软雅黑"><span style="font-size: 18px;">源代码全交付</span></font>
+					</div>
 				</div>
-
 			</div>
-		</div>
-		<script>
-			$('#layer1337B2A5D7FAE14D6C056AA7E9178957').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 573px; top: 272px; position: absolute; z-index: 137; width: 54px; height: 58px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 54px; height: 58px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 54px; height: 58px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" type="zoom" src="/public/static/images/case_icon_2.png" style="width: 54px; height: 58px;" />
+			<script>
+				$('#layerAB1AC77F202D390E646C56F90EA65162').data('wopop_effects', {
+					"effect": "fadeFromLeft",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layerAB1AC77F202D390E646C56F90EA65162').triggerHandler('layer_ready');
+			</script>
+			<div id='layer2C9D5F26D0958E1CBE4FDBC2FC4E8D6E' type='title' class='cstlayer' style='left: 863px; top: 352px; position: absolute; z-index: 164; width: 336px; height: 71px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 71px; width: 336px; display: block; border-style: solid;">
+					<div style="text-align: left;">
+						<font color="#ffffff" face="微软雅黑"><span style="font-size: 14px; line-height: 180%;">项目完成后，我们会将系统连同项目源代码一同交付与您。​不仅能够保证系统的安全性、稳定性，也能为后续系统维护，甚至是进行二次开发提供便利。</span></font>
+					</div>
 				</div>
-
 			</div>
-		</div>
-		<script>
-			$('#layer9DCEBE93B89FD7FE1D750EE5A4B58A16').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 517.5px; top: 229px; position: absolute; z-index: 136; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
+			<script>
+				$('#layer2C9D5F26D0958E1CBE4FDBC2FC4E8D6E').data('wopop_effects', {
+					"effect": "fadeFromLeft",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layer2C9D5F26D0958E1CBE4FDBC2FC4E8D6E').triggerHandler('layer_ready');
+			</script>
+			<div id='layerA2DCE0F433407C2A5CB6F0D819471B62' type='media' class='cstlayer' style='left: 995px; top: 212px; position: absolute; z-index: 103; width: 72px; height: 72px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<script>
+					create_pc_media_set_pic('layerA2DCE0F433407C2A5CB6F0D819471B62', false);
+				</script>
+				<div class="wp-media_content" style="overflow: hidden; width: 72px; height: 72px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
+					<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 72px; height: 72px;'>
+						<div class="imgloading" style="z-index:100;"> </div>
+						<img onerror="set_thumb_layerA2DCE0F433407C2A5CB6F0D819471B62(this);" onload="set_thumb_layerA2DCE0F433407C2A5CB6F0D819471B62(this);" id="wp-media-image_layerA2DCE0F433407C2A5CB6F0D819471B62" src="/public/static/images/y4.png" type="zoom" class="paragraph_image" style="width: 72px; height: 72px;;display:none;" /> </div>
 				</div>
+				<script>
+					(function() {
+						layer_media_init_func('layerA2DCE0F433407C2A5CB6F0D819471B62');
 
+					})()
+				</script>
 			</div>
+			<script>
+				$('#layerA2DCE0F433407C2A5CB6F0D819471B62').data('wopop_effects', {
+					"effect": "fromright",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layerA2DCE0F433407C2A5CB6F0D819471B62').triggerHandler('layer_ready');
+			</script>
+			<div id='layer4FA587AE4844625078EFE54E33CA85ED' type='title' class='cstlayer' style='left: 500px; top: 308px; position: absolute; z-index: 106; width: 200px; height: 29px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 29px; width: 200px; display: block; border-style: solid;">
+					<div style="text-align: center;">
+						<font color="#ffffff" face="微软雅黑"><span style="font-size: 18px;">专业的团队支持</span></font>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('#layer4FA587AE4844625078EFE54E33CA85ED').data('wopop_effects', {
+					"effect": "fadeFromLeft",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layer4FA587AE4844625078EFE54E33CA85ED').triggerHandler('layer_ready');
+			</script>
+			<div id='layerCEC4779C2D3DD9FA3C62789CD4D85397' type='title' class='cstlayer' style='left: 0px; top: 353px; position: absolute; z-index: 108; width: 336px; height: 69px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 69px; width: 336px; display: block; border-style: solid;">
+					<div style="text-align: justify;">
+						<font color="#ffffff" face="微软雅黑"><span style="font-size: 14px; line-height: 180%;">采用业内较严谨的八步开发流程：需求调研、需求分析、原型设计、产品设计、界面设计、程序编码、软件测试、打包发布。较大限度的保证开发效率​​。</span></font>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('#layerCEC4779C2D3DD9FA3C62789CD4D85397').data('wopop_effects', {
+					"effect": "fadeFromLeft",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layerCEC4779C2D3DD9FA3C62789CD4D85397').triggerHandler('layer_ready');
+			</script>
+			<div id='layer84ECD89F140B4FFF9F6B87495101963B' type='title' class='cstlayer' style='left: 68px; top: 308px; position: absolute; z-index: 109; width: 200px; height: 29px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 29px; width: 200px; display: block; border-style: solid;">
+					<div style="text-align: center;">
+						<font color="#ffffff" face="微软雅黑"><span style="font-size: 18px;">完善的开发流程</span></font>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('#layer84ECD89F140B4FFF9F6B87495101963B').data('wopop_effects', {
+					"effect": "fadeFromLeft",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layer84ECD89F140B4FFF9F6B87495101963B').triggerHandler('layer_ready');
+			</script>
+			<div id='layer6160974454621F295F19C952C0AAC644' type='media' class='cstlayer' style='left: 131.5px; top: 212px; position: absolute; z-index: 104; width: 72px; height: 72px; display: block;display:none;' mid="" fatherid='layer23BB0AC219D175B3DF3B1F3226E8F380' deg='0'>
+				<script>
+					create_pc_media_set_pic('layer6160974454621F295F19C952C0AAC644', false);
+				</script>
+				<div class="wp-media_content" style="overflow: hidden; width: 72px; height: 72px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
+					<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 72px; height: 72px;'>
+						<div class="imgloading" style="z-index:100;"> </div>
+						<img onerror="set_thumb_layer6160974454621F295F19C952C0AAC644(this);" onload="set_thumb_layer6160974454621F295F19C952C0AAC644(this);" id="wp-media-image_layer6160974454621F295F19C952C0AAC644" src="/public/static/images/y2.png" type="zoom" class="paragraph_image" style="width: 72px; height: 72px;;display:none;" /> </div>
+				</div>
+				<script>
+					(function() {
+						layer_media_init_func('layer6160974454621F295F19C952C0AAC644');
+
+					})()
+				</script>
+			</div>
+			<script>
+				$('#layer6160974454621F295F19C952C0AAC644').data('wopop_effects', {
+					"effect": "fromright",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layer6160974454621F295F19C952C0AAC644').triggerHandler('layer_ready');
+			</script>
 		</div>
-		<script>
-			$('#layer6CAF46AAC1B383C0DCD59F01F003FEBF').triggerHandler('layer_ready');
-		</script>
+	</div>
+	<script>
+		var $fullwidth = $('#layer23BB0AC219D175B3DF3B1F3226E8F380 .full_width');
+		$fullwidth.css({
+			left: 0 - $('#canvas').offset().left + $('#scroll_container').offset().left - $('#scroll_container').scrollLeft() - $.parseInteger($('#canvas').css("borderLeftWidth")),
+			width: $('#scroll_container_bg').width()
+		});
+		$(function() {
+			var videoParams = {
+				"id": "layer23BB0AC219D175B3DF3B1F3226E8F380",
+				"bgauto": null,
+				"ctauto": null,
+				"bVideouse": null,
+				"cVideouse": null,
+				"bgvHeight": null,
+				"bgvWidth": null
+			};
+			fullcolumn_bgvideo_init_func(videoParams);
+		});
+	</script>
+	<div id="layer615F400C9B6B4569689421CFD1FAE550" class="full_column" style="width:1200px;position:absolute;top:1301px;height:500px;z-index:105;">
+		<div class="full_width" style="position:absolute;height:500px;background-color:#ffffff;background:;"> </div>
+		<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:500px;">
+			<div id='layerF6CF43B0F1AE3B1BDFF2B48760BB29B2' type='media' class='cstlayer' style='left: 1033px; top: 230px; position: absolute; z-index: 191; width: 78px; height: 78px; display: block;display:none;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<script>
+					create_pc_media_set_pic('layerF6CF43B0F1AE3B1BDFF2B48760BB29B2', false);
+				</script>
+				<div class="wp-media_content" style="overflow: hidden; width: 78px; height: 78px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
+					<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 78px; height: 78px;'>
+						<div class="imgloading" style="z-index:100;"> </div>
+						<img onerror="set_thumb_layerF6CF43B0F1AE3B1BDFF2B48760BB29B2(this);" onload="set_thumb_layerF6CF43B0F1AE3B1BDFF2B48760BB29B2(this);" id="wp-media-image_layerF6CF43B0F1AE3B1BDFF2B48760BB29B2" src="/public/static/images/d4.png" type="zoom" class="paragraph_image" style="width: 78px; height: 78px;;display:none;" /> </div>
+				</div>
+				<script>
+					(function() {
+						layer_media_init_func('layerF6CF43B0F1AE3B1BDFF2B48760BB29B2');
+
+					})()
+				</script>
+			</div>
+			<script>
+				$('#layerF6CF43B0F1AE3B1BDFF2B48760BB29B2').data('wopop_effects', {
+					"effect": "callout.bounce",
+					"delay": 0.9,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layerF6CF43B0F1AE3B1BDFF2B48760BB29B2').triggerHandler('layer_ready');
+			</script>
+			<div id='layer5F49A4AE53BAC357A05F37E9906859C6' type='buttons' class='cstlayer' style='left: 628.5px; top: 170px; position: absolute; z-index: 194; width: 255px; height: 310px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-buttons_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 255px; height: 310px; border-style: solid;">
+					<a href="javascript:;" class="btnarea button_btndefault-link" style="width:253px;left:0px;top:0px;height:308px;line-height:308px;"> <span class="button_btndefault-label">按钮文本</span> </a>
+					<script language="javascript">
+						$('#layer5F49A4AE53BAC357A05F37E9906859C6').layer_ready(function() {});
+					</script>
+				</div>
+			</div>
+			<script>
+				$('#layer5F49A4AE53BAC357A05F37E9906859C6').triggerHandler('layer_ready');
+			</script>
+			<div id='layerF506B3AA613B5FCB76234FED50FF93F7' type='buttons' class='cstlayer' style='left: 1113px; top: 130px; position: absolute; z-index: 198; width: 87px; height: 28px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-buttons_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 87px; height: 28px;">
+					<a href="solution.html" class="btnarea button_btndefault-link" style="width:87px;left:0px;top:0px;height:28px;line-height:28px;"> <span class="button_btndefault-label">MORE  +</span> </a>
+					<script language="javascript">
+						$('#layerF506B3AA613B5FCB76234FED50FF93F7').layer_ready(function() {});
+					</script>
+				</div>
+			</div>
+			<script>
+				$('#layerF506B3AA613B5FCB76234FED50FF93F7').triggerHandler('layer_ready');
+			</script>
+			<div id='layer962BD5DE48603AF55091CD2E56888AF2' type='buttons' class='cstlayer' style='left: -0.5px; top: 170px; position: absolute; z-index: 182; width: 255px; height: 310px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-buttons_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 255px; height: 310px; border-style: solid;">
+					<a href="javascript:;" class="btnarea button_btndefault-link" style="width:253px;left:0px;top:0px;height:308px;line-height:308px;"> <span class="button_btndefault-label">按钮文本</span> </a>
+					<script language="javascript">
+						$('#layer962BD5DE48603AF55091CD2E56888AF2').layer_ready(function() {});
+					</script>
+				</div>
+			</div>
+			<script>
+				$('#layer962BD5DE48603AF55091CD2E56888AF2').triggerHandler('layer_ready');
+			</script>
+			<div id='layerDFA1F2FB7B435578FB6D1042241EF167' type='media' class='cstlayer' style='left: 82px; top: 242px; position: absolute; z-index: 183; width: 90px; height: 64px; display: block;display:none;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<script>
+					create_pc_media_set_pic('layerDFA1F2FB7B435578FB6D1042241EF167', false);
+				</script>
+				<div class="wp-media_content" style="overflow: hidden; width: 90px; height: 64px;" type="0">
+					<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 90px; height: 64px;'>
+						<div class="imgloading" style="z-index:100;"> </div>
+						<img onerror="set_thumb_layerDFA1F2FB7B435578FB6D1042241EF167(this);" onload="set_thumb_layerDFA1F2FB7B435578FB6D1042241EF167(this);" id="wp-media-image_layerDFA1F2FB7B435578FB6D1042241EF167" src="/public/static/images/d1.png" type="zoom" class="paragraph_image" style="width: 90px; height: 64px;;display:none;" /> </div>
+				</div>
+				<script>
+					(function() {
+						layer_media_init_func('layerDFA1F2FB7B435578FB6D1042241EF167');
+
+					})()
+				</script>
+			</div>
+			<script>
+				$('#layerDFA1F2FB7B435578FB6D1042241EF167').data('wopop_effects', {
+					"effect": "callout.bounce",
+					"delay": 0,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layerDFA1F2FB7B435578FB6D1042241EF167').triggerHandler('layer_ready');
+			</script>
+			<div id='layerDA6EE3F46429DFD1C4F190B375F920FD' type='title' class='cstlayer' style='left: 681px; top: 351px; position: absolute; z-index: 196; width: 150px; height: 31px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 31px; width: 150px; display: block;">
+					<div style="text-align: center;">
+						<font color="#222222" face="微软雅黑"><span style="font-size: 18px;">APP定制开发</span></font>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('#layerDA6EE3F46429DFD1C4F190B375F920FD').triggerHandler('layer_ready');
+			</script>
+			<div id='layer0B2F709A41177F83FC7FE69FD4ED177C' type='title' class='cstlayer' style='left: 652.5px; top: 396px; position: absolute; z-index: 197; width: 207px; height: 53px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 53px; width: 207px; display: block;">
+					<div style="text-align: justify;"><span style="font-family: 微软雅黑; font-size: 14px; color: rgb(136, 136, 136); line-height: 160%;">致力于全行业APP开发，为各商业、企业及个人提供开发服务。</span></div>
+				</div>
+			</div>
+			<script>
+				$('#layer0B2F709A41177F83FC7FE69FD4ED177C').triggerHandler('layer_ready');
+			</script>
+			<div id='layerD14E5C6B694392CE97D7337CCECE092A' type='title' class='cstlayer' style='left: 366px; top: 351px; position: absolute; z-index: 188; width: 150px; height: 31px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 31px; width: 150px; display: block;">
+					<div style="text-align: center;">
+						<font color="#222222" face="微软雅黑"><span style="font-size: 18px;">微信定制开发</span></font>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('#layerD14E5C6B694392CE97D7337CCECE092A').triggerHandler('layer_ready');
+			</script>
+			<div id='layer4C13C8C8CBA4F84AB201EAE5EF038169' type='title' class='cstlayer' style='left: 338px; top: 396px; position: absolute; z-index: 189; width: 206px; height: 53px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 53px; width: 206px; display: block;">
+					<div style="text-align: justify;"><span style="font-family: 微软雅黑; font-size: 14px; color: rgb(136, 136, 136); line-height: 160%;">承接微信定制开发。二次开发，微商城，微生活，微相册等。</span></div>
+				</div>
+			</div>
+			<script>
+				$('#layer4C13C8C8CBA4F84AB201EAE5EF038169').triggerHandler('layer_ready');
+			</script>
+			<div id='layer0A8473F58780CA4EE9C5BD70A123FDDE' type='buttons' class='cstlayer' style='left: 313.5px; top: 170px; position: absolute; z-index: 186; width: 255px; height: 310px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-buttons_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 255px; height: 310px; border-style: solid;">
+					<a href="javascript:;" class="btnarea button_btndefault-link" style="width:253px;left:0px;top:0px;height:308px;line-height:308px;"> <span class="button_btndefault-label">按钮文本</span> </a>
+					<script language="javascript">
+						$('#layer0A8473F58780CA4EE9C5BD70A123FDDE').layer_ready(function() {});
+					</script>
+				</div>
+			</div>
+			<script>
+				$('#layer0A8473F58780CA4EE9C5BD70A123FDDE').triggerHandler('layer_ready');
+			</script>
+			<div id='layerECC5774DE01E537A3BB34EB4369A5FA3' type='title' class='cstlayer' style='left: 52px; top: 351px; position: absolute; z-index: 184; width: 150px; height: 31px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 31px; width: 150px; display: block;">
+					<div style="text-align: center;"><span style="font-size: 18px; font-family: 微软雅黑; color: rgb(34, 34, 34);">软件定制开发</span></div>
+				</div>
+			</div>
+			<script>
+				$('#layerECC5774DE01E537A3BB34EB4369A5FA3').triggerHandler('layer_ready');
+			</script>
+			<div id='layerCA10641E4974AF7D55B8E9C8B75C8CF3' type='title' class='cstlayer' style='left: 29px; top: 396px; position: absolute; z-index: 185; width: 196px; height: 53px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 53px; width: 196px; display: block;">
+					<div style="text-align: justify;"><span style="font-family: 微软雅黑; font-size: 14px; color: rgb(136, 136, 136); line-height: 160%;">承接软件开发、平台定制、办公OA等定制服务</span></div>
+				</div>
+			</div>
+			<script>
+				$('#layerCA10641E4974AF7D55B8E9C8B75C8CF3').triggerHandler('layer_ready');
+			</script>
+			<div id='layerCA66A44BE12924EABCDC6A3BCF2023B5' type='media' class='cstlayer' style='left: 396.5px; top: 228px; position: absolute; z-index: 187; width: 89px; height: 82px; display: block;display:none;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<script>
+					create_pc_media_set_pic('layerCA66A44BE12924EABCDC6A3BCF2023B5', false);
+				</script>
+				<div class="wp-media_content" style="overflow: hidden; width: 89px; height: 82px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
+					<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 89px; height: 82px;'>
+						<div class="imgloading" style="z-index:100;"> </div>
+						<img onerror="set_thumb_layerCA66A44BE12924EABCDC6A3BCF2023B5(this);" onload="set_thumb_layerCA66A44BE12924EABCDC6A3BCF2023B5(this);" id="wp-media-image_layerCA66A44BE12924EABCDC6A3BCF2023B5" src="/public/static/images/d2.png" type="zoom" class="paragraph_image" style="width: 89px; height: 82px;;display:none;" /> </div>
+				</div>
+				<script>
+					(function() {
+						layer_media_init_func('layerCA66A44BE12924EABCDC6A3BCF2023B5');
+
+					})()
+				</script>
+			</div>
+			<script>
+				$('#layerCA66A44BE12924EABCDC6A3BCF2023B5').data('wopop_effects', {
+					"effect": "callout.bounce",
+					"delay": 0.3,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layerCA66A44BE12924EABCDC6A3BCF2023B5').triggerHandler('layer_ready');
+			</script>
+			<div id='layer48E8AA2B92F9B0EB680E399853DAF145' type='title' class='cstlayer' style='left: 997px; top: 351px; position: absolute; z-index: 192; width: 150px; height: 31px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 31px; width: 150px; display: block;">
+					<div style="text-align: center;">
+						<font color="#222222" face="微软雅黑"><span style="font-size: 18px;">电商平台定制开发</span></font>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('#layer48E8AA2B92F9B0EB680E399853DAF145').triggerHandler('layer_ready');
+			</script>
+			<div id='layer23482A54E216EDD20F3EDE3AD1708B0F' type='media' class='cstlayer' style='left: 726px; top: 229px; position: absolute; z-index: 195; width: 60px; height: 80px; display: block;display:none;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<script>
+					create_pc_media_set_pic('layer23482A54E216EDD20F3EDE3AD1708B0F', false);
+				</script>
+				<div class="wp-media_content" style="overflow: hidden; width: 60px; height: 80px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
+					<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 60px; height: 80px;'>
+						<div class="imgloading" style="z-index:100;"> </div>
+						<img onerror="set_thumb_layer23482A54E216EDD20F3EDE3AD1708B0F(this);" onload="set_thumb_layer23482A54E216EDD20F3EDE3AD1708B0F(this);" id="wp-media-image_layer23482A54E216EDD20F3EDE3AD1708B0F" src="/public/static/images/d3.png" type="zoom" class="paragraph_image" style="width: 60px; height: 80px;;display:none;" /> </div>
+				</div>
+				<script>
+					(function() {
+						layer_media_init_func('layer23482A54E216EDD20F3EDE3AD1708B0F');
+
+					})()
+				</script>
+			</div>
+			<script>
+				$('#layer23482A54E216EDD20F3EDE3AD1708B0F').data('wopop_effects', {
+					"effect": "callout.bounce",
+					"delay": 0.6,
+					"duration": 1.2,
+					"loop": 0,
+					"loop_infinite": "0"
+				});
+				$('#layer23482A54E216EDD20F3EDE3AD1708B0F').triggerHandler('layer_ready');
+			</script>
+			<div id='layer5B5ACCF74268540ED680B864E8413E26' type='title' class='cstlayer' style='left: 964px; top: 396px; position: absolute; z-index: 193; width: 216px; height: 53px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 53px; width: 216px; display: block;">
+					<div style="text-align: justify;"><span style="font-family: 微软雅黑; font-size: 14px; color: rgb(136, 136, 136); line-height: 160%;">致力于各类企业用户的电商平台开发，O2O商城开发，网上商城等。</span></div>
+				</div>
+			</div>
+			<script>
+				$('#layer5B5ACCF74268540ED680B864E8413E26').triggerHandler('layer_ready');
+			</script>
+			<div id='layer307DF81FF020BBE986FC44AC79769167' type='buttons' class='cstlayer' style='left: 944.5px; top: 170px; position: absolute; z-index: 190; width: 255px; height: 310px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-buttons_content" style="padding: 0px; border-color: transparent; border-width: 0px; overflow: hidden; width: 255px; height: 310px; border-style: solid;">
+					<a href="javascript:;" class="btnarea button_btndefault-link" style="width:253px;left:0px;top:0px;height:308px;line-height:308px;"> <span class="button_btndefault-label">按钮文本</span> </a>
+					<script language="javascript">
+						$('#layer307DF81FF020BBE986FC44AC79769167').layer_ready(function() {});
+					</script>
+				</div>
+			</div>
+			<script>
+				$('#layer307DF81FF020BBE986FC44AC79769167').triggerHandler('layer_ready');
+			</script>
+			<div id='layer32D730CAD5BAEDDE3B3B59B3799E355F' type='title' class='cstlayer' style='left: 0px; top: 60px; position: absolute; z-index: 180; width: 1200px; height: 52px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 52px; width: 1200px; display: block;">
+					<div style="text-align: center;"><span style="color: rgb(34, 34, 34); font-family: 微软雅黑; font-size: 30px;">定制开发服务</span></div>
+				</div>
+			</div>
+			<script>
+				$('#layer32D730CAD5BAEDDE3B3B59B3799E355F').triggerHandler('layer_ready');
+			</script>
+			<div id='layer3522C36E1D781E4C6ED21C39B364C936' type='title' class='cstlayer' style='left: 0px; top: 111px; position: absolute; z-index: 181; width: 1200px; height: 27px;' mid="" fatherid='layer615F400C9B6B4569689421CFD1FAE550' deg='0'>
+				<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 27px; width: 1200px; display: block;">
+					<div style="text-align: center;">
+						<font color="#222222" face="微软雅黑"><span style="font-size: 14px; color: rgb(119, 119, 119);">保证交付率、您的要求就是我们的追求，为您专属定制</span></font>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('#layer3522C36E1D781E4C6ED21C39B364C936').triggerHandler('layer_ready');
+			</script>
+		</div>
 	</div>
 </div>
 <script>
-	var $fullwidth = $('#layerF7CA9D75C805E25ABB66F9114D2EC67A .full_width');
+	var $fullwidth = $('#layer615F400C9B6B4569689421CFD1FAE550 .full_width')
 	$fullwidth.css({
 		left: 0 - $('#canvas').offset().left + $('#scroll_container').offset().left - $('#scroll_container').scrollLeft() - $.parseInteger($('#canvas').css("borderLeftWidth")),
 		width: $('#scroll_container_bg').width()
 	});
 	$(function() {
 		var videoParams = {
-			"id": "layerF7CA9D75C805E25ABB66F9114D2EC67A",
+			"id": "layer615F400C9B6B4569689421CFD1FAE550",
 			"bgauto": null,
 			"ctauto": null,
 			"bVideouse": null,
@@ -479,355 +841,8 @@
 		fullcolumn_bgvideo_init_func(videoParams);
 	});
 </script>
-
-<div class="full_column" style="width:1200px;position:absolute;top:860px;height:450px;z-index:147;">
-	<div class="full_width" style="position:absolute;height:450px;background-color:#ffffff;background:;"> </div>
-	<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:450px;">
-		<div type='media' class='cstlayer' style='left: 332px; top: 270px; position: absolute; z-index: 153; width: 56px; height: 60px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 56px; height: 60px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 56px; height: 60px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/08.png" type="zoom" style="width: auto; height: 60px; top: 0px; left: 0px; position: relative;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 101px; top: 270px; position: absolute; z-index: 151; width: 60px; height: 60px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 60px; height: 60px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 60px; height: 60px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/33.png" type="zoom" style="width: auto; height: 60px; top: 0px; left: 0px; position: relative;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 279.5px; top: 229px; position: absolute; z-index: 152; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 567px; top: 270px; position: absolute; z-index: 155; width: 60px; height: 59px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 60px; height: 59px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 60px; height: 59px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/07.png" type="zoom" style="width: auto; height: 59px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 517.5px; top: 229px; position: absolute; z-index: 154; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-
-		</div>
-		<div type='media' class='cstlayer' style='left: 807px; top: 270px; position: absolute; z-index: 157; width: 60px; height: 59px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 60px; height: 59px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 60px; height: 59px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/36.png" type="zoom" style="width: 60px; height: auto;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 754.5px; top: 229px; position: absolute; z-index: 156; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-
-		</div>
-		<div type='media' class='cstlayer' style='left: 1038px; top: 270px; position: absolute; z-index: 159; width: 60px; height: 60px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 60px; height: 60px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 60px; height: 60px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/case_icon_19.png" type="zoom" style="width: 60px; height: 60px;;" />
-				</div>
-
-			</div>
-		</div>
-		<script>
-			$('#layer4FBDA65FADEA5A5D37FF34AED9A5B25E').triggerHandler('layer_ready');
-		</script>
-		<div type='media' class='cstlayer' style='left: 984.5px; top: 229px; position: absolute; z-index: 158; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 82px; top: 340px; position: absolute; z-index: 160; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">中信银行</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 0px; top: 60px; position: absolute; z-index: 148; width: 1200px; height: 44px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 44px; width: 1200px; display: block;">
-				<div style="text-align: center;">
-					<font face="微软雅黑"><span style="font-size: 30px;">金融行业</span></font>
-				</div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 149; width: 1200px; height: 61px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 61px; width: 1200px; display: block;">
-				<div style="text-align: center;">
-					<div><span style="font-size: 14px; line-height: 200%; font-family: 微软雅黑; color: rgb(153, 153, 153);">随着创新金融的蓬勃发展，其运维特征已经从基础设施层转向业务交易层、从面向IT管理转为面向人员管理、从保障业务转为促进业务的历史转变；广通提供了</span></div>
-					<div><span style="font-size: 14px; line-height: 200%; font-family: 微软雅黑; color: rgb(153, 153, 153);">以业务交易和用户体验监控（APM）、自动化为基础的金融云运维解决方案。</span></div>
-				</div>
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 49.5px; top: 230px; position: absolute; z-index: 150; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 312px; top: 340px; position: absolute; z-index: 161; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">建设银行</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 549px; top: 340px; position: absolute; z-index: 162; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">农业银行</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 789px; top: 340px; position: absolute; z-index: 163; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">工商银行</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 1019px; top: 340px; position: absolute; z-index: 174; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">浙商证券</span></div>
-			</div>
-		</div>
-	</div>
 </div>
-<script>
-	var $fullwidth = $('#layerBFC8DFB17D0F794CD814C2700D782393 .full_width');
-	$fullwidth.css({
-		left: 0 - $('#canvas').offset().left + $('#scroll_container').offset().left - $('#scroll_container').scrollLeft() - $.parseInteger($('#canvas').css("borderLeftWidth")),
-		width: $('#scroll_container_bg').width()
-	});
-	$(function() {
-		var videoParams = {
-			"id": "layerBFC8DFB17D0F794CD814C2700D782393",
-			"bgauto": null,
-			"ctauto": null,
-			"bVideouse": null,
-			"cVideouse": null,
-			"bgvHeight": null,
-			"bgvWidth": null
-		};
-		fullcolumn_bgvideo_init_func(videoParams);
-	});
-</script>
-
-<div class="full_column" style="width:1200px;position:absolute;top:1310px;height:500px;z-index:165;">
-	<div class="full_width" style="position:absolute;height:500px;background-color:#ffffff;background:;"> </div>
-	<div class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:500px;">
-		<div type='media' class='cstlayer' style='left: 754.5px; top: 259px; position: absolute; z-index: 114; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 1038px; top: 300px; position: absolute; z-index: 123; width: 62px; height: 62px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 62px; height: 62px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 62px; height: 62px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/lALOgiZzzz4-_62_62-1478247140427.jpg" type="zoom" style="width: 62px; height: 62px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 1019px; top: 370px; position: absolute; z-index: 127; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">江苏公安厅</span></div>
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 49.5px; top: 260px; position: absolute; z-index: 117; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 101px; top: 300px; position: absolute; z-index: 118; width: 62px; height: 62px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 62px; height: 62px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 62px; height: 62px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/lALOgiZzzz4-_62_62-1478247140427.jpg" type="zoom" style="width: 62px; height: 62px; top: 0px; left: 0px; position: relative;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 332px; top: 300px; position: absolute; z-index: 119; width: 62px; height: 62px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 62px; height: 62px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 62px; height: 62px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/lALOgiZzzz4-_62_62-1478247140427.jpg" type="zoom" style="width: 62px; height: 62px; top: 0px; left: 0px; position: relative;;" />
-				</div>
-
-			</div>
-
-		</div>
-		<div type='media' class='cstlayer' style='left: 279.5px; top: 259px; position: absolute; z-index: 116; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-
-		</div>
-		<div type='media' class='cstlayer' style='left: 567px; top: 300px; position: absolute; z-index: 120; width: 62px; height: 62px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 62px; height: 62px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 62px; height: 62px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/lALOgiZzzz4-_62_62-1478247140427.jpg" type="zoom" style="width: 62px; height: 62px;;" />
-				</div>
-
-			</div>
-
-		</div>
-		<div type='media' class='cstlayer' style='left: 517.5px; top: 259px; position: absolute; z-index: 115; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='media' class='cstlayer' style='left: 807px; top: 300px; position: absolute; z-index: 121; width: 62px; height: 62px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 62px; height: 62px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 62px; height: 62px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/lALOgiZzzz4-_62_62-1478247140427.jpg" type="zoom" style="width: 62px; height: 62px;;" />
-				</div>
-
-			</div>
-
-		</div>
-		<div type='media' class='cstlayer' style='left: 984.5px; top: 259px; position: absolute; z-index: 122; width: 165px; height: 171px;'>
-			<div class="wp-media_content" style="overflow: hidden; width: 165px; height: 171px; border-width: 0px; border-style: solid; padding: 0px;" type="0">
-				<div class="img_over" style='overflow: hidden; border-color: transparent; border-width: 0px; width: 165px; height: 171px;'>
-
-					<div class="imgloading" style="z-index:100;"> </div>
-					<img class="img_lazy_load paragraph_image" src="/public/static/images/cjx4.png" type="zoom" style="width: 165px; height: 171px;;" />
-				</div>
-
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 82px; top: 370px; position: absolute; z-index: 124; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">湖北公安厅</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 312px; top: 370px; position: absolute; z-index: 125; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">山东公安厅</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 0px; top: 60px; position: absolute; z-index: 128; width: 1200px; height: 44px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 44px; width: 1200px; display: block;">
-				<div style="text-align: center;">
-					<font face="微软雅黑"><span style="font-size: 30px;">平安城市</span></font>
-				</div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 129; width: 1200px; height: 85px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 85px; width: 1200px; display: block;">
-				<div style="text-align: center;">
-					<div>
-						<font face="微软雅黑"><span style="font-size: 14px; line-height: 200%; color: rgb(153, 153, 153);">在公安部指导下，围绕着社会和谐、共铸中国梦这一核心思想，分别在公安信息通信、平安城市和警务云三大领域展开了卓有成效的信息化建设，</span></font>
-					</div>
-					<div>
-						<font face="微软雅黑"><span style="font-size: 14px; line-height: 200%; color: rgb(153, 153, 153);">并各有分工、各有特色；广通针对这一特点，分别提供了面向信通考核、平安城市视频监控管理、警务云-云运维管理解决方案，保障、促进公安各项业务工作稳定</span></font>
-					</div>
-					<div>
-						<font face="微软雅黑"><span style="font-size: 14px; line-height: 200%; color: rgb(153, 153, 153);">开展，间接促进社会和谐发展。</span></font>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 549px; top: 370px; position: absolute; z-index: 126; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">河北公安厅</span></div>
-			</div>
-		</div>
-		<div type='title' class='cstlayer' style='left: 789px; top: 369px; position: absolute; z-index: 130; width: 100px; height: 23px;'>
-			<div class="wp-title_content" style="word-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 23px; width: 100px; display: block; border-style: solid;">
-				<div style="text-align: center;"><span style="font-size: 16px; font-family: 微软雅黑;">山西公安厅</span></div>
-			</div>
-		</div>
-	</div>
-</div>
-<script>
-	var $fullwidth = $('#layer119F0EDAF95597773677AD8B73DF202F .full_width');
-	$fullwidth.css({
-		left: 0 - $('#canvas').offset().left + $('#scroll_container').offset().left - $('#scroll_container').scrollLeft() - $.parseInteger($('#canvas').css("borderLeftWidth")),
-		width: $('#scroll_container_bg').width()
-	});
-	$(function() {
-		var videoParams = {
-			"id": "layer119F0EDAF95597773677AD8B73DF202F",
-			"bgauto": null,
-			"ctauto": null,
-			"bVideouse": null,
-			"cVideouse": null,
-			"bgvHeight": null,
-			"bgvWidth": null
-		};
-		fullcolumn_bgvideo_init_func(videoParams);
-	});
-</script>
-
-</div>
-</div>
-<div id="site_footer" style="width:1200px;position:absolute;height:600px;z-index:500;margin-top:50px">
+<div id="site_footer" style="width:1200px;position:absolute;height:600px;z-index:500;margin-top:50px;left: 351.5px;top: 1801px;display: none;">
 	        <div class="full_width" margintopheight=50 style="position:absolute;height:600px;background-color:#434343;background-position:center top;background-image:url('http://tpl-c383b95.pic32.websiteonline.cn/upload/z_bg2.jpg');"></div>
         <div id="footer_content" class="full_content" style="width:1200px; position:absolute;left:0;top:0;margin-left: 0px;;height:600px;">
             <div id='layer93923DB32704FF1B6A4ABD34B659E864' type='line'  inbuttom='1' class='cstlayer' style='left: 0px; top: 120px; position: absolute; z-index: 102; width: 340px; height: 31px;'  mid=""   deg='0'>
