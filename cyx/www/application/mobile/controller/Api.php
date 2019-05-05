@@ -128,15 +128,159 @@ class Api extends Base
      */
     public function getSolutionList()
     {
+        //获取列表
 
+        //获取分页
+        $p = $this->getPage(1, 100, 'http://www.baidu.com', 10);
+
+        $data = array(
+            'lists' => $lists,
+            'page' => $page,
+        );
+
+        $this->_toJson($data);
     }
 
     /**
      * [getPage 制作分页]
-     * @return [type] [description]
+     * @param  integer $thispage [当前页]
+     * @param  integer $allnum   [总条数]
+     * @param  string  $url      [跳转路径]
+     * @return [type]            [每页条数]
      */
-    public function getPage()
+    public function getPage($thispage=1, $allnum=100, $url, $limit=10)
     {
+
+        $allpage = ceil( $allnum / $limit );//总页数
+
+        if($allpage<2 && $allpage>0)
+        {
+
+        }
+        else
+        {
+            $p='';
+            $p.= '<nav aria-label="Page navigation"><ul class="pagination">';
+
+            if($thispage>1)
+            {
+                $nurl1 = explode('.',$url);
+                $p.='<li><a href="'.$url.'?page='.($thispage-1).'" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+            }
+
+            if($thispage<=($allpage)&&$thispage<6)
+            {
+
+                if($allpage>=5)
+                {
+                    $allpages=5;
+                }
+                else
+                {
+                    $allpages=$allpage;
+                }
+                for($i=1;$i<=$allpages;$i++)
+                {
+                    $nurls = $url . '?page=' . $i;
+
+                    if($i==$thispage)
+                    {
+                        $p.= "<li class='active'><a href=\"{$nurls}\">{$i}</a></li>";
+                    }
+                    else
+                    {
+                        $p.= "<li><a href=\"{$nurls}\">{$i}</a></li>";
+                    }
+                }
+
+            }
+            else if($allpage>2&&$thispage<=($allpage)&&$thispage<=$allpage-2)
+            {
+                $offset_u = ($thispage-2);
+                $offset_d = ($thispage+2);
+                //偏移上2个
+                for($i=$offset_u;$i<$thispage;$i++)
+                {
+                    $nurls = $url . '?page=' . $i;
+
+                    if($i==$thispage)
+                    {
+                        $p.= "<li class='active'><a href=\"{$nurls}\">{$i}</a></li>";
+                    }
+                    else
+                    {
+                        $p.= "<li><a href=\"{$nurls}\">{$i}</a></li>";
+                    }
+                }
+                //偏移下2个
+                for($i=$thispage;$i<=$offset_d;$i++)
+                {
+                    $nurls = $url . '?page=' . $i;
+
+                    if($i==$thispage)
+                    {
+                        $p.= "<li class='active'><a href=\"{$nurls}\">{$i}</a></li>";
+                    }
+                    else
+                    {
+                        $p.= "<li><a href=\"{$nurls}\">{$i}</a></li>";
+                    }
+                }
+            }
+            else
+            {
+                $offset_u = ($thispage-2);
+                $offset_d = ($allpage);
+                //偏移上2个
+
+                if($allpage>2)
+                {
+                    for($i=$offset_u;$i<$thispage;$i++)
+                    {
+                        $nurls = $url . '?page=' . $i;
+
+                        if($i==$thispage)
+                        {
+                            $p.= "<li class='active'><a href=\"{$nurls}\">{$i}</a></li>";
+                        }
+                        else
+                        {
+                            $p.= "<li><a href=\"{$nurls}\">{$i}</a></li>";
+                        }
+                    }
+                }
+
+                //偏移下2个
+                for($i=$thispage;$i<=$offset_d;$i++)
+                {
+                    $nurls = $url . '?page=' . $i;
+
+                    if($i==$thispage)
+                    {
+                        $p.= "<li class='active'><a href=\"{$nurls}\" >{$i}</a></li>";
+                    }
+                    else
+                    {
+                        $p.= "<li><a href=\"{$nurls}\">{$i}</a></li>";
+                    }
+                }
+            }
+
+
+            if($thispage<($allpage))
+            {
+                $p.='<li><a href="'.$url.'?page='.($thispage+1).'" aria-label=\"Next\"><span aria-hidden="true">&raquo;</span></a></li>';
+            }
+
+            if($allpage>1)
+            {
+                $p.='<li><a href="javascript:;">共'.$allpage.'页</a></li>';
+            }
+
+
+            $p.= '</ul></nav>';
+            return $p;
+        }
 
     }
 
