@@ -41,7 +41,7 @@ class Base extends Index{
     	}
     	else
     	{
-    		$station = db('station')->where('tel', array('<>', ''))->find();
+    		$station = db('station')->where('type', 'station')->find();
     		Session::set('station', $station);
     	}
     }

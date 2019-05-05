@@ -16,7 +16,7 @@ class Api extends Base
      * [getstation 获取站点信息]
      * @return [type] [description]
      */
-    public function getstation()
+    public function getStation()
     {
     	$this->_toJson( $this->_station );
     }
@@ -27,7 +27,7 @@ class Api extends Base
      * name=hotnews 资讯热点
      * @return [type] [description]
      */
-    public function getarticle()
+    public function getArticle()
     {
 
     	$name = input('name');
@@ -47,7 +47,7 @@ class Api extends Base
      * [getarticle_detail 获取文章详情]
      * @return [type] [description]
      */
-    public function getarticle_detail()
+    public function getArticleDetail()
     {
     	$article_id = input('article_id');
 
@@ -97,7 +97,7 @@ class Api extends Base
      * [getcustomer 获取经典客户]
      * @return [type] [description]
      */
-    public function getcustomer()
+    public function getCustomer()
     {
     	$limit = input('limit', 4);
 
@@ -112,10 +112,21 @@ class Api extends Base
     }
 
     /**
+     * [getAboutUs 获取关于我们]
+     * @return [type] [description]
+     */
+    public function getAboutUs()
+    {
+    	$data = db('station')->where('type', 'about_us')->find();
+
+    	$this->_toJson($data);
+    }
+
+    /**
      * [getsolutionList 获取解决方案列表]
      * @return [type] [description]
      */
-    public function getsolutionList()
+    public function getSolutionList()
     {
 
     }
@@ -127,6 +138,42 @@ class Api extends Base
     public function getPage()
     {
 
+    }
+
+    /**
+     * [connectUs 联系我们]
+     * @return [type] [description]
+     */
+    public function connectUs()
+    {
+    	$data = array(
+    		'username' => strval(getparameter('username')),
+    		'email' => strval(getparameter('email')),
+    		'mobile' => strval(getparameter('mobile')),
+    		'type' => strval(getparameter('type')),
+    		'remark' => strval(getparameter('remark')),
+    	);
+
+    	if(empty($data['username']))
+    	{
+    		$this->_toError('请填写您的称呼');
+    	}
+    	if(empty($data['mobile']))
+    	{
+    		$this->_toError('请填写您的手机号');
+    	}
+    	if(!preg_match("/^1[3456789]\d{9}$/", $data['mobile']))
+    	{
+    		$this->_toError('请填写正确的手机号');
+    	}
+
+    	$res = db('connect_us')->insert($data);
+    	if(!$res)
+    	{
+    		$this->_toError('抱歉，系统错误！请稍后重试。');
+    	}
+
+    	$this->_toSuccess('恭喜，您的信息已提交，我们会尽快联系您！');
     }
 
 

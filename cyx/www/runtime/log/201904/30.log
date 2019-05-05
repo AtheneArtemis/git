@@ -19301,3 +19301,613 @@
 [ error ] [2002]SQLSTATE[HY000] [2002] �������ӷ���һ��ʱ���û����ȷ�𸴻����ӵ�����û�з�Ӧ�����ӳ���ʧ�ܡ�
 [F:\git\cyx\www\thinkphp\library\think\db\Connection.php:295]
 >>>>>>> 3e63b70a6ef6e5241adfc1f734ed754a8156d994
+---------------------------------------------------------------
+[ 2019-04-30T16:55:15+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/index/index/index.html
+[运行时间：0.436025s] [吞吐率：2.29req/s] [内存消耗：2,051.42kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\Controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.198011s ] mysql:host=www.chenyixuankeji.com;port=3306;dbname=wwwchenyixuankejicom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_station` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_station` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.094005s ]
+---------------------------------------------------------------
+[ 2019-04-30T17:00:25+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/mobile/about/index.html
+[运行时间：0.052003s] [吞吐率：19.23req/s] [内存消耗：1,435.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => 'about',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/mobile/Homepage/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\mobile\Controller\About->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\mobile\controller\About.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/mobile\view\about\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'station',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-30T17:00:31+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/mobile/About/index.html
+[运行时间：0.051003s] [吞吐率：19.61req/s] [内存消耗：1,435.57kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => 'About',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/mobile/about/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\mobile\Controller\About->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\mobile\controller\About.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/mobile\view\about\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'station',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-30T17:00:33+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/mobile/About/index.html
+[运行时间：0.043002s] [吞吐率：23.25req/s] [内存消耗：1,435.57kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => 'About',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/mobile/About/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\mobile\Controller\About->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\mobile\controller\About.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/mobile\view\about\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'station',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-30T17:00:39+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/admin/Aboutus
+[运行时间：0.857049s] [吞吐率：1.17req/s] [内存消耗：2,520.22kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Aboutus',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Aboutus->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Aboutus.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/admin\view\Aboutus\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'sysset',
+  2 => 'number',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.581033s ] mysql:host=www.chenyixuankeji.com;port=3306;dbname=wwwchenyixuankejicom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_station` [ RunTime:0.107007s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_station` WHERE  `is_delete` = 0  AND `id` = 2  AND `status` = 1 LIMIT 1 [ RunTime:0.106006s ]
+---------------------------------------------------------------
+[ 2019-04-30T17:18:13+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/mobile/About/index.html
+[运行时间：0.042002s] [吞吐率：23.81req/s] [内存消耗：1,435.57kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => 'About',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/mobile/About/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\mobile\Controller\About->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\mobile\controller\About.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/mobile\view\about\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'station',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-30T17:18:21+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/mobile/Cases/index.html
+[运行时间：0.050003s] [吞吐率：20.00req/s] [内存消耗：1,471.52kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => 'Cases',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/mobile/About/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\mobile\Controller\Cases->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\mobile\controller\Cases.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/mobile\view\cases\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'station',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-30T17:18:25+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/mobile/Homepage/index.html
+[运行时间：1.343077s] [吞吐率：0.74req/s] [内存消耗：2,142.78kb] [文件加载：49]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => 'Homepage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/mobile/Cases/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\mobile\Controller\Homepage->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\mobile\controller\Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/mobile\view\homepage\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'station',
+  2 => 'solution',
+  3 => 'hotnews',
+  4 => 'customer',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.755043s ] mysql:host=www.chenyixuankeji.com;port=3306;dbname=wwwchenyixuankejicom;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_article` [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`intro`,`a`.`thumbpicture`,`a`.`createtime` FROM `cyx_article` `a` INNER JOIN `cyx_articletype` `at1` ON `at1`.`type`='group' AND at1.name = 'solution' INNER JOIN `cyx_articletype` `at2` ON `at2`.`gid`=at1.id AND at2.id = a.articletype_id ORDER BY `a`.`id` DESC LIMIT 3 [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`intro`,`a`.`thumbpicture`,`a`.`createtime` FROM `cyx_article` `a` INNER JOIN `cyx_articletype` `at1` ON `at1`.`type`='group' AND at1.name = 'hotnews' INNER JOIN `cyx_articletype` `at2` ON `at2`.`gid`=at1.id AND at2.id = a.articletype_id ORDER BY `a`.`id` DESC LIMIT 4 [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_customer` [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_customer` WHERE  `is_delete` = 0  AND `status` = 1 ORDER BY `sort` ASC LIMIT 4 [ RunTime:0.104006s ]
+---------------------------------------------------------------
+[ 2019-04-30T17:18:29+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/mobile/service/index.html
+[运行时间：0.047002s] [吞吐率：21.28req/s] [内存消耗：1,443.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'mobile',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/mobile/Homepage/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\mobile\Controller\Service->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\mobile\controller\Service.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/mobile\view\service\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'station',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-30T17:19:44+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/admin/Flow
+[运行时间：1.286073s] [吞吐率：0.78req/s] [内存消耗：2,926.80kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Flow',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Flow->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Flow.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/admin\view\Flow\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'sysset',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.158009s ] mysql:host=www.chenyixuankeji.com;port=3306;dbname=wwwchenyixuankejicom;charset=utf8
+[ sql ] [ SQL ] show tables like 'cyx_flow' [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'flow' AND column_name = 'createtime' [ RunTime:0.105006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_flow` [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_flow` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_flow` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_flow` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_flow` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_flow` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_flow` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_flow` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.102006s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Flow::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Flow[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Flow::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Flow[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Flow::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Flow[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Flow::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Flow[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Flow::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Flow[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-30T17:19:51+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/admin/User
+[运行时间：1.087062s] [吞吐率：0.92req/s] [内存消耗：3,089.63kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/admin\view\User\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'sysset',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.144008s ] mysql:host=www.chenyixuankeji.com;port=3306;dbname=wwwchenyixuankejicom;charset=utf8
+[ sql ] [ SQL ] show tables like 'cyx_user' [ RunTime:0.094006s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'user' AND column_name = 'createtime' [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_user` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_user` WHERE  `is_delete` = 0  AND `usertype_id` <> 'member' LIMIT 1 [ RunTime:0.094005s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_user` WHERE  `is_delete` = 0  AND `usertype_id` <> 'member' ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.094006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_role_user` [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_role` [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT `cyx_role`.*,pivot.role_id AS pivot__role_id,pivot.user_id AS pivot__user_id,pivot.status AS pivot__status FROM `cyx_role` INNER JOIN `cyx_role_user` `pivot` ON `pivot`.`role_id`=`cyx_role`.`id` WHERE  `pivot`.`status` > '0'  AND `pivot`.`user_id` = 1 [ RunTime:0.094005s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\User::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\User[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\User.php:30]
+[ error ] [8]未定义变量: theFirst[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-30T17:20:00+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/admin/Customization
+[运行时间：1.090062s] [吞吐率：0.92req/s] [内存消耗：2,930.48kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Customization',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Customization->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Customization.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/admin\view\Customization\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'sysset',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.147008s ] mysql:host=www.chenyixuankeji.com;port=3306;dbname=wwwchenyixuankejicom;charset=utf8
+[ sql ] [ SQL ] show tables like 'cyx_customization' [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'customization' AND column_name = 'createtime' [ RunTime:0.096005s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_customization` [ RunTime:0.096006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_customization` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.097006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_customization` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_customization` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.095006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_customization` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_customization` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.095005s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_customization` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.095005s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Customization::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Customization[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Customization::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Customization[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Customization::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Customization[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Customization::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Customization[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+---------------------------------------------------------------
+[ 2019-04-30T17:20:21+08:00 ] 127.0.0.1 GET www.chenyixuan.com/index.php/admin/Servicetitle
+[运行时间：1.090063s] [吞吐率：0.92req/s] [内存消耗：2,925.61kb] [文件加载：65]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Servicetitle',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7933634560; UM_distinctid=169fff442ef3cc-0f8a0e18e14749-121b7154-1fa400-169fff442f055f; CNZZDATA1261418685=1542986905-1554777376-%7C1555056264; PHPSESSID=vaqrm2msl5313k4l0ld5j8sc45',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.chenyixuan.com/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3724.8 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.chenyixuan.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 0,
+)
+[ info ] [ RUN ] app\admin\controller\Servicetitle->index[ D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Servicetitle.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\git\cyx\www/application/admin\view\Servicetitle\index.html [ array (
+  0 => 'uploadurl',
+  1 => 'sysset',
+  2 => 'datalist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.158009s ] mysql:host=www.chenyixuankeji.com;port=3306;dbname=wwwchenyixuankejicom;charset=utf8
+[ sql ] [ SQL ] show tables like 'cyx_servicetitle' [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.`columns` 
+            WHERE table_name = 'servicetitle' AND column_name = 'createtime' [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cyx_servicetitle` [ RunTime:0.104006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cyx_servicetitle` WHERE  `is_delete` = 0 LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cyx_servicetitle` WHERE  `is_delete` = 0 ORDER BY `id` DESC LIMIT 0,20 [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_servicetitle` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_servicetitle` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.103006s ]
+[ sql ] [ SQL ] SELECT * FROM `cyx_servicetitle` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.103006s ]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Servicetitle::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Servicetitle[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Servicetitle::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Servicetitle[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [2048]call_user_func_array() expects parameter 1 to be a valid callback, non-static method app\admin\controller\Servicetitle::_generatetabledatahtml() should not be called statically, assuming $this from compatible context app\admin\controller\Servicetitle[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\admin\controller\Publictable.php:76]
+[ error ] [8]未定义变量: theFirst[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: prePage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: nextPage[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
+[ error ] [8]未定义变量: theEnd[D:\phpStudy\PHPTutorial\WWW\git\cyx\www\application\common\Ajaxpage.php:145]
