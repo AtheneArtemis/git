@@ -36,12 +36,14 @@ class Api extends Base
     public function getArticle()
     {
 
-    	$name = input('name');
-    	$limit = input('limit', 3);
+    	$name = getparameter('name');
+    	$limit = getparameter('limit', 3);
 
     	$lists = db('article')->field('a.id,a.title,a.intro,a.thumbpicture,a.createtime')->alias('a')
     		                  ->join("__ARTICLETYPE__ at1", "at1.type = 'group' AND at1.name = '{$name}'")
     		                  ->join("__ARTICLETYPE__ at2", "at2.gid = at1.id AND at2.id = a.articletype_id")
+                              ->where('a.is_delete', 0)
+                              ->where('at1.is_delete', 0)
     		                  ->order('a.id DESC')
     		                  ->limit($limit)
     	                      ->select();
@@ -55,25 +57,25 @@ class Api extends Base
      */
     public function getArtileList()
     {
-        $group = getparameter('name');  //articletype中name字段
+        $name = getparameter('name');  //articletype中name字段
 
-        if(empty($group))
+        if(empty($name))
         {
             $this->_toError('name data is not empty');
         }
 
-        $ids = db('articletype')->alias('a1')
-                                 ->field('a1.id as a1,a2.id as a2,a3.id as a3')
-                                 ->distinct(true)
-                                 ->join('__ARTICLETYPE__ a2', 'a2.gid = a1.id')
-                                 ->join('__ARTICLETYPE__ a3', 'a3.pid = a2.id')
-                                 ->where('a1.name', $group)
-                                 ->where('a1.is_delete', 0)
-                                 ->where('a2.is_delete', 0)
-                                 ->where('a3.is_delete', 0)
-                                 ->select();
+        $ids = db('articletype')->alias('at1')
+                                ->field('at1.id as at1,at2.id as at2')
+                                ->distinct(true)
+                                ->join('__ARTICLETYPE__ at2', 'at2.gid = at1.id')
+                                ->where('at1.type', 'group')
+                                ->where('at1.name', $name)
+                                ->where('at1.is_delete', 0)
+                                ->where('at2.is_delete', 0)
+                                ->select();
 
-        $ids = array_keys(array_flip($ids[0])+array_flip($ids[1])+array_flip($ids[2]));
+        $ids = array_keys(array_flip($ids[0])+array_flip($ids[1]));
+
 
         //获取列表
         $where = array(
@@ -98,7 +100,7 @@ class Api extends Base
      */
     public function getArticleDetail()
     {
-    	$article_id = input('article_id');
+    	$article_id = getparameter('article_id');
 
     	$where = array(
     		'id' => $article_id,
@@ -148,7 +150,7 @@ class Api extends Base
      */
     public function getCustomer()
     {
-    	$limit = input('limit', 4);
+    	$limit = getparameter('limit', 4);
 
     	$where = array(
     		'is_delete' => 0,
@@ -166,7 +168,7 @@ class Api extends Base
      */
     public function getAboutUs()
     {
-    	$data = db('station')->where('type', 'about_us')->find();
+    	$data = db('station')->where('type', 'about_us')->find(); 
 
     	$this->_toJson($data);
     }
