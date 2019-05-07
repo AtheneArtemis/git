@@ -330,6 +330,16 @@ class Api extends Base
     }
 
     /**
+     * [getCustomization 获取定制开发服务类型]
+     * @return [type] [description]
+     */
+    public function getCustomization()
+    {
+        $lists = db('customization')->field('id,name,icon')->where('is_delete', 0)->order('sort asc')->select();
+        $this->_toJson($lists);
+    }
+
+    /**
      * [connectUs 联系我们]
      * @return [type] [description]
      */
@@ -339,29 +349,27 @@ class Api extends Base
     		'username' => strval(getparameter('username')),
     		'email' => strval(getparameter('email')),
     		'mobile' => strval(getparameter('mobile')),
-    		// 'type' => strval(getparameter('type')),
+    		'type' => strval(getparameter('type')),
     		'remark' => strval(getparameter('remark')),
     	);
 
-        switch (getparameter('type')) {
-            case '1':
-                $type = "微信开发";
-                break;
-            case '2':
-                $type = "小程序开发";
-                break;
-            case '3':
-                $type = "网站开发";
-                break;
-            case '4':
-                $type = "商城开发";
-                break;
-            case '5':
-                $type = "APP开发";
-                break;
-        }
-
-        $data['type'] = $type;
+        // switch (getparameter('type')) {
+        //     case '1':
+        //         $type = "微信开发";
+        //         break;
+        //     case '2':
+        //         $type = "小程序开发";
+        //         break;
+        //     case '3':
+        //         $type = "网站开发";
+        //         break;
+        //     case '4':
+        //         $type = "商城开发";
+        //         break;
+        //     case '5':
+        //         $type = "APP开发";
+        //         break;
+        // }
 
     	if(empty($data['username']))
     	{
