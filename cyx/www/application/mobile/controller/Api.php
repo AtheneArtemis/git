@@ -24,7 +24,37 @@ class Api extends Base
      */
     public function getStation()
     {
-    	$this->_toJson( $this->_station );
+        $name = getparameter('name');
+
+        $station = $this->_station;
+
+        if(!empty($name))
+        {
+            $this->_toJson( $station[$name] );
+        }
+        else
+        {
+            $this->_toJson( $station );
+        }
+    }
+
+    /**
+     * [getBanner 获取banner]
+     * @return [type] [description]
+     */
+    public function getBanner()
+    {
+        $station = $this->_station;
+        $banner = $station['banner'];
+        $banner = unserialize($banner);
+
+        $bannerImg = array();
+        foreach ($banner as $key => $value)
+        {
+            $bannerImg[] = $this->uploadurl . $value['picture'];
+        }
+
+        $this->_toJson( $bannerImg );
     }
 
     /**
