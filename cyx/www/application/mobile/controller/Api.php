@@ -12,6 +12,11 @@ class Api extends Base
        parent::__construct();
     }
 
+    public function index()
+    {
+        echo 'Hello World';
+    }
+
     /**
      * [getstation 获取站点信息]
      * @return [type] [description]
@@ -129,6 +134,7 @@ class Api extends Base
     public function getSolutionList()
     {
         //获取列表
+        
 
         //获取分页
         $p = $this->getPage(1, 100, 'http://www.baidu.com', 10);
@@ -146,12 +152,26 @@ class Api extends Base
      * @param  integer $thispage [当前页]
      * @param  integer $allnum   [总条数]
      * @param  string  $url      [跳转路径]
+     * @param  string  $args     [跳转参数]
      * @return [type]            [每页条数]
      */
-    public function getPage($thispage=1, $allnum=100, $url, $limit=10)
+    public function getPage($thispage=1, $allnum=100, $url, $args=array(), $limit=10)
     {
 
         $allpage = ceil( $allnum / $limit );//总页数
+
+        $url .= "?";
+
+        if(!empty($args))
+        {
+            unset($args['page']);
+
+            $args = implode("&", $args);
+
+            $url .= $args;
+
+            $url .= "&";
+        }
 
         if($allpage<2 && $allpage>0)
         {
@@ -164,8 +184,7 @@ class Api extends Base
 
             if($thispage>1)
             {
-                $nurl1 = explode('.',$url);
-                $p.='<li><a href="'.$url.'?page='.($thispage-1).'" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+                $p.='<li><a href="'.$url.'page='.($thispage-1).'" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
             }
 
             if($thispage<=($allpage)&&$thispage<6)
@@ -181,7 +200,7 @@ class Api extends Base
                 }
                 for($i=1;$i<=$allpages;$i++)
                 {
-                    $nurls = $url . '?page=' . $i;
+                    $nurls = $url . 'page=' . $i;
 
                     if($i==$thispage)
                     {
@@ -201,7 +220,7 @@ class Api extends Base
                 //偏移上2个
                 for($i=$offset_u;$i<$thispage;$i++)
                 {
-                    $nurls = $url . '?page=' . $i;
+                    $nurls = $url . 'page=' . $i;
 
                     if($i==$thispage)
                     {
@@ -215,7 +234,7 @@ class Api extends Base
                 //偏移下2个
                 for($i=$thispage;$i<=$offset_d;$i++)
                 {
-                    $nurls = $url . '?page=' . $i;
+                    $nurls = $url . 'page=' . $i;
 
                     if($i==$thispage)
                     {
@@ -237,7 +256,7 @@ class Api extends Base
                 {
                     for($i=$offset_u;$i<$thispage;$i++)
                     {
-                        $nurls = $url . '?page=' . $i;
+                        $nurls = $url . 'page=' . $i;
 
                         if($i==$thispage)
                         {
@@ -253,7 +272,7 @@ class Api extends Base
                 //偏移下2个
                 for($i=$thispage;$i<=$offset_d;$i++)
                 {
-                    $nurls = $url . '?page=' . $i;
+                    $nurls = $url . 'page=' . $i;
 
                     if($i==$thispage)
                     {
@@ -269,7 +288,7 @@ class Api extends Base
 
             if($thispage<($allpage))
             {
-                $p.='<li><a href="'.$url.'?page='.($thispage+1).'" aria-label=\"Next\"><span aria-hidden="true">&raquo;</span></a></li>';
+                $p.='<li><a href="'.$url.'page='.($thispage+1).'" aria-label=\"Next\"><span aria-hidden="true">&raquo;</span></a></li>';
             }
 
             if($allpage>1)
