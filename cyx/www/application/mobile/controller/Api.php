@@ -198,7 +198,16 @@ class Api extends Base
      */
     public function getAboutUs()
     {
-    	$data = db('station')->where('type', 'about_us')->find(); 
+    	$data = db('station')->field('description,loginbg')->where('type', 'about_us')->find();
+        $data['loginbg'] = unserialize($data['loginbg']);
+
+        $loginbg = array();
+        foreach ( $data['loginbg'] as $key => $value)
+        {
+            $loginbg[] = $this->uploadurl . $value['picture'];
+        }
+
+        $data['loginbg'] = $loginbg;
 
     	$this->_toJson($data);
     }
