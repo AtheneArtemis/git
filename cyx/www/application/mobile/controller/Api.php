@@ -1,6 +1,7 @@
 <?php
 namespace app\mobile\Controller;
 use app\mobile\Controller\Base;
+use think\Paginator;
 
 /**
  * Api接口
@@ -128,19 +129,42 @@ class Api extends Base
     }
 
     /**
-     * [getsolutionList 获取解决方案列表]
+     * [getArtileList 获取文章列表]
      * @return [type] [description]
      */
-    public function getSolutionList()
+    public function getArtileList()
     {
-        //获取列表
-        
+        $group = getparameter('name');  //articletype中name字段
 
-        //获取分页
-        $p = $this->getPage(1, 100, 'http://www.baidu.com', 10);
+        if(empty($group))
+        {
+            $this->_toError('name data is not empty');
+        }
+
+        $ids = db('articletype')->alias('a1')
+                                 ->field('a1.id as a1,a2.id as a2,a3.id as a3')
+                                 ->distinct(true)
+                                 ->join('__ARTICLETYPE__ a2', 'a2.gid = a1.id')
+                                 ->join('__ARTICLETYPE__ a3', 'a3.pid = a2.id')
+                                 ->where('a1.name', $group)
+                                 ->where('a1.is_delete', 0)
+                                 ->where('a2.is_delete', 0)
+                                 ->where('a3.is_delete', 0)
+                                 ->select();
+
+        $ids = array_keys(array_flip($ids[0])+array_flip($ids[1])+array_flip($ids[2]));
+
+        //获取列表
+        $where = array(
+            'articletype_id' => array('in', $ids),
+        );
+
+        $list = db('article')->where($where)->paginate(1, true);
+
+        $page = $list->render();
 
         $data = array(
-            'lists' => $lists,
+            'list' => $list,
             'page' => $page,
         );
 
