@@ -339,9 +339,29 @@ class Api extends Base
     		'username' => strval(getparameter('username')),
     		'email' => strval(getparameter('email')),
     		'mobile' => strval(getparameter('mobile')),
-    		'type' => strval(getparameter('type')),
+    		// 'type' => strval(getparameter('type')),
     		'remark' => strval(getparameter('remark')),
     	);
+
+        switch (getparameter('type')) {
+            case '1':
+                $type = "微信开发";
+                break;
+            case '2':
+                $type = "小程序开发";
+                break;
+            case '3':
+                $type = "网站开发";
+                break;
+            case '4':
+                $type = "商城开发";
+                break;
+            case '5':
+                $type = "APP开发";
+                break;
+        }
+
+        $data['type'] = $type;
 
     	if(empty($data['username']))
     	{
@@ -357,6 +377,7 @@ class Api extends Base
     	}
 
     	$res = db('connect_us')->insert($data);
+
     	if(!$res)
     	{
     		$this->_toError('抱歉，系统错误！请稍后重试。');
